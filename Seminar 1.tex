@@ -14,12 +14,12 @@
 \usepackage{graphicx}
 \graphicspath{ {./pic/} }
 
-\usepackage{fourier,amssymb,microtype}
+\usepackage{fourier,amssymb,microtype,amsmath}
 \usepackage{mdframed,caption,xcolor}
 \usepackage{tikz}
 
 \title{Seminar 1 - Preference and Marshallian demand function}
-\author{Xiaoguang Ling }
+\author{Xiaoguang Ling \\  \href{xiaoguang.ling@econ.uio.no}{xiaoguang.ling@econ.uio.no}}
 \date{\today}
 
 \begin{document}
@@ -27,6 +27,76 @@
 \maketitle
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Before we start}
+
+\begin{itemize}
+\item The course/seminar is difficult and time-consuming \rightarrow help each other
+\item More details on assumptions we rely on, more complex and interesting questions, more mathmatics.
+\item Open-book exam, also difficult. Previous exam: \href{https://www.uio.no/studier/emner/sv/oekonomi/ECON4220/previous-exams/}{Econ 4220/3220}, \href{https://www.uio.no/studier/emner/sv/oekonomi/ECON3200/previous-exams/index.html}{Econ 4200/3200}
+\item New problem set and solution sketch will be available before every weekend in Canvas.
+\item Your feedback is important (too fast, unclear, mistake etc.). Chatroom in \href{}{Canvas}
+
+acontact me (\href{xiaoguang.ling@econ.uio.no}{xiaoguang.ling@econ.uio.no}) in time!
+
+
+
+
+\end{itemize}
+
+
+
+\usetikzlibrary{arrows,shapes,positioning,shadows,trees}
+
+\tikzset{
+  basic/.style  = {draw, text width=2cm, drop shadow, font=\sffamily, rectangle},
+  root/.style   = {basic, rounded corners=2pt, thin, align=center,
+                   fill=green!30},
+  level 2/.style = {basic, rounded corners=6pt, thin,align=center, fill=green!60,
+                   text width=8em},
+  level 3/.style = {basic, thin, align=left, fill=pink!60, text width=6.5em}
+}
+
+\begin{tikzpicture}[
+  level 1/.style={sibling distance=40mm},
+  edge from parent/.style={->,draw},
+  >=latex]
+
+% root of the the initial tree, level 1
+\node[root] {Econ 3220/4220}
+% The first level, as children of the initial tree
+  child {node[level 2] (c1) {Microeconomic Theory}}
+  child {node[level 2] (c2) {Game Theory}}
+  child {node[level 2] (c3) {Information Theory}};
+
+% The second level, relatively positioned nodes
+\begin{scope}[every node/.style={level 3}]
+\node [below of = c1, xshift=15pt] (c11) {Consumer};
+\node [below of = c11] (c12) {Firm};
+\node [below of = c12] (c13) {Equilibrium};
+
+\node [below of = c2, xshift=15pt] (c21) {Static};
+\node [below of = c21] (c22) {Dynamic};
+\node [below of = c22] (c23) {};
+\node [below of = c23] (c24) {};
+
+\node [below of = c3, xshift=15pt] (c31) {Moral Hazard};
+\node [below of = c31] (c32) {Adverse Selection};
+\node [below of = c32] (c33) {};
+\end{scope}
+
+% lines from each level 1 node to every one of its "children"
+\foreach \value in {1,2,3}
+  \draw[->] (c1.195) |- (c1\value.west);
+
+\foreach \value in {1,...,4}
+  \draw[->] (c2.195) |- (c2\value.west);
+
+\foreach \value in {1,...,3}
+  \draw[->] (c3.195) |- (c3\value.west);
+\end{tikzpicture}
+
+
+\newpage
 
 \section{Jehle \& Reny 1.8. Axioms of consumer choice}
 
