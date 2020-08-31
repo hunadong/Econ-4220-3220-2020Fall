@@ -484,7 +484,8 @@ x^1 \succsim x^2 \Leftrightarrow
       \text{or}\\
       \text{$x^1_1 = x^2_1 \ and \ x^1_2 \ge x^2_2$}\\
     \end{cases}
-    \label{eq:laxi}       
+    \label{eq:laxi}  
+\nonumber     
 \end{equation}
 \begin{itemize}
 \item $x_1$ is critical
@@ -512,7 +513,8 @@ and $x^2 \succsim x^1$. According to the definition in formula \ref{eq:laxi}, th
       \text{or}\\
       \text{$x^2_1 = x^1_1 \ and \ x^2_2 \ge x^1_2$}\\
     \end{cases}
-    \label{eq:nomap}       
+    \label{eq:nomap}   
+    \nonumber    
 \end{equation}
 
 Obviously, the only possible condition is $x^1_1 = x^2_1 \ and \ x^1_2 = x^2_2$, which contradicts
@@ -611,6 +613,16 @@ $B$ is closed.
 
 \textbf{(2) $B$ is bounded}
 
+Define $N \equiv max\{\frac{y}{p_1},\frac{y}{p_2},\ldots, \frac{y}{p_n}\} > 0$.
+
+$\forall x \in B$, we have $C = (N,N, \ldots, N) > x$. We can thus argue that $B$
+can be contained by some ball  $B_{(\epsilon)}(x^0)$, i.e. bounded.
+
+
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+For example:
+
 {\centering
 \begin{tikzpicture}[scale=0.85]
 \draw [->] (0,0) node [below] {0} -- (0,0) -- (3.4,0) node [below] {$x_1$};
@@ -628,11 +640,8 @@ $B$ is closed.
 
 \vspace{2mm}
 
-Define $N \equiv max{\frac{y}{p_1},\frac{y}{p_2},\ldots, \frac{y}{p_n}} > 0$.
-
-$\forall x \in B$, we have $(N+1,N+1, \ldots, N+1) > x$. $y \subset B_{N+1}(origin)$.
-
-$B$ is thus bounded.
+$B \subset C \subset B_{(nN^n)^{\frac{1}{n}}}(origin)$.
+\end{mdframed}
 
 %***************************************************
 \subsection{Budget set $B$ is convex when $p \gg 0$}
@@ -657,14 +666,124 @@ We have
 
 $p'x^t \le y \Rightarrow x^t \in B$. Therefore $B$ is compact.
 
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Jehle \& Reny 1.26 - Masshallian demand function}
 A consumer of \textbf{two goods} faces \textbf{positive prices} and has a \textbf{positive income}. 
 His utility function is $$u(x_1, x_2) = x_1$$ 
+\begin{itemize}
+\item Derive the Marshallian demand functions.
+\end{itemize}
 
-Derive the Marshallian demand functions.
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+Marshallian demand functions $x^* = x(p, y)$ is the solutions 
+to the utility maximisation problem (JR. pp.21).
+\end{mdframed}
+
+Here we have a 2-commodities consumption problem:
+
+\begin{equation}
+  \begin{cases}
+  Commodities: x_1, x_2 \ge 0 \\
+  Price: p_1, p_2 > 0 \\
+  Income: y > 0 \\
+  Utility: u(x_1,x_2) = x_1 \\
+  \nonumber
+  \end{cases}
+\end{equation}
+
+A consumer wants to 
+$$\max_{x_1,x_2} \ u(x_1,x_2) = x_1 \ \ s.t. \ p_1x_1 + p_2x_2 \le y,
+\ \ and \ x_1, x_2 \ge 0 $$
+
+{\centering
+\begin{tikzpicture}[scale=0.85]
+\draw [->] (0,0) node [below] {0} -- (0,0) -- (7,0) node [below] {$x_1$};
+\draw [->] (0,0) node [below] {0} -- (0,0) -- (0,5) node [left] {$x_2$};
+\draw [fill=gray!20] (0,2) -- (0,0) -- (6,0);
+
+\draw [thick] (0,2) -- (6,0);
+\draw [thick] (1,3) -- (1,0);
+\draw [thick] (3,3) -- (3,0);
+\draw [thick] (6,3) -- (6,0);
+
+\node[above] at (1,3) {$u^1$};
+\node[above] at (3,3) {$u^2$};
+\node[above] at (6,3) {$u^*$};
+
+\node[below] at (6,0) {$x^* =\frac{y}{p_1}$};
+\node[left] at (0,2) {$\frac{y}{p_2}$};
+\draw [fill] (6,0) circle [radius =0.04];
+
+\end{tikzpicture}
+\captionof{figure}{Corner solution}
+\label{fig:1_15_corner}}
+
+\vspace{2mm}
+
+$x_1^*(p_1,y)=\frac{y}{p_1}, x_2^*=0$, note it's a corner solution.
+
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+If you want to use Lagrangian method, be sure don't forget $x_1, x_2 \ge 0$.
+This is important for corner solutions.
+
+More general, we can use \href{https://mjo.osborne.economics.utoronto.ca/index.php/tutorial/index/1/ktc/t}{Kuhn-Tucker conditions} to solve the problem.
+
+$\max_{x_1,x_2} \ u(x_1,x_2) =  \ \ s.t. \ p_1x_1 + p_2x_2 \le y,
+\ \ and \ x_1, x_2 \ge 0 $ are:
+Lagrangian function:
+$$L = x_1 + \lambda_1(y - p_1x_1 - p_2x_2) + \lambda_2(x_1-0)+ \lambda_3(x_2-0)$$
+
+The Kuhn-Tucker conditions are:
+
+\begin{equation}
+  \begin{cases}
+    \frac{\partial L}{\partial x_1} = 1-p_1\lambda_1 + \lambda_2 =0 \\
+    \frac{\partial L}{\partial x_1} = -p_2\lambda_1 + \lambda_3 =0 \\
+  \end{cases}
+  \label{eq:L1}
+\end{equation}
+
+\begin{equation}
+  \begin{cases}
+    p_1x_1 + p_2x_2 \le y \\
+    \lambda_1 \ge 0 \\
+    \lambda_1(y - p_1x_1 - p_2x_2) =0 \\
+  \end{cases}
+   \label{eq:L2}
+\end{equation}
+
+\begin{equation}
+  \begin{cases}
+    x_1 \ge y \\
+    \lambda_2 \ge 0 \\
+    \lambda_2 x_1 =0 \\
+  \end{cases}
+   \label{eq:L3}
+\end{equation}
+
+\begin{equation}
+  \begin{cases}
+    x_2 \ge y \\
+    \lambda_3 \ge 0 \\
+    \lambda_3 x_2 =0 \\
+  \end{cases}
+   \label{eq:L4}
+\end{equation}
+
+\begin{itemize}
+\item If $x_1,x_2>0$, by condition \ref{eq:L3} and \ref{eq:L4}, $\lambda_2 = \lambda_3 =0$.
+Contradicts with condition \ref{eq:L1}
+
+\item If $x_1=0,x_2>0$, by condition \ref{eq:L4}, $\lambda_3 =0$.
+With condition \ref{eq:L1}, we have $\lambda_1 =0, \lambda_2 = -1$, condition \ref{eq:L3} violated.
+
+\item If $x_1>0,x_2=0$, by condition \ref{eq:L3}, $\lambda_2 =0$.
+With condition \ref{eq:L1}, we have $\lambda_1 =\frac{1}{p_1}, \lambda_3 = \frac{p_2}{p_1}$.
+With condition \ref{eq:L2}, $x_1^* = \frac{y}{p_1}$
+\end{itemize}
+\end{mdframed}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Jehle \& Reny 1.27 - Masshallian demand function}
@@ -672,6 +791,7 @@ Derive the Marshallian demand functions.
 A consumer of \textbf{two goods} faces \textbf{positive} prices and has a \textbf{positive income}. 
 His utility function is $$u(x_1, x_2) = max[ax_1, ax_2] + min[x_1, x_2], \ \ where \ \ 0 < a < 1.$$
 Derive the Marshallian demand functions.
+
 
 
 \end{document}
