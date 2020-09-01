@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.6.29) (preloaded format=xelatex 2020.9.1)  1 SEP 2020 13:33
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.6.29) (preloaded format=xelatex 2020.9.1)  1 SEP 2020 16:11
 entering extended mode
 **"./Seminar 1.tex"
 ("Seminar 1.tex"
@@ -220,13 +220,8 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip49
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 13.
+Package hyperref Info: Option `colorlinks' set `true' on input line 11.
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\se-ascii
--print.def
-File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
-
-)
 (C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.st
 y
 Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
@@ -1378,58 +1373,58 @@ eu-triangles.tex
 )) ("Seminar 1.aux")
 \openout1 = `"Seminar 1.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 2
-6.
+4.
 
 (C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 24.
 LaTeX Font Info:    Trying to load font information for FML+futm on input line 
-26.
+24.
 
 (C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 24.
 LaTeX Font Info:    Trying to load font information for FMS+futm on input line 
-26.
+24.
 
 (C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 24.
 LaTeX Font Info:    Trying to load font information for FMX+futm on input line 
-26.
+24.
 
 (C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    ... okay on input line 24.
 \AtBeginShipoutBox=\box70
-Package hyperref Info: Link coloring ON on input line 26.
+Package hyperref Info: Link coloring ON on input line 24.
 
 (C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1444,16 +1439,16 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count328
 )
-LaTeX Info: Redefining \ref on input line 26.
-LaTeX Info: Redefining \pageref on input line 26.
-LaTeX Info: Redefining \nameref on input line 26.
+LaTeX Info: Redefining \ref on input line 24.
+LaTeX Info: Redefining \pageref on input line 24.
+LaTeX Info: Redefining \nameref on input line 24.
  ("Seminar 1.out") ("Seminar 1.out")
 \@outlinefile=\write4
 \openout4 = `"Seminar 1.out"'.
 
-LaTeX Font Info:    Redeclaring math accent \widehat on input line 26.
-LaTeX Font Info:    Redeclaring math accent \widetilde on input line 26.
-LaTeX Info: Redefining \microtypecontext on input line 26.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 24.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 24.
+LaTeX Info: Redefining \microtypecontext on input line 24.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: No adjustment of tracking.
@@ -1465,38 +1460,38 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 \symgns@font=\mathgroup8
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/futs/m/n --> TS1/futs/b/n on input line 26.
-Package gensymb Info: Math companion symbols declared on input line 26.
-LaTeX Info: Redefining \degree on input line 26.
-LaTeX Info: Redefining \celsius on input line 26.
+(Font)                  TS1/futs/m/n --> TS1/futs/b/n on input line 24.
+Package gensymb Info: Math companion symbols declared on input line 24.
+LaTeX Info: Redefining \degree on input line 24.
+LaTeX Info: Redefining \celsius on input line 24.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 26.
-LaTeX Info: Redefining \ohm on input line 26.
-Package gensymb Info: Using \textohm for \ohm on input line 26.
-Package gensymb Info: Using \textmu for \micro on input line 26.
+erthousand on input line 24.
+LaTeX Info: Redefining \ohm on input line 24.
+Package gensymb Info: Using \textohm for \ohm on input line 24.
+Package gensymb Info: Using \textmu for \micro on input line 24.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
 ABD: EveryShipout initializing macros
 LaTeX Font Info:    Trying to load font information for FML+futmi on input line
- 29.
+ 27.
 
 (C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 29.
+(Font)              scaled to size 11.03998pt on input line 27.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 29.
+(Font)              scaled to size 8.27998pt on input line 27.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 29.
+(Font)              scaled to size 6.43999pt on input line 27.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 29.
+(Font)              scaled to size 11.03998pt on input line 27.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 29.
+(Font)              scaled to size 8.27998pt on input line 27.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 29.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 29.
+(Font)              scaled to size 6.43999pt on input line 27.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 27.
 
 (C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1504,7 +1499,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 (C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 29.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
 
  (C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1513,7 +1508,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Trying to load font information for TS1+futs on input line 
-29.
+27.
  (C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/fourier\ts1futs.fd
 File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
 )
@@ -1522,27 +1517,32 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 34.
+(Font)              scaled to size 9.19998pt on input line 32.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 34.
+(Font)              scaled to size 6.99199pt on input line 32.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 34.
+(Font)              scaled to size 5.51999pt on input line 32.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 34.
+(Font)              scaled to size 9.19998pt on input line 32.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 34.
+(Font)              scaled to size 6.99199pt on input line 32.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 34.
+(Font)              scaled to size 5.51999pt on input line 32.
 
-Overfull \hbox (0.89952pt too wide) in paragraph at lines 35--36
+Overfull \hbox (0.89952pt too wide) in paragraph at lines 33--34
 []\T1/futs/m/n/10 More de-tails on as-sump-tions we have used in pre-vi-ous eco
 -nomic classes, more
  []
 
-[1
+
+(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\se-ascii
+-print.def
+File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
+
+) [1
 
 ]
-Overfull \hbox (37.07947pt too wide) in paragraph at lines 52--53
+Overfull \hbox (37.07947pt too wide) in paragraph at lines 50--51
 []\T1/futs/m/n/10 You can com-ment on my slides di-rectly, and point out in whi
 ch line/graph/fuction
  []
@@ -1613,7 +1613,7 @@ tikz/libraries\tikzlibrarytrees.code.tex
 File: tikzlibrarytrees.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 1
-02.
+00.
 
 (C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1623,77 +1623,77 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (81.69899pt too wide) in paragraph at lines 133--134
+Overfull \hbox (81.69899pt too wide) in paragraph at lines 131--132
 [] 
  []
 
 [3]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 168.
+(caption)                particular \caption on input line 166.
 See the caption package documentation for explanation.
 
 File: ./pic/1.open.png Graphic file (type bmp)
 <./pic/1.open.png>
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 187.
+(caption)                particular \caption on input line 185.
 See the caption package documentation for explanation.
 
 File: ./pic/1.ball.png Graphic file (type bmp)
 <./pic/1.ball.png>
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 206.
+(caption)                particular \caption on input line 204.
 See the caption package documentation for explanation.
 
 File: ./pic/1.line.png Graphic file (type bmp)
 <./pic/1.line.png>
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 228.
+(caption)                particular \caption on input line 226.
 See the caption package documentation for explanation.
 
 File: ./pic/1.mono.png Graphic file (type bmp)
 <./pic/1.mono.png>
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 237.
+(caption)                particular \caption on input line 235.
 See the caption package documentation for explanation.
 
 File: ./pic/1.closest.png Graphic file (type bmp)
 <./pic/1.closest.png>
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 255.
+(caption)                particular \caption on input line 253.
 See the caption package documentation for explanation.
 
 File: ./pic/1.final.png Graphic file (type bmp)
 <./pic/1.final.png>
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 281.
+(caption)                particular \caption on input line 279.
 See the caption package documentation for explanation.
 
 [4]
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
-(mdframed)              on input line 284.
+(mdframed)              on input line 282.
  [5] [6] [7]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 299.
+(caption)                particular \caption on input line 297.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 347.
+(caption)                particular \caption on input line 345.
 See the caption package documentation for explanation.
 
 [8]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 377.
+(caption)                particular \caption on input line 375.
 See the caption package documentation for explanation.
 
 [9]
@@ -1702,27 +1702,27 @@ Missing character: There is no ’ in font futb8t!
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 412.
+(caption)                particular \caption on input line 410.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 449.
+(caption)                particular \caption on input line 447.
 See the caption package documentation for explanation.
 
 [10]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 481.
+(caption)                particular \caption on input line 479.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 504.
+(caption)                particular \caption on input line 502.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (1.26143pt too wide) in paragraph at lines 510--512
+Overfull \hbox (1.26143pt too wide) in paragraph at lines 508--510
 \T1/futs/m/n/10 A con-sumer has lex-i-co-graphic pref-er-ences over $\U/futm/m/
 n/10 R[]$ \T1/futs/m/n/10 if the re-la-tion sat-is-fies $\FML/futmi/m/it/10 x[]
 ; x[]$ \T1/futs/m/n/10 when-
@@ -1731,129 +1731,129 @@ n/10 R[]$ \T1/futs/m/n/10 if the re-la-tion sat-is-fies $\FML/futmi/m/it/10 x[]
 [11]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 581.
+(caption)                particular \caption on input line 579.
 See the caption package documentation for explanation.
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 601--602
+Underfull \hbox (badness 10000) in paragraph at lines 599--600
 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 607.
+(hyperref)                removing `math shift' on input line 605.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 607.
+(hyperref)                removing `math shift' on input line 605.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 607.
+(hyperref)                removing `math shift' on input line 605.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\gg' on input line 607.
+(hyperref)                removing `\gg' on input line 605.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 607.
+(hyperref)                removing `math shift' on input line 605.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 625.
+(caption)                particular \caption on input line 623.
 See the caption package documentation for explanation.
 
 [13]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 673.
+(caption)                particular \caption on input line 671.
 See the caption package documentation for explanation.
 
 [14]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 682.
+(hyperref)                removing `math shift' on input line 680.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 682.
+(hyperref)                removing `math shift' on input line 680.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 682.
+(hyperref)                removing `math shift' on input line 680.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\gg' on input line 682.
+(hyperref)                removing `\gg' on input line 680.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 682.
+(hyperref)                removing `math shift' on input line 680.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 752.
+(caption)                particular \caption on input line 750.
 See the caption package documentation for explanation.
 
 [15]
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
-(mdframed)              on input line 819.
+(mdframed)              on input line 817.
  [16]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 862.
+(caption)                particular \caption on input line 860.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 904.
+(caption)                particular \caption on input line 902.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 946.
+(caption)                particular \caption on input line 944.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 975.
+(caption)                particular \caption on input line 973.
 See the caption package documentation for explanation.
 
 [17] [18]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1018.
+(caption)                particular \caption on input line 1016.
 See the caption package documentation for explanation.
 
 [19]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1049.
+(caption)                particular \caption on input line 1047.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1080.
+(caption)                particular \caption on input line 1078.
 See the caption package documentation for explanation.
 
 [20] [21]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1106.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1106.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1104.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1104.
  ("Seminar 1.aux")
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1106.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1106.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1104.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1104.
 
 Package rerunfilecheck Info: File `"Seminar 1".out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1106.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1104.
  ) 
 Here is how much of TeX's memory you used:
- 33132 strings out of 414071
- 648982 string characters out of 2893980
- 1018528 words of memory out of 3000000
- 50080 multiletter control sequences out of 15000+200000
+ 33133 strings out of 414071
+ 648977 string characters out of 2893980
+ 1018464 words of memory out of 3000000
+ 50081 multiletter control sequences out of 15000+200000
  622743 words of font info for 105 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
  60i,13n,91p,961b,1227s stack positions out of 5000i,500n,10000p,200000b,50000s
