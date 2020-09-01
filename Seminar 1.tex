@@ -14,10 +14,10 @@
 \usepackage{graphicx}
 \graphicspath{ {./pic/} }
 
-\usepackage{fourier,amssymb,microtype,amsmath}
+\usepackage{fourier,amssymb,microtype,amsmath,gensymb}
 \newcommand{\R}{\mathbb{R}}
 \usepackage{mdframed,caption,xcolor}
-\usepackage{tikz}
+\usepackage{tikz,tkz-euclide}
 
 \title{Seminar 1 - Preference and Marshallian demand function}
 \author{Xiaoguang Ling \\  \href{xiaoguang.ling@econ.uio.no}{xiaoguang.ling@econ.uio.no}}
@@ -32,7 +32,8 @@
 
 \begin{itemize}
 \item The course/seminar is difficult and time-consuming $\rightarrow$ help each other
-\item More details on assumptions we have used in previous economic classes, more complex and interesting questions, more mathematics $\rightarrow$ Use Mathematical Appendices and Index at the end of the textbook. 
+\item More details on assumptions we have used in previous economic classes, more complex and interesting questions, more mathematics 
+\item Use your textbook wisely: Hints, Mathematical Appendices, Index
 \item Open-book exam, can also be difficult. Previous exam: \href{https://www.uio.no/studier/emner/sv/oekonomi/ECON4220/previous-exams/}{Econ 4220/3220}, \href{https://www.uio.no/studier/emner/sv/oekonomi/ECON3200/previous-exams/index.html}{Econ 4200/3200}
 \item Zoom seminars, solution sketch will be available before every weekend in Canvas.
 \item Your feedback is important (too fast, unclear, mistakes etc.). Contact me (\href{xiaoguang.ling@econ.uio.no}{xiaoguang.ling@econ.uio.no}) in time!
@@ -55,15 +56,12 @@
   edge from parent/.style={->,draw},
   >=latex]
 
-% root of the the initial tree, level 1
 \node[root] {Econ 3220/4220}
-% The first level, as children of the initial tree
   child {node[level 2] (c1) {Economic Agents}}
   child {node[level 2] (c2) {Equilibrium}}
   child {node[level 2] (c3) {Game Theory}}
   child {node[level 2] (c4) {More about Information}};
 
-% The second level, relatively positioned nodes
 \begin{scope}[every node/.style={level 3}]
 \node [below of = c1, xshift=15pt] (c11) {Consumer};
 \node [below of = c11] (c12) {Firm};
@@ -79,7 +77,6 @@
 
 \end{scope}
 
-% lines from each level 1 node to every one of its "children"
 \foreach \value in {1,2}
   \draw[->] (c1.195) |- (c1\value.west);
 
@@ -485,7 +482,6 @@ x^1 \succsim x^2 \Leftrightarrow
       \text{$x^1_1 = x^2_1 \ and \ x^1_2 \ge x^2_2$}\\
     \end{cases}
     \label{eq:laxi}  
-\nonumber     
 \end{equation}
 \begin{itemize}
 \item $x_1$ is critical
@@ -514,7 +510,6 @@ and $x^2 \succsim x^1$. According to the definition in formula \ref{eq:laxi}, th
       \text{$x^2_1 = x^1_1 \ and \ x^2_2 \ge x^1_2$}\\
     \end{cases}
     \label{eq:nomap}   
-    \nonumber    
 \end{equation}
 
 Obviously, the only possible condition is $x^1_1 = x^2_1 \ and \ x^1_2 = x^2_2$, which contradicts
@@ -558,8 +553,7 @@ Prove that the budget set, $B$, is a \textbf{compact, convex set whenever $p \gg
       \text{Closed: not open}\\
       \text{Bounded: $\exists \epsilon > 0 \ $ s.t. $\ S \subset B_{\epsilon}(x)$}\\
     \end{cases}
-    \nonumber     
-\end{equation}
+    \end{equation}
 
 \item Open:  $S$ is open if $\forall x \in S, \exists \epsilon > 0 \ $ s.t. $\ B_{\epsilon}(x) \subset S$ \\
 \item Convex: $S$ is convex if for any $x^1, x^2 \in S,\ $ we have $tx^1 + (1-t)x^2 \in S, \forall t \in [0,1]$
@@ -618,8 +612,6 @@ Define $N \equiv max\{\frac{y}{p_1},\frac{y}{p_2},\ldots, \frac{y}{p_n}\} > 0$.
 $\forall x \in B$, we have $C = (N,N, \ldots, N) > x$. We can thus argue that $B$
 can be contained by some ball  $B_{(\epsilon)}(x^0)$, i.e. bounded.
 
-
-
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
 For example:
 
@@ -661,13 +653,12 @@ We have
   p'x^t &=  p'tx^1 +  p'(1-t)x^2 \\
         &=  tp'x^1 +  (1-t)p'x^2 \\
         &\le  ty +  (1-t)y \\
-    \nonumber     
 \end{align*}
 
 $p'x^t \le y \Rightarrow x^t \in B$. Therefore $B$ is compact.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Jehle \& Reny 1.26 - Masshallian demand function}
+\section{Jehle \& Reny 1.26 - Marshallian demand function}
 A consumer of \textbf{two goods} faces \textbf{positive prices} and has a \textbf{positive income}. 
 His utility function is $$u(x_1, x_2) = x_1$$ 
 \begin{itemize}
@@ -687,7 +678,7 @@ Here we have a 2-commodities consumption problem:
   Price: p_1, p_2 > 0 \\
   Income: y > 0 \\
   Utility: u(x_1,x_2) = x_1 \\
-  \nonumber
+  
   \end{cases}
 \end{equation}
 
@@ -784,13 +775,288 @@ With condition \ref{eq:L2}, $x_1^* = \frac{y}{p_1}$
 \end{itemize}
 \end{mdframed}
 
+\begin{mdframed}[backgroundcolor=yellow!20,linecolor=white]
+Tips for exam:
+\begin{itemize}
+
+\item Drawing a sketch of the budget set and the indifference curves can be very helpful when the utility 
+function is "bizarre". See also the next question.
+
+\end{itemize}
+
+\end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Jehle \& Reny 1.27 - Masshallian demand function}
 
 A consumer of \textbf{two goods} faces \textbf{positive} prices and has a \textbf{positive income}. 
 His utility function is $$u(x_1, x_2) = max[ax_1, ax_2] + min[x_1, x_2], \ \ where \ \ 0 < a < 1.$$
-Derive the Marshallian demand functions.
+\begin{itemize}
+\item Derive the Marshallian demand functions.
+\end{itemize}
+
+The utility $u(x_1, x_2) = max[ax_1, ax_2] + min[x_1, x_2]$ depends on the relation between $ax_1, ax_2$ and $x_1, x_2$
+
+Since $0 < a < 1$, we know $ax_1 \ge ax_2 \iff x_1 \ge x_2$. Thus:
+\begin{equation}
+  \begin{cases}
+If \ \ x_2 >= x_1 ,\ \ u(x_1, x_2) = ax_2 + x_1  \\
+If \ \ x_1 >= x_2 ,\ \ u(x_1, x_2) = ax_1 + x_2
+  \end{cases}
+ \label{eq:mm}
+\end{equation}
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+
+Any indifference curve in a rectangular coordinate system below is actually the graph of
+a function $x_2 = f_(x_1)$
+
+{\centering
+\begin{tikzpicture}[scale=0.85]
+\draw [->] (0,0) node [below] {0} -- (0,0) -- (2,0) node [below] {$x_1$};
+\draw [->] (0,0) node [below] {0} -- (0,0) -- (0,2) node [left] {$x_2$};
+\end{tikzpicture}
+\captionof{figure}{A rectangular coordinate system}
+\label{fig:1_27_coor}}
+
+More specifically, since bundles on the same indifference curve can provide the same level of utility,
+an indifference curve is the graph of a function $x_2 = f_(x_1)$ given some utility $\bar{u}$
+
+Given  $u = \bar{u}$, We can rewrite equation \ref{eq:mm} as:
+
+\begin{equation}
+  \begin{cases}
+    If \ \ x_2 >= x_1 ,\ \ x_2 = -\frac{1}{a}x_1 + \frac{1}{a}\bar{u} \\
+    If \ \ x_1 >= x_2 ,\ \ x_2 = -ax_1 + \bar{u} \\
+  \end{cases}
+\end{equation}
+
+Now we can draw the sketch of the indifference curves:
+
+{\centering
+\begin{tikzpicture}[scale=0.85]
+\draw [->] (0,0) node [below] {0} -- (0,0) -- (7,0) node [below] {$x_1$};
+\draw [->] (0,0) node [below] {0} -- (0,0) -- (0,7) node [left] {$x_2$};
+
+\draw [thick] (0,2) -- (0.67,0.67);
+\draw [thick] (0.67,0.67) -- (2,0);
+\draw [thick] (0,4) -- (1.33,1.33);
+\draw [thick] (1.33,1.33) -- (4,0);
+\draw [thick] (0,6) -- (2,2);
+\draw [thick] (2,2) -- (6,0);
+\draw [dashed] (0,0) -- (6,6);
+
+\node[above] at (0.5,1.2) {$\bar{u}_1$};
+\node[above] at (0.5,3.5) {$\bar{u}_2$};
+\node[above] at (0.5,5.5) {$\bar{u}_3$};
+\node[right] at (1,4.4) {$x_2 = -\frac{1}{a}x_1 + \frac{1}{a}\bar{u}$};
+\node[right] at (3.8,1.3) {$x_2 = -ax_1 + \bar{u}$};
+
+\node[below] at (6,0) {$\frac{1}{a}\bar{u}_3$};
+\node[left] at (0,6) {$\frac{1}{a}\bar{u}_3$};
+\draw [fill] (6,0) circle [radius =0.04];
+\draw [fill] (0,6) circle [radius =0.04];
+
+\end{tikzpicture}
+\captionof{figure}{Indifference curves are seperated by 45 $\degree \ $line}
+\label{fig:1_27_indiff}}
+
+\vspace{2mm}
+
+If we have a budget set similar to the one in Figure \ref{fig:1_27_budget}, we can move our
+indifference curve until we have a tangent point. The affordable bundle maximazing the utility
+is thus found.
+
+{\centering
+\begin{tikzpicture}[scale=0.85]
+\draw [->] (0,0) node [below] {0} -- (0,0) -- (7,0) node [below] {$x_1$};
+\draw [->] (0,0) node [below] {0} -- (0,0) -- (0,7) node [left] {$x_2$};
+
+\draw [thick] (0,6) -- (2,2);
+\draw [thick] (2,2) -- (6,0);
+\draw [dashed] (0,4.5) -- (1.5,1.5);
+\draw [dashed] (1.5,1.5) -- (4.5,0);
+
+\draw [thick,red] (0,3) -- (3,0);
+
+\node[right] at (1,4.4) {$x_2 = -\frac{1}{a}x_1 + \frac{1}{a}\bar{u}$};
+\node[right] at (3.8,1.3) {$x_2 = -ax_1 + \bar{u}$};
+
+\node[below] at (6,0) {$\frac{1}{a}\bar{u}$};
+\node[left] at (0,6) {$\frac{1}{a}\bar{u}$};
+\draw [fill] (6,0) circle [radius =0.04];
+\draw [fill] (0,6) circle [radius =0.04];
+
+\node[left,red] at (0,3) {$\frac{y}{p_2}$};
+\node[below,red] at (3,0) {$\frac{y}{p_1}$};
+\draw [fill,red] (3,0) circle [radius =0.04];
+\draw [fill,red] (0,3) circle [radius =0.04];
+\draw [fill] (1.5,1.5) circle [radius =0.04];
+
+\tkzDefPoint(0,0){A}
+\tkzDefPoint(3,0){B}
+\tkzDefPoint(0,3){C}
+\tkzMarkAngle[fill=yellow,opacity=0.8](C,B,A)
+\tkzLabelAngle[pos= 1.8,red](C,B,A){$\alpha = -\frac{p_1}{p_2}$}
+
+\end{tikzpicture}
+\captionof{figure}{A budget set example}
+\label{fig:1_27_budget}}
+
+However, there can be other tricky conditions, depending on the shape of the budget set.
+For example, in Figure \ref{fig:1_27_budget2}
+
+{\centering
+\begin{tikzpicture}[scale=0.85]
+\draw [->] (0,0) node [below] {0} -- (0,0) -- (7,0) node [below] {$x_1$};
+\draw [->] (0,0) node [below] {0} -- (0,0) -- (0,7) node [left] {$x_2$};
+
+\draw [thick] (0,6) -- (2,2);
+\draw [thick] (2,2) -- (6,0);
+\draw [dashed] (0,4.5) -- (1.5,1.5);
+\draw [dashed] (1.5,1.5) -- (4.5,0);
+\node[right] at (1,4.4) {$x_2 = -\frac{1}{a}x_1 + \frac{1}{a}\bar{u}$};
+\node[right] at (3.8,1.3) {$x_2 = -ax_1 + \bar{u}$};
+
+\draw [thick,red] (0,4.5) -- (1,0);
+
+\draw [fill] (0,4.5) circle [radius =0.04];
+
+\tkzDefPoint(0,0){A}
+\tkzDefPoint(1,0){B}
+\tkzDefPoint(0,4.5){C}
+\tkzMarkAngle[fill=yellow,size = 0.4, opacity=0.8](C,B,A)
+\tkzLabelAngle[pos= 1,red](C,B,A){$\alpha = -\frac{p_1}{p_2}$}
+
+\end{tikzpicture}
+\captionof{figure}{A budget set example 2}
+\label{fig:1_27_budget2}}
+\vspace{2mm}
+
+\begin{itemize}
+\item The position of the optimal consumption bundle depends on the slope $\alpha = -\frac{p_1}{p_2}$
+
+\item We need to discussion the relation between $\frac{p_1}{p_2} \ $ and the slop of the 
+indifference curve $[a,\frac{1}{a}]$ , for $a \in (0,1)$
+\end{itemize}
+
+\end{mdframed}
+
+%***************************************************
+
+\begin{enumerate}
+
+\item When $0 < \frac{p_1}{p_2} < a$, the budget set is showed in Figure \ref{fig:1_27_la}. The Marshallian
+demand is $\{x_1 = \frac{y}{p_1}, x_2 = 0\}$
+
+{\centering
+\begin{tikzpicture}[scale=0.85]
+\draw [->] (0,0) node [below] {0} -- (0,0) -- (7,0) node [below] {$x_1$};
+\draw [->] (0,0) node [below] {0} -- (0,0) -- (0,7) node [left] {$x_2$};
+
+\draw [thick] (0,6) -- (2,2);
+\draw [thick] (2,2) -- (6,0);
+\draw [dashed] (0,4.5) -- (1.5,1.5);
+\draw [dashed] (1.5,1.5) -- (4.5,0);
+\node[right] at (1,4.4) {$x_2 = -\frac{1}{a}x_1 + \frac{1}{a}\bar{u}$};
+\node[right] at (3.8,1.3) {$x_2 = -ax_1 + \bar{u}$};
+
+\draw [thick,red] (0,1) -- (4.5,0);
+
+\draw [fill] (4.5,0) circle [radius =0.04];
+
+\tkzDefPoint(0,0){A}
+\tkzDefPoint(4.5,0){B}
+\tkzDefPoint(0,1){C}
+\tkzMarkAngle[fill=yellow, opacity=0.8](C,B,A)
+\tkzLabelAngle[pos= 1.3,red](C,B,A){$\alpha$}
+
+\end{tikzpicture}
+\captionof{figure}{A budget set when $\frac{p_1}{p_2} < a$}
+\label{fig:1_27_la}}
+\vspace{2mm}
+
+
+\item When $\frac{p_1}{p_2} = a$, the budget set is showed in Figure \ref{fig:1_27_a}. The Marshallian
+demand is in a set $x(p_1,p_2,y) = \{(x_1,x_2)| x_2 \le x_1 and x_2 = -ax_1 + \frac{y}{p_2}\}$
+
+
+{\centering
+\begin{tikzpicture}[scale=0.85]
+\draw [->] (0,0) node [below] {0} -- (0,0) -- (7,0) node [below] {$x_1$};
+\draw [->] (0,0) node [below] {0} -- (0,0) -- (0,7) node [left] {$x_2$};
+
+\draw [thick] (0,6) -- (2,2);
+\draw [thick] (2,2) -- (6,0);
+\node[right] at (1,4.4) {$x_2 = -\frac{1}{a}x_1 + \frac{1}{a}\bar{u}$};
+\node[right] at (3.8,1.3) {$x_2 = -ax_1 + \bar{u}$};
+\node[left,red] at (0,2.25) {$\frac{y}{p_2}$};
+
+\draw [thick,red] (0,2.25) -- (4.5,0);
+\draw [dashed] (0,4.5) -- (1.5,1.5);
+\draw [dashed] (1.5,1.5) -- (4.5,0);
+
+\tkzDefPoint(0,0){A}
+\tkzDefPoint(4.5,0){B}
+\tkzDefPoint(0,2.25){C}
+\tkzMarkAngle[fill=yellow, opacity=0.8](C,B,A)
+\tkzLabelAngle[pos= 1.3,red](C,B,A){$\alpha$}
+
+\end{tikzpicture}
+\captionof{figure}{A budget set when $\frac{p_1}{p_2} = a$}
+\label{fig:1_27_a}}
+\vspace{2mm}
+
+
+\item When $\frac{p_1}{p_2} \in (a,\frac{1}{a})$, the budget set was already showed in Figure \ref{fig:1_27_budget}.
+In this case, $x_1 = x_2$ and $p_1x_1 + p_2x_2 = y$, the Marshallian demand is therefore
+$\{x_1 = \frac{y}{p_1 + p_2}, x_2 = \frac{y}{p_1 + p_2} \}$
+
+{\centering
+\begin{tikzpicture}[scale=0.85]
+\draw [->] (0,0) node [below] {0} -- (0,0) -- (7,0) node [below] {$x_1$};
+\draw [->] (0,0) node [below] {0} -- (0,0) -- (0,7) node [left] {$x_2$};
+
+\draw [thick] (0,6) -- (2,2);
+\draw [thick] (2,2) -- (6,0);
+\node[right] at (1,4.4) {$x_2 = -\frac{1}{a}x_1 + \frac{1}{a}\bar{u}$};
+\node[right] at (3.8,1.3) {$x_2 = -ax_1 + \bar{u}$};
+\node[left,red] at (0,4.5) {$\frac{y}{p_2}$};
+
+\draw [thick,red] (0,4.5) -- (2.25,0);
+\draw [dashed] (0,4.5) -- (1.5,1.5);
+\draw [dashed] (1.5,1.5) -- (4.5,0);
+
+\tkzDefPoint(0,0){A}
+\tkzDefPoint(2.25,0){B}
+\tkzDefPoint(0,4.5){C}
+\tkzMarkAngle[fill=yellow, opacity=0.8](C,B,A)
+\tkzLabelAngle[pos= 1.3,red](C,B,A){$\alpha$}
+
+\end{tikzpicture}
+\captionof{figure}{A budget set when $\frac{p_1}{p_2} = \frac{1}{a}$}\label{fig:1_27_1/a}}
+\vspace{2mm}
+
+\item When $\frac{p_1}{p_2} = \frac{1}{a}$, the budget set is showed in Figure \ref{fig:1_27_1/a}. The Marshallian
+demand is in a set $x(p_1,p_2,y) = \{(x_1,x_2)| x_2 \ge x_1 and x_2 = -\frac{1}{a}x_1 + \frac{y}{p_2}\}$
+
+\item When $1 > \frac{p_1}{p_2} > \frac{1}{a}$, the budget set was already showed in Figure \ref{fig:1_27_budget2}. The Marshallian demand is $\{x_1 = 0, x_2 = \frac{y}{p_2}\}$
+
+\end{enumerate}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
