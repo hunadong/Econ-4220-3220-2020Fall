@@ -34,13 +34,50 @@ Verify that the expenditure function obtained from the CES direct utility functi
 
 \textbf{Expenditure Function (JR. pp.35)}
 
+\medskip
+
 We define the expenditure function as theminimum-value function:
 
 $$e(p, u) \equiv \min_{x \in \R^n_+} p \cdot x$$
 
+\textbf{Expenditure Function of CES direct utility function (JR. pp.39)}
+
+\medskip
+
+In Example 1.3 (JR. pp.39), we have a so called CES  direct utility function:
+$$u(x_1, x_2) = (x_1^{\rho} + x_2^{\rho})^{\frac{1}{\rho}},\ where \ 0 \ne \rho<1.$$
+
+To derive the Expenditure Function, we need to solve the expenditure minimisation problem
+given some utility $u$. i.e.
+$$\min_{x_1,x_2} \ p_1x_1 + p_2x_2 \ \ s.t.  \ \ u(x_1, x_2) = (x_1^{\rho} + x_2^{\rho})^{\frac{1}{\rho}} = u, \ x_1 \le 0, \ x_2 \le 0$$
+
+(Read JR. pp.40 to see how to minimize the expenditure with Lagrangian method.)
+
+\medskip
+
+The solution to the expenditure-minimisation problem is called the consumer’s
+vector of \textbf{Hicksian demands}:
+
+\begin{equation}
+    \begin{cases}
+    x_1^h(p_1,p_2,u) = u(p_1^{r} + p_2^{r})^{\frac{1}{r}-1} p_1^(r-1) \\	
+    x_1^h(p_1,p_2,u) = u(p_1^{r} + p_2^{r})^{\frac{1}{r}-1} p_2^(r-1) \\	
+    \end{cases}
+    \label{eq:1_38_hicks}   
+\end{equation}
+
+Here $r \equiv \frac{\rho}{\rho - 1}$.
+
+Substitute the solution above (Equation \ref{eq:1_38_hicks}) into our
+objective function  $p_1x_1 + p_2x_2$ to obtain the Expenditure Function:
+
+$$e(p_1,p_2, u) = p_1x_1^h(p_1,p_2,u) + p_2x_2^h(p_1,p_2,u) = 
+u(p_1^{r} + p_2^{r})^{\frac{1}{r}}$$
+
+
 \textbf{THEOREM 1.7 Properties of the Expenditure Function (JR. pp.37)}
 
-\bigskip
+\medskip
 
 If $u(.)$ is continuous and strictly increasing, then $e(p, u)$ defined in (1.14) is
 
