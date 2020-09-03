@@ -5,7 +5,7 @@
 #### UiO
 #### 2020.09.01
 
-## Slides and other teaching materail for Econ-4220&3220 seminars in 2020
+## Slides and other teaching material for Econ-4220&3220 seminars in 2020
 * We can answer questions in file **Q&A**, PDF version will be shared in Dropbox folder.
 * **doc_template** and **slides_template** are templates containing preambles
 * Folder **mathDept_template** is a nice template from the department of Mathematics (UiO)
