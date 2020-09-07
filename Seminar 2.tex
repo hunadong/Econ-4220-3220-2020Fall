@@ -72,8 +72,7 @@ Substitute the solution above (Equation \ref{eq:1_38_hicks}) into our
 objective function  $p_1x_1 + p_2x_2$ to obtain the Expenditure Function:
 
 $$e(p_1,p_2, u) = p_1x_1^h(p_1,p_2,u) + p_2x_2^h(p_1,p_2,u) = 
-u(p_1^{r} + p_2^{r})^{\frac{1}{r}}$$
-
+u(p_1^{r} + p_2^{r})^{\frac{1}{r}} , r \equiv \frac{\rho}{\rho - 1}$$
 
 \textbf{THEOREM 1.7 Properties of the Expenditure Function (JR. pp.37)}
 
@@ -96,11 +95,40 @@ $$\frac{\partial e(p^0, u^0)}{\partial p_i} = x^h_i (p^0, u^0), \ \ \ \ i = 1, .
 \end{enumerate}
 \end{mdframed}
 
+Firstly we should know that the CES direct utility function $u(x_1, x_2) = (x_1^{\rho} + x_2^{\rho})^{\frac{1}{\rho}},\ where \ 0 \ne \rho<1.$ is continuous and strictly increasing (can be proved similarly as below), which is the
+prerequisite of Theorem 1.7.
 
 %***************************************************
-\subsection{}
+\subsection{$e(p, u)$ is zero when $u$ takes on the lowest level of utility in $\mathcal{U}$}
+
+As usual, we assume non-negative consumption, i.e. $x \in R^n_+$. Since $u(.)$ is strictly increasing,
+$u_{min} = u(0,0) = 0$. 
+
+When $u = 0$, we have $e(p,0) = 0 \times (p_1^{r} + p_2^{r})^{\frac{1}{r}} =0$.
+
+\textit{no consumption, no cost}
+
+%***************************************************
+\subsection{$e(p, u)$ is continuous on its domain $\R^n_{++} \times \mathcal{U}$,}
+
+We can try to take all the (partial) derivatives of function $e(p, u)$ and see if they exist on its domain. If they exist, it's differenciable and thus continuous.
 
 
+%***************************************************
+\subsection{For all $p \gg 0$, $e(p, u)$ is strictly increasing and unbounded above in $u$,}
+
+%***************************************************
+\subsection{$e(p, u)$ is increasing in $p$,}
+
+
+%***************************************************
+\subsection{$e(p, u)$ is omogeneous of degree $1$ in $p$}
+
+%***************************************************
+\subsection{$e(p, u)$ is oncave in $p$.}
+
+%***************************************************
+\subsection{If $u(.)$ is also strictly quasiconcave, we have Shephard’s lemma: $e(p, u)$ is differentiable in $p$ at $(p^0, u^0)$ with $p^0 \gg 0$, and $\frac{\partial e(p^0, u^0)}{\partial p_i} = x^h_i (p^0, u^0), \ \ \ \ i = 1, . . . , n$.}
 
 
 
