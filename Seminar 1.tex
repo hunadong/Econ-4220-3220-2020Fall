@@ -11,6 +11,7 @@
     urlcolor=cyan}
 \usepackage{graphicx}
 \graphicspath{ {./pic/} }
+\usepackage{tablefootnote}
 
 \usepackage{fourier,amssymb,microtype,amsmath,gensymb}
 \newcommand{\R}{\mathbb{R}}
@@ -30,7 +31,7 @@
 
 \begin{itemize}
 \item The course/seminar is difficult and time-consuming $\rightarrow$ help each other
-\item More details on assumptions we have used in previous economic classes, more complex and interesting questions, more mathematics 
+\item More details on assumptions (that we have "recklessly" applied in previous economic classes), more complex and interesting questions, more mathematics 
 \item Use your textbook wisely: Hints, Mathematical Appendices, Index
 \item Open-book exam, can also be difficult. Previous exam: \href{https://www.uio.no/studier/emner/sv/oekonomi/ECON4220/previous-exams/}{Econ 4220/3220}, \href{https://www.uio.no/studier/emner/sv/oekonomi/ECON3200/previous-exams/index.html}{Econ 4200/3200}
 \item Zoom seminars, solution sketch will be available before every weekend in Canvas.
@@ -67,8 +68,7 @@ As you may know, your questions can contain many graphs and mathematical symbols
 
 \bigskip
 
-We will create a new document called "Q\&A.pdf" in our shared folder. It will contain all the questions
-We collected from you and my answers.
+We will create a new document called "Q\&A.pdf" in our shared folder. It will contain all the questions we collected from you and our answers.
 \begin{itemize}
 \item Questions will be anonymous without special requirement.
 \end{itemize}
@@ -171,7 +171,7 @@ The most basic assumptions about our preference are Axiom 1.  and Axiom 2.
 
 \begin{itemize}
 \item Axiom 1. Completeness (We can always choose)
-$\forall \ x^1, x^2$ in $X$, we have: $x^1 \succsim  x^2$ or $x^2 \succsim  x^3$  or both
+$\forall \ x^1, x^2$ in $X$, we have: $x^1 \succsim  x^2$ or $x^2 \succsim  x^1$  or both
 \item Axiom 2. Transitivity
 $\forall \ x^1, x^2$, and  $x^3$ in $X$, if $x^1 \succsim  x^2$ and $x^2 \succsim  x^3$, then $x^1 \succsim  x^3$
 \end{itemize}
@@ -587,7 +587,7 @@ Prove that the budget set, $B$, is a \textbf{compact, convex set whenever $p \gg
 
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
 \begin{itemize}
-\item A budget set $B$ can be difined as $B \equiv {x \in \R^n_+ | p_1x_1 + p_2x_2 + \ldots + p_nx_n \le y}$
+\item A budget set $B$ can be difined as $B \equiv \{x \in \R^n_+ | p_1x_1 + p_2x_2 + \ldots + p_nx_n \le y \}$
 \item \begin{equation}
  S \  \ is \ \ Compact \ (JR. \ pp. 514):
     \begin{cases}
@@ -708,10 +708,10 @@ His utility function is $$u(x_1, x_2) = x_1$$
 
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
 Marshallian demand functions $x^* = x(p, y)$ is the solutions 
-to the utility maximisation problem (JR. pp.21).
+to the utility maximization problem (JR. pp.21).
 \end{mdframed}
 
-Here we have a 2-commodities consumption problem:
+Here we have a 2-commodity consumption problem:
 
 \begin{equation}
   \begin{cases}
@@ -756,14 +756,15 @@ $x_1^*(p_1,y)=\frac{y}{p_1}, x_2^*=0$, note it's a corner solution.
 
 
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
-If you want to use Lagrangian method, be sure don't forget $x_1, x_2 \ge 0$.
+
+If you want to use Lagrangian method \footnote{You may wonder how Lagrangian method works for maximizing. Here is a very clear explanation:\href{https://medium.com/@andrew.chamberlain/a-simple-explanation-of-why-lagrange-multipliers-works-253e2cdcbf74\#:~:text=That\%20means\%20they're\%20parallel\%20and\%20point\%20in\%20the\%20same\%20direction.\&text=So\%20the\%20bottom\%20line\%20is,while\%20also\%20satisfying\%20those\%20constraints}{A Simple Explanation of Why Lagrange Multipliers Works}. Note that the in the case of 2-commodity problem, the utility is the third dimension.}, be sure don't forget $x_1, x_2 \ge 0$.
 This is important for corner solutions.
 
 More general, we can use \href{https://mjo.osborne.economics.utoronto.ca/index.php/tutorial/index/1/ktc/t}{Kuhn-Tucker conditions} to solve the problem.
 
-$\max_{x_1,x_2} \ u(x_1,x_2) =  \ \ s.t. \ p_1x_1 + p_2x_2 \le y,
-\ \ and \ x_1, x_2 \ge 0 $ are:
-Lagrangian function:
+For question: $\max_{x_1,x_2} \ u(x_1,x_2) =  \ \ s.t. \ p_1x_1 + p_2x_2 \le y,
+\ \ and \ x_1, x_2 \ge 0 $ , the Lagrangian function is:
+
 $$L = x_1 + \lambda_1(y - p_1x_1 - p_2x_2) + \lambda_2(x_1-0)+ \lambda_3(x_2-0)$$
 
 The Kuhn-Tucker conditions are:
@@ -771,7 +772,7 @@ The Kuhn-Tucker conditions are:
 \begin{equation}
   \begin{cases}
     \frac{\partial L}{\partial x_1} = 1-p_1\lambda_1 + \lambda_2 =0 \\
-    \frac{\partial L}{\partial x_1} = -p_2\lambda_1 + \lambda_3 =0 \\
+    \frac{\partial L}{\partial x_2} = -p_2\lambda_1 + \lambda_3 =0 \\
   \end{cases}
   \label{eq:L1}
 \end{equation}
