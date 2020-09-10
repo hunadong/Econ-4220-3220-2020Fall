@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2020.8.31)  8 SEP 2020 21:30
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2020.8.31)  10 SEP 2020 12:47
 entering extended mode
 **"./Seminar 1.tex"
 ("Seminar 1.tex"
@@ -1821,7 +1821,16 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 750.
 See the caption package documentation for explanation.
 
-[15] [16]
+[15]
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 7.35999pt on input line 760.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.25598pt on input line 760.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 7.35999pt on input line 760.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.25598pt on input line 760.
+ [16]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 861.
@@ -1842,7 +1851,11 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 974.
 See the caption package documentation for explanation.
 
-[17] [18]
+[17]
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 985.
+ [18]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 1017.
@@ -1871,12 +1884,12 @@ Package rerunfilecheck Info: File `"Seminar 1".out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1105.
  ) 
 Here is how much of TeX's memory you used:
- 33346 strings out of 414493
- 652279 string characters out of 2902447
- 1025943 words of memory out of 3000000
- 49857 multiletter control sequences out of 15000+200000
- 625493 words of font info for 110 fonts, out of 3000000 for 9000
+ 33388 strings out of 414493
+ 653065 string characters out of 2902447
+ 1027410 words of memory out of 3000000
+ 49898 multiletter control sequences out of 15000+200000
+ 649534 words of font info for 130 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 60i,13n,91p,896b,1242s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,13n,91p,896b,1244s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on Seminar 1.pdf (21 pages).
