@@ -289,6 +289,16 @@ We want to prove:
 \end{itemize}
 \end{mdframed}
 
+
+\begin{mdframed}[backgroundcolor=yellow!20,linecolor=white]
+You can apply the criteria above without any explanation. Note that
+in exam one-dimension function is most common, which means you only need to 
+calculate its derivatives to prove concavity.
+
+Before you prove it, think about the intuition of the curve (function). Diminishing
+marginal effects is very common in economics, which also implies concavity. 
+\end{mdframed}
+
 \vspace{2mm}
 
 
@@ -423,6 +433,13 @@ Do we need to think about corner solution? No, the function is strictly increasi
 (Compare this question with Jehle \& Reny 1.26.)
 \end{mdframed}
 
+\begin{mdframed}[backgroundcolor=yellow!20,linecolor=white]
+In exam, a formal discussion about interior solutions may be unnecessary if the object function is "well behaved". But never forget to check it in mind, especially when you get weired object functions or contradictory results.
+\end{mdframed}
+
+
+
+
 We want to solve the utility maximization problem with some $(x_1^*, x_2^*)$, i.e.
 $$\max_{x_1,x_2} \ u(x_1,x_2) = x_1^{0.5} + x_2^{0.5} \ \ s.t. \ p_1x_1 + p_2x_2 = y$$
 
@@ -487,43 +504,32 @@ The question asks you to compute SE, and you already have Marshallian demand fun
 %***************************************************
 \subsection{Classify $x_1$ and $x_2$ as (gross) complements or substitutes}
 
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
 
+How to define complements and substitutes? If $\frac{\partial x_b}{\partial p_a} > 0$, are $x_a,x_b$ substitutes?
 
+Here is an example:
 
-\begin{figure}
+As fruits, apple and banana seems to be "substitutes", i.e. when apple 
+price increases, we tend to buy fewer apples and more bananas($\frac{\partial x_b}{\partial p_a} > 0$).
 
-\begin{tikzpicture}[scale=1.2]
+However, since apples are very expensive, ony a few apples cost so much money that you have less money for bananas. As a result, you buy fewer apples and fewer bananas ($\frac{\partial x_b}{\partial p_a} < 0$).
 
-\draw [thick] (0,0) -- (8,0);
-\draw [thick] (0,0) -- (0,5);
-\node [right] at (8,0) {$x_1$};
-\node [above] at (0,5) {$x_2$};
-\draw [thick] (1.7,4.2) to [out=310,in=160] (5.4,1.5);
-\draw [thick] (0.6,4) to [out=295,in=165] (3.5,1);
-\draw [thick] (1.4,3.2) to [out=290,in=155] (3.5,1.3);
-\node [right] at (6.5,0.9) {$C$};
-\draw [thick] (0,4.6) -- (7.5,0);
-\draw [thick] (0,4.6) -- (3.15,0);
-\draw[dashed](1.4,2.5)--(1.4,0);
-\draw[dashed](3.4,2.5)--(3.4,0);
-\draw [thick] (0,3.4) -- (5.4,0);
-\draw[dashed](2.4,1.9)--(2.4,0);
-\node [above] at (2.4,2) {$x^B$};
-\draw[fill] (2.4,1.9) circle [radius =0.06];
-\node [left] at (1.3,2.5) {$x^A$};
-\draw[fill] (1.4,2.5) circle [radius =0.06];
-\node [right] at (3.2,3) {$x^C$};
-\draw[fill] (3.4,2.5) circle [radius =0.06];
-\node [right] at (0.5,4.6) {$C$};
-\node [right] at (-0.1,4) {$A$};
-\node [left] at (2.9,0.2) {$A$};
-\node [right] at (4.3,0.2) {$B$};
-\node [right] at (-0.1,3.1) {$B$};
-\draw [decorate,decoration={brace,amplitude=4pt, mirror},xshift=0pt,yshift=-3pt]
-(1.4,0) -- (2.4,0) node [black,midway,yshift=-.5cm] {\footnotesize $SE_1$};
-\draw [decorate,decoration={brace,amplitude=4pt, mirror},xshift=0pt,yshift=-3pt]
-(2.4,0) -- (3.4,0) node [black,midway,yshift=-.5cm] {\footnotesize $IE_1$};
-\end{tikzpicture}
-\caption{Slutsky decomposition}
-\end{figure}
+\textbf{Substitute effects may be "covered" by the income effects}
+
+To precisely describe "substitutes" we need to define:
+
+\begin{itemize}
+\item Gross substitutes: $\frac{\partial x_b}{\partial p_a} > 0$
+\item Net substitutes: $\frac{\partial x(\bar{u})^h_b}{\partial p_a} > 0$
+\end{itemize}
+
+\end{mdframed}
+
+Since $\frac{\partial x_1^h(p,u^*)}{\partial p_2} = \frac{2y}{(p_1 + p_2)^2}>0$, we already know $x_1, x_2$ are net substitutes.
+
+$$\frac{\partial x_1(p,y)}{\partial p_2} = \frac{\partial (\frac{p_2}{p_1}\frac{y}{p_1 + p_2})}{\partial p_2} = \frac{1}{p_1}\frac{y}{p_1 + p_2} > 0$$
+
+$\Rightarrow x_1, x_2$ are also gross substitutes
+
 \end{document}
