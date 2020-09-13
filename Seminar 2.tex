@@ -60,8 +60,8 @@ vector of \textbf{Hicksian demands}:
 
 \begin{equation}
     \begin{cases}
-    x_1^h(p_1,p_2,u) = u(p_1^{r} + p_2^{r})^{\frac{1}{r}-1} p_1^(r-1) \\	
-    x_1^h(p_1,p_2,u) = u(p_1^{r} + p_2^{r})^{\frac{1}{r}-1} p_2^(r-1) \\	
+    x_1^h(p_1,p_2,u) = u(p_1^{r} + p_2^{r})^{\frac{1}{r}-1} p_1^{(r-1)} \\	
+    x_1^h(p_1,p_2,u) = u(p_1^{r} + p_2^{r})^{\frac{1}{r}-1} p_2^{(r-1)} \\	
     \end{cases}
     \label{eq:1_38_hicks}   
 \end{equation}
@@ -344,26 +344,58 @@ Therefore, $H(p)$ is negative semidefinite $\Rightarrow \ e(p,u)$ is concave in 
 %***************************************************
 \subsection{If $u(.)$ is also strictly quasiconcave, we have Shephard’s lemma: $e(p, u)$ is differentiable in $p$ at $(p^0, u^0)$ with $p^0 \gg 0$, and $\frac{\partial e(p^0, u^0)}{\partial p_i} = x^h_i (p^0, u^0), \ \ \ \ i = 1, . . . , n$.}
 
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+Again, the proof for $e(p,u)$ is differentiable at $(p^0,u^0)$ in $p$ with $p^0 \gg 0$ is nor required by our course
+
+CES utility function $u(x_1, x_2) = (x_1^{\rho} + x_2^{\rho})^{\frac{1}{\rho}}, \ 0 \ne \rho<1.$ has a similar form as the expenditure function 
+$e(p_1,p_2, u) = u(p_1^{r} + p_2^{r})^{\frac{1}{r}} , r \equiv \frac{\rho}{\rho - 1}$. You can similarly prove it is concave ($\Rightarrow$ quasiconcave, see also Thorem A1.15 on Jehle \& Reny pp. 541).
+
+\vspace{3mm}
+
+\textbf{Shephard’s lemma} states the fact that the Hicksian demands on $x_i=$ the partial derivatives of the expenditure functions on $p_i$.
+
+\textbf{Hicksian demands are also called "compensated demands": given utility $\bar{u}$, when price $p_i$ changed a little, how your demand will change to reach the same utility level $\bar{u}$?}
+
+\end{mdframed}
 
 
+$$\frac{\partial e(p_1,p_2)}{\partial p_1} =
+u (p_1^{r} + p_2^{r})^{\frac{1}{r} - 1} p_1^{r-1}$$
 
+$$\frac{\partial e(p_1,p_2)}{\partial p_2} = 
+u (p_1^{r} + p_2^{r})^{\frac{1}{r} - 1} p_2^{r-1}$$
 
-
-
-
-
-
-
-
-
+Compare these derivatives with the Hicksian demand in Equation \ref{eq:1_38_hicks}.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Jehle \& Reny 1.44 - Inferior and Normal goods}
 In a two-good case, show that if one good is inferior, the other good must be normal.
 
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+The question is actually based on the assumption that $u(.)$ is strictly increasing. Therefore you will always use your budget up to maximize your utility ( $p_1x_1 + p_2x_2 = y$). This is called "Budget Balancedness"(Theorem 1.10 on Jehle \& Reny pp. 49).
 
+\end{mdframed}
 
+Assume there are only 2 goods , $x_1, x_2 \in \R^2_+$, the price vector
+$p' = (p_1,p_2) \gg 0$, $y$ is the income and the budget constraint is $p_1x_1 + p_2x_2 \le y$.
+
+We always assume u(.) is strictly increasing, therefore we have budget balancedness to maximize the utility:$p_1x_1 + p_2x_2 = y$
+
+If $x_1$ is inferior, it means the demand for $x_1$ will decrease when the income increases, i.e. $\frac{\partial x_1(p_1,p_2,y)}{\partial y} < 0$.
+
+If $x_2$ is also inferior, what will happen when $y$ increases? The left-hand side will decrease but the right-hand side will increase, which is impossible. Therefore  $x_2$ must be normal.
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+You can also take derivatives on both sides of the budget balancedness to avoid wordy argument:
+
+\begin{align*}
+\frac{\partial (p_1x_1 + p_2x_2)}{\partial y} &= \frac{dy}{dy} \\
+p_1\frac{\partial x_1}{\partial y} + p_2\frac{\partial x_2}{\partial y} &= 1 \\
+\frac{\partial x_2}{\partial y} &= \frac{1}{p_2}
+(1- p_1\frac{\partial x_1}{\partial y}) >0 \\
+\end{align*}
+\end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Jehle \& Reny 1.51 - Substitues and Complements}
@@ -378,6 +410,83 @@ Consider the utility function, $u(x_1, x_2) = (x_1)^{1/2} + (x_2)^{1/2}$.
 \item Classify $x_1$ and $x_2$ as (gross) complements or substitutes.
 
 \end{enumerate}
+
+%***************************************************
+\subsection{Compute the demand functions, $x_i(p_1, p_2, y), \ i = 1, 2$}
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+Marshallian demand functions $x^* = x(p, y)$ is the solutions 
+to the utility maximization problem (JR. pp.21).
+
+Do we need to think about corner solution? No, the function is strictly increasing so the budget balancedness holds. Since the marginal utility $u_{x_1} = 0.5x_1^{-0.5}$ and $u_{x_2} = 0.5x_2^{-0.5}$ go to infinite as $x_i \to 0$, constraints $x_1 \ge 0$  and  $x_2 \ge 0$ are not binding. We will have an interior solution.
+
+(Compare this question with Jehle \& Reny 1.26.)
+\end{mdframed}
+
+We want to solve the utility maximization problem with some $(x_1^*, x_2^*)$, i.e.
+$$\max_{x_1,x_2} \ u(x_1,x_2) = x_1^{0.5} + x_2^{0.5} \ \ s.t. \ p_1x_1 + p_2x_2 = y$$
+
+
+Lagrangean: $$L = x_1^{0.5} + x_2^{0.5} + \lambda (y - p_1x_1 -p_2x_2)$$
+FOCs:
+\begin{equation}
+\begin{cases}
+\frac{\partial L}{\partial x_1} &= 0.5x_1^{-0.5} -p_1\lambda = 0 \\
+\frac{\partial L}{\partial x_2} &= 0.5x_2^{-0.5} -p_2\lambda = 0 \\
+\frac{\partial L}{\partial \lambda} &= y - p_1x_1 -p_2x_2 =0
+\end{cases}
+\nonumber
+\end{equation}
+
+Simplify:
+
+\begin{equation}
+\begin{cases}
+0.5x_1^{-0.5} &= p_1\lambda \\
+0.5x_2^{-0.5} &= p_2\lambda \\
+p_1x_1 + p_2x_2 &= y
+\end{cases}
+\end{equation}
+
+Take the ratio between first and second condition to get:
+$$[\frac{x_1}{x_2}]^{-0.5} = \frac{p_1}{p_2} \Rightarrow x_1 = (\frac{p_1}{p_2})^{-2}x_2 $$
+Substitute $x_1$ with $x_2$ in the 3rd condition to get:
+
+$$p_1(\frac{p_1}{p_2})^{-2}x_2 + p_2x_2 = y$$ 
+
+$$\Rightarrow x_2 = \frac{y}{p_1(\frac{p_1}{p_2})^{-2} + p_2} = \frac{y}{p_1(\frac{p_2^2}{p_1^2}) + p_2} =\frac{p_1y}{p_2^2 + p_1p_2} = \frac{p_1}{p_2}\frac{y}{p_1 + p_2}$$
+
+Thus:
+$$x_1 = (\frac{p_1}{p_2})^{-2}x_2 = (\frac{p_1}{p_2})^{-2}\frac{p_1}{p_2}\frac{y}{p_1 + p_2} =\frac{p_2}{p_1}\frac{y}{p_1 + p_2}$$
+
+
+%***************************************************
+\subsection{Compute the substitution term in the Slutsky equation for the effects on $x_1$ of changes in $p_2$}
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+\textbf{THEOREM 1.11 Slutsky equation}(Jehle \& Reny pp.53)
+
+Let $x(p, y)$ be the consumer’s Marshallian demand system. Let $u^*$ be the level of utility the consumer achieves at prices $p$ and income $y$. Then,
+$$\underbrace{\frac{\partial x_i(p,y)}{\partial p_j}}_{TE} = \underbrace{\frac{\partial x_i^h(p,u^*)}{\partial p_j}}_{SE} \underbrace{- x_j(p,y)\frac{\partial x_i(p,y)}{\partial y}}_{IE} , \  i,j = 1,2,...,n.$$
+
+Slutsky equation decomposes the change of demand when price changes (TE) into
+2 parts: substitution effects (SE) and income effects (IE).
+
+The question asks you to compute SE, and you already have Marshallian demand function in question part (a), it's easier to use $SE = TE - IE$ directely
+
+\end{mdframed}
+
+\begin{align*}
+\frac{\partial x_1^h(p,u^*)}{\partial p_2} &= \frac{\partial x_1(p,y)}{\partial p_2} + x_2(p,y)\frac{\partial x_1(p,y)}{\partial y} \\
+&= \frac{\partial (\frac{p_2}{p_1}\frac{y}{p_1 + p_2})}{\partial p_2} + (\frac{p_1}{p_2}\frac{y}{p_1 + p_2})\frac{\partial (\frac{p_2}{p_1}\frac{y}{p_1 + p_2})}{\partial y} \\
+&= \frac{1}{p_1}\frac{y}{p_1 + p_2} + \frac{p_2}{p_1}\frac{-y}{(p_1 + p_2)^2} + (\frac{p_1}{p_2}\frac{y}{p_1 + p_2})(\frac{p_2}{p_1}\frac{1}{p_1 + p_2}) \\
+&=\frac{\frac{(p_1+p_2)}{p_1} y}{(p_1 + p_2)^2} - \frac{\frac{p_2}{p_1}y}{(p_1 + p_2)^2} +\frac{y}{(p_1 + p_2)^2} \\
+&=\frac{2y}{(p_1 + p_2)^2} 
+\end{align*}
+
+%***************************************************
+\subsection{Classify $x_1$ and $x_2$ as (gross) complements or substitutes}
+
 
 
 
