@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.6.29) (preloaded format=xelatex 2020.9.1)  14 SEP 2020 09:54
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.6.29) (preloaded format=xelatex 2020.9.1)  14 SEP 2020 10:05
 entering extended mode
 **"./Seminar 2.tex"
 ("Seminar 2.tex"
@@ -1698,6 +1698,13 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 173.
 
+
+Package mdframed Warning: You got a bad break
+(mdframed)                because the last box will be empty
+(mdframed)                you have to change it manually
+(mdframed)                by changing the text, the space
+(mdframed)                or something else on input line 184.
+
 [3]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1735,10 +1742,11 @@ FMS/futm/m/n/10 ^^80 \FML/futmi/m/it/10 p[]\T1/futs/m/n/10 )[]\FML/futmi/m/it/1
 0 p[]$ 
  []
 
+[4]
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
 (mdframed)              on input line 379.
-[4] [5]
+ [5]
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
 (mdframed)              on input line 379.
@@ -1865,29 +1873,33 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 382.
 
-Missing character: There is no ’ in font futb8t!
 [7]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 454.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 454.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 454.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 454.
+Missing character: There is no ’ in font futb8t!
+Package mdframed Info: Not enough space on this page on input line 437.
+ [8]
+Package mdframed Info: Not enough space on this page on input line 437.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 454.
 
-[8]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 454.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 454.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 454.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 454.
+
+[9]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 510.
@@ -1913,7 +1925,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 510.
 
 Missing character: There is no ’ in font futr8t!
-[9]
+[10]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 534.
@@ -1938,7 +1950,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 534.
 
-[10] [11]
+[11]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 564.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 564.
  ("Seminar 2.aux")
@@ -1955,7 +1967,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 564.
 Here is how much of TeX's memory you used:
  31186 strings out of 414071
  592846 string characters out of 2893980
- 971229 words of memory out of 3000000
+ 965252 words of memory out of 3000000
  48178 multiletter control sequences out of 15000+200000
  608163 words of font info for 87 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
