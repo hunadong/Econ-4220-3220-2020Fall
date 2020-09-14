@@ -118,11 +118,13 @@ When $u = 0$, we have $e(p,0) = 0 \times (p_1^{r} + p_2^{r})^{\frac{1}{r}} =0$.
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
 We want a function to be continuously differentiable because we can then take derivatives (to study its property) freely.
 
-For a ONE dimention function $f(x)$, if the derivative at $x = a$ ($f'(a)$) exists, it's differentiable at $x = a$.
-If $f(x)$ is differentiable at $x = a$, it's also continuous at $x = a$.
+For a ONE dimention function $f(x)$, if the derivative at $x = a$ (i.e. $f'(a)$) exists, it's differentiable at $x = a$.
+$\Rightarrow f(x)$ is continuous at $x = a$.
 
 For a higher dimension function, the existance of all partial/directional derivatives is not
 sufficient for its differentiability. Here are examples from Wikipedia: \href{https://en.wikipedia.org/wiki/Differentiable_function}{Differentiability in higher dimensions}
+
+$e(p_1,p_2,u)$ is a 3-dimension function. If you really want to prove it's differentiable ($\Rightarrow$ continuous), you can either try to use the definition of differentiable functions. You can also read theorem A2.21 (Jehle \& Reny pp.602) and theorem 1.9 (point 3,Jehle \& Reny  pp.520).
 \end{mdframed}
 
 \begin{mdframed}[backgroundcolor=yellow!20,linecolor=white]
@@ -131,9 +133,7 @@ Good news for your exam:
 \textit{"There is no need to prove continuity (or concavity) of higher dimension functions (in your exam). I might ask you to prove continuity (or concavity) wrt one variable (a specific price, for example)." -- Paolo}
 \end{mdframed}
 
-$e(p_1,p_2,u)$ is a 3-dimension function. If you really want to prove it's differentiable/continuous, you can either try to use the definition of differentiable/ continuous functions. 
-You can also read theorem A2.21 (Jehle \& Reny pp.602) and theorem 1.9 (point 3,Jehle \& Reny
- pp.520).
+
 
 For this sub-question, let's assume the prices are given (say, by the market). Therefore
 $e(p_1,p_2,u) = e(u)$ is one dimesional.
@@ -211,9 +211,6 @@ simply asks "Is the function concave? Is it increasing? etc."
 \end{itemize}
 \end{mdframed}
 
-\vspace{2mm}
-
-
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
 
 \textit{"Diminishing marginal cost (in $p$)"}
@@ -257,7 +254,7 @@ $$f(x) \ is \  concave \iff f''(x) < 0$$
 
 \vspace{2mm}
 
-Read the following creteria if you're interested.
+(Read the following creteria and proof if you're interested)
 
 \vspace{2mm}
 
@@ -300,6 +297,7 @@ The Hessian matrix of $e(p_1,p_2,u)$ (in $p$) is:
 
 \vspace{2mm}
 
+
 \begin{equation}
 H(p)=\left(
     \begin{array}{cc}
@@ -329,8 +327,6 @@ We want to prove:
 \item  $e_{p_1p_1}e_{p_2p_2} - e_{p_1p_2}e_{p_2p_1} \ge 0$
 
 \end{itemize}
-\end{mdframed}
-
 
 We already know $\frac{\partial e(p_1,p_2)}{\partial p_1} =
 u (p_1^{r} + p_2^{r})^{\frac{1}{r} - 1} p_1^{r-1}$, and 
@@ -371,8 +367,8 @@ According to Young's theorem (Jehle \& Reny pp.557),$\frac{\partial e(p_1,p_2)}{
 
 We have
 \begin{align*}
- e_{p_1p_1}e_{p_2p_2} - e_{p_1p_2}e_{p_2p_1} &=
-[u(p_1^{r} + p_2^{r})^{\frac{1}{r} - 2} p_1^{r-2} (r-1)p_2^r][u(p_1^{r} + p_2^{r})^{\frac{1}{r} - 2} p_2^{r-2} (r-1)p_1^r] \\ 
+&e_{p_1p_1}e_{p_2p_2} - e_{p_1p_2}e_{p_2p_1} \\
+&=[u(p_1^{r} + p_2^{r})^{\frac{1}{r} - 2} p_1^{r-2} (r-1)p_2^r][u(p_1^{r} + p_2^{r})^{\frac{1}{r} - 2} p_2^{r-2} (r-1)p_1^r] \\
 & - [u (1-r)(p_1^{r} + p_2^{r})^{\frac{1}{r} - 2} p_2^{r-1}p_1^{r-1}]^2 \\ &=u^2(p_1^{r} + p_2^{r})^{\frac{2}{r} - 4}(p_1p_2)^{2r-2)} (r-1)^2 -
 u^2(1-r)^2(p_1^{r} + p_2^{r})^{\frac{2}{r} - 4} (p_2p_1)^{2r-2} \\
 &= 0 \ge 0
@@ -380,6 +376,7 @@ u^2(1-r)^2(p_1^{r} + p_2^{r})^{\frac{2}{r} - 4} (p_2p_1)^{2r-2} \\
 
 Therefore, $H(p)$ is negative semidefinite $\Rightarrow \ e(p,u)$ is concave in $p$.
 
+\end{mdframed}
 
 %***************************************************
 \subsection{If $u(.)$ is also strictly quasiconcave, we have Shephard’s lemma: $e(p, u)$ is differentiable in $p$ at $(p^0, u^0)$ with $p^0 \gg 0$, and $\frac{\partial e(p^0, u^0)}{\partial p_i} = x^h_i (p^0, u^0), \ \ \ \ i = 1, . . . , n$.}
@@ -498,7 +495,7 @@ p_1x_1 + p_2x_2 &= y
 \end{equation}
 
 Take the ratio between first and second condition to get:
-$$[\frac{x_1}{x_2}]^{-0.5} = \frac{p_1}{p_2} \Rightarrow x_1 = (\frac{p_1}{p_2})^{-2}x_2 $$
+$$(\frac{x_1}{x_2})^{-0.5} = \frac{p_1}{p_2} \Rightarrow x_1 = (\frac{p_1}{p_2})^{-2}x_2 $$
 Substitute $x_1$ with $x_2$ in the 3rd condition to get:
 
 $$p_1(\frac{p_1}{p_2})^{-2}x_2 + p_2x_2 = y$$ 

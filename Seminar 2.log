@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.6.29) (preloaded format=xelatex 2020.9.1)  14 SEP 2020 09:23
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.6.29) (preloaded format=xelatex 2020.9.1)  14 SEP 2020 09:54
 entering extended mode
 **"./Seminar 2.tex"
 ("Seminar 2.tex"
@@ -1622,12 +1622,6 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 115.
 
 [2]
-Overfull \hbox (39.63263pt too wide) in paragraph at lines 134--137
-[]$\FML/futmi/m/it/10 e\T1/futs/m/n/10 (\FML/futmi/m/it/10 p[]; p[]; u\T1/futs/
-m/n/10 )$ is a 3-dimension func-tion. If you re-ally want to prove it's dif-fer
--en-tiable/continuous,
- []
-
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 147.
@@ -1704,13 +1698,6 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 173.
 
-
-Package mdframed Warning: You got a bad break
-(mdframed)                because the last box will be empty
-(mdframed)                you have to change it manually
-(mdframed)                by changing the text, the space
-(mdframed)                or something else on input line 184.
-
 [3]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1733,23 +1720,32 @@ File: ./pic/2.concavef.png Graphic file (type bmp)
 <./pic/2.concavef.png>
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 232.
+(caption)                particular \caption on input line 229.
 See the caption package documentation for explanation.
 
 Missing character: There is no − in font futr8t!
 Missing character: There is no − in font futr8t!
-[4]
-Package mdframed Info: Box was splittet wrong
- starting loop to iterate the splitting point
-(mdframed)              on input line 332.
- [5] [6]
-Overfull \hbox (41.6725pt too wide) detected at line 379
-[]
+
+Overfull \hbox (2.56044pt too wide) in paragraph at lines 331--335
+[]\T1/futs/m/n/10 We al-ready know $[] \FMS/futm/m/n/10 ^^81 \FML/futmi/m/it/10
+ u\T1/futs/m/n/10 (\FML/futmi/m/it/10 p[] \FMS/futm/m/n/10 ^^80 \FML/futmi/m/it
+/10 p[]\T1/futs/m/n/10 )[]\FML/futmi/m/it/10 p[]$\T1/futs/m/n/10 , and $[] \FMS
+/futm/m/n/10 ^^81 \FML/futmi/m/it/10 u\T1/futs/m/n/10 (\FML/futmi/m/it/10 p[] \
+FMS/futm/m/n/10 ^^80 \FML/futmi/m/it/10 p[]\T1/futs/m/n/10 )[]\FML/futmi/m/it/1
+0 p[]$ 
  []
 
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 379.
+[4] [5]
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 379.
+ [6]
 Missing character: There is no ’ in font futb8t!
 
-Overfull \hbox (2.88258pt too wide) in paragraph at lines 385--385
+Overfull \hbox (2.88258pt too wide) in paragraph at lines 382--382
 \FML/futmi/m/it/12 e\T1/futs/m/n/12 (\FML/futmi/m/it/12 p; u\T1/futs/m/n/12 )$ 
 \T1/futs/b/n/12 is dif-fer-en-tiable in $\FML/futmi/m/it/12 p$ \T1/futs/b/n/12 
 at $\T1/futs/m/n/12 (\FML/futmi/m/it/12 p[]; u[]\T1/futs/m/n/12 )$ \T1/futs/b/n
@@ -1759,209 +1755,210 @@ s/b/n/12 , and $[] \FMS/futm/m/n/12 ^^81
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 385.
+(hyperref)                removing `math shift' on input line 382.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 385.
+(hyperref)                removing `math shift' on input line 382.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 385.
+(hyperref)                removing `math shift' on input line 382.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 385.
+(hyperref)                removing `math shift' on input line 382.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 385.
+(hyperref)                removing `math shift' on input line 382.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 385.
+(hyperref)                removing `math shift' on input line 382.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 385.
+(hyperref)                removing `math shift' on input line 382.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 385.
+(hyperref)                removing `superscript' on input line 382.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 385.
+(hyperref)                removing `superscript' on input line 382.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 385.
+(hyperref)                removing `math shift' on input line 382.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 385.
+(hyperref)                removing `math shift' on input line 382.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 385.
+(hyperref)                removing `superscript' on input line 382.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\gg' on input line 385.
+(hyperref)                removing `\gg' on input line 382.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 385.
+(hyperref)                removing `math shift' on input line 382.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 385.
+(hyperref)                removing `math shift' on input line 382.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 385.
+(hyperref)                removing `\begingroup' on input line 382.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\partial' on input line 385.
+(hyperref)                removing `\partial' on input line 382.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 385.
+(hyperref)                removing `superscript' on input line 382.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 385.
+(hyperref)                removing `superscript' on input line 382.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\endgroup' on input line 385.
+(hyperref)                removing `\endgroup' on input line 382.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@@over' on input line 385.
+(hyperref)                removing `\@@over' on input line 382.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\partial' on input line 385.
+(hyperref)                removing `\partial' on input line 382.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 385.
+(hyperref)                removing `subscript' on input line 382.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 385.
+(hyperref)                removing `superscript' on input line 382.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 385.
+(hyperref)                removing `subscript' on input line 382.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 385.
+(hyperref)                removing `superscript' on input line 382.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 385.
+(hyperref)                removing `superscript' on input line 382.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 385.
+(hyperref)                removing `math shift' on input line 382.
 
 Missing character: There is no ’ in font futb8t!
 [7]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 457.
+(hyperref)                removing `math shift' on input line 454.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 457.
+(hyperref)                removing `subscript' on input line 454.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 457.
+(hyperref)                removing `subscript' on input line 454.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 457.
+(hyperref)                removing `subscript' on input line 454.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 457.
+(hyperref)                removing `math shift' on input line 454.
 
-Package mdframed Info: Not enough space on this page on input line 466.
 [8]
-Package mdframed Info: Not enough space on this page on input line 466.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 510.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 513.
+(hyperref)                removing `subscript' on input line 510.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 513.
+(hyperref)                removing `math shift' on input line 510.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 513.
+(hyperref)                removing `math shift' on input line 510.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 513.
+(hyperref)                removing `subscript' on input line 510.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 513.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 513.
+(hyperref)                removing `math shift' on input line 510.
 
 Missing character: There is no ’ in font futr8t!
 [9]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 537.
+(hyperref)                removing `math shift' on input line 534.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 537.
+(hyperref)                removing `subscript' on input line 534.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 537.
+(hyperref)                removing `math shift' on input line 534.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 537.
+(hyperref)                removing `math shift' on input line 534.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 537.
+(hyperref)                removing `subscript' on input line 534.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 537.
+(hyperref)                removing `math shift' on input line 534.
 
 [10] [11]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 567.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 567.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 564.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 564.
  ("Seminar 2.aux")
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 567.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 567.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 564.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 564.
 Package rerunfilecheck Info: File `"Seminar 2".out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 567.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 564.
  ) 
 Here is how much of TeX's memory you used:
  31186 strings out of 414071
  592846 string characters out of 2893980
- 938229 words of memory out of 3000000
+ 971229 words of memory out of 3000000
  48178 multiletter control sequences out of 15000+200000
  608163 words of font info for 87 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 60i,10n,91p,961b,478s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,11n,91p,1118b,476s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on Seminar 2.pdf (11 pages).
