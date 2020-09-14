@@ -11,7 +11,6 @@
     urlcolor=cyan}
 \usepackage{graphicx}
 \graphicspath{ {./pic/} }
-
 \usepackage{fourier,amssymb,microtype,amsmath,gensymb}
 \newcommand{\R}{\mathbb{R}}
 \usepackage{mdframed,caption,xcolor,enumitem}
@@ -100,21 +99,26 @@ prerequisite of Theorem 1.7.
 
 %***************************************************
 \subsection{$e(p, u)$ is zero when $u$ takes on the lowest level of utility in $\mathcal{U}$}
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+\textit{"no consumption, no cost"}
+
+\end{mdframed}
+
 
 As usual, we assume non-negative consumption, i.e. $x \in R^n_+$. Since $u(.)$ is strictly increasing,
 $u_{min} = u(0,0) = 0$. 
 
 When $u = 0$, we have $e(p,0) = 0 \times (p_1^{r} + p_2^{r})^{\frac{1}{r}} =0$.
 
-\textit{"no consumption, no cost"}
 
 %***************************************************
 \subsection{$e(p, u)$ is continuous on its domain $\R^n_{++} \times \mathcal{U}$,}
 
 
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
-For a ONE dimention function $f(x)$, if the derivative at $x = a$ ($f'(a)$) exists, it's differentiable at $x = a$.
+We want a function to be continuously differentiable because we can then take derivatives (to study its property) freely.
 
+For a ONE dimention function $f(x)$, if the derivative at $x = a$ ($f'(a)$) exists, it's differentiable at $x = a$.
 If $f(x)$ is differentiable at $x = a$, it's also continuous at $x = a$.
 
 For a higher dimension function, the existance of all partial/directional derivatives is not
@@ -141,6 +145,10 @@ The derivetive exists for any $u \in \mathcal{U}$. $e(u)$ is differentiable and 
 
 %***************************************************
 \subsection{For all $p \gg 0$, $e(p, u)$ is strictly increasing in $u$ and unbounded above in $u$,}
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+\textit{"more utility, more cost"}
+
+\end{mdframed}
 
 
 Since $\frac{d e(u)}{d u} = (p_1^{r} + p_2^{r})^{\frac{1}{r}} > 0, \forall p \gg 0$,
@@ -165,6 +173,9 @@ Therefore $e(p, u)$ is increasing in $p$.
 \subsection{$e(p, u)$ is homogeneous of degree $1$ in $p$,}
 
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+
+\textit{"Inflation"}
+
 Homogeneous functions (Jehle \& Reny Definition A2.2 pp.561):
 
 $f(x)$ is called homogeneous of degree $k$ if $f(tx) \equiv t^kf(x),\ \forall t > 0$
@@ -186,13 +197,34 @@ Therefore $e(p, u)$ is homogeneous of degree $1$ in $p$.
 %***************************************************
 \subsection{$e(p, u)$ is concave in $p$.}
 
+
+\begin{mdframed}[backgroundcolor=yellow!20,linecolor=white]
+\begin{itemize}
+\item In exam one-dimension function is most common, which means you only need to 
+calculate its second derivative to prove concavity.
+
+\item Before you prove it, think about the intuition of the curve (function). Diminishing
+marginal effects is very common in economics, which also implies concavity. 
+
+\item Do NOT prove anything if the question doesn't require you. Just answer yes or no if the question
+simply asks "Is the function concave? Is it increasing? etc."
+\end{itemize}
+\end{mdframed}
+
+\vspace{2mm}
+
+
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+
+\textit{"Diminishing marginal cost (in $p$)"}
+
 Concave functions (Jehle \& Reny pp.534):
 
 $f : D \to \R \ $ is a concave function if for all $x^1, x^2 \in D$,
-$$f(x^t) \ge tf(x^1) + (1 − t)f(x^2), \ \forall t \in [0, 1]$$
 
-Where $x^t \equiv tx^1 + (1-t)x^2, t \in [0,1]$
+$$f(x^t) \ge tf(x^1) + (1 − t)f(x^2), \ \forall t \in [0, 1].$$
+
+Where $x^t \equiv tx^1 + (1-t)x^2, t \in [0,1].$
 
 \vspace{2mm}
 {\centering
@@ -201,7 +233,6 @@ Where $x^t \equiv tx^1 + (1-t)x^2, t \in [0,1]$
 \label{cf}}
 \vspace{2mm}
 
-(Diminishing margin)
 
 \begin{itemize}
 \item Intuition: $e(p,u)$ is increasing \textbf{in $p$} but the marginal expenditure is diminishing.
@@ -216,8 +247,19 @@ Where $p^1 = \left(\begin{smallmatrix}p^1_1 \\ p^1_2\end{smallmatrix}\right)$ an
 
 \textbf{We can also prove it's concavity using derivatives.} 
 
-For a one-dimension increasing function $f(x)$ with diminishing margin (
-concave towards x-axis), $f'(x)>0$ and $f''(x)<0$. 
+\vspace{2mm}
+
+\textbf{For a (twice differentiable) one-dimension function $f(x)$ with diminishing margin (
+concave towards x-axis), $f''(x)<0$, i.e.}
+$$f(x) \ is \  concave \iff f''(x) < 0$$
+
+\noindent\makebox[\linewidth]{\rule{12cm}{0.4pt}}
+
+\vspace{2mm}
+
+Read the following creteria if you're interested.
+
+\vspace{2mm}
 
 For a higher dimension function $e(p_1,p_2,u)$, it's natural to think about how the derivatives look like.
 
@@ -254,7 +296,7 @@ $f$ is concave $\iff$ the Hessian matrix $H(x)$ of $f$ is \href{https://towardsd
 
 \vspace{2mm}
 
-The Hessian matrix of $e(p_1,p_2,u)$ (in $p$ !) is:
+The Hessian matrix of $e(p_1,p_2,u)$ (in $p$) is:
 
 \vspace{2mm}
 
@@ -288,18 +330,6 @@ We want to prove:
 
 \end{itemize}
 \end{mdframed}
-
-
-\begin{mdframed}[backgroundcolor=yellow!20,linecolor=white]
-You can apply the criteria above without any explanation. Note that
-in exam one-dimension function is most common, which means you only need to 
-calculate its derivatives to prove concavity.
-
-Before you prove it, think about the intuition of the curve (function). Diminishing
-marginal effects is very common in economics, which also implies concavity. 
-\end{mdframed}
-
-\vspace{2mm}
 
 
 We already know $\frac{\partial e(p_1,p_2)}{\partial p_1} =
@@ -355,6 +385,8 @@ Therefore, $H(p)$ is negative semidefinite $\Rightarrow \ e(p,u)$ is concave in 
 \subsection{If $u(.)$ is also strictly quasiconcave, we have Shephard’s lemma: $e(p, u)$ is differentiable in $p$ at $(p^0, u^0)$ with $p^0 \gg 0$, and $\frac{\partial e(p^0, u^0)}{\partial p_i} = x^h_i (p^0, u^0), \ \ \ \ i = 1, . . . , n$.}
 
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+\textit{"Compensated demands"}
+
 Again, the proof for $e(p,u)$ is differentiable at $(p^0,u^0)$ in $p$ with $p^0 \gg 0$ is nor required by our course
 
 CES utility function $u(x_1, x_2) = (x_1^{\rho} + x_2^{\rho})^{\frac{1}{\rho}}, \ 0 \ne \rho<1.$ has a similar form as the expenditure function 
@@ -364,7 +396,7 @@ $e(p_1,p_2, u) = u(p_1^{r} + p_2^{r})^{\frac{1}{r}} , r \equiv \frac{\rho}{\rho 
 
 \textbf{Shephard’s lemma} states the fact that the Hicksian demands on $x_i=$ the partial derivatives of the expenditure functions on $p_i$.
 
-\textbf{Hicksian demands are also called "compensated demands": given utility $\bar{u}$, when price $p_i$ changed a little, how your demand will change to reach the same utility level $\bar{u}$?}
+\textbf{Hicksian demands are also called "compensated demands": given utility $\bar{u}$, when price $p_i$ changed a little, how your demand will change to achieve the same utility level $\bar{u}$?}
 
 \end{mdframed}
 
