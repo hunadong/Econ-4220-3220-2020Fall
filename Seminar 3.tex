@@ -19,7 +19,7 @@
 \usepackage{mdframed,caption,xcolor}
 \usepackage{tikz,tkz-euclide}
 
-\title{Seminar 3.}
+\title{Seminar 3.Duality of Consumers Behavior}
 \author{Xiaoguang Ling \\  \href{xiaoguang.ling@econ.uio.no}{xiaoguang.ling@econ.uio.no}}
 \date{\today}
 
@@ -30,9 +30,16 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{landscape}
-\section*{Duality}
+\section*{Consumption Duality}
 
+\begin{mdframed}[backgroundcolor=yellow!20,linecolor=white]
 
+You will never lose your way with this Consumption Duality map!
+
+All "derive this from that and verify some guy's equation"-like questions can be
+solved by finding the correct (shortest) route.
+\end{mdframed}
+\vspace{3mm}
 {\scriptsize
 \usetikzlibrary{arrows.meta}
 \tikzset{%
@@ -45,20 +52,26 @@
          process/.style = {base, minimum width=2.5cm, fill=orange!15,
                            font=\ttfamily},
 }
-
 \begin{tikzpicture}[node distance=2cm,
     every node/.style={fill=white, font=\sffamily}, align=center]
   \node (start) [Starts] {Utility Maximization: \\ $\max_{x \in \R^n_+} \ u(x), s.t.  px \le y$};
   \node (1) [process, below of=start] {Marshallian Demand: \\ \ $x(p,y)$};
   \node (2) [process, below of=1] {Indirect Utility: \\ $v(p,y) = u[x(p,y)]$};
-  \node (3) [process, left of=2,xshift=-1cm,yshift=1cm]  {Roy's Identity(pp.829: \\ $x_i(p^0,y^0) = - \frac{\partial v(p^0,y^0) / \partial p_i}{\partial v(p^0,y^0) / \partial y}$};
+  \node (3) [process, left of=2,xshift=-1cm,yshift=1cm]  {Roy's Identity(pp.29): \\ $x_i(p^0,y^0) = - \frac{\partial v(p^0,y^0) / \partial p_i}{\partial v(p^0,y^0) / \partial y}$};
   \node (4) [process, below of=2] {Direct Utility (pp.82): \\ $u(x) = \min_{p \in \R^n_{++}}  v(p,1), s.t. px=1$};
-
+  \node (5) [process, below of=4] {Inverse Demands (pp.84): \\ (Hotelling, Wold) \\ $p_i(x) = \frac{\partial u(x) / \partial x_i}{\Sigma^{n}_{j=1} x_j( \partial u(x) / \partial x_j)} $};
   \draw[->]  (start) -- (1);
   \draw[->] (1) -- (2);
   \draw[-]  (2) --  (3);
   \draw[-]  (3) --  (1);
   \draw[->] (2) --  (4);
+  \draw[->] (4) --  (5);
+{\tiny
+\path (start) to  node {solution $x^*$} (1); 
+\path (1) to  node {maximized value} (2); 
+\path (4) to  node {solution $p^*$} (5); 
+}
+  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
   \node (start2) [Starts, right of = 1, xshift =9cm, yshift=2cm] {Expenditure Minimization: \\ $\min_{x \in \R^n_+} \ px, s.t. u \ge \bar{u}$};
@@ -66,27 +79,28 @@
   \node (22) [process, below of=21] {Expenditure: \\ $e(p,\bar{u}) = px^h(p,\bar{u})$};
   \node (23) [process, right of=22,xshift=1cm,yshift=1cm]  {Shephard's lemma(pp.37): \\ $\frac{\partial e(p^0,u^0)}{\partial p_i} = x^h(p^0,u^0)$};
   \node (24) [process, below of=22] {Direct Utility (pp.75): \\ $u(x) \equiv max\{u \le 0 | x \in A(u) \}$};
-
   \draw[->]  (start2) -- (21);
   \draw[->]  (21) -- (22);
   \draw[-]  (22) --  (23);
   \draw[-]  (23) --  (21);
   \draw[->] (22) --  (24);
-
+{\tiny
+\path (start2) to  node {solution $x^*$} (21); 
+\path (21) to  node {minimized value} (22); 
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \node (31) [process, right of=1,xshift=3.8cm,yshift=2cm] {Slutsky equation(pp.53): \\ $\frac{\partial x_i(p,y)}{\partial p_j} = \frac{\partial x_i^h(p,u^*)}{\partial p_j} - x_j(p,y)\frac{\partial x_i(p,y)}{\partial y}$};
-
   \node (32) [process, right of=2,xshift=4cm,yshift=-1.8cm] {$e[p,v(p,y)] = y$ \\ $v[p,e(p,u)] = u$};
-
   \draw[dashed]  (1) --  (31);
   \draw[dashed]  (31) --  (21);
-  \draw[dashed]  (2) --  (32);
-  \draw[dashed]  (32) --  (22);
-
-  \draw[<->]   (1) --  (21);
-  \draw[-,blue]   (2) -- (21);
-  \draw[-,red]   (22) -- (1);
-
+  \draw[<-]  (2) --  (32);
+  \draw[->]  (32) --  (22);
+  \draw[-,blue]   (21) -- (2.north east);
+  \draw[-,red]   (22.north west) -- (1);
+  
+%\path (22.west) to  node {ddd} (21); 
+ \draw [->,red,yshift=2cm] (22.north west) -- (21) ;
+ \draw [->,blue,yshift=2cm] (2.north east) -- (1) ;
 
   \end{tikzpicture}
 }
@@ -96,8 +110,6 @@
 \section{Jehle \& Reny 2.3}
 Derive the consumer’s direct utility function if his indirect utility function has the form $v(p, y) =
 yp_1^\alpha p_2^\beta$ for negative $\alpha$ and $\beta$.
-
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Jehle \& Reny 2.5(a)}
