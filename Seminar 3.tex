@@ -111,6 +111,106 @@ solved by finding the correct (shortest) route.
 Derive the consumer’s direct utility function if his indirect utility function has the form $v(p, y) =
 yp_1^\alpha p_2^\beta$ for negative $\alpha$ and $\beta$.
 
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+\textbf{THEOREM 2.3 Duality Between Direct and Indirect Utility}(Jehle \& Reny pp.81 )
+
+
+Suppose that $u(x)$ is quasiconcave and differentiable on $\R^n_{++}$ with strictly positive partial derivatives there. Then for all $x \in \R^n_{++}$ , $v(p, p \cdot x)$, the indirect utility function generated
+by $u(x)$, achieves a minimum in $p$ on $\R^n_{++}$, and
+
+$$u(x) = \min_{p \in \R^n_{++}}  v(p,y), s.t. px=y$$
+
+Let's call the solution $p^*$
+
+Note that by \textbf{Theorem 1.6}(Jehle \& Reny pp.29), $v(p, y)$ is homogeneous of degree zero in $(p, y)$. We have $v(p, p \cdot x) = v(p/(p \cdot x), 1)$ whenever $p \cdot x > 0$. Thus the equation above can also be written as:
+
+$$u(x) = \min_{p \in \R^n_{++}}  v(p,1), s.t. px=1$$
+
+The solution $\hat{p} = p^* / p^* \cdot x = p^* / y$. We don't care about the difference between $\hat{p}$ and $p^*$ because once you substitute them into $v(p,p\cdot x)$, you have the same result (homogeneity of degree zero).
+\end{mdframed}
+
+$$u(x) = \min_{p \in \R^n_{++}}  v(p, 1) =
+p_1^\alpha p_2^\beta, s.t. px=1$$
+
+%***************************************************
+\subsection{Method 1 - Lagrangian}
+
+Lagrangian:
+
+$$L = p_1^\alpha p_2^\beta + \lambda (1- p_1x_1 - p_2x_2)$$
+
+Note there should not be interior solution since
+
+\begin{itemize}
+\item According to Theorem 2.3, $p \gg 0$
+\item $v(p,1)$ is decreasing in $p$(this is always true for indirect utility function, see pp.29). For any $px<1$, you can always decrease $v(p, 1)$ by increasing $p$ until $px = 1$.
+\end{itemize}
+
+FOCs.
+
+\begin{equation}
+    \begin{cases}
+\frac{\partial L}{\partial p_1} = \alpha p_1^{\alpha - 1} p_2^\beta - \lambda x_1= 0 \\
+\frac{\partial L}{\partial p_2} = p_1^{\alpha} \beta p_2^{\beta - 1} - \lambda x_2 = 0 \\
+p_1x_1 + p_2x_2 = 1
+    \end{cases}
+    \nonumber
+\end{equation}
+
+Simplify:
+
+\begin{equation}
+    \begin{cases}
+ \alpha p_1^{\alpha - 1} p_2^\beta = \lambda x_1 \\
+ \beta  p_1^{\alpha}  p_2^{\beta - 1} = \lambda x_2  \\
+p_1x_1 + p_2x_2 = 1
+    \end{cases}
+    \label{eq:2_3_foc}   
+\end{equation}
+
+Take the ratio between first and second condition to get:
+
+$$\frac{x_1}{x_2} = \frac{\alpha}{\beta} \frac{p_2}{p_1}$$
+
+Thus: $p_2 = \frac{\beta}{\alpha}\frac{x_1}{x_2} p_1 $
+
+Substitute $p_2$ with $p_1$ in the 3rd condition to get:
+
+\begin{align*}
+p_1x_1 + \frac{\beta}{\alpha}\frac{x_1}{x_2} p_1  x_2 &= 1 \\
+p_1(x_1 + \frac{\beta}{\alpha} x_1) &= 1 \\
+p_1^* &= \frac{1}{x_1(1+ \frac{\beta}{\alpha})} \\
+\Rightarrow p_2^* &= \frac{\beta}{\alpha} \frac{x_1}{x_2} p_1 =\frac{\beta}{\alpha} \frac{x_1}{x_2}\frac{1}{x_1(1+ \frac{\beta}{\alpha})} = \frac{1}{x_2(1+ \frac{\alpha}{\beta})}
+\end{align*}
+
+Substitute $p^*_1$ and $p^*_2$ into $v(p,1)$ we get the minimized value, i.e. the direct utility function:
+
+\begin{align*}
+u(x_1.x_2) &= [\frac{1}{x_1(1+ \frac{\beta}{\alpha})}]^\alpha[\frac{1}{x_2(1+ \frac{\alpha}{\beta})}]^\beta \\
+ &= A x_1^a x_2^b
+\end{align*}
+
+Where $A = [\frac{1}{1+ \frac{\beta}{\alpha}}]^\alpha[\frac{1}{1+ \frac{\alpha}{\beta}}]^\beta$ ,$a = -\alpha >0$ , $b= -\beta > 0$. The utility function is a Cobb-Douglas function.
+
+
+\begin{mdframed}[backgroundcolor=yellow!20,linecolor=white]
+As a cautious proof, you may want to check if $u(x)$ is quasiconcave and differentiable on $\R^n_{++}$ with strictly positive partial derivatives there, as assumed by Theorem 2.3. 
+
+In exam for this course, again, if the function is one- dimension, you should prove it; if it's a higher-dimension function, the proof is not required.
+\end{mdframed}
+
+%***************************************************
+\subsection{Method 2 - Derivative}
+
+Given $p_1x_1 + p_2x_2 = 1$, we can express $p_1$ with $p_2$ as:
+$$p_1 = \frac{1 - p_2x_2}{x_1}$$
+
+Substitute $p_1$ and $p_2$ into $v(p,1)$ we get the minimized value, i.e. the direct utility function:
+
+
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Jehle \& Reny 2.5(a)}
 Consider the solution, $e(p, u) = up_1^{\alpha_1}p_2^{\alpha_2}p_3^{\alpha_3}$ at the end of Example 2.3.
