@@ -1,27 +1,27 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.6.29) (preloaded format=xelatex 2020.9.1)  14 SEP 2020 12:00
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2020.8.31)  17 SEP 2020 10:32
 entering extended mode
 **"./Seminar 2.tex"
 ("Seminar 2.tex"
 LaTeX2e <2020-02-02> patch level 5
-L3 programming layer <2020-06-18>
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+L3 programming layer <2020-08-07>
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
 File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
 )
-\c@part=\count163
-\c@section=\count164
-\c@subsection=\count165
-\c@subsubsection=\count166
-\c@paragraph=\count167
-\c@subparagraph=\count168
-\c@figure=\count169
-\c@table=\count170
+\c@part=\count164
+\c@section=\count165
+\c@subsection=\count166
+\c@subsubsection=\count167
+\c@paragraph=\count168
+\c@subparagraph=\count169
+\c@figure=\count170
+\c@table=\count171
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen134
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
 Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks15
 \inpenc@posthook=\toks16
@@ -29,39 +29,40 @@ Package: inputenc 2018/08/11 v1.3c Input encoding file
 
 Package inputenc Warning: inputenc package ignored with utf8 based engines.
 
-) (C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+) (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 11
 2.
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ))
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
-Package: babel 2020/07/07 3.46 The Babel package
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+Package: babel 2020/07/13 3.47 The Babel package
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.def
-File: babel.def 2020/07/07 3.46 Babel common definitions
-\babel@savecnt=\count171
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.def
+File: babel.def 2020/07/13 3.47 Babel common definitions
+\babel@savecnt=\count172
 \U@D=\dimen135
 \l@babelnohyphens=\language79
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/babel\xebabel.def
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def
-))
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/babel\xebabel.def
+
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.de
+f))
 \bbl@readstream=\read2
 )
-\bbl@dirlevel=\count172
+\bbl@dirlevel=\count173
 
 *************************************
 * Local config file bblopts.cfg used
 *
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\englis
-h.ldf
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\engli
+sh.ldf
 Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: \l@canadian = using hyphenrules for english
 (babel)             (\language0) on input line 102.
@@ -70,75 +71,76 @@ Package babel Info: \l@australian = using hyphenrules for ukenglish
 Package babel Info: \l@newzealand = using hyphenrules for ukenglish
 (babel)             (\language73) on input line 108.
 ))
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.st
-y
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.s
+ty
 Package: hyperref 2020-05-15 v7.00e Hypertext links for LaTeX
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.st
-y
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.s
+ty
 Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
-) (C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+)
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2020/03/06 v1.0d TeX engine tests
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexc
-mds.sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftex
+cmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarer
-r.sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infware
+rr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode not found.
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks17
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/kvsetkeys\kvsetkey
-s.sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/kvsetkeys\kvsetke
+ys.sty
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdef
-inekeys.sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvde
+finekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescap
-e.sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfesca
+pe.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxma
-cro.sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxm
+acro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.
-sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions
+.sty
 Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
 )
 \@linkdim=\dimen136
-\Hy@linkcounter=\count173
-\Hy@pagecounter=\count174
+\Hy@linkcounter=\count174
+\Hy@pagecounter=\count175
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.st
-y
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.s
+ty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.
-sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds
+.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count175
+\Hy@SavedSpaceFactor=\count176
 Package hyperref Info: Hyper figures OFF on input line 4464.
 Package hyperref Info: Link nesting OFF on input line 4469.
 Package hyperref Info: Hyper index ON on input line 4472.
@@ -146,23 +148,23 @@ Package hyperref Info: Plain pages OFF on input line 4479.
 Package hyperref Info: Backreferencing OFF on input line 4484.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4717.
-\c@Hy@tempcnt=\count176
- (C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\c@Hy@tempcnt=\count177
+ (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5076.
 \XeTeXLinkMargin=\dimen137
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintc
-alc.sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigint
+calc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count177
+\Fld@menulength=\count178
 \Field@Width=\dimen138
 \Fld@charsize=\dimen139
 Package hyperref Info: Hyper figures OFF on input line 6347.
@@ -175,44 +177,43 @@ Package hyperref Info: PDF/A mode OFF on input line 6377.
 LaTeX Info: Redefining \ref on input line 6417.
 LaTeX Info: Redefining \pageref on input line 6421.
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/atbegshi\atbegshi.
-sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/atbegshi\atbegshi
+.sty
 Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 )
-\Hy@abspage=\count178
-\c@Item=\count179
-\c@Hfootnote=\count180
+\Hy@abspage=\count179
+\c@Item=\count180
+\c@Hfootnote=\count181
 )
 Package hyperref Info: Driver (autodetected): hxetex.
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hxetex.def
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hxetex.def
 File: hxetex.def 2020-05-15 v7.00e Hyperref driver for XeTeX
-
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2020-05-15 v7.00e Hyperref: PDF Unicode definition (HO)
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringen
-c.sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringe
+nc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
 \pdfm@box=\box45
-\c@Hy@AnnotLevel=\count181
-\HyField@AnnotCount=\count182
-\Fld@listcount=\count183
-\c@bookmark@seq@number=\count184
+\c@Hy@AnnotLevel=\count182
+\HyField@AnnotCount=\count183
+\Fld@listcount=\count184
+\c@bookmark@seq@number=\count185
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerun
-filecheck.sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\reru
+nfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/atveryend\atveryend.
-sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/atveryend\atveryend
+.sty
 Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
 Package atveryend Info: \enddocument detected (standard20110627).
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniq
-uecounter.sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uni
+quecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
@@ -222,51 +223,51 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 11.
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.st
-y
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.s
+ty
 Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.st
-y
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.s
+ty
 Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
- (C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphic
-s.cfg
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphi
+cs.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: xetex.def on input line 105.
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\xetex.d
-ef
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\xetex.
+def
 File: xetex.def 2017/06/24 v5.0h Graphics/color driver for xetex
 ))
 \Gin@req@height=\dimen140
 \Gin@req@width=\dimen141
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fourier.sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fourier.sty
 Package: fourier 2020/03/03 2.2 fourier-GUTenberg package
-
 
 Package fourier Warning: Please consider loading "fourier-otf.sty" instead of
 (fourier)                "fourier.sty" with Unicode engines LuaTeX or XeTeX,
 (fourier)                so that Type1 fonts get replaced by OpenType fonts.
 (fourier)                See file "Erewhon-Math.pdf" for more information.
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
 LaTeX Font Info:    Trying to load font information for T1+futs on input line 1
 12.
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/fourier\t1futs.fd
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/fourier\t1futs.fd
 File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
-))
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
+)) (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.st
+y
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fourier-orns
-.sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fourier-orn
+s.sty
 Package: fourier-orns 2020/03/03 2.2 fourier-ornaments package
 )
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 63.
@@ -365,11 +366,12 @@ LaTeX Font Info:    Redeclaring math accent \dot on input line 268.
 LaTeX Font Info:    Redeclaring math accent \mathring on input line 269.
 \symUfutm=\mathgroup5
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.st
+y
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.st
-y
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.s
+ty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks18
 \symAMSa=\mathgroup6
@@ -405,53 +407,53 @@ LaTeX Font Info:    Redeclaring math symbol \curvearrowright on input line 258.
 LaTeX Font Info:    Redeclaring math symbol \varkappa on input line 260.
 LaTeX Font Info:    Redeclaring math symbol \hslash on input line 262.
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.
-sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype
+.sty
 Package: microtype 2019/11/18 v2.7d Micro-typographical refinements (RS)
 \MT@toks=\toks19
-\MT@count=\count185
+\MT@count=\count186
 LaTeX Info: Redefining \textls on input line 790.
 \MT@outer@kern=\dimen142
 LaTeX Info: Redefining \textmicrotypecontext on input line 1354.
-\MT@listname@count=\count186
+\MT@listname@count=\count187
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype-
-xetex.def
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype
+-xetex.def
 File: microtype-xetex.def 2019/11/18 v2.7d Definitions specific to xetex (RS)
 LaTeX Info: Redefining \lsstyle on input line 258.
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype.
-cfg
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype
+.cfg
 File: microtype.cfg 2019/11/18 v2.7d microtype main configuration file (RS)
 ))
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2020/01/20 v2.17e AMS math features
 \@mathmargin=\skip50
-
 For additional information on amsmath, use the `?' option.
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
-Package: amstext 2000/06/29 v2.01 AMS text
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks20
 \ex@=\dimen143
-)) (C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.st
-y
+))
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen144
-) (C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+) (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.st
+y
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count187
+\inf@bad=\count188
 LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count188
-\leftroot@=\count189
+\uproot@=\count189
+\leftroot@=\count190
 LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count190
-\DOTSCASE@=\count191
+\classnum@=\count191
+\DOTSCASE@=\count192
 LaTeX Info: Redefining \ldots on input line 486.
 LaTeX Info: Redefining \dots on input line 489.
 LaTeX Info: Redefining \cdots on input line 610.
@@ -460,15 +462,15 @@ LaTeX Info: Redefining \cdots on input line 610.
 \big@size=\dimen145
 LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count192
-\c@MaxMatrixCols=\count193
+\macc@depth=\count193
+\c@MaxMatrixCols=\count194
 \dotsspace@=\muskip17
-\c@parentequation=\count194
-\dspbrk@lvl=\count195
+\c@parentequation=\count195
+\dspbrk@lvl=\count196
 \tag@help=\toks21
-\row@=\count196
-\column@=\count197
-\maxfields@=\count198
+\row@=\count197
+\column@=\count198
+\maxfields@=\count199
 \andhelp@=\toks22
 \eqnshift@=\dimen146
 \alignsep@=\dimen147
@@ -482,67 +484,68 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 \mathdisplay@stack=\toks24
 LaTeX Info: Redefining \[ on input line 2859.
 LaTeX Info: Redefining \] on input line 2860.
-) (C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/was\gensymb.sty
+) (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/was\gensymb.sty
 Package: gensymb 2003/07/02 v1.0 (WaS)
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/mdframed\mdframed.st
-y
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/mdframed\mdframed.s
+ty
 Package: mdframed 2013/07/01 1.9b: mdframed
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xp
-arse.sty
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
-Package: expl3 2020-06-18 L3 programming layer (loader) 
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\x
+parse.sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2020-08-07 L3 programming layer (loader) 
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-
-xdvipdfmx.def
-File: l3backend-xdvipdfmx.def 2020-06-29 L3 backend support: xdvipdfmx
-\g__graphics_track_int=\count199
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend
+-xdvipdfmx.def
+File: l3backend-xdvipdfmx.def 2020-08-07 L3 backend support: xdvipdfmx
+\g__graphics_track_int=\count266
 \l__pdf_internal_box=\box48
-\g__pdf_backend_object_int=\count266
-\g__pdf_backend_annotation_int=\count267
+\g__pdf_backend_object_int=\count267
+\g__pdf_backend_annotation_int=\count268
 ))
 Package: xparse 2020-05-15 L3 Experimental document command parser
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xp
-arse-generic.tex
-\l__xparse_current_arg_int=\count268
-\g__xparse_grabber_int=\count269
-\l__xparse_m_args_int=\count270
-\l__xparse_v_nesting_int=\count271
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\x
+parse-generic.tex
+\l__xparse_current_arg_int=\count269
+\g__xparse_grabber_int=\count270
+\l__xparse_m_args_int=\count271
+\l__xparse_v_nesting_int=\count272
 ))
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.st
-y
-Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count272
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.s
+ty
+Package: etoolbox 2020/08/24 v2.5j e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count273
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/zref\zref-abspage.st
-y
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/zref\zref-abspage.s
+ty
 Package: zref-abspage 2020-05-28 v2.31 Module abspage for zref (HO)
- (C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/zref\zref-base.sty
+
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/zref\zref-base.sty
 Package: zref-base 2020-05-28 v2.31 Module base for zref (HO)
 Package zref Info: New property list: main on input line 763.
 Package zref Info: New property: default on input line 764.
 Package zref Info: New property: page on input line 765.
 )
-\c@abspage=\count273
+\c@abspage=\count274
 Package zref Info: New property: abspage on input line 66.
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/needspace\needspace.
-sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/needspace\needspace
+.sty
 Package: needspace 2010/09/12 v1.3d reserve vertical space
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
 Package: color 2019/11/23 v1.2a Standard LaTeX Color (DPC)
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.c
-fg
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.
+cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: xetex.def on input line 147.
 )
 \mdf@templength=\skip53
-\c@mdf@globalstyle@cnt=\count274
+\c@mdf@globalstyle@cnt=\count275
 \mdf@skipabove@length=\skip54
 \mdf@skipbelow@length=\skip55
 \mdf@leftmargin@length=\skip56
@@ -583,8 +586,8 @@ Package color Info: Driver file: xetex.def on input line 147.
 \mdf@subsubtitleinneraboveskip@length=\skip91
 \mdf@subsubtitleinnerbelowskip@length=\skip92
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/mdframed\md-frame-0.
-mdf
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/mdframed\md-frame-0
+.mdf
 File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 )
 \mdf@frametitlebox=\box49
@@ -619,22 +622,23 @@ File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 \mdf@horizontalspaceofbox=\skip117
 \mdfsubtitleheight=\skip118
 \mdfsubsubtitleheight=\skip119
-\c@mdfcountframes=\count275
+\c@mdfcountframes=\count276
 
 ****** mdframed patching \endmdf@trivlist
 
 ****** -- success******
 
-\mdf@envdepth=\count276
-\c@mdf@env@i=\count277
-\c@mdf@env@ii=\count278
-\c@mdf@zref@counter=\count279
+\mdf@envdepth=\count277
+\c@mdf@env@i=\count278
+\c@mdf@env@ii=\count279
+\c@mdf@zref@counter=\count280
 Package zref Info: New property: mdf@pagevalue on input line 895.
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
 Package: caption 2020/05/30 v3.4k Customizing captions (AR)
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.st
+y
 Package: caption3 2020/07/20 v1.12b caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 61.
 \captionmargin=\dimen152
@@ -646,14 +650,15 @@ Package caption3 Info: TeX engine: e-TeX on input line 61.
 \caption@hangindent=\dimen158
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count280
-\c@continuedfloat=\count281
+\c@caption@flags=\count281
+\c@continuedfloat=\count282
 Package caption Info: hyperref package is loaded.
-) (C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+)
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.c
-fg
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.
+cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: xetex.def on input line 225.
@@ -667,60 +672,60 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.st
-y
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.s
+ty
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \labelindent=\skip120
 \enit@outerparindent=\dimen159
 \enit@toks=\toks25
 \enit@inbox=\box54
-\enit@count@id=\count282
-\enitdp@description=\count283
+\enit@count@id=\count283
+\enitdp@description=\count284
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\ti
-kz.sty
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.s
-ty
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs
-.sty
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfu
-til-common.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\t
+ikz.sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.
+sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrc
+s.sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgf
+util-common.tex
 \pgfutil@everybye=\toks26
 \pgfutil@tempdima=\dimen160
 \pgfutil@tempdimb=\dimen161
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfu
-til-common-lists.tex))
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfu
-til-latex.def
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgf
+util-common-lists.tex))
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgf
+util-latex.def
 \pgfutil@abb=\box55
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/ms\everyshi.sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/ms\everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfr
-cs.code.tex
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.t
-ex)
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgf
+rcs.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.
+tex)
 Package: pgfrcs 2020/01/08 v3.1.5b (3.1.5b)
 ))
 Package: pgf 2020/01/08 v3.1.5b (3.1.5b)
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfco
-re.sty
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfs
-ys.sty
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pg
-fsys.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfc
+ore.sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgf
+sys.sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\p
+gfsys.code.tex
 Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfk
-eys.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgf
+keys.code.tex
 \pgfkeys@pathtoks=\toks27
 \pgfkeys@temptoks=\toks28
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfk
-eysfiltered.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgf
+keysfiltered.code.tex
 \pgfkeys@tmptoks=\toks29
 ))
 \pgf@x=\dimen162
@@ -735,90 +740,90 @@ eysfiltered.code.tex
 \pgf@yd=\dimen171
 \w@pgf@writea=\write3
 \r@pgf@reada=\read3
-\c@pgf@counta=\count284
-\c@pgf@countb=\count285
-\c@pgf@countc=\count286
-\c@pgf@countd=\count287
+\c@pgf@counta=\count285
+\c@pgf@countb=\count286
+\c@pgf@countc=\count287
+\c@pgf@countd=\count288
 \t@pgf@toka=\toks30
 \t@pgf@tokb=\toks31
 \t@pgf@tokc=\toks32
-\pgf@sys@id@count=\count288
+\pgf@sys@id@count=\count289
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pg
-f.cfg
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\p
+gf.cfg
 File: pgf.cfg 2020/01/08 v3.1.5b (3.1.5b)
 )
 Driver file for pgf: pgfsys-xetex.def
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pg
-fsys-xetex.def
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\p
+gfsys-xetex.def
 File: pgfsys-xetex.def 2020/01/08 v3.1.5b (3.1.5b)
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pg
-fsys-dvipdfmx.def
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\p
+gfsys-dvipdfmx.def
 File: pgfsys-dvipdfmx.def 2020/01/08 v3.1.5b (3.1.5b)
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pg
-fsys-common-pdf.def
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\p
+gfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2020/01/08 v3.1.5b (3.1.5b)
 )
-\pgfsys@objnum=\count289
+\pgfsys@objnum=\count290
 )))
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pg
-fsyssoftpath.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\p
+gfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfsyssoftpath@smallbuffer@items=\count290
-\pgfsyssoftpath@bigbuffer@items=\count291
+\pgfsyssoftpath@smallbuffer@items=\count291
+\pgfsyssoftpath@bigbuffer@items=\count292
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pg
-fsysprotocol.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\p
+gfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ))
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
-core.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
+fcore.code.tex
 Package: pgfcore 2020/01/08 v3.1.5b (3.1.5b)
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.c
-ode.tex
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathca
-lc.code.tex
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathut
-il.code.tex)
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathpa
-rser.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.
+code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathc
+alc.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathu
+til.code.tex)
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathp
+arser.code.tex
 \pgfmath@dimen=\dimen172
-\pgfmath@count=\count292
+\pgfmath@count=\count293
 \pgfmath@box=\box56
 \pgfmath@toks=\toks33
 \pgfmath@stack@operand=\toks34
 \pgfmath@stack@operation=\toks35
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfu
-nctions.code.tex
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfu
-nctions.basic.code.tex)
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfu
-nctions.trigonometric.code.tex)
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfu
-nctions.random.code.tex)
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfu
-nctions.comparison.code.tex)
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfu
-nctions.base.code.tex)
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfu
-nctions.round.code.tex)
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfu
-nctions.misc.code.tex)
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfu
-nctions.integerarithmetics.code.tex)))
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfl
-oat.code.tex
-\c@pgfmathroundto@lastzeros=\count293
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathf
+unctions.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathf
+unctions.basic.code.tex)
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathf
+unctions.trigonometric.code.tex)
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathf
+unctions.random.code.tex)
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathf
+unctions.comparison.code.tex)
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathf
+unctions.base.code.tex)
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathf
+unctions.round.code.tex)
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathf
+unctions.misc.code.tex)
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathf
+unctions.integerarithmetics.code.tex)))
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathf
+loat.code.tex
+\c@pgfmathroundto@lastzeros=\count294
 ))
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.co
-de.tex)
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
-corepoints.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.c
+ode.tex)
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
+fcorepoints.code.tex
 File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@picminx=\dimen173
 \pgf@picmaxx=\dimen174
@@ -835,135 +840,135 @@ File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@zx=\dimen185
 \pgf@zy=\dimen186
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
-corepathconstruct.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
+fcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@path@lastx=\dimen187
 \pgf@path@lasty=\dimen188
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
-corepathusage.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
+fcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@shorten@end@additional=\dimen189
 \pgf@shorten@start@additional=\dimen190
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
-corescopes.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
+fcorescopes.code.tex
 File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgfpic=\box57
 \pgf@hbox=\box58
 \pgf@layerbox@main=\box59
-\pgf@picture@serial@count=\count294
+\pgf@picture@serial@count=\count295
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
-coregraphicstate.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
+fcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgflinewidth=\dimen191
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
-coretransformations.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
+fcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@pt@x=\dimen192
 \pgf@pt@y=\dimen193
 \pgf@pt@temp=\dimen194
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
-corequick.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
+fcorequick.code.tex
 File: pgfcorequick.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
-coreobjects.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
+fcoreobjects.code.tex
 File: pgfcoreobjects.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
-corepathprocessing.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
+fcorepathprocessing.code.tex
 File: pgfcorepathprocessing.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
-corearrows.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
+fcorearrows.code.tex
 File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgfarrowsep=\dimen195
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
-coreshade.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
+fcoreshade.code.tex
 File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@max=\dimen196
-\pgf@sys@shading@range@num=\count295
-\pgf@shadingcount=\count296
+\pgf@sys@shading@range@num=\count296
+\pgf@shadingcount=\count297
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
-coreimage.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
+fcoreimage.code.tex
 File: pgfcoreimage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
-coreexternal.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
+fcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgfexternal@startupbox=\box60
 ))
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
-corelayers.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
+fcorelayers.code.tex
 File: pgfcorelayers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
-coretransparency.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
+fcoretransparency.code.tex
 File: pgfcoretransparency.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
-corepatterns.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
+fcorepatterns.code.tex
 File: pgfcorepatterns.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgf
-corerdf.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
+fcorerdf.code.tex
 File: pgfcorerdf.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )))
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmod
-uleshapes.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmo
+duleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgfnodeparttextbox=\box61
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmod
-uleplot.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmo
+duleplot.code.tex
 File: pgfmoduleplot.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pg
-fcomp-version-0-65.sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\p
+gfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@nodesepstart=\dimen197
 \pgf@nodesepend=\dimen198
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pg
-fcomp-version-1-18.sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\p
+gfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2020/01/08 v3.1.5b (3.1.5b)
 ))
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor
-.sty
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkey
-s.sty
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfk
-eys.code.tex))
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty
-
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.c
-ode.tex))
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgff
-or.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffo
+r.sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfke
+ys.sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgf
+keys.code.tex))
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.st
+y
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.
+code.tex))
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgf
+for.code.tex
 Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.c
-ode.tex)
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.
+code.tex)
 \pgffor@iter=\dimen199
 \pgffor@skip=\dimen256
 \pgffor@stack=\toks36
 \pgffor@toks=\toks37
 ))
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/
-tikz\tikz.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer
+/tikz\tikz.code.tex
 Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgfl
-ibraryplothandlers.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgf
+libraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@plot@mark@count=\count297
+\pgf@plot@mark@count=\count298
 \pgfplotmarksize=\dimen257
 )
 \tikz@lastx=\dimen258
@@ -978,162 +983,162 @@ File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \tikz@figbox@bg=\box63
 \tikz@tempbox=\box64
 \tikz@tempbox@bg=\box65
-\tikztreelevel=\count298
-\tikznumberofchildren=\count299
-\tikznumberofcurrentchild=\count300
-\tikz@fig@count=\count301
+\tikztreelevel=\count299
+\tikznumberofchildren=\count300
+\tikznumberofcurrentchild=\count301
+\tikz@fig@count=\count302
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmod
-ulematrix.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmo
+dulematrix.code.tex
 File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfmatrixcurrentrow=\count302
-\pgfmatrixcurrentcolumn=\count303
-\pgf@matrix@numberofcolumns=\count304
+\pgfmatrixcurrentrow=\count303
+\pgfmatrixcurrentcolumn=\count304
+\pgf@matrix@numberofcolumns=\count305
 )
-\tikz@expandcount=\count305
+\tikz@expandcount=\count306
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/
-tikz/libraries\tikzlibrarytopaths.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer
+/tikz/libraries\tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )))
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-eucl
-ide.sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-euc
+lide.sty
 2020/03/18 3.06c tkz-euclide.sty
 Package: tkz-euclide 2020/03/18 3.06c for euclidan geometry 
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/tkz-base\tkz-base.st
-y
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tkz-base\tkz-base.s
+ty
 2020/03/18 3.06c tkz-base.sty
 Package: tkz-base 2020/03/18 3.06c tkz-base
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/
-tikz/libraries\tikzlibraryangles.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer
+/tikz/libraries\tikzlibraryangles.code.tex
 File: tikzlibraryangles.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/
-tikz/libraries\tikzlibraryarrows.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer
+/tikz/libraries\tikzlibraryarrows.code.tex
 File: tikzlibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgfl
-ibraryarrows.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgf
+libraryarrows.code.tex
 File: pgflibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \arrowsize=\dimen266
 ))
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgfl
-ibraryarrows.meta.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgf
+libraryarrows.meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgfarrowinset=\dimen267
 \pgfarrowlength=\dimen268
 \pgfarrowwidth=\dimen269
 \pgfarrowlinewidth=\dimen270
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/
-tikz/libraries\tikzlibrarybabel.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer
+/tikz/libraries\tikzlibrarybabel.code.tex
 File: tikzlibrarybabel.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/
-tikz/libraries\tikzlibrarycalc.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer
+/tikz/libraries\tikzlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/
-tikz/libraries\tikzlibrarydecorations.code.tex
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmod
-uledecorations.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer
+/tikz/libraries\tikzlibrarydecorations.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmo
+duledecorations.code.tex
 \pgfdecoratedcompleteddistance=\dimen271
 \pgfdecoratedremainingdistance=\dimen272
 \pgfdecoratedinputsegmentcompleteddistance=\dimen273
 \pgfdecoratedinputsegmentremainingdistance=\dimen274
 \pgf@decorate@distancetomove=\dimen275
-\pgf@decorate@repeatstate=\count306
+\pgf@decorate@repeatstate=\count307
 \pgfdecorationsegmentamplitude=\dimen276
 \pgfdecorationsegmentlength=\dimen277
 )
 \tikz@lib@dec@box=\box66
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/
-tikz/libraries\tikzlibrarydecorations.markings.code.tex
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/deco
-rations\pgflibrarydecorations.markings.code.tex))
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/
-tikz/libraries\tikzlibrarydecorations.pathreplacing.code.tex
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/deco
-rations\pgflibrarydecorations.pathreplacing.code.tex))
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/
-tikz/libraries\tikzlibrarydecorations.shapes.code.tex
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/deco
-rations\pgflibrarydecorations.shapes.code.tex))
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/
-tikz/libraries\tikzlibrarydecorations.text.code.tex
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/deco
-rations\pgflibrarydecorations.text.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer
+/tikz/libraries\tikzlibrarydecorations.markings.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/dec
+orations\pgflibrarydecorations.markings.code.tex))
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer
+/tikz/libraries\tikzlibrarydecorations.pathreplacing.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/dec
+orations\pgflibrarydecorations.pathreplacing.code.tex))
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer
+/tikz/libraries\tikzlibrarydecorations.shapes.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/dec
+orations\pgflibrarydecorations.shapes.code.tex))
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer
+/tikz/libraries\tikzlibrarydecorations.text.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/dec
+orations\pgflibrarydecorations.text.code.tex
 \pgf@lib@dec@text@box=\box67
 )
 \tikz@lib@dec@te@box=\box68
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/
-tikz/libraries\tikzlibrarydecorations.pathmorphing.code.tex
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/deco
-rations\pgflibrarydecorations.pathmorphing.code.tex))
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/
-tikz/libraries\tikzlibraryintersections.code.tex
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgfl
-ibraryintersections.code.tex
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgfl
-ibraryfpu.code.tex)
-\pgf@intersect@solutions=\count307
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer
+/tikz/libraries\tikzlibrarydecorations.pathmorphing.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/dec
+orations\pgflibrarydecorations.pathmorphing.code.tex))
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer
+/tikz/libraries\tikzlibraryintersections.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgf
+libraryintersections.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgf
+libraryfpu.code.tex)
+\pgf@intersect@solutions=\count308
 ))
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/
-tikz/libraries\tikzlibrarypatterns.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer
+/tikz/libraries\tikzlibrarypatterns.code.tex
 File: tikzlibrarypatterns.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgfl
-ibrarypatterns.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgf
+librarypatterns.code.tex
 File: pgflibrarypatterns.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ))
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/
-tikz/libraries\tikzlibraryplotmarks.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer
+/tikz/libraries\tikzlibraryplotmarks.code.tex
 File: tikzlibraryplotmarks.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgfl
-ibraryplotmarks.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgf
+libraryplotmarks.code.tex
 File: pgflibraryplotmarks.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ))
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/
-tikz/libraries\tikzlibrarypositioning.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer
+/tikz/libraries\tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/
-tikz/libraries\tikzlibraryquotes.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer
+/tikz/libraries\tikzlibraryquotes.code.tex
 File: tikzlibraryquotes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/
-tikz/libraries\tikzlibraryshadows.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer
+/tikz/libraries\tikzlibraryshadows.code.tex
 File: tikzlibraryshadows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/
-tikz/libraries\tikzlibraryfadings.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer
+/tikz/libraries\tikzlibraryfadings.code.tex
 File: tikzlibraryfadings.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgfl
-ibraryfadings.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgf
+libraryfadings.code.tex
 File: pgflibraryfadings.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )))
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/
-tikz/libraries\tikzlibraryshapes.misc.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer
+/tikz/libraries\tikzlibraryshapes.misc.code.tex
 File: tikzlibraryshapes.misc.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shap
-es\pgflibraryshapes.misc.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/sha
+pes\pgflibraryshapes.misc.code.tex
 File: pgflibraryshapes.misc.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ))
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/
-tikz/libraries\tikzlibrarythrough.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer
+/tikz/libraries\tikzlibrarythrough.code.tex
 File: tikzlibrarythrough.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/numprint\numprint.st
-y
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/numprint\numprint.s
+ty
 Package: numprint 2012/08/20 v1.39 Print numbers (HH)
- (C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+ (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
 Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \col@sep=\dimen278
 \ar@mcellbox=\box69
@@ -1143,10 +1148,10 @@ Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \backup@length=\skip122
 \ar@cellbox=\box70
 )
-\c@nprt@mantissa@digitsbefore=\count308
-\c@nprt@mantissa@digitsafter=\count309
-\c@nprt@exponent@digitsbefore=\count310
-\c@nprt@exponent@digitsafter=\count311
+\c@nprt@mantissa@digitsbefore=\count309
+\c@nprt@mantissa@digitsafter=\count310
+\c@nprt@exponent@digitsbefore=\count311
+\c@nprt@exponent@digitsafter=\count312
 \nprt@digitwidth=\skip123
 \nprt@sepwidth=\skip124
 \nprt@decimalwidth=\skip125
@@ -1154,63 +1159,62 @@ Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \nprt@digittoks=\toks39
 \nprt@pretoks=\toks40
 \nprt@posttoks=\toks41
-\nprt@thisdigit=\count312
-\nprt@curpos=\count313
-\nprt@rndpos=\count314
-\c@nprt@digitsfirstblock=\count315
-\c@nprt@blockcnt=\count316
-\c@nprt@cntprint=\count317
-
+\nprt@thisdigit=\count313
+\nprt@curpos=\count314
+\nprt@rndpos=\count315
+\c@nprt@digitsfirstblock=\count316
+\c@nprt@blockcnt=\count317
+\c@nprt@cntprint=\count318
 No configuration file `numprint.cfg' found.)
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xfp\xfp.s
-ty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xfp\xfp.
+sty
 Package: xfp 2020-05-15 L3 Floating point unit
-) (C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp.sty
+) (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp.sty
 Package: fp 1995/04/02
 
 `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/fp\defpattern.sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/fp\defpattern.sty
 Package: defpattern 1994/10/12
-\actioncount=\count318
+\actioncount=\count319
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-basic.sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-basic.sty
 Package: fp-basic 1996/05/13
-\FP@xs=\count319
-\FP@xia=\count320
-\FP@xib=\count321
-\FP@xfa=\count322
-\FP@xfb=\count323
-\FP@rega=\count324
-\FP@regb=\count325
-\FP@regs=\count326
-\FP@times=\count327
+\FP@xs=\count320
+\FP@xia=\count321
+\FP@xib=\count322
+\FP@xfa=\count323
+\FP@xfb=\count324
+\FP@rega=\count325
+\FP@regb=\count326
+\FP@regs=\count327
+\FP@times=\count328
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-addons.sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-addons.sty
 Package: fp-addons 1995/03/15
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-snap.sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-snap.sty
 Package: fp-snap 1995/04/05
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-exp.sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-exp.sty
 Package: fp-exp 1995/04/03
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-trigo.sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-trigo.sty
 Package: fp-trigo 1995/04/14
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-pas.sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-pas.sty
 Package: fp-pas 1994/08/29
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-random.sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-random.sty
 Package: fp-random 1995/02/23
-\FPseed=\count328
+\FPseed=\count329
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-eqn.sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-eqn.sty
 Package: fp-eqn 1995/04/03
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-upn.sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-upn.sty
 Package: fp-upn 1996/10/21
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-eval.sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-eval.sty
 Package: fp-eval 1995/04/03
 ))
 \tkzRadius=\dimen280
@@ -1232,153 +1236,153 @@ Package: fp-eval 1995/04/03
 \tkz@tcy=\dimen296
 \tkz@tdx=\dimen297
 \tkz@tdy=\dimen298
-\tkz@cntmk=\count329
+\tkz@cntmk=\count330
 
 Local configuration file tkz-base.cfg found and used
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/tkz-base\tkz-base.cf
-g
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tkz-base\tkz-base.c
+fg
 2020/03/18 3.06c tkz-base.cfg
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/tkz-base\tkz-tools-m
-odules.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tkz-base\tkz-tools-
+modules.tex
 2020/03/18 3.06c tkz-tools-utilities.tex
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/tkz-base\tkz-lib-mar
-ks.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tkz-base\tkz-lib-ma
+rks.tex
 2020/03/18 3.06c tkz-lib-symbols.tex
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/tkz-base\tkz-tools-b
-ase.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tkz-base\tkz-tools-
+base.tex
 2020/03/18 3.06c tkz-tools-base.tex
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/tkz-base\tkz-tools-u
-tilities.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tkz-base\tkz-tools-
+utilities.tex
 2020/03/18 3.06c tkz-tools-utilities.tex
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-tool
-s-math.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-too
+ls-math.tex
 2020/03/18 3.06c tkz-tools-math.tex
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/tkz-base\tkz-tools-t
-ext.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tkz-base\tkz-tools-
+text.tex
 2020/03/18 3.06c tkz-tools-text.tex
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/tkz-base\tkz-tools-B
-B.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tkz-base\tkz-tools-
+BB.tex
 2020/03/18 3.06c tkz-obj-BB.tex
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/tkz-base\tkz-tools-a
-rith.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tkz-base\tkz-tools-
+arith.tex
 2020/03/18 3.06c tkz-tools-arith.tex
 File: tkz-tool-arith.tex tkz-tool-arith 3.02 c
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/tkz-base\tkz-tools-p
-rint.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tkz-base\tkz-tools-
+print.tex
 2020/03/18 3.06c tkz-tools-print.tex
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/tkz-base\tkz-tools-m
-isc.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tkz-base\tkz-tools-
+misc.tex
 2020/03/18 3.06c tkz-tools-misc.tex
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/tkz-base\tkz-obj-axe
-s.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tkz-base\tkz-obj-ax
+es.tex
 2020/03/18 3.06c tkz-obj-axes.tex
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/tkz-base\tkz-obj-gri
-ds.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tkz-base\tkz-obj-gr
+ids.tex
 2020/03/18 3.06c tkz-obj-grids.tex
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/tkz-base\tkz-obj-mar
-ks.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tkz-base\tkz-obj-ma
+rks.tex
 2020/03/18 3.07c tkz-obj-marks.tex
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/tkz-base\tkz-obj-poi
-nts.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tkz-base\tkz-obj-po
+ints.tex
 2020/03/18 3.06c tkz-obj-points.tex
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/tkz-base\tkz-obj-rep
-.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tkz-base\tkz-obj-re
+p.tex
 2020/03/18 3.06c tkz-obj-rep.tex
 ))
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-tool
-s-intersections.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-too
+ls-intersections.tex
 2020/03/18 3.06c tkz-tools-intersections.tex
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-tool
-s-angles.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-too
+ls-angles.tex
 2020/03/18 3.06c tkz-tools-angles.tex
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-obj-
-eu-angles.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-obj
+-eu-angles.tex
 2020/03/18 3.06c tkz-tool-eu-angles.tex
 \tkz@arcsize=\dimen299
 \tkz@fillsize=\dimen300
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-obj-
-eu-arcs.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-obj
+-eu-arcs.tex
 2020/03/23 3.06c tkz-obj-eu-arcs.tex
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-obj-
-eu-compass.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-obj
+-eu-compass.tex
 2020/03/18 3.06c tkz-obj-eu-compass.tex
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-obj-
-eu-circles.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-obj
+-eu-circles.tex
 2020/03/18 3.06c tkz-obj-eu-circles.tex
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-obj-
-eu-draw-circles.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-obj
+-eu-draw-circles.tex
 2020/03/18 3.06c tkz-obj-eu-draw-circles.tex
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-obj-
-eu-draw-lines.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-obj
+-eu-draw-lines.tex
 2020/03/18 3.06c tkz-obj-eu-draw-lines.tex
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-obj-
-eu-draw-polygons.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-obj
+-eu-draw-polygons.tex
 2020/03/18 3.06c tkz-obj-eu-polygons.tex
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-obj-
-eu-draw-triangles.tex)
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-obj-
-eu-lines.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-obj
+-eu-draw-triangles.tex)
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-obj
+-eu-lines.tex
 2020/03/18 3.06c tkz-obj-eu-lines.tex
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-obj-
-eu-points.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-obj
+-eu-points.tex
 2020/03/18 3.06c tkz-obj-eu-points.tex
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-obj-
-eu-points-by.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-obj
+-eu-points-by.tex
 2020/03/18 3.06c tkz-tools-eu-points-by.tex
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-obj-
-eu-points-rnd.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-obj
+-eu-points-rnd.tex
 2020/03/18 3.06c tkz-obj-eu-points-rnd.tex
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-obj-
-eu-points-with.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-obj
+-eu-points-with.tex
 2020/03/18 3.06c tkz-obj-eu-points-with.tex
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-obj-
-eu-polygons.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-obj
+-eu-polygons.tex
 2020/03/18 3.06c tkz-obj-eu-polygons.tex
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-obj-
-eu-protractor.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-obj
+-eu-protractor.tex
 2020/03/18 3.06c tkz-obj-eu-protractor.tex
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-obj-
-eu-sectors.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-obj
+-eu-sectors.tex
 2020/03/18 3.06c tkz-obj-eu-sectors.tex
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-obj-
-eu-show.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-obj
+-eu-show.tex
 2020/03/18 3.06c tkz-obj-eu-show.tex
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-obj-
-eu-triangles.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-obj
+-eu-triangles.tex
 2020/03/18 3.06c tkz-obj-eu-triangles.tex
 )) ("Seminar 2.aux")
 \openout1 = `"Seminar 2.aux"'.
@@ -1395,7 +1399,7 @@ LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 2
 3.
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmr.fd
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 23.
@@ -1413,41 +1417,40 @@ LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 23.
 LaTeX Font Info:    Trying to load font information for FML+futm on input line 
 23.
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmlfutm.fd
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
 LaTeX Font Info:    ... okay on input line 23.
 LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 23.
 LaTeX Font Info:    Trying to load font information for FMS+futm on input line 
 23.
-
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmsfutm.fd
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
 LaTeX Font Info:    ... okay on input line 23.
 LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 23.
 LaTeX Font Info:    Trying to load font information for FMX+futm on input line 
 23.
-
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmxfutm.fd
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
 LaTeX Font Info:    ... okay on input line 23.
 \AtBeginShipoutBox=\box71
 Package hyperref Info: Link coloring ON on input line 23.
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.st
+y
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.st
-y
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.s
+ty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\get
-titlestring.sty
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\ge
+ttitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count330
+\c@section@level=\count331
 )
 LaTeX Info: Redefining \ref on input line 23.
 LaTeX Info: Redefining \pageref on input line 23.
@@ -1486,7 +1489,7 @@ ABD: EveryShipout initializing macros
 LaTeX Font Info:    Trying to load font information for FML+futmi on input line
  26.
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmlfutmi.fd
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
@@ -1503,23 +1506,26 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 6.43999pt on input line 26.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 26.
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+ (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cf
+g
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 26.
 
- (C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+ (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cf
+g
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Trying to load font information for TS1+futs on input line 
 26.
- (C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/fourier\ts1futs.fd
+
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/fourier\ts1futs.fd
 File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
 )
 Package microtype Info: Loading generic protrusion settings for font family
@@ -1533,8 +1539,8 @@ Overfull \hbox (4.53947pt too wide) in paragraph at lines 28--28
  []
 
 
-(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\se-ascii
--print.def
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\se-asci
+i-print.def
 File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
 
 )
@@ -1899,74 +1905,74 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 454.
 
-[9]
+[9] [10]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 510.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 510.
+(hyperref)                removing `math shift' on input line 547.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 510.
+(hyperref)                removing `subscript' on input line 547.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 510.
+(hyperref)                removing `math shift' on input line 547.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 510.
+(hyperref)                removing `math shift' on input line 547.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 510.
+(hyperref)                removing `subscript' on input line 547.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 547.
 
 Missing character: There is no ’ in font futr8t!
-[10]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 534.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 534.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 534.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 534.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 534.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 534.
-
 [11]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 564.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 564.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 571.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 571.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 571.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 571.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 571.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 571.
+
+[12]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 601.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 601.
  ("Seminar 2.aux")
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 564.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 564.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 601.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 601.
 Package rerunfilecheck Info: File `"Seminar 2".out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 564.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 601.
  ) 
 Here is how much of TeX's memory you used:
- 31186 strings out of 414071
- 592846 string characters out of 2893980
- 965252 words of memory out of 3000000
- 48178 multiletter control sequences out of 15000+200000
- 608163 words of font info for 87 fonts, out of 3000000 for 9000
+ 31197 strings out of 414493
+ 593274 string characters out of 2902447
+ 968294 words of memory out of 3000000
+ 47767 multiletter control sequences out of 15000+200000
+ 610913 words of font info for 92 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
  60i,11n,91p,1118b,476s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Seminar 2.pdf (11 pages).
+Output written on Seminar 2.pdf (12 pages).

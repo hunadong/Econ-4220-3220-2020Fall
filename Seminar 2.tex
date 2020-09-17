@@ -456,17 +456,21 @@ Consider the utility function, $u(x_1, x_2) = (x_1)^{1/2} + (x_2)^{1/2}$.
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
 Marshallian demand functions $x^* = x(p, y)$ is the solutions 
 to the utility maximization problem (JR. pp.21).
+\end{mdframed}
 
-Do we need to think about corner solution? No, the function is strictly increasing so the budget balancedness holds. Since the marginal utility $u_{x_1} = 0.5x_1^{-0.5}$ and $u_{x_2} = 0.5x_2^{-0.5}$ go to infinite as $x_i \to 0$, constraints $x_1 \ge 0$  and  $x_2 \ge 0$ are not binding. We will have an interior solution.
+There is no interior solutions:
+
+\begin{itemize}
+\item The function is strictly increasing so the budget balancedness holds. 
+\item The marginal utility $u_{x_1} = 0.5x_1^{-0.5}$ and $u_{x_2} = 0.5x_2^{-0.5}$ go to infinite as $x_i \to 0$, constraints $x_1 \ge 0$  and  $x_2 \ge 0$ can not be binding. 
+\end{itemize}
+
+
+\begin{mdframed}[backgroundcolor=yellow!20,linecolor=white]
+In exam, always discuss if interior solutions exist, in case you make mistakes! Especially when you get weired object functions or contradictory results.
 
 (Compare this question with Jehle \& Reny 1.26.)
 \end{mdframed}
-
-\begin{mdframed}[backgroundcolor=yellow!20,linecolor=white]
-In exam, a formal discussion about interior solutions may be unnecessary if the object function is "well behaved". But never forget to check it in mind, especially when you get weired object functions or contradictory results.
-\end{mdframed}
-
-
 
 
 We want to solve the utility maximization problem with some $(x_1^*, x_2^*)$, i.e.
@@ -504,6 +508,39 @@ $$\Rightarrow x_2 = \frac{y}{p_1(\frac{p_1}{p_2})^{-2} + p_2} = \frac{y}{p_1(\fr
 
 Thus:
 $$x_1 = (\frac{p_1}{p_2})^{-2}x_2 = (\frac{p_1}{p_2})^{-2}\frac{p_1}{p_2}\frac{y}{p_1 + p_2} =\frac{p_2}{p_1}\frac{y}{p_1 + p_2}$$
+
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+Since there are only 2 variables $x_1$ and $x_2$ in your object function
+$u(x_1,x_2)$ and you already know the budget must be binding, i.e.
+$y = p_1x_1 + p_2x_2$, you can actually transform $u(x_1,x_2)$  into 
+a function of only $x_1$ or $x_2$:
+
+$$y = p_1x_1 + p_2x_2 \Rightarrow x_1 = \frac{y-p_2x_2}{p_1}$$
+
+$$u(x_1,x_2)= x_1^{0.5} + x_2^{0.5} = (\frac{y-p_2x_2}{p_1})^0.5 + x_2^0.5$$
+
+Since the question ask you to maximize $u(x_1,x_2)$, if you solve $\frac{d u(x_2)}{d x_2} = 0$ and get only one solution, it is the solution.
+
+
+\begin{align*}
+\frac{d u(x_2)}{d x_2} = 0.5[ (\frac{y-p_2x_2}{p_1})^{-0.5}](\frac{-p_2}{p_1}) + 0.5x_2^{-0.5} &= 0 \\
+(\frac{y-p_2x_2}{p_1})^{-0.5}\frac{p_2}{p_1} &= x_2^{-0.5} \\
+\frac{y-p_2x_2}{p_1}\frac{p_2^{-2}}{p_1^{-2}} &= x_2 \\
+\frac{y-p_2x_2}{p_1}\frac{p_1^{2}}{p_2^{2}} &= x_2 \\
+y\frac{p_1}{p_2^{2}} - \frac{p_1}{p_2}x_2&= x_2 \\
+x_2 + \frac{p_1}{p_2}x_2 &=  y\frac{p_1}{p_2^{2}} -\\
+x_2 &=  \frac{1}{1+\frac{p_1}{p_2}}y\frac{p_1}{p_2^{2}} \\
+x_2 &=  \frac{p_1}{p_2}\frac{y}{p_1 + p_2}
+\end{align*}
+
+You then solve $x_1$ with the budget constraint
+\end{mdframed}
+
+
+
+
+
 
 
 %***************************************************
