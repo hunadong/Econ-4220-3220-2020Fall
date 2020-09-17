@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2020.8.31)  17 SEP 2020 13:28
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2020.8.31)  17 SEP 2020 13:57
 entering extended mode
 **"./Seminar 2.tex"
 ("Seminar 2.tex"
@@ -1881,8 +1881,14 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 
 [7]
 Missing character: There is no ’ in font futb8t!
+
+Overfull \hbox (3.31462pt too wide) in paragraph at lines 396--397
+\T1/futs/m/n/10 util-ity $[]$, when price $\FML/futmi/m/it/10 p[]$ \T1/futs/m/n
+/10 changed a lit-tle, how your de-mand will change to achieve
+ []
+
 Package mdframed Info: Not enough space on this page on input line 437.
- [8]
+[8]
 Package mdframed Info: Not enough space on this page on input line 437.
 
 
@@ -1908,63 +1914,63 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [9] [10]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 547.
+(hyperref)                removing `math shift' on input line 542.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 547.
+(hyperref)                removing `subscript' on input line 542.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 547.
+(hyperref)                removing `math shift' on input line 542.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 547.
+(hyperref)                removing `math shift' on input line 542.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 547.
+(hyperref)                removing `subscript' on input line 542.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 547.
+(hyperref)                removing `math shift' on input line 542.
 
 Missing character: There is no ’ in font futr8t!
 [11]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 571.
+(hyperref)                removing `math shift' on input line 566.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 571.
+(hyperref)                removing `subscript' on input line 566.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 571.
+(hyperref)                removing `math shift' on input line 566.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 571.
+(hyperref)                removing `math shift' on input line 566.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 571.
+(hyperref)                removing `subscript' on input line 566.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 571.
+(hyperref)                removing `math shift' on input line 566.
 
 [12]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 601.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 601.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 596.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 596.
  ("Seminar 2.aux")
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 601.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 601.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 596.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 596.
 Package rerunfilecheck Info: File `"Seminar 2".out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 601.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 596.
  ) 
 Here is how much of TeX's memory you used:
  31197 strings out of 414493

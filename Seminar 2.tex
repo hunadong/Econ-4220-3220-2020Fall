@@ -384,7 +384,7 @@ Therefore, $H(p)$ is negative semidefinite $\Rightarrow \ e(p,u)$ is concave in 
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
 \textit{"Compensated demands"}
 
-Again, the proof for $e(p,u)$ is differentiable at $(p^0,u^0)$ in $p$ with $p^0 \gg 0$ is nor required by our course
+Again, the proof for $e(p,u)$ is differentiable at $(p^0,u^0)$ in $p$ with $p^0 \gg 0$ is not required by our course.
 
 CES utility function $u(x_1, x_2) = (x_1^{\rho} + x_2^{\rho})^{\frac{1}{\rho}}, \ 0 \ne \rho<1.$ has a similar form as the expenditure function 
 $e(p_1,p_2, u) = u(p_1^{r} + p_2^{r})^{\frac{1}{r}} , r \equiv \frac{\rho}{\rho - 1}$. You can similarly prove it is concave ($\Rightarrow$ quasiconcave, see also Thorem A1.15 on Jehle \& Reny pp. 541).
@@ -393,7 +393,7 @@ $e(p_1,p_2, u) = u(p_1^{r} + p_2^{r})^{\frac{1}{r}} , r \equiv \frac{\rho}{\rho 
 
 \textbf{Shephard’s lemma} states the fact that the Hicksian demands on $x_i=$ the partial derivatives of the expenditure functions on $p_i$.
 
-\textbf{Hicksian demands are also called "compensated demands": given utility $\bar{u}$, when price $p_i$ changed a little, how your demand will change to achieve the same utility level $\bar{u}$?}
+\textbf{Intuition:} Hicksian demands are also called "compensated demands": given utility $\bar{u}$, when price $p_i$ changed a little, how your demand will change to achieve the same utility level $\bar{u}$?
 
 \end{mdframed}
 
@@ -518,7 +518,7 @@ a function of only $x_1$ or $x_2$:
 
 $$y = p_1x_1 + p_2x_2 \Rightarrow x_1 = \frac{y-p_2x_2}{p_1}$$
 
-$$u(x_1,x_2)= x_1^{0.5} + x_2^{0.5} = (\frac{y-p_2x_2}{p_1})^0.5 + x_2^0.5$$
+$$u(x_1,x_2)= x_1^{0.5} + x_2^{0.5} = (\frac{y-p_2x_2}{p_1})^{0.5} + x_2^{0.5}$$
 
 Since the question ask you to maximize $u(x_1,x_2)$, if you solve $\frac{d u(x_2)}{d x_2} = 0$ and get only one solution, it is the solution.
 
@@ -538,11 +538,6 @@ You then solve $x_1$ with the budget constraint
 \end{mdframed}
 
 
-
-
-
-
-
 %***************************************************
 \subsection{Compute the substitution term in the Slutsky equation for the effects on $x_1$ of changes in $p_2$}
 
@@ -555,7 +550,7 @@ $$\underbrace{\frac{\partial x_i(p,y)}{\partial p_j}}_{TE} = \underbrace{\frac{\
 Slutsky equation decomposes the change of demand when price changes (TE) into
 2 parts: substitution effects (SE) and income effects (IE).
 
-The question asks you to compute SE, and you already have Marshallian demand function in question part (a), it's easier to use $SE = TE - IE$ directely
+The question asks you to compute SE, and you already have Marshallian demand function in question part (a), it's easier to use $SE = TE + IE$ directely
 
 \end{mdframed}
 
