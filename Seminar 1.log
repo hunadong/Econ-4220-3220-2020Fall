@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2020.8.31)  17 SEP 2020 09:08
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2020.8.31)  17 SEP 2020 12:53
 entering extended mode
 **"./Seminar 1.tex"
 ("Seminar 1.tex"
@@ -1567,7 +1567,7 @@ File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
 ) [1
 
 ]
-Overfull \hbox (37.07947pt too wide) in paragraph at lines 51--52
+Overfull \hbox (37.07947pt too wide) in paragraph at lines 52--53
 []\T1/futs/m/n/10 You can com-ment on my slides di-rectly, and point out in whi
 ch line/graph/fuction
  []
@@ -1638,7 +1638,7 @@ File: pgflibraryshapes.multipart.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 File: tikzlibrarytrees.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
 LaTeX Font Info:    Trying to load font information for T1+lmss on input line 1
-00.
+01.
 
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1648,77 +1648,77 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (81.69899pt too wide) in paragraph at lines 131--132
+Overfull \hbox (81.69899pt too wide) in paragraph at lines 132--133
 [] 
  []
 
 [3]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 166.
+(caption)                particular \caption on input line 167.
 See the caption package documentation for explanation.
 
 File: ./pic/1.open.png Graphic file (type bmp)
 <./pic/1.open.png>
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 185.
+(caption)                particular \caption on input line 186.
 See the caption package documentation for explanation.
 
 File: ./pic/1.ball.png Graphic file (type bmp)
 <./pic/1.ball.png>
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 204.
+(caption)                particular \caption on input line 205.
 See the caption package documentation for explanation.
 
 File: ./pic/1.line.png Graphic file (type bmp)
 <./pic/1.line.png>
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 226.
+(caption)                particular \caption on input line 227.
 See the caption package documentation for explanation.
 
 File: ./pic/1.mono.png Graphic file (type bmp)
 <./pic/1.mono.png>
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 235.
+(caption)                particular \caption on input line 236.
 See the caption package documentation for explanation.
 
 File: ./pic/1.closest.png Graphic file (type bmp)
 <./pic/1.closest.png>
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 253.
+(caption)                particular \caption on input line 254.
 See the caption package documentation for explanation.
 
 File: ./pic/1.final.png Graphic file (type bmp)
 <./pic/1.final.png>
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 279.
+(caption)                particular \caption on input line 280.
 See the caption package documentation for explanation.
 
 [4]
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
-(mdframed)              on input line 282.
+(mdframed)              on input line 283.
  [5] [6] [7]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 297.
+(caption)                particular \caption on input line 298.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 345.
+(caption)                particular \caption on input line 346.
 See the caption package documentation for explanation.
 
 [8]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 375.
+(caption)                particular \caption on input line 376.
 See the caption package documentation for explanation.
 
 [9]
@@ -1727,27 +1727,27 @@ Missing character: There is no ’ in font futb8t!
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 410.
+(caption)                particular \caption on input line 411.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 447.
+(caption)                particular \caption on input line 448.
 See the caption package documentation for explanation.
 
 [10]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 479.
+(caption)                particular \caption on input line 480.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 502.
+(caption)                particular \caption on input line 503.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (1.26143pt too wide) in paragraph at lines 508--510
+Overfull \hbox (1.26143pt too wide) in paragraph at lines 509--511
 \T1/futs/m/n/10 A con-sumer has lex-i-co-graphic pref-er-ences over $\U/futm/m/
 n/10 R[]$ \T1/futs/m/n/10 if the re-la-tion sat-is-fies $\FML/futmi/m/it/10 x[]
 ; x[]$ \T1/futs/m/n/10 when-
@@ -1756,141 +1756,137 @@ n/10 R[]$ \T1/futs/m/n/10 if the re-la-tion sat-is-fies $\FML/futmi/m/it/10 x[]
 [11]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 579.
+(caption)                particular \caption on input line 580.
 See the caption package documentation for explanation.
 
 [12]
-Underfull \hbox (badness 10000) in paragraph at lines 599--600
+Underfull \hbox (badness 10000) in paragraph at lines 600--601
 
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 605.
+(hyperref)                removing `math shift' on input line 606.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 605.
+(hyperref)                removing `math shift' on input line 606.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 605.
+(hyperref)                removing `math shift' on input line 606.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\gg' on input line 605.
+(hyperref)                removing `\gg' on input line 606.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 605.
+(hyperref)                removing `math shift' on input line 606.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 623.
+(caption)                particular \caption on input line 624.
 See the caption package documentation for explanation.
 
 [13]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 671.
+(caption)                particular \caption on input line 672.
 See the caption package documentation for explanation.
 
 [14]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 680.
+(hyperref)                removing `math shift' on input line 681.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 680.
+(hyperref)                removing `math shift' on input line 681.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 680.
+(hyperref)                removing `math shift' on input line 681.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\gg' on input line 680.
+(hyperref)                removing `\gg' on input line 681.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 680.
+(hyperref)                removing `math shift' on input line 681.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 750.
+(caption)                particular \caption on input line 751.
 See the caption package documentation for explanation.
 
 [15]
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 760.
+(Font)              scaled to size 7.35999pt on input line 761.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.25598pt on input line 760.
+(Font)              scaled to size 6.25598pt on input line 761.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 760.
+(Font)              scaled to size 7.35999pt on input line 761.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.25598pt on input line 760.
+(Font)              scaled to size 6.25598pt on input line 761.
  [16]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 861.
+(caption)                particular \caption on input line 862.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 903.
+(caption)                particular \caption on input line 904.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 945.
+(caption)                particular \caption on input line 946.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 974.
+(caption)                particular \caption on input line 975.
 See the caption package documentation for explanation.
 
 [17]
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
-(mdframed)              on input line 985.
+(mdframed)              on input line 986.
  [18]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1017.
+(caption)                particular \caption on input line 1018.
 See the caption package documentation for explanation.
 
 [19]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1048.
+(caption)                particular \caption on input line 1049.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 1079.
+(caption)                particular \caption on input line 1080.
 See the caption package documentation for explanation.
 
 [20] [21]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1105.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1105.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1106.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1106.
  ("Seminar 1.aux")
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1105.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1105.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1106.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1106.
 
 Package rerunfilecheck Info: File `"Seminar 1".out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1105.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1106.
  ) 
 Here is how much of TeX's memory you used:
  33388 strings out of 414493
  653065 string characters out of 2902447
- 1027410 words of memory out of 3000000
+ 1027408 words of memory out of 3000000
  49898 multiletter control sequences out of 15000+200000
  649534 words of font info for 130 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
