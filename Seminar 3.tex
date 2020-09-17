@@ -132,9 +132,6 @@ The solution $\hat{p} = p^* / p^* \cdot x = p^* / y$. We don't care about the di
 $$u(x) = \min_{p \in \R^n_{++}}  v(p, 1) =
 p_1^\alpha p_2^\beta, s.t. px=1$$
 
-%***************************************************
-\subsection{Method 1 - Lagrangian}
-
 Lagrangian:
 
 $$L = p_1^\alpha p_2^\beta + \lambda (1- p_1x_1 - p_2x_2)$$
@@ -199,13 +196,28 @@ As a cautious proof, you may want to check if $u(x)$ is quasiconcave and differe
 In exam for this course, again, if the function is one- dimension, you should prove it; if it's a higher-dimension function, the proof is not required.
 \end{mdframed}
 
-%***************************************************
-\subsection{Method 2 - Derivative}
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+Like Jehle \& Reny 1.51, you can actually transform $v(p_1,p_2,1)$  into a function of only $p_1$ or $p_1$ using $p_1x_1 + p_2x_2 = 1$.
 
-Given $p_1x_1 + p_2x_2 = 1$, we can express $p_1$ with $p_2$ as:
 $$p_1 = \frac{1 - p_2x_2}{x_1}$$
 
-Substitute $p_1$ and $p_2$ into $v(p,1)$ we get the minimized value, i.e. the direct utility function:
+Substitute into  $v(p_1,p_2,1)$ to have:
+$$v(p_1,p_2,1) = [\frac{1 - p_2x_2}{x_1}]^\alpha p_2^\beta$$
+
+Since the question ask you to minimize $v(p_1,p_2,1)$, if you solve $\frac{d e(p_2)}{d p_2} = 0$ and get only one solution, it is the solution.
+
+\begin{align*}
+\frac{d e(p_2)}{d p_2} =  \alpha(\frac{1-p_2x_2}{x_1})^{\alpha -1}(\frac{-x_2}{x_1})p_2^\beta +  \frac{1 - p_2x_2}{x_1}^\alpha \beta p_2^{\beta -1} &= 0 \\
+ \alpha(\frac{1-p_2x_2}{x_1})^{\alpha -1}(\frac{x_2}{x_1})p_2^\beta &= \frac{1 - p_2x_2}{x_1}^\alpha \beta p_2^{\beta -1} \\
+ \alpha(\frac{x_1}{1-p_2x_2})(\frac{x_2}{x_1})p_2 &= \beta  \\
+\alpha(\frac{x_2}{1-p_2x_2}) p_2 &= \beta  \\
+\alpha x_2 p_2 &= \beta-\beta x_2 p_2  \\
+(\alpha x_2 + \beta x_2) p_2&= \beta  \\
+ p^*_2&= \frac{\beta}{(\alpha + \beta)x_2} 
+\end{align*}
+You then solve $p^*_1$ with the budget constraint
+\end{mdframed}
+
 
 
 
