@@ -53,19 +53,19 @@ solved by finding the correct (shortest) route.
                            font=\ttfamily},
 }
 \begin{tikzpicture}[node distance=2cm,
-    every node/.style={fill=white, font=\sffamily}, align=center]
-  \node (start) [Starts] {Utility Maximization: \\ $\max_{x \in \R^n_+} \ u(x), s.t.  px \le y$};
-  \node (1) [process, below of=start] {Marshallian Demand: \\ \ $x(p,y)$};
-  \node (2) [process, below of=1] {Indirect Utility: \\ $v(p,y) = u[x(p,y)]$};
-  \node (3) [process, left of=2,xshift=-1.5cm,yshift=1cm]  {Roy's Identity(pp.29): \\ $x_i(p^0,y^0) = - \frac{\partial v(p^0,y^0) / \partial p_i}{\partial v(p^0,y^0) / \partial y}$};
-  \node (4) [process, below of=2] {Direct Utility (pp.82): \\ $u(x) = \min_{p \in \R^n_{++}}  v(p,1), s.t. px=1$};
-  \node (5) [process, below of=4] {Inverse Demands (pp.84): \\ (Hotelling, Wold) \\ $p_i(x) = \frac{\partial u(x) / \partial x_i}{\Sigma^{n}_{j=1} x_j( \partial u(x) / \partial x_j)} $};
-  \draw[->]  (start) -- (1);
-  \draw[->] (1) -- (2);
-  \draw[dashed]  (2) --  (3);
-  \draw[dashed]  (3) --  (1);
-  \draw[->] (2) --  (4);
-  \draw[->] (4) --  (5);
+every node/.style={fill=white, font=\sffamily}, align=center]
+\node (start) [Starts] {Utility Maximization: \\ $\max_{x \in \R^n_+} \ u(x), s.t.  px \le y$};
+\node (1) [process, below of=start] {Marshallian Demand: \\ \ $x(p,y)$};
+\node (2) [process, below of=1] {Indirect Utility: \\ $v(p,y) = u[x(p,y)]$};
+\node (3) [process, left of=2,xshift=-1.5cm,yshift=1cm]  {Roy's Identity(pp.29): \\ $x_i(p^0,y^0) = - \frac{\partial v(p^0,y^0) / \partial p_i}{\partial v(p^0,y^0) / \partial y}$};
+\node (4) [process, below of=2] {Direct Utility (pp.82): \\ $u(x) = \min_{p \in \R^n_{++}}  v(p,1), s.t. px=1$};
+\node (5) [process, below of=4] {Inverse Demands (pp.84): \\ (Hotelling, Wold) \\ $p_i(x) = \frac{\partial u(x) / \partial x_i}{\Sigma^{n}_{j=1} x_j( \partial u(x) / \partial x_j)} $};
+\draw[->]  (start) -- (1);
+\draw[->] (1) -- (2);
+\draw[dashed]  (2) --  (3);
+\draw[dashed]  (3) --  (1);
+\draw[->] (2) --  (4);
+\draw[->] (4) --  (5);
 {\tiny
 \path (start) to  node {solution $x^*$} (1); 
 \path (1) to  node {maximized value} (2); 
@@ -74,35 +74,37 @@ solved by finding the correct (shortest) route.
   
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-  \node (start2) [Starts, right of = 1, xshift =9cm, yshift=2cm] {Expenditure Minimization: \\ $\min_{x \in \R^n_+} \ px, s.t. u \ge \bar{u}$};
-  \node (21) [process, below of=start2] {Hicksian Demand: \\ $x^h(p,\bar{u})$};
-  \node (22) [process, below of=21] {Expenditure: \\ $e(p,\bar{u}) = px^h(p,\bar{u})$};
-  \node (23) [process, right of=22,xshift=1.5cm,yshift=1cm]  {Shephard's lemma(pp.37): \\ $\frac{\partial e(p^0,u^0)}{\partial p_i} = x^h(p^0,u^0)$};
-  \node (24) [process, below of=22] {Direct Utility (pp.75): \\ $u(x) \equiv max\{u \le 0 | x \in A(u) \}$};
-  \draw[->]  (start2) -- (21);
-  \draw[->]  (21) -- (22);
-  \draw[dashed]  (22) --  (23);
-  \draw[dashed]  (23) --  (21);
-  \draw[->] (22) --  (24);
+\node (start2) [Starts, right of = 1, xshift =9cm, yshift=2cm] {Expenditure Minimization: \\ $\min_{x \in \R^n_+} \ px, s.t. u \ge \bar{u}$};
+\node (21) [process, below of=start2] {Hicksian Demand: \\ $x^h(p,\bar{u})$};
+\node (22) [process, below of=21] {Expenditure: \\ $e(p,\bar{u}) = px^h(p,\bar{u})$};
+\node (23) [process, right of=22,xshift=1.5cm,yshift=1cm]  {Shephard's lemma(pp.37): \\ $\frac{\partial e(p^0,u^0)}{\partial p_i} = x^h(p^0,u^0)$};
+\node (24) [process, below of=22] {Direct Utility (pp.75): \\ $u(x) \equiv max\{u \le 0 | x \in A(u) \}$};
+\draw[->]  (start2) -- (21);
+\draw[->]  (21) -- (22);
+\draw[dashed]  (22) --  (23);
+\draw[dashed]  (23) --  (21);
+\draw[->] (22) --  (24);
 {\tiny
 \path (start2) to  node {solution $x^*$} (21); 
 \path (21) to  node {minimized value} (22); 
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \node (31) [process, right of=1,xshift=3.5cm,yshift=2cm] {Slutsky equation(pp.53): \\ $\frac{\partial x_i(p,y)}{\partial p_j} = \frac{\partial x_i^h(p,u^*)}{\partial p_j} - x_j(p,y)\frac{\partial x_i(p,y)}{\partial y}$};
-  \node (32) [process, below of=31,yshift=-4cm] {$e[p,v(p,y)] = y$ \\ $v[p,e(p,u)] = u$};
-  \draw[dashed]  (1) --  (31);
-  \draw[dashed]  (31) --  (21);
-  \draw[<-]  (2) --  (32);
-  \draw[->]  (32) --  (22);
-  \draw[-,blue]   (21) -- (2.north east);
-  \draw[-,red]   (22.north west) -- (1);
-  
-%\path (22.west) to  node {ddd} (21); 
- \draw [->,red,yshift=2cm] (22.north west) -- (21) ;
- \draw [->,blue,yshift=2cm] (2.north east) -- (1) ;
+\node (31) [process, right of=1,xshift=3.5cm,yshift=2cm] {Slutsky equation(pp.53): \\ $\frac{\partial x_i(p,y)}{\partial p_j} = \frac{\partial x_i^h(p,u^*)}{\partial p_j} - x_j(p,y)\frac{\partial x_i(p,y)}{\partial y}$};
+\node (32) [process, below of=31,yshift=-4cm] {$e[p,v(p,y)] = y$ \\ $v[p,e(p,u)] = u$};
+\draw[dashed]  (1) --  (31);
+\draw[dashed]  (31) --  (21);
+\draw[<-]  (2) --  (32);
+\draw[->]  (32) --  (22);
+\draw[-,blue]   (21) -- (2.north east);
+\draw [->,blue] (2.north east) -- (1) ;
+\path (21) to  node[below, sloped, xshift=-3cm] {$x(p,y) = x^h[p,v(p,y)]$}  (2.north east); 
 
-  \end{tikzpicture}
+\draw[-,red]   (22.north west) -- (1);
+\draw [->,red] (22.north west) -- (21) ;
+\path (1) to  node[below, sloped, xshift=3cm] {$x^h(p,y) = x[p,e(p,\bar{u})]$}  (22.north west); 
+
+
+\end{tikzpicture}
 }
 \end{landscape}
 
@@ -218,19 +220,38 @@ Since the question ask you to minimize $v(p_1,p_2,1)$, if you solve $\frac{d e(p
 (\alpha x_2 + \beta x_2) p_2&= \beta  \\
  p^*_2&= \frac{\beta}{(\alpha + \beta)x_2} 
 \end{align*}
-You then solve $p^*_1$ with the budget constraint
+You then solve $p^*_1$ with the budget constraint.
+\end{mdframed}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Jehle \& Reny 2.5(a)}
+Consider the solution, $e(p, u) = up_1^{\alpha_1}p_2^{\alpha_2}p_3^{\alpha_3}$ at the end of Example 2.3.
+Derive the \textbf{indirect utility function} through the relation $e(p, v(p, y)) = y$ and verify Roy's identity.
+
+\vspace{3mm}
+
+\textbf{Indirect utility function}:
+
+We already know $e(p, v(p, y)) = y$.
+
+Substitute $v(p, y)$ into $e(p, u) = y$ will solve the question directly:
+
+$$e(p, u) = v(p, y) p_1^{\alpha_1}p_2^{\alpha_2}p_3^{\alpha_3} = y$$
+$$\Rightarrow v(p, y) = \frac{y}{p_1^{\alpha_1}p_2^{\alpha_2}p_3^{\alpha_3}}$$
+
+\textbf{Verify Roy's identity}:
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+Roy's Identity(Jehle \& Reny pp.29): $$x_i(p^0,y^0) = - \frac{\partial v(p^0,y^0) / \partial p_i}{\partial v(p^0,y^0) / \partial y}$$
+
+\textbf{Intuition}:Your optimal consumption plan (Marshallian demand) is a trade- off between the importance of "comodity $i$" and "money ($y$)".
+
 \end{mdframed}
 
 
 
 
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Jehle \& Reny 2.5(a)}
-Consider the solution, $e(p, u) = up_1^{\alpha_1}p_2^{\alpha_2}p_3^{\alpha_3}$ at the end of Example 2.3.
-Derive the indirect utility function through the relation $e(p, v(p, y)) = y$ and verify Roy's
-identity.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Jehle \& Reny 2.7}
