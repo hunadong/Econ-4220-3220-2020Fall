@@ -59,13 +59,21 @@ every node/.style={fill=white, font=\sffamily}, align=center]
 \node (2) [process, below of=1] {Indirect Utility: \\ $v(p,y) = u[x(p,y)]$};
 \node (3) [process, left of=2,xshift=-1.5cm,yshift=1cm]  {Roy's Identity(pp.29): \\ $x_i(p^0,y^0) = - \frac{\partial v(p^0,y^0) / \partial p_i}{\partial v(p^0,y^0) / \partial y}$};
 \node (4) [process, below of=2] {Direct Utility (pp.82): \\ $u(x) = \min_{p \in \R^n_{++}}  v(p,1), s.t. px=1$};
-\node (5) [process, below of=4] {Inverse Demands (pp.84): \\ (Hotelling, Wold) \\ $p_i(x) = \frac{\partial u(x) / \partial x_i}{\Sigma^{n}_{j=1} x_j( \partial u(x) / \partial x_j)} $};
+\node (5) [process, below of=4] {Inverse Demands: \\ $p_i(x)$};
+
+\node (6) [process, left of=5,xshift=-1.5cm,yshift=1cm] {Hotelling, Wold (pp.84) \\ $p_i(x) = \frac{\partial u(x) / \partial x_i}{\Sigma^{n}_{j=1} x_j( \partial u(x) / \partial x_j)}$};
+
 \draw[->]  (start) -- (1);
 \draw[->] (1) -- (2);
 \draw[dashed]  (2) --  (3);
 \draw[dashed]  (3) --  (1);
 \draw[->] (2) --  (4);
 \draw[->] (4) --  (5);
+\draw[dashed]  (4) --  (6);
+\draw[dashed]  (6) --  (5);
+
+
+
 {\tiny
 \path (start) to  node {solution $x^*$} (1); 
 \path (1) to  node {maximized value} (2); 
@@ -285,8 +293,37 @@ Compare with the Marshallian demand!
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Jehle \& Reny 2.7}
-Derive the consumer's \textbf{inverse} demand functions, $p_1(x_1, x_2)$ and $p_2(x_1, x_2)$, 
-when the utility function is of the Cobb-Douglas form, $u(x_1, x_2) = Ax_1^{\alpha}x_2^{1-\alpha}$
-for $0 < \alpha < 1$.
+Derive the consumer's \textbf{inverse demand functions}, $p_1(x_1, x_2)$ and $p_2(x_1, x_2)$, when the \textbf{utility function} is of the Cobb-Douglas form, $u(x_1, x_2) = Ax_1^{\alpha}x_2^{1-\alpha}$ for $0 < \alpha < 1$.
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+The shortest route is using Hotelling, Wold (pp.84) directly.
+
+$$p_i(x) = \frac{\partial u(x) / \partial x_i}{\Sigma^{n}_{j=1} x_j( \partial u(x) / \partial x_j)}$$
+\end{mdframed}
+
+\begin{align*}
+p_1(x_1,x_2) &=  \frac{\partial (Ax_1^{\alpha}x_2^{1-\alpha}) / \partial x_1}{\Sigma^{2}_{j=1} x_j( \partial (Ax_1^{\alpha}x_2^{1-\alpha}) / \partial x_j)} \\
+&=\frac{\partial (Ax_1^{\alpha}x_2^{1-\alpha}) / \partial x_1}{x_1 \partial (Ax_1^{\alpha}x_2^{1-\alpha}) / \partial x_1 + x_2  \partial (Ax_1^{\alpha}x_2^{1-\alpha}) / \partial x_2} \\
+&=\frac{A\alpha x_1^{\alpha -1}x_2^{1-\alpha}}{x_1 A\alpha x_1^{\alpha -1}x_2^{1-\alpha} + x_2A(1-\alpha) x_1^{\alpha}x_2^{-\alpha}} \\
+&=\frac{\alpha x_1^{\alpha -1}x_2^{1-\alpha}}{\alpha x_1^{\alpha}x_2^{1-\alpha} + (1-\alpha) x_1^{\alpha}x_2^{1-\alpha}} \\
+&=\frac{\alpha}{x_1}
+\end{align*}
+
+\begin{align*}
+p_2(x_1,x_2) &=  \frac{\partial (Ax_1^{\alpha}x_2^{1-\alpha}) / \partial x_2}{\Sigma^{2}_{j=1} x_j( \partial (Ax_1^{\alpha}x_2^{1-\alpha}) / \partial x_j)} \\
+&=\frac{\partial (Ax_1^{\alpha}x_2^{1-\alpha}) / \partial x_2}{x_1 \partial (Ax_1^{\alpha}x_2^{1-\alpha}) / \partial x_1 + x_2  \partial (Ax_1^{\alpha}x_2^{1-\alpha}) / \partial x_2} \\
+&=\frac{A(1-\alpha) x_1^{\alpha}x_2^{-\alpha}}{x_1 A\alpha x_1^{\alpha -1}x_2^{1-\alpha} + x_2A(1-\alpha) x_1^{\alpha}x_2^{-\alpha}} \\
+&=\frac{(1-\alpha) x_1^{\alpha}x_2^{-\alpha}}{\alpha x_1^{\alpha}x_2^{1-\alpha} + (1-\alpha) x_1^{\alpha}x_2^{1-\alpha}} \\
+&=\frac{1-\alpha}{x_2}
+\end{align*}
+
+
+
+
+
+
+
+
+
 
 \end{document}
