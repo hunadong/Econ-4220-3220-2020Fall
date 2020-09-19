@@ -299,6 +299,13 @@ Derive the consumer's \textbf{inverse demand functions}, $p_1(x_1, x_2)$ and $p_
 The shortest route is using Hotelling, Wold (pp.84) directly.
 
 $$p_i(x) = \frac{\partial u(x) / \partial x_i}{\Sigma^{n}_{j=1} x_j( \partial u(x) / \partial x_j)}$$
+
+\textbf{Intuition}: the highest price you'd like to accept (and actually uses up your budget) reflects how important the commodity is.
+
+\vspace{3mm}
+
+
+The duality between direct and indirect utility functions showed by Hotelling, Wold makes it (hopefully) easier to solve $p_i^*(x)$
 \end{mdframed}
 
 \begin{align*}
@@ -317,7 +324,32 @@ p_2(x_1,x_2) &=  \frac{\partial (Ax_1^{\alpha}x_2^{1-\alpha}) / \partial x_2}{\S
 &=\frac{1-\alpha}{x_2}
 \end{align*}
 
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+You can also try another route: maximize $u(x) \Rightarrow x(p,y) \Rightarrow p_i(x) = x^{-1}(x,1)$
 
+Use Lagrangian to maximize $u(x_1, x_2) = Ax_1^{\alpha}x_2^{1-\alpha}$
+s.t. $p_1x_2 + p_2x_2 = 1$. The solution (Marshallian demands) is:
+
+\begin{equation}
+    \begin{cases}
+x_1 = \frac{\alpha}{p_1} \\
+x_1 = \frac{1-\alpha}{p_2}
+    \end{cases}
+\nonumber
+\end{equation}
+
+The inverse of Marshallian demand function gives the inverse demand function
+
+\begin{equation}
+    \begin{cases}
+p_1 = \frac{\alpha}{x_1} \\
+p_1 = \frac{1-\alpha}{x_2}
+    \end{cases}
+\nonumber
+\end{equation}
+
+
+\end{mdframed}
 
 
 
