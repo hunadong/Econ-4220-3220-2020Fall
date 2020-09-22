@@ -28,8 +28,19 @@
 \maketitle
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+
+This review part contains the following key points:
+
+\begin{itemize}
+\item The slop of indifference curve is MRS;
+\item MRS shows the relative importance of the two commodities;
+\item The relationship between $MRS_{12}$ and $\frac{x_2}{x_1}$ shows the substitution relationship between the two commodities;
+\item The relationship between $MRS_{12}$ and $\frac{x_2}{x_1}$ can be expressed by Elasticity of Substitution $\sigma_{12}$
+
+\end{itemize}
+
+
 \section{Substitution along an indifference curve}
 \begin{center}
 \begin{tikzpicture}[scale=0.5]
@@ -97,7 +108,7 @@ When we move along $u(x_1,x_2)=\bar{u}$, we can observe the following facts:
 \begin{itemize}
 \item The small increase of $x_1$ (i.e. $\Delta x_1$) is always followed by some small decrease of $x_2$ (i.e. $\Delta x_2$). Angle $\alpha$ reflects how much you have to give up (substitute).
 
-\item $\alpha = - \frac{\Delta x_2}{\Delta x_1}$ depends on the relative amount of $x_1$ and $x_2$, i.e. $\frac{x_1}{x_2}$ (Note $\Delta x_2$ is negative here).
+\item $\alpha = - \frac{\Delta x_2}{\Delta x_1}$ depends on the relative amount of $x_1$ and $x_2$, i.e. $\frac{x_2}{x_1}$ (Note $\Delta x_2$ is negative here).
 \end{itemize}
 
 \textbf{Intuition}: To keep utility the same, you need to give up $\Delta x_2$ to consume $\Delta x_1$. 
@@ -108,7 +119,7 @@ When we move along $u(x_1,x_2)=\bar{u}$, we can observe the following facts:
 
 \begin{itemize}
 \item How to calculate $\alpha = - \frac{\Delta x_2}{\Delta x_1}$ ?
-\item How to describe the relationship between $\alpha$ and $\frac{x_1}{x_2}$ ?
+\item How to describe the relationship between $\alpha$ and $\frac{x_2}{x_1}$ ?
 \end{itemize}
 
 \section{Marginal Rate of Substitution (MRS)}
@@ -161,12 +172,12 @@ Here the word "Technical" refers to the technology $f(x)$.
 
 \section{Elasticity of Substitution}
 
-\subsection{$\alpha$ and $\frac{x_1}{x_2}$}
+\subsection{$\alpha$ and $\frac{x_2}{x_1}$}
 
 
-The relationship between $\alpha$ and $\frac{x_1}{x_2}$ also reflects the nature of the two commodities.
+The relationship between $\alpha$ and $\frac{x_2}{x_1}$ also reflects the nature of the two commodities.
 
-In Figure \ref{fig:bent} and Figure \ref{fig:flat}, the change of $\frac{x_1}{x_2}$ can be expressed by $\angle \gamma$. When $\frac{x_1}{x_2}$ changes $\gamma$:
+In Figure \ref{fig:bent} and Figure \ref{fig:flat}, the change of $\frac{x_2}{x_1}$ can be expressed by $\angle \gamma$. When $\frac{x_2}{x_1}$ changes $\gamma$:
 
 \begin{itemize}
 \item in Figure \ref{fig:bent},  the "slope" MRS changes a lot.
@@ -211,7 +222,7 @@ In Figure \ref{fig:bent} and Figure \ref{fig:flat}, the change of $\frac{x_1}{x_
 
 
 \begin{center}
-\begin{tikzpicture}[scale=0.3]
+\begin{tikzpicture}[scale=0.5]
 \draw[thick,<->] (0,12) node[left]{$x_2$}--(0,0)--(12,0) node[right]{$x_1$};
 \node [below left] at (0,0) {$0$};
 \draw(2.5,11) ..controls (5.5,5.5).. (11,2.5) node[right]{$u(x_1,x_2)=\bar{u}$};
@@ -236,7 +247,7 @@ In Figure \ref{fig:bent} and Figure \ref{fig:flat}, the change of $\frac{x_1}{x_
 
 
 Now let's think about an extreme case. In Figure \ref{fig:straight}, when
-$\frac{x_1}{x_2}$ changes $\gamma$, MRS does not change ($MRS_{12}(x) = \frac{\partial u(x) / \partial x_1}{\partial u(x) / \partial x_2} = 0.5$). That is, MRS is independent of $\frac{x_1}{x_2}$. 
+$\frac{x_2}{x_1}$ changes $\gamma$, MRS does not change ($MRS_{12}(x) = \frac{\partial u(x) / \partial x_1}{\partial u(x) / \partial x_2} = 0.5$). That is, MRS is independent of $\frac{x_2}{x_1}$. 
 
 You're never bored with $x_1$ comparing with $x_2$, no matter how much $x_1$ and $x_2$ you consumed. This can only happen when $x_1$ and $x_2$ are in nature the same commodity. 
 
@@ -245,7 +256,7 @@ For example, $x_1$ is an apple, while $x_2$ is a pack of 2 apples. The quality o
 
 
 \begin{center}
-\begin{tikzpicture}[scale=0.3]
+\begin{tikzpicture}[scale=0.5]
 \draw[thick,<->] (0,12) node[left]{$x_2$}--(0,0)--(12,0) node[right]{$x_1$};
 \node [below left] at (0,0) {$0$};
 \draw(2,9) -- (10,5) node[right]{$u(x_1,x_2)= x_1 + 2x_2$};
@@ -268,12 +279,12 @@ For example, $x_1$ is an apple, while $x_2$ is a pack of 2 apples. The quality o
 \end{center}
 \vspace{2mm}
 
-Another extreme example is Leontief preference.  In Figure \ref{fig:leo}, when $\frac{x_1}{x_2}$ changes $\gamma$, MRS changes from $+\infty$ to $0$.
+Another extreme example is Leontief preference.  In Figure \ref{fig:leo}, when $\frac{x_2}{x_1}$ changes $\gamma$, MRS changes from $+\infty$ to $0$.
 We already know with Leontief preference, you believe $x_1$ and $x_2$ are totally different and can only make sense with certain proportion, like bread and cheeze. There can be \textbf{no substitution} between the two.
 
 
 \begin{center}
-\begin{tikzpicture}[scale=0.3]
+\begin{tikzpicture}[scale=0.5]
 \draw[thick,<->] (0,12) node[left]{$x_2$}--(0,0)--(12,0) node[right]{$x_1$};
 \node [below left] at (0,0) {$0$};
 
@@ -298,14 +309,25 @@ We already know with Leontief preference, you believe $x_1$ and $x_2$ are totall
 \end{center}
 
 
-\section{Elasticity of Substitution $\sigma_{12}$}
+\subsection{Elasticity of Substitution $\sigma_{12}$}
 
-We can use "\textbf{Elasticity}" to reflect the relationship between $\alpha$ and $\frac{x_1}{x_2}$.
+We can use "\textbf{Elasticity}" to reflect the relationship between $\alpha$ and $\frac{x_2}{x_1}$.
 
-$Elasticity = \frac{\Delta MRS /MRS}{d}$
+\begin{align*}
+Elasticity &= [\frac{1\% \ change \  of \ MRS}{1\% \ change \ of \ \frac{x_2}{x_1}}]^{-1} \\
+&= [\frac{\frac{d MRTS}{MRTS}}{\frac{d(x_2/x_1}{x_2/x_1}}]^{-1} \\
+&= [\frac{d ln(MRTS)}{d ln(x_2/x_1)}]^{-1}
+\end{align*}
+
+\begin{itemize}
+\item Inside brackets: when $\frac{x_2}{x_1}$ changes 1 percent, how many percent $MRTS$ changes. E.g. $0$ if perfect substitution, $+\infty$ if no substitution.
+\item Why inverse? We want it to be $+\infty$ when perfect substitution, and $0$ when no substitution.
+\end{itemize}
 
 
-DEFINITION: The Elasticity of Substitution (a 2-input case for DEFINITION 3.2 on Jehle \& Reny pp. 129)
+
+
+\textbf{DEFINITION: The Elasticity of Substitution} (a 2-input case for DEFINITION 3.2 on Jehle \& Reny pp. 129)
 
 \vspace{2mm}
 
@@ -318,7 +340,6 @@ Note both the numerator and the denominator are functions of $\frac{x_2}{x_1}$. 
 $\sigma_{12}(x_1,x_2)$ can be rewritten as:
 
 $$\sigma_{12}(x_1,x_2) \equiv (\frac{d ln MRTS_{12}(r)}{dln r})^{-1}$$
-
 
 
 
