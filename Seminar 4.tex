@@ -30,7 +30,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
-\section*{Substitution along an indifference curve}
+\section{Substitution along an indifference curve}
 \begin{center}
 \begin{tikzpicture}[scale=0.5]
 
@@ -111,7 +111,7 @@ When we move along $u(x_1,x_2)=\bar{u}$, we can observe the following facts:
 \item How to describe the relationship between $\alpha$ and $\frac{x_1}{x_2}$ ?
 \end{itemize}
 
-\section*{Marginal Rate of Substitution (MRS)}
+\section{Marginal Rate of Substitution (MRS)}
 
 When $x_1$ increases one very small unit, we define $\angle \alpha$ as Marginal Rate of Substitution (MRS). 
 
@@ -159,9 +159,20 @@ $$MRTS_{ij}(x) = \frac{\partial f(x) / \partial x_i}{\partial f(x) / \partial x_
 
 Here the word "Technical" refers to the technology $f(x)$.
 
-\subsection*{Elasticity of Substitution $\sigma_{ij}$}
+\section{Elasticity of Substitution}
 
-The relationship between $\alpha$ and $\frac{x_1}{x_2}$ also reflects important properties of the two commodities.
+\subsection{$\alpha$ and $\frac{x_1}{x_2}$}
+
+
+The relationship between $\alpha$ and $\frac{x_1}{x_2}$ also reflects the nature of the two commodities.
+
+In Figure \ref{fig:bent} and Figure \ref{fig:flat}, the change of $\frac{x_1}{x_2}$ can be expressed by $\angle \gamma$. When $\frac{x_1}{x_2}$ changes $\gamma$:
+
+\begin{itemize}
+\item in Figure \ref{fig:bent},  the "slope" MRS changes a lot.
+\item in Figure \ref{fig:flat},  the "slope" MRS changes a little.
+\end{itemize}
+
 
 \begin{center}
 \begin{tikzpicture}[scale=0.5]
@@ -193,18 +204,11 @@ The relationship between $\alpha$ and $\frac{x_1}{x_2}$ also reflects important 
 \tkzLabelAngle[pos= 1.6,yellow](C,O,A){$\gamma$}
 
 \end{tikzpicture}
-\captionof{figure}{The MRS changes much}
+\captionof{figure}{MRS changes much}
 \label{fig:bent}
 \end{center}
 \vspace{2mm}
 
-The change of $\frac{x_1}{x_2}$ can be expressed by 
-$\angle \gamma$. When $\frac{x_1}{x_2}$ changes $\gamma$:
-
-\begin{itemize}
-\item in Figure \ref{fig:bent},  the "slope" MRS changes a lot.
-\item in Figure \ref{fig:flat},  the "slope" MRS changes a little.
-\end{itemize}
 
 \begin{center}
 \begin{tikzpicture}[scale=0.3]
@@ -225,19 +229,18 @@ $\angle \gamma$. When $\frac{x_1}{x_2}$ changes $\gamma$:
 \tkzLabelAngle[pos= 1.6,yellow](C,O,A){$\gamma$}
 
 \end{tikzpicture}
-\captionof{figure}{The curvature changes slow}
+\captionof{figure}{MRS changes a little}
 \label{fig:straight}
 \end{center}
 \vspace{2mm}
 
 
-Now let's think about a extreme case. In Figure \ref{fig:straight}, when
+Now let's think about an extreme case. In Figure \ref{fig:straight}, when
 $\frac{x_1}{x_2}$ changes $\gamma$, MRS does not change ($MRS_{12}(x) = \frac{\partial u(x) / \partial x_1}{\partial u(x) / \partial x_2} = 0.5$). That is, MRS is independent of $\frac{x_1}{x_2}$. 
 
 You're never bored with $x_1$ comparing with $x_2$, no matter how much $x_1$ and $x_2$ you consumed. This can only happen when $x_1$ and $x_2$ are in nature the same commodity. 
 
-For example, $x_1$ is an apple, while $x_2$ is a pack of 2 apples. The quality of the apples are the same and the only difference is the amount per package. Since you can always substitute a 2-apple pack with 2 single apples, we call this condition as "perfect substitution".
-
+For example, $x_1$ is an apple, while $x_2$ is a pack of 2 apples. The quality of the apples are the same and the only difference is the amount per package. Since you can always substitute a 2-apple pack with 2 single apples, we call this condition as "\textbf{perfect substitution}".
 
 
 
@@ -252,7 +255,7 @@ For example, $x_1$ is an apple, while $x_2$ is a pack of 2 apples. The quality o
 \tkzDefPoint(8,6){C}
 \draw [red] (O)--(A);
 \draw [blue] (O)--(C);
-\node[right,red] at (A) {A} ;
+\node[above,red] at (A) {A} ;
 \draw[fill,red] (A) circle [radius =0.04];
 \node[above,blue] at (C) {C} ;
 \draw[fill,blue] (C) circle [radius =0.04];
@@ -260,36 +263,46 @@ For example, $x_1$ is an apple, while $x_2$ is a pack of 2 apples. The quality o
 \tkzLabelAngle[pos= 1.6,yellow](C,O,A){$\gamma$}
 
 \end{tikzpicture}
-\captionof{figure}{The curvature changes slow}
+\captionof{figure}{Perfect substitution}
 \label{fig:flat}
 \end{center}
 \vspace{2mm}
 
+Another extreme example is Leontief preference.  In Figure \ref{fig:leo}, when $\frac{x_1}{x_2}$ changes $\gamma$, MRS changes from $+\infty$ to $0$.
+We already know with Leontief preference, you believe $x_1$ and $x_2$ are totally different and can only make sense with certain proportion, like bread and cheeze. There can be \textbf{no substitution} between the two.
 
 
+\begin{center}
+\begin{tikzpicture}[scale=0.3]
+\draw[thick,<->] (0,12) node[left]{$x_2$}--(0,0)--(12,0) node[right]{$x_1$};
+\node [below left] at (0,0) {$0$};
+
+\tkzDefPoint(0,0){O}
+\tkzDefPoint(4,8){A}
+\tkzDefPoint(8,4){C}
+\draw [red] (O)--(A);
+\draw [blue] (O)--(C);
+\node[right,red] at (A) {A} ;
+\draw[fill,red] (A) circle [radius =0.04];
+\node[above,blue] at (C) {C} ;
+\draw[fill,blue] (C) circle [radius =0.04];
+\tkzMarkAngle[fill=yellow,size=1.4,opacity=0.4](C,O,A)
+\tkzLabelAngle[pos= 1.6,yellow](C,O,A){$\gamma$}
+
+\draw [thick] (4,10) -- (4,4);
+\draw [thick] (4,4) -- (10,4);
+
+\end{tikzpicture}
+\captionof{figure}{Leontief Preference}
+\label{fig:leo}
+\end{center}
 
 
+\section{Elasticity of Substitution $\sigma_{12}$}
 
+We can use "\textbf{Elasticity}" to reflect the relationship between $\alpha$ and $\frac{x_1}{x_2}$.
 
-
-We can use "\textbf{Elasticity}" to reflect the relative speed between Curvature and $(x_1,x_2)$ position.
-
-
-
-$Elasticity = \frac{\Delta MRTS /MRTS}{d}$
-
-
-
-
-
-
-
-
-
-
-
-
-
+$Elasticity = \frac{\Delta MRS /MRS}{d}$
 
 
 DEFINITION: The Elasticity of Substitution (a 2-input case for DEFINITION 3.2 on Jehle \& Reny pp. 129)
