@@ -750,13 +750,101 @@ Like Figure \ref{fig:leo}, when $\frac{x_2}{x_1}$ changes some angle $\gamma$, M
 
 $$MRTS = [\frac{d ln(MRTS)}{d ln(x_2/x_1)}]^{-1} =  [\frac{+\infty}{some \ finite \ number }]^{-1} = 0$$
 
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+A formal proof: from CES to Leontief (read if you're interested)
+
+\vspace{2mm}
+
+Suppose we have a CES utility function:
+
+$$u(x_1,x_2) = [(\alpha x_1)^\rho + (\beta x_2)^\rho]^\frac{1}{\rho}$$
+
+Where $\rho < 1, and \ \rho \ne 0$. The Elasticity of Substitution of the CES utility function is $\sigma = \frac{1}{1-\rho}$ (Jehle \& Reny pp.130).
 
 
+For simplicity, let's denote $\alpha x_1$ as $m$ and $\beta x_2$ as $n$. A log transformation will simplify our proof too:
+
+$$ln u(m,n) = \frac{ln(m^\rho + n^\rho)}{\rho}$$
+
+Then:
+
+$$\lim_{\rho \to -\infty} ln u(m,n) = \lim_{\rho \to -\infty}\frac{ln(m^\rho + n^\rho)}{\rho} \to \frac{ln(0+0)}{-\infty} = \frac{\infty}{\infty}$$
+
+Which is a \href{https://en.wikipedia.org/wiki/Indeterminate_form}{Indeterminate Form}. We can thus apply \href{https://en.wikipedia.org/wiki/L\%27H\%C3\%B4pital\%27s_rule}{L'Hôpital's rule}:
+
+\begin{align*}
+\lim_{\rho \to -\infty} ln u(m,n) &= \lim_{\rho \to -\infty}\frac{ln(m^\rho + n^\rho)}{\rho} \\
+L'Hôpital's \ rule : \ \ \  &= \lim_{\rho \to -\infty} \frac{d ln(m^\rho + n^\rho) /d \rho}{d \rho / d\rho} \\
+&= \lim_{\rho \to -\infty} \frac{m^\rho ln m+ n^\rho ln n}{m^\rho + n^\rho}
+\end{align*}
+
+(Note here we treat $\rho$ as the only variable, therefore $\frac{d x^\rho}{d\rho}=x^\rho lnx$)
+
+Denote $c = min{m,n}$
+
+\begin{align*}
+\lim_{\rho \to -\infty} ln u(m,n) &=  \lim_{\rho \to -\infty} \frac{\frac{1}{c^\rho}}{\frac{1}{c^\rho}} ln u(m,n)\\
+&= \lim_{\rho \to -\infty} \frac{(m/c)^\rho ln m+ (n/c)^\rho ln n}{(m/c)^\rho + (n/c)^\rho}
+\end{align*}
+
+\textbf{Case 1. if $m<n$}: $c = m, \frac{n}{c} = \frac{n}{m} >1$
+\begin{align*}
+\lim_{\rho \to -\infty} ln u(m,n) &= \lim_{\rho \to -\infty} \frac{1^\rho ln m+ (n/m)^\rho ln n}{1^\rho + (n/m)^\rho} \\
+(\textcolor{red}{\frac{n}{m} >1}) \ \ \ \ \ \ \ &= \lim_{\rho \to -\infty} \frac{ln m+ 0}{1 + 0} \\
+&= ln m 
+\end{align*}
+
+Therefore $\lim_{\rho \to -\infty} ln u(x_1,x_2) =ln m = ln (\alpha x_1) \Rightarrow \lim_{\rho \to -\infty} u(x_1,x_2) =  \alpha x_1$
+
+\vspace{2mm}
+
+\textbf{Case 2. if $m>n$}: $c = n, \frac{m}{c} = \frac{m}{n} >1$
+\begin{align*}
+\lim_{\rho \to -\infty} ln u(m,n) &= \lim_{\rho \to -\infty} \frac{(m/n)^\rho ln m+ 1^\rho ln n}{(m/n)^\rho + 1^\rho} \\
+(\textcolor{red}{\frac{m}{n} >1}) \ \ \ \ \ \ \ &= \lim_{\rho \to -\infty} \frac{ 0 + ln n}{0 + 1} \\
+&= ln m
+\end{align*}
+
+Therefore $\lim_{\rho \to -\infty} ln u(x_1,x_2) =ln n = ln (\beta x_2) \Rightarrow \lim_{\rho \to -\infty} u(x_1,x_2) =  \beta x_2$
+
+\vspace{2mm}
+
+
+To sum up, $$\lim_{\rho \to -\infty} u(x_1,x_2) = min\{\alpha x_1,\beta x_2\}$$
+
+In addition, $$\lim_{\rho \to -\infty} \sigma =\lim_{\rho \to -\infty} \frac{1}{1-\rho} = 0$$
+
+We can conclude:when $\rho \to -\infty$, the CES utility function shows Leontief preference, and $\sigma = 0$.
+\end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Jehle \& Reny 3.11}
-Calculate $\sigma$ for the Cobb-Douglas production function $y = Ax_1^\alpha x_2^\beta$
-, where $A > 0,\alpha > 0,$ and $\beta > 0$.
+Calculate $\sigma$ for the Cobb-Douglas production function $y = Ax_1^\alpha x_2^\beta$, where $A > 0,\alpha > 0,$ and $\beta > 0$.
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+$$\sigma_{12}(x_1,x_2) \equiv (\frac{d ln MRTS_{12}(r)}{dln r})^{-1}$$
+
+$$ MRTS = \frac{\partial f(x_1,x_2) / \partial x_1}{\partial f(x_1,x_2) / \partial x_2}$$
+
+\end{mdframed}
+
+\begin{align*}
+MRTS &= \frac{\partial  Ax_1^\alpha x_2^\beta / \partial x_1}{\partial  Ax_1^\alpha x_2^\beta / \partial x_2} \\
+ &= \frac{A\alpha x_1^{\alpha - 1} x_2^\beta }{Ax_1^\alpha \beta x_2^{\beta -1}} \\
+ &= \frac{\alpha x_2}{\beta x_1}
+\end{align*}
+
+
+Denote $\frac{x_2}{ x_1}$ as $r$, then $MRTS =  \frac{\alpha}{\beta} r$. Then,
+
+\begin{align*}
+\sigma_{12}&= (\frac{d ln (\frac{\alpha}{\beta} r)}{dln r})^{-1} \\
+&= (\frac{d [ln (\frac{\alpha}{\beta}) +ln(r)]}{dln r})^{-1} \\
+&= (\frac{d ln (\frac{\alpha}{\beta}) +d ln(r)}{d ln r})^{-1} \\
+&= (\frac{0 +d ln(r)}{d ln r})^{-1} \\
+& = 1
+\end{align*}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Jehle \& Reny 3.14}
@@ -769,7 +857,12 @@ $$y = k(1 + x_1^{-\alpha} x_2^{-\beta} )^{-1}$$
 where $\alpha > 0,\alpha > 0$, and $k$ is an upper bound on the level of output, so that $0 \le y < k$.
 \end{mdframed}
 
+\begin{align*}
+MRTS &= \frac{\partial k(1 + x_1^{-\alpha} x_2^{-\beta} )^{-1} / \partial x_1}{\partial k(1 + x_1^{-\alpha} x_2^{-\beta} )^{-1} / \partial x_2} \\
+ &= \frac{-k(1 + x_1^{-\alpha} x_2^{-\beta} )^{-2}(-\alpha) x_1^{-\alpha-1} x_2^{-\beta})}{-k(1 + x_1^{-\alpha} x_2^{-\beta} )^{-2} x_1^{-\alpha} (-\beta)x_2^{-\beta-1})} \\
+ &= \frac{\alpha x_2}{\beta x_1}
+\end{align*}
 
-
+The same as Jehle \& Reny 3.11, $\sigma_{12} = 1$
 
 \end{document}
