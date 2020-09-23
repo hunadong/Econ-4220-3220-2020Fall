@@ -356,7 +356,7 @@ $$\sigma_{12}(x_1,x_2) \equiv (\frac{d ln MRTS_{12}(r)}{dln r})^{-1}$$
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section*{An example from exam 2019 Q1(b)}
+\section{An example from exam 2019 Q1(b)}
 
 Deb and Frank have the following utility functions
 $U_D = x_D + 2y_D$ and $U_F = x^\alpha_Fy^{1-\alpha}_F$, with $\alpha \in (0,1)$
@@ -598,11 +598,14 @@ Tips: Allocate your time according to the point of the questions.
 Question: What is the implication of Leontief preference's ES for the income and substitution effects? 
 \end{mdframed}
 
-Since you are here.
+\newpage
 
-\section*{exam 2019 Q1(c) - Choice with uncertainty}
+Since you are here...
+\section{exam 2019 Q1(c)-(d) - Choice with uncertainty}
 
-c) [5\%] Suppose that $x$ and $y$ measure the same commodity in two
+\subsection{exam 2019 Q1(c) [5\%] }
+
+c)Suppose that $x$ and $y$ measure the same commodity in two
 different states of the world, say states $X$ and $Y$. 
 
 \begin{itemize}
@@ -644,9 +647,8 @@ When $\alpha = \frac{1}{3}$, $E(U_F) =\frac{1}{3} ln x_F +  \frac{2}{3} ln y_F$ 
 
 Deb and Frank believe the possibilities of the two states are the same.
 
-\section*{exam 2019 Q1(D) - Choice with uncertainty}
+\subsection{exam 2019 Q1(d) [5\%] }
 
-d) [5\%] 
 \begin{itemize}
 \item Compute Deb's certainty equivalent at her endowment. 
 \item Compute the Arrow-Pratt index of absolute risk aversion for Frank.
@@ -690,6 +692,66 @@ $$R_a(w) = -\frac{-\frac{1}{w^2}}{\frac{1}{w}}=\frac{1}{w}$$
 A Leontief production function has the form $$y = min\{\alpha x_1, \beta x_2 \}$$
 for $\alpha > 0$ and $\beta > 0$. Carefully sketch the isoquant map for this technology and verify that the
 elasticity of substitution $\sigma = 0$, where defined.
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+\begin{equation}
+    \begin{cases}
+If \ \alpha x_1 > \beta x_2, i.e. \frac{\alpha}{\beta}  x_1 >  x_2, y = \beta x_2 \\
+If \ \alpha x_1 = \beta x_2, i.e. \frac{\alpha}{\beta}  x_1 =  x_2, y = \alpha x_1 = \beta x_2 \\
+If \ \alpha x_1 < \beta x_2, i.e. \frac{\alpha}{\beta}  x_1 <  x_2, y = \alpha x_1
+    \end{cases}
+\nonumber
+\end{equation}
+
+Similar to Jehle \& Reny 1.27 in seminar 1, the indifference curves are seperated by a line. Here the line is
+$\frac{\alpha}{\beta}  x_1 =  x_2$. Since $\alpha > 0$ and $\beta > 0, \frac{\alpha}{\beta} \in (0,+\infty)$
+
+{\centering
+\begin{tikzpicture}[scale=0.85]
+\draw [->] (0,0) node [below] {0} -- (0,0) -- (6,0) node [below] {$x_1$};
+\draw [->] (0,0) node [below] {0} -- (0,0) -- (0,3) node [left] {$x_2$};
+
+\draw[dashed](0,0)--(5,2);
+\node[right] at (5,2) {$x_2 = \frac{\alpha}{\beta}x_1$};
+\node[right] at (1.5,2) {$y =  \alpha x_1$};
+\node[right] at (3,0.8) {$y =\beta x_2$};
+
+\end{tikzpicture}
+\captionof{figure}{A possible $\frac{\alpha}{\beta}$}
+\label{fig:3_10_1}}
+
+We can then draw the indifference curves:
+
+\end{mdframed}
+
+{\centering
+\begin{tikzpicture}[scale=0.85]
+\draw [->] (0,0) node [below] {0} -- (0,0) -- (12,0) node [below] {$x_1$};
+\draw [->] (0,0) node [below] {0} -- (0,0) -- (0,7) node [left] {$x_2$};
+
+\draw [thick] (5,6) -- (5,2);
+\draw [thick] (5,2) -- (11,2);
+\draw [thick] (4,6) -- (4,1.6);
+\draw [thick] (4,1.6) -- (11,1.6);
+
+\draw [thick] (10,6) -- (10,4);
+\draw [thick] (10,4) -- (11,4);
+
+\draw[dashed](0,0)--(12,4.8);
+\node[right] at (12,5) {$x_2 = \frac{\alpha}{\beta}x_1$};
+
+\end{tikzpicture}
+\captionof{figure}{A map of the indifference sets for Q.3.10}
+\label{fig:3_10_2}}
+
+\vspace{3mm}
+
+Like Figure \ref{fig:leo}, when $\frac{x_2}{x_1}$ changes some angle $\gamma$, MRS changes from $+\infty$ to $0$.
+
+$$MRTS = [\frac{d ln(MRTS)}{d ln(x_2/x_1)}]^{-1} =  [\frac{+\infty}{some \ finite \ number }]^{-1} = 0$$
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Jehle \& Reny 3.11}

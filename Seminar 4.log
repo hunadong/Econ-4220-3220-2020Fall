@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.6.29) (preloaded format=xelatex 2020.9.1)  23 SEP 2020 14:18
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.6.29) (preloaded format=xelatex 2020.9.1)  23 SEP 2020 16:21
 entering extended mode
 **"./Seminar 4.tex"
 ("Seminar 4.tex"
@@ -1758,455 +1758,51 @@ Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
 (mdframed)              on input line 574.
  [9] [10]
-Package mdframed Info: Not enough space on this page on input line 623.
 File: ./pic/4.cereq.png Graphic file (type bmp)
 <./pic/4.cereq.png>
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 659.
+(caption)                particular \caption on input line 661.
+See the caption package documentation for explanation.
+
+[11] [12]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 720.
 See the caption package documentation for explanation.
 
 
-Overfull \vbox (31.40898pt too high) detected at line 662
- []
-
-Package mdframed Info: Box was splittet wrong
- starting loop to iterate the splitting point
-(mdframed)              on input line 662.
-
-Overfull \vbox (32.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (33.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (34.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (35.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (36.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (37.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (38.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (39.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (40.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (41.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (42.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (43.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (44.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (45.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (46.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (47.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (48.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (49.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (50.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (51.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (52.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (53.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (54.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (55.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (56.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (57.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (58.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (59.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (60.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (61.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (62.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (63.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (64.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (65.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (66.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (67.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (68.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (69.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (70.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (71.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (72.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (73.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (74.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (75.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (76.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (77.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (78.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (79.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (80.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (81.40898pt too high) detected at line 662
- []
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 744.
+See the caption package documentation for explanation.
 
 
-Overfull \vbox (82.40898pt too high) detected at line 662
+Overfull \hbox (3.05734pt too wide) in paragraph at lines 743--744
+ [][] 
  []
-
-
-Overfull \vbox (83.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (84.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (85.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (86.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (87.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (88.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (89.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (90.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (91.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (92.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (93.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (94.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (95.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (96.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (97.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (98.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (99.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (100.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (101.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (102.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (103.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (104.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (105.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (106.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (107.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (108.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (109.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (110.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (111.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (112.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (113.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (114.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (115.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (116.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (117.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (118.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (119.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (120.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (121.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (122.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (123.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (124.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (125.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (126.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (127.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (128.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (129.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (130.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (131.40898pt too high) detected at line 662
- []
-
-
-Overfull \vbox (132.40898pt too high) detected at line 662
- []
-
-
-Package mdframed Warning: correct box splittet fails
- It seems you are using a non splittable contents
-(mdframed)                 on input line 662.
 
-Package mdframed Info: You first box width is to small
- mdframed fixed it
-(mdframed)              on input line 662.
-[11] [12] [13]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 713.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 713.
+[13] [14]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 775.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 775.
  ("Seminar 4.aux")
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 713.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 713.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 775.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 775.
 Package rerunfilecheck Info: File `"Seminar 4".out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 713.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 775.
  ) 
 Here is how much of TeX's memory you used:
- 31332 strings out of 414071
- 597098 string characters out of 2893980
- 1012593 words of memory out of 3000000
- 48322 multiletter control sequences out of 15000+200000
- 611631 words of font info for 102 fonts, out of 3000000 for 9000
+ 31346 strings out of 414071
+ 597391 string characters out of 2893980
+ 1013136 words of memory out of 3000000
+ 48336 multiletter control sequences out of 15000+200000
+ 615731 words of font info for 103 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
  60i,12n,91p,961b,1286s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Seminar 4.pdf (13 pages).
+Output written on Seminar 4.pdf (14 pages).
