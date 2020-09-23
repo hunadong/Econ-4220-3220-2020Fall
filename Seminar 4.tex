@@ -30,16 +30,26 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
 
-This review part contains the following key points:
+This review part is to help you to understand Elasticity of Substitution step by step.
+It contains the following key points:
 
-\begin{itemize}
-\item The slop of indifference curve is MRS;
-\item MRS shows the relative importance of the two commodities;
-\item The relationship between $MRS_{12}$ and $\frac{x_2}{x_1}$ shows the substitution relationship between the two commodities;
-\item The relationship between $MRS_{12}$ and $\frac{x_2}{x_1}$ can be expressed by Elasticity of Substitution $\sigma_{12}$
+\begin{enumerate}
+\item The |slop| of indifference curve is \textbf{Marginal Rate of Substitution} ($MRS$);
+\item $MRS$ shows the relative importance of the two commodities;
+\item The relationship between $MRS_{12}$ and $\frac{x_2}{x_1}$ shows the \textbf{substitution relationship} between the two commodities;
+\item The relationship between $MRS_{12}$ and $\frac{x_2}{x_1}$ can be expressed by \textbf{Elasticity of Substitution} $\sigma_{12}$
+\end{enumerate}
 
-\end{itemize}
+After this part you will understand:
 
+\begin{enumerate}
+\item $\sigma_{12} = 0 \iff$ Leotief preference
+\item $\sigma_{12} = constant \iff$ CES
+\item $\sigma_{12} = + \infty \iff$ Perfect substitution
+\end{enumerate}
+
+Note that I will use MRS instead of MRTS by default in this part, because we have spent more time on consumer theory and MRS
+can be easily generalized to MRTS.
 
 \section{Substitution along an indifference curve}
 \begin{center}
@@ -98,7 +108,7 @@ This review part contains the following key points:
 \draw(1.6,11.2) ..controls (3.1,6) and (6,3.1) .. (11.2,1.6) node[right]{$u(x_1,x_2)=\bar{u}$};
 
 \end{tikzpicture}
-\captionof{figure}{Marginal change and slope}
+\captionof{figure}{You have to give up $\Delta x_2$ to consume 1 more $\Delta x_1$}
 \label{fig:margin}
 \end{center}
 \vspace{2mm}
@@ -134,15 +144,15 @@ We can calculate $\alpha$  in the following 2 ways:
 
 \textbf{Method 1 (2-D thinking)}
 
-Similar to Jehle \& Reny 1.27 in seminar 1, an indifference curve can be seen as the graph of a function $x_2 = f_(x_1)$ given some utility $\bar{u}$. $- \alpha$ is simply the slope (derivative), thus $\alpha = - \frac{dx_2}{dx_1}$.
+When line segment $A-B$ and $D-E$ are extremely short, $- \alpha$ is simply the slope of the indifference curve.
 
-An alternative way of thinking is: when line segment $A-B$ and $D-E$ are extremely short, $\alpha$ is simply the slope of the indifference curve.
+Similar to Jehle \& Reny 1.27 in seminar 1, an indifference curve can be seen as the graph of a function $x_2 = f_(x_1)$ given some utility $\bar{u}$. Thus $\alpha = - \frac{dx_2}{dx_1}$.
 
 \vspace{2mm}
 
 \textbf{Method 2 (3-D thinking)}
 
-Given $u(x_1,x_2)$ is a differentiable function (recall the hill-like 3-D graph I showed you). The small change of $u(x_1,x_2)$, i.e. $\Delta u(x_1,x_2)$, can always be attributed to the small change of $x_1$ and  $x_2$. The "attribution" of each unit change of the two commodities is called "Marginal utility", $\frac{\partial u(x_1,x_2)}{\partial x_1}$ and $\frac{\partial u(x_1,x_2)}{\partial x_2}$:
+Given $u(x_1,x_2)$ is a differentiable function (recall the hill-like 3-D graph I showed you). The small change of $u(x_1,x_2)$, i.e. $\Delta u(x_1,x_2)$, can always be attributed to the small change of $x_1$ and  $x_2$. "Marginal utility", $\frac{\partial u(x_1,x_2)}{\partial x_1}$ and $\frac{\partial u(x_1,x_2)}{\partial x_2}$, show how "effective" the two commodities are :
 
 $$\Delta u(x_1,x_2) = \frac{\partial u(x_1,x_2)}{\partial x_1} \Delta x_1 + \frac{\partial u(x_1,x_2)}{\partial x_2} \Delta x_2$$
 
@@ -160,7 +170,7 @@ $$ \alpha = - \frac{\Delta x_2}{\Delta x_1} = \frac{\partial u(x_1,x_2) / \parti
 \vspace{2mm}
 
 
-Another virtue of the 3-D thinking is that it can be easily generalized to many-dimension problem. Given utility the same, \textbf{to consume more commodity $i$}, how much commodity $j$ must you give up? This is called the \textbf{Marginal Rate of Substitution of good $j$ for good $i$}:
+Another virtue of the 3-D thinking is that it can be easily generalized to many-dimension problems. Given utility the same, \textbf{to consume more commodity $i$}, how much commodity $j$ must you give up? This is called the \textbf{Marginal Rate of Substitution of good $j$ for good $i$}:
 
 $$MRS_{ij}(x) = \frac{\partial u(x) / \partial x_i}{\partial u(x) / \partial x_j}$$
 
@@ -170,20 +180,10 @@ $$MRTS_{ij}(x) = \frac{\partial f(x) / \partial x_i}{\partial f(x) / \partial x_
 
 Here the word "Technical" refers to the technology $f(x)$.
 
-\section{Elasticity of Substitution}
-
-\subsection{$\alpha$ and $\frac{x_2}{x_1}$}
+\section{$\alpha$ and $\frac{x_2}{x_1}$}
 
 
-The relationship between $\alpha$ and $\frac{x_2}{x_1}$ also reflects the nature of the two commodities.
-
-In Figure \ref{fig:bent} and Figure \ref{fig:flat}, the change of $\frac{x_2}{x_1}$ can be expressed by $\angle \gamma$. When $\frac{x_2}{x_1}$ changes $\gamma$:
-
-\begin{itemize}
-\item in Figure \ref{fig:bent},  the "slope" MRS changes a lot.
-\item in Figure \ref{fig:flat},  the "slope" MRS changes a little.
-\end{itemize}
-
+The relationship between $\alpha$ and $\frac{x_2}{x_1}$ also reflects the nature of the two commodities. Note that we can use angles to express $\frac{x_2}{x_1}$. For example, in Figure \ref{fig:bent}, $\angle AOB = \frac{AB}{OB} = \frac{x^1_2}{x^1_1}$. Similarly,  $\angle COD = \frac{CD}{OD} = \frac{x^2_2}{x^2_1}$.
 
 \begin{center}
 \begin{tikzpicture}[scale=0.5]
@@ -241,23 +241,25 @@ In Figure \ref{fig:bent} and Figure \ref{fig:flat}, the change of $\frac{x_2}{x_
 
 \end{tikzpicture}
 \captionof{figure}{MRS changes a little}
-\label{fig:straight}
+\label{fig:flat}
 \end{center}
 \vspace{2mm}
+
+
+In Figure \ref{fig:bent} and Figure \ref{fig:flat}, the change of $\frac{x_2}{x_1}$ can be expressed by $\angle \gamma$. When $\frac{x_2}{x_1}$ changes $\gamma$:
+
+\begin{itemize}
+\item in Figure \ref{fig:bent},  the "|slope|" MRS changes a lot.
+\item in Figure \ref{fig:flat},  the "|slope|" MRS changes a little.
+\end{itemize}
 
 
 Now let's think about an extreme case. In Figure \ref{fig:straight}, when
 $\frac{x_2}{x_1}$ changes $\gamma$, MRS does not change ($MRS_{12}(x) = \frac{\partial u(x) / \partial x_1}{\partial u(x) / \partial x_2} = 0.5$). That is, MRS is independent of $\frac{x_2}{x_1}$. 
 
-You're never bored with $x_1$ comparing with $x_2$, no matter how much $x_1$ and $x_2$ you consumed. This can only happen when $x_1$ and $x_2$ are in nature the same commodity. 
-
-For example, $x_1$ is an apple, while $x_2$ is a pack of 2 apples. The quality of the apples are the same and the only difference is the amount per package. Since you can always substitute a 2-apple pack with 2 single apples, we call this condition as "\textbf{perfect substitution}".
-
-
-
 \begin{center}
 \begin{tikzpicture}[scale=0.5]
-\draw[thick,<->] (0,12) node[left]{$x_2$}--(0,0)--(12,0) node[right]{$x_1$};
+\draw[thick,<->] (0,10) node[left]{$x_2$}--(0,0)--(12,0) node[right]{$x_1$};
 \node [below left] at (0,0) {$0$};
 \draw(2,9) -- (10,5) node[right]{$u(x_1,x_2)= x_1 + 2x_2$};
 
@@ -275,13 +277,17 @@ For example, $x_1$ is an apple, while $x_2$ is a pack of 2 apples. The quality o
 
 \end{tikzpicture}
 \captionof{figure}{Perfect substitution}
-\label{fig:flat}
+\label{fig:straight}
 \end{center}
 \vspace{2mm}
 
-Another extreme example is Leontief preference.  In Figure \ref{fig:leo}, when $\frac{x_2}{x_1}$ changes $\gamma$, MRS changes from $+\infty$ to $0$.
-We already know with Leontief preference, you believe $x_1$ and $x_2$ are totally different and can only make sense with certain proportion, like bread and cheeze. There can be \textbf{no substitution} between the two.
+You're never bored with $x_1$ comparing with $x_2$, no matter how much $x_1$ and $x_2$ you consumed. This can only happen when $x_1$ and $x_2$ are in nature the same commodity. 
 
+For example, $x_1$ is an apple, while $x_2$ is a pack of 2 apples. The quality of the apples are the same and the only difference is the amount per package. Since you can always substitute a 2-apple pack with 2 single apples, we call this condition as "\textbf{Perfect Substitution}".
+
+\vspace{6mm}
+
+Another extreme example is Leontief preference.  In Figure \ref{fig:leo}, when $\frac{x_2}{x_1}$ changes $\gamma$, MRS changes from $+\infty$ to $0$.
 
 \begin{center}
 \begin{tikzpicture}[scale=0.5]
@@ -308,10 +314,12 @@ We already know with Leontief preference, you believe $x_1$ and $x_2$ are totall
 \label{fig:leo}
 \end{center}
 
+We already know with Leontief preference, you believe $x_1$ and $x_2$ are totally different and can only make sense with a certain proportion, like bread and cheeze. There can be \textbf{NO substitution} between the two.
 
-\subsection{Elasticity of Substitution $\sigma_{12}$}
 
-We can use "\textbf{Elasticity}" to reflect the relationship between $\alpha$ and $\frac{x_2}{x_1}$.
+\section{Elasticity of Substitution $\sigma_{12}$}
+
+We can use "\textbf{Elasticity}" to describe the relationship between $\alpha$ and $\frac{x_2}{x_1}$.
 
 \begin{align*}
 Elasticity &= [\frac{1\% \ change \  of \ MRS}{1\% \ change \ of \ \frac{x_2}{x_1}}]^{-1} \\
@@ -320,14 +328,13 @@ Elasticity &= [\frac{1\% \ change \  of \ MRS}{1\% \ change \ of \ \frac{x_2}{x_
 \end{align*}
 
 \begin{itemize}
-\item Inside brackets: when $\frac{x_2}{x_1}$ changes 1 percent, how many percent $MRTS$ changes. E.g. $0$ if perfect substitution, $+\infty$ if no substitution.
-\item Why inverse? We want it to be $+\infty$ when perfect substitution, and $0$ when no substitution.
+\item Inside brackets: when $\frac{x_2}{x_1}$ changes 1 percent, how many percent $MRS$ changes. E.g. $0$ if perfect substitution, $+\infty$ if no substitution.
+\item Why inverse? We want it to be $+\infty$ when perfect substitution, and $0$ when no substitution (more intuitive).
 \end{itemize}
 
+Similarly, for firms, we have:
 
-
-
-\textbf{DEFINITION: The Elasticity of Substitution} (a 2-input case for DEFINITION 3.2 on Jehle \& Reny pp. 129)
+\textbf{DEFINITION: The Elasticity of Technical Substitution} (a 2-input case for DEFINITION 3.2 on Jehle \& Reny pp. 129)
 
 \vspace{2mm}
 
@@ -341,20 +348,250 @@ $\sigma_{12}(x_1,x_2)$ can be rewritten as:
 
 $$\sigma_{12}(x_1,x_2) \equiv (\frac{d ln MRTS_{12}(r)}{dln r})^{-1}$$
 
+\end{mdframed}
 
 
-
-
-\textbf{An example from exam 2019 Q1(b)}
+\section*{An example from exam 2019 Q1(b)}
 
 Deb and Frank have the following utility functions
+$U_D = x_D + 2y_D$ and $U_F = x^\alpha_Fy^{1-\alpha}_F$, with $\alpha \in (0,1)$
+
+b) [5\%] What is the elasticity of substitution for Deb? What is the
+implication for the income and substitution effects?
+
+\vspace{2mm}
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+
+Obviously, Deb has a "perfect substitution" preference exactly the same as Figure \ref{fig:straight}.
+
+$$MRS_{xy} = \frac{\partial / \partial x}{\partial u / \partial y} = 0.5$$
+
+$$\sigma_{xy} = [\frac{d ln(MRTS)}{d ln(x/y)}]^{-1} = [\frac{0}{d ln(x/y)}]^{-1}=[0]^{-1} = + \infty$$
+
+In this case, Deb believes $x$ and $y$ are the same product but with different amount per package. 
+
+As for income and substitution effects, the solution online is incorrect.
+Let's use apple as an example to make it clear:
+
+\vspace{2mm}
+
+\textbf{Day 1：}
+
+\begin{center}
+\begin{tikzpicture}[scale = 0.9]
+\draw[thick,<->] (0,3.5) node[left]{$y$}--(0,0)--(7,0) node[right]{$x$};
+\node [below left] at (0,0) {$0$};
+
+\tkzDefPoint(0,0){O}
+\tkzDefPoint(4,0){A}
+\tkzDefPoint(0,2){B}
+\tkzDefPoint(6,0){C}
+\tkzDefPoint(0,3){D}
+
+\draw [red] (B)--(A);
+\draw [blue] (D)--(C) ;
+
+\node[left,red] at (B) {$\frac{\$}{10 kr}$} ;
+\draw[fill,red] (B) circle [radius =0.04];
+\node[below,red] at (A) {$\frac{\$}{5 kr}$} ;
+\draw[fill,red] (A) circle [radius =0.04];
+\node[left,red] at (1.5,1) {Budget} ;
+\node[above,blue] at (2.5,2) {$u = x + 2 y$} ;
+
+\end{tikzpicture}
+\captionof{figure}{A fair deal}
+\label{fig:fair}
+\end{center}
+\vspace{2mm}
+
+\begin{itemize}
+\item $x$ : an apple , 5 kr per package.
+\item $y$ : a 2-apple pack, 10 kr per package.
+\end{itemize}
+
+It's fair! Deb will not mind to substitute 2 $x$ with 1 $y$. Her demands lie on the budget frontier.
+
+\vspace{2mm}
+
+\textbf{Day 2：}
+
+\begin{itemize}
+\item $x$ : an apple , 5 kr per package.
+\item $y$ : a 2-apple pack,\textcolor{red}{5 kr per package. On Sale!}.
+\end{itemize}
+
+\begin{center}
+\begin{tikzpicture}
+\draw[thick,<->] (0,5) node[left]{$y$}--(0,0)--(10,0) node[right]{$x$};
+\node [below left] at (0,0) {$0$};
+
+\tkzDefPoint(0,0){O}
+\tkzDefPoint(4,0){A}
+\tkzDefPoint(0,2){B}
+\tkzDefPoint(8,0){C}
+\tkzDefPoint(0,4){D}
+\tkzDefPoint(0,4){E}
+\tkzDefPoint(2,0){F}
+
+\draw [red] (B)--(A);
+\draw [red] (E)--(A);
+\draw [dashed,red] (F)--(B);
+\draw [blue] (D)--(C) ;
+
+\node[left,red] at (B) {$\frac{\$}{10 kr}$} ;
+\draw[fill,black] (B) circle [radius =0.04];
+\node[left,red] at (E) {$\frac{\$}{5 kr}$} ;
+\draw[fill,black] (E) circle [radius =0.04];
+
+\node[below,red] at (A) {$\frac{\$}{5 kr}$} ;
+\draw[fill,red] (A) circle [radius =0.04];
+
+\node[left,red] at (1.9,1) {B} ;
+\node[left,red] at (2.5,2) {B'} ;
+
+\node[above,blue] at (4,2) {$u'$} ;
+
+
+\end{tikzpicture}
+\captionof{figure}{$y$ is on sale}
+\label{fig:fair}
+\end{center}
+\vspace{2mm}
+
+Deb will spend all income on $y$ because it's cheaper per apple. 
+
+If Deb chose $(x=0,y=\frac{\$}{10 kr})$ in Day 1, when "relative price" changes (dash line), her demand 
+will not change $\Rightarrow$ no substitution effects, and income effects only exist for $y$:
+
+$$y = \frac{\$}{10kr} =  \to y= \frac{\$}{5kr}$$
+
+(Note in Day 1, indifference curve $u$ is also on the budget frontier $B$)
+
+\vspace{2mm}
+
+\textbf{Day 3：}
+
+\begin{itemize}
+\item $x$ : an apple , \textcolor{red}{3 kr} per package (also on sale but still more expensive).
+\item $y$ : a 2-apple pack,5 kr per package. Still on sale.
+\end{itemize}
+\begin{center}
+\begin{tikzpicture}
+\draw[thick,<->] (0,5) node[left]{$y$}--(0,0)--(9,0) node[right]{$x$};
+\node [below left] at (0,0) {$0$};
+
+\tkzDefPoint(0,0){O}
+\tkzDefPoint(4,0){B}
+\tkzDefPoint(8,0){C}
+\tkzDefPoint(0,4){D}
+
+\draw [red] (D)--(A);
+\draw [red] (B)--(D);
+
+\draw [red] (D)--(6,0);
+\draw [blue] (C)--(D) ;
+
+\node[left,red] at (D) {$\frac{\$}{5 kr}$} ;
+\draw[fill,black] (D) circle [radius =0.04];
+\node[below,red] at (A) {$\frac{\$}{5 kr}$} ;
+\draw[fill,black] (A) circle [radius =0.04];
+
+\node[left,red] at (3,2) {B''} ;
+\node[below,red] at (2.5,1.5) {B'} ;
+
+\node[below,blue] at (5.2,1.8) {$u'$} ;
+
+\end{tikzpicture}
+\captionof{figure}{$y$ is still cheaper}
+\label{fig:fair}
+\end{center}
+\vspace{2mm}
+
+There is no substitution effect and income effect  Demands unchange.
+
+\vspace{2mm}
+
+\textbf{Day 4：}
+
+\begin{itemize}
+\item $x$ : an apple , \textcolor{red}{2 kr} per package (Cheaper!).
+\item $y$ : a 2-apple pack,5 kr per package. Still on sale.
+\end{itemize}
+
+\begin{center}
+\begin{tikzpicture}
+\draw[thick,<->] (0,6) node[left]{$y$}--(0,0)--(10.5,0) node[right]{$x$};
+\node [below left] at (0,0) {$0$};
+
+\tkzDefPoint(0,0){O}
+\tkzDefPoint(10,0){A}
+\tkzDefPoint(4,0){B}
+\tkzDefPoint(8,0){C}
+\tkzDefPoint(0,4){D}
+\tkzDefPoint(0,5){E}
+
+\draw [red] (D)--(A);
+\draw [red] (B)--(D);
+
+\draw [dashed,red] (0,3.2)--(C);
+\draw [blue] (E)--(A) ;
+\draw [blue] (C)--(D) ;
+
+\node[left,red] at (D) {$\frac{\$}{10 kr}$} ;
+\draw[fill,black] (D) circle [radius =0.04];
+\node[below,red] at (A) {$\frac{\$}{2 kr}$} ;
+\draw[fill,black] (A) circle [radius =0.04];
+\node[below,black] at (C) {$x^h$} ;
+\draw[fill,black] (C) circle [radius =0.04];
+
+\node[left,red] at (4.5,2.5) {B'''} ;
+\node[below,red] at (2.5,1.5) {B'} ;
+
+\node[above,blue] at (6,2) {$u''$} ;
+\node[below,blue] at (5.2,1.8) {$u'$} ;
+
+\end{tikzpicture}
+\captionof{figure}{$x$ is cheaper}
+\label{fig:fair}
+\end{center}
+
+\vspace{2mm}
+
+
+If the relative price changed (red dash line),with the same utility, Deb's demand will change:
+$$x=0 \to x^h$$
+$$y=\frac{\$}{10 kr} \to y= 0$$
+
+This is due to substitution effect. In this case, the income effects only exist for $x$:
+$$x^h \to x= \frac{\$}{2kr}$$
+
+\end{mdframed}
+
+Answer: The elasticity of substitution for Deb is infinite due to pefect substitution.
+
+Assume there is a cheaper commodity, like $y$ in Day 2.
+\begin{itemize}
+\item When the cheaper is still cheaper($y$ in Day 3), no substitution effect, no income effect, no price effect.
+\item When the cheaper becomes the more expensive ($y$ in Day 4),  income effect exists only for the cheaper ($x$ in Day 4).
+\end{itemize}
+
+\begin{mdframed}[backgroundcolor=yellow!20,linecolor=white]
+Tips: Allocate your time according to the point of the questions.
+\begin{itemize}
+\item This is a 5\% point question, then just answer it briefly. 
+\item Use graphs can save your time.
+\item Use "common sense" to avoid proving (unless the question asks you to \textbf{calculate}), e.g. "straight" indifference curve  $\Rightarrow$ perfect substitution $\Rightarrow \sigma = + \infty $ 
+\item Just skip it if you find it difficult. This small sub-question is really hard to answer.
+\end{itemize}
+
 
 
 \end{mdframed}
 
-
-
-
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+Question: What is the implication of Leontief preference's ES for the income and substitution effects? 
+\end{mdframed}
 
 
 \end{document}
