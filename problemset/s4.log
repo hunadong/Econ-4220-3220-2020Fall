@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2020.8.31)  19 SEP 2020 21:48
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2020.8.31)  21 SEP 2020 19:41
 entering extended mode
 **./s4.tex
 (s4.tex
@@ -230,8 +230,7 @@ File: l3backend-xdvipdfmx.def 2020-08-07 L3 backend support: xdvipdfmx
 \l__pdf_internal_box=\box46
 \g__pdf_backend_object_int=\count187
 \g__pdf_backend_annotation_int=\count188
-)
-No file s4.aux.
+) (s4.aux)
 \openout1 = `s4.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
@@ -245,6 +244,7 @@ LaTeX Font Info:    ... okay on input line 16.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
 6.
+
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
@@ -293,12 +293,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 16.
 LaTeX Info: Redefining \pageref on input line 16.
 LaTeX Info: Redefining \nameref on input line 16.
+ (s4.out) (s4.out)
 \@outlinefile=\write3
 \openout3 = `s4.out'.
-
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 19.
@@ -306,6 +303,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 19.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 19.
+
 
 LaTeX Warning: No \author given.
 
@@ -322,21 +320,14 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 29.
  (s4.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 29.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 29.
-
-
-Package rerunfilecheck Warning: File `s4.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `s4.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+Package rerunfilecheck Info: File `s4.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 29.
  ) 
 Here is how much of TeX's memory you used:
- 8855 strings out of 414493
- 126765 string characters out of 2902447
- 395259 words of memory out of 3000000
+ 8861 strings out of 414493
+ 126801 string characters out of 2902447
+ 395374 words of memory out of 3000000
  26021 multiletter control sequences out of 15000+200000
  553193 words of font info for 45 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
