@@ -186,7 +186,7 @@ Here the word "Technical" refers to the technology $f(x)$.
 \section{$\alpha$ and $\frac{x_2}{x_1}$}
 
 
-The relationship between $\alpha$ and $\frac{x_2}{x_1}$ also reflects the nature of the two commodities. Note that we can use angles to express $\frac{x_2}{x_1}$. For example, in Figure \ref{fig:bent}, $\angle AOB = \frac{AB}{OB} = \frac{x^1_2}{x^1_1}$. Similarly,  $\angle COD = \frac{CD}{OD} = \frac{x^2_2}{x^2_1}$.
+The relationship between $\alpha$ and $\frac{x_2}{x_1}$ also reflects the substitution nature of the two commodities. Note that we can use angles to express $\frac{x_2}{x_1}$. For example, in Figure \ref{fig:bent}, $\angle AOB = \frac{AB}{OB} = \frac{x^1_2}{x^1_1}$. Similarly,  $\angle COD = \frac{CD}{OD} = \frac{x^2_2}{x^2_1}$.
 
 \begin{center}
 \begin{tikzpicture}[scale=0.5]
@@ -249,7 +249,7 @@ The relationship between $\alpha$ and $\frac{x_2}{x_1}$ also reflects the nature
 \vspace{2mm}
 
 
-In Figure \ref{fig:bent} and Figure \ref{fig:flat}, the change of $\frac{x_2}{x_1}$ can be expressed by $\angle \gamma$. When $\frac{x_2}{x_1}$ changes $\gamma$:
+The change of $\frac{x_2}{x_1}$ can be expressed by $\angle \gamma$. When $\frac{x_2}{x_1}$ changes $\gamma$:
 
 \begin{itemize}
 \item in Figure \ref{fig:bent},  the "|slope|" MRS changes a lot.
@@ -317,7 +317,7 @@ Another extreme example is Leontief preference.  In Figure \ref{fig:leo}, when $
 \label{fig:leo}
 \end{center}
 
-We already know with Leontief preference, you believe $x_1$ and $x_2$ are totally different and can only make sense with a certain proportion, like bread and cheeze. There can be \textbf{NO substitution} between the two.
+We already know with Leontief preference, you believe $x_1$ and $x_2$ are totally different and can only make sense with a certain proportion, like bread and cheese. There can be \textbf{NO substitution} between the two.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -327,7 +327,7 @@ We can use "\textbf{Elasticity}" to describe the relationship between $\alpha$ a
 
 \begin{align*}
 Elasticity &= [\frac{1\% \ change \  of \ MRS}{1\% \ change \ of \ \frac{x_2}{x_1}}]^{-1} \\
-&= [\frac{\frac{d MRTS}{MRTS}}{\frac{d(x_2/x_1}{x_2/x_1}}]^{-1} \\
+&= [\frac{\frac{d MRTS}{MRTS}}{\frac{d(x_2/x_1)}{x_2/x_1}}]^{-1} \\
 &= [\frac{d ln(MRTS)}{d ln(x_2/x_1)}]^{-1}
 \end{align*}
 
@@ -500,7 +500,6 @@ $$y = \frac{\$}{10kr} =  \to y= \frac{\$}{5kr}$$
 \node[left,red] at (D) {$\frac{\$}{5 kr}$} ;
 \draw[fill,black] (D) circle [radius =0.04];
 \node[below,red] at (A) {$\frac{\$}{5 kr}$} ;
-\draw[fill,black] (A) circle [radius =0.04];
 
 \node[left,red] at (3,2) {B''} ;
 \node[below,red] at (2.5,1.5) {B'} ;
@@ -513,7 +512,7 @@ $$y = \frac{\$}{10kr} =  \to y= \frac{\$}{5kr}$$
 \end{center}
 \vspace{2mm}
 
-There is no substitution effect and income effect  Demands unchange.
+There is no substitution effect and income effect.  Demands unchange.
 
 \vspace{2mm}
 
@@ -628,7 +627,7 @@ We know:
 1.Rewrite:
 
 \begin{align*}
-E(U_D) &= \frac{1}{3}x_D + {2}{3}y_D \\
+E(U_D) &= \frac{1}{3}x_D + \frac{2}{3}y_D \\
 E(U_F) &= \alpha ln x_F +  ({1-\alpha}) ln y_F 
 \end{align*}
 
@@ -755,6 +754,7 @@ A formal proof: from CES to Leontief (read if you're interested)
 
 \vspace{2mm}
 
+Since Leontief indifference curve is not differentiable(at the kink point), it's easier to start from a CES utility function.
 Suppose we have a CES utility function:
 
 $$u(x_1,x_2) = [(\alpha x_1)^\rho + (\beta x_2)^\rho]^\frac{1}{\rho}$$
@@ -768,7 +768,7 @@ $$ln u(m,n) = \frac{ln(m^\rho + n^\rho)}{\rho}$$
 
 Then:
 
-$$\lim_{\rho \to -\infty} ln u(m,n) = \lim_{\rho \to -\infty}\frac{ln(m^\rho + n^\rho)}{\rho} \to \frac{ln(0+0)}{-\infty} = \frac{\infty}{\infty}$$
+$$\lim_{\rho \to -\infty} ln u(m,n) = \lim_{\rho \to -\infty}\frac{ln(m^\rho + n^\rho)}{\rho} \to \frac{ln(0) \ or \ ln(+\infty)}{-\infty} = \frac{\infty}{\infty}$$
 
 Which is a \href{https://en.wikipedia.org/wiki/Indeterminate_form}{Indeterminate Form}. We can thus apply \href{https://en.wikipedia.org/wiki/L\%27H\%C3\%B4pital\%27s_rule}{L'Hôpital's rule}:
 
@@ -780,7 +780,7 @@ L'Hôpital's \ rule : \ \ \  &= \lim_{\rho \to -\infty} \frac{d ln(m^\rho + n^\r
 
 (Note here we treat $\rho$ as the only variable, therefore $\frac{d x^\rho}{d\rho}=x^\rho lnx$)
 
-Denote $c = min{m,n}$
+Denote $c = min\{m,n\}$
 
 \begin{align*}
 \lim_{\rho \to -\infty} ln u(m,n) &=  \lim_{\rho \to -\infty} \frac{\frac{1}{c^\rho}}{\frac{1}{c^\rho}} ln u(m,n)\\
