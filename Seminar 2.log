@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2020.8.31)  17 SEP 2020 13:57
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2020.8.31)  24 SEP 2020 20:46
 entering extended mode
 **"./Seminar 2.tex"
 ("Seminar 2.tex"
@@ -1459,6 +1459,10 @@ LaTeX Info: Redefining \nameref on input line 23.
 \@outlinefile=\write4
 \openout4 = `"Seminar 2.out"'.
 
+
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
 LaTeX Font Info:    Redeclaring math accent \widehat on input line 23.
 LaTeX Font Info:    Redeclaring math accent \widetilde on input line 23.
 LaTeX Info: Redefining \microtypecontext on input line 23.
@@ -1484,7 +1488,6 @@ Package gensymb Info: Using \textohm for \ohm on input line 23.
 Package gensymb Info: Using \textmu for \micro on input line 23.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-
 ABD: EveryShipout initializing macros
 LaTeX Font Info:    Trying to load font information for FML+futmi on input line
  26.
@@ -1563,6 +1566,9 @@ ith La-grangian method.)
  []
 
 Missing character: There is no ’ in font futr8t!
+
+LaTeX Warning: Reference `eq:1_38_hicks' on page 1 undefined on input line 70.
+
 Missing character: There is no ’ in font futr8t!
 [1
 
@@ -1887,6 +1893,10 @@ Overfull \hbox (3.31462pt too wide) in paragraph at lines 396--397
 /10 changed a lit-tle, how your de-mand will change to achieve
  []
 
+
+LaTeX Warning: Reference `eq:1_38_hicks' on page 8 undefined on input line 407.
+
+
 Package mdframed Info: Not enough space on this page on input line 437.
 [8]
 Package mdframed Info: Not enough space on this page on input line 437.
@@ -1963,22 +1973,29 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 566.
 
 [12]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 596.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 596.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 602.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 602.
  ("Seminar 2.aux")
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 596.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 596.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 602.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 602.
 Package rerunfilecheck Info: File `"Seminar 2".out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 596.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 602.
  ) 
 Here is how much of TeX's memory you used:
- 31197 strings out of 414493
- 593274 string characters out of 2902447
- 968294 words of memory out of 3000000
- 47767 multiletter control sequences out of 15000+200000
+ 31194 strings out of 414493
+ 593250 string characters out of 2902447
+ 967896 words of memory out of 3000000
+ 47764 multiletter control sequences out of 15000+200000
  610913 words of font info for 92 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 60i,11n,91p,1118b,476s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,11n,91p,961b,476s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on Seminar 2.pdf (12 pages).

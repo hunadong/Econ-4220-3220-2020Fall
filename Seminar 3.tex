@@ -146,12 +146,12 @@ Lagrangian:
 
 $$L = p_1^\alpha p_2^\beta + \lambda (1- p_1x_1 - p_2x_2)$$
 
-Note there should not be interior solution since
+Note there should not be corner solution since
 
 \begin{itemize}
-\item $\frac{\partial v(p_1,p_2,1)}{\partial p_1} = \alpha p_1^{\alpha -1}p_2^\beta, \alpha, \beta < 0. \lim_{p_1 \to 0} \frac{\partial v(p_1,p_2,1)}{\partial p_1} = - \infty$
+\item $Since \alpha, \beta < 0, p$ can't be $0$.
 
-\item $\frac{\partial v(p_1,p_2,1)}{\partial p_2} = p_1^{\alpha} \beta p_2^{\beta - 1}, \alpha, \beta < 0. \lim_{p_2 \to 0} \frac{\partial v(p_1,p_2,1)}{\partial p_2} = - \infty$
+\item You can also argue $\frac{\partial v(p_1,p_2,1)}{\partial p_i} = - \infty, i=1,2$
 
 \item $v(p,1)$ is decreasing in $p$(this is always true for indirect utility function, see pp.29). For any $px<1$, you can always decrease $v(p, 1)$ by increasing $p$ until $px = 1$.
 \end{itemize}
@@ -210,7 +210,7 @@ In exam for this course, again, if the function is one- dimension, you should pr
 \end{mdframed}
 
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
-Like Jehle \& Reny 1.51, you can actually transform $v(p_1,p_2,1)$  into a function of only $p_1$ or $p_1$ using $p_1x_1 + p_2x_2 = 1$.
+Like Jehle \& Reny 1.51, you can actually transform $v(p_1,p_2,1)$  into a function of only $p_1$ or $p_2$ using $p_1x_1 + p_2x_2 = 1$.
 
 $$p_1 = \frac{1 - p_2x_2}{x_1}$$
 
