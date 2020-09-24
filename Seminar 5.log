@@ -1,7 +1,7 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.6.29) (preloaded format=xelatex 2020.9.1)  24 SEP 2020 09:37
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.6.29) (preloaded format=xelatex 2020.9.1)  24 SEP 2020 10:27
 entering extended mode
-**"./Seminar 4.tex"
-("Seminar 4.tex"
+**"./Seminar 5.tex"
+("Seminar 5.tex"
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-06-18>
 (C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -1442,18 +1442,8 @@ eu-show.tex
 (C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-obj-
 eu-triangles.tex
 2020/03/18 3.06c tkz-obj-eu-triangles.tex
-)) ("Seminar 4.aux"
-
-LaTeX Warning: Label `fig:fair' multiply defined.
-
-
-LaTeX Warning: Label `fig:fair' multiply defined.
-
-
-LaTeX Warning: Label `fig:fair' multiply defined.
-
-)
-\openout1 = `"Seminar 4.aux"'.
+)) ("Seminar 5.aux")
+\openout1 = `"Seminar 5.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
 LaTeX Font Info:    ... okay on input line 26.
@@ -1466,7 +1456,8 @@ LaTeX Font Info:    ... okay on input line 26.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 2
 6.
- (C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmr.fd
+
+(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 26.
@@ -1523,9 +1514,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 26.
 LaTeX Info: Redefining \pageref on input line 26.
 LaTeX Info: Redefining \nameref on input line 26.
- ("Seminar 4.out") ("Seminar 4.out")
+ ("Seminar 5.out") ("Seminar 5.out")
 \@outlinefile=\write4
-\openout4 = `"Seminar 4.out"'.
+\openout4 = `"Seminar 5.out"'.
 
 LaTeX Font Info:    Redeclaring math accent \widehat on input line 26.
 LaTeX Font Info:    Redeclaring math accent \widetilde on input line 26.
@@ -1597,218 +1588,64 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `futs' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 37.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 37.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 37.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 37.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 37.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 37.
 
 (C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\se-ascii
 -print.def
 File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
 
 )
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 36.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 36.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 36.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 36.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 36.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 36.
 
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 112.
-See the caption package documentation for explanation.
-
-
-Overfull \hbox (3.19379pt too wide) in paragraph at lines 157--158
-[]\T1/futs/m/n/10 Given $\FML/futmi/m/it/10 u\T1/futs/m/n/10 (\FML/futmi/m/it/1
-0 x[]; x[]\T1/futs/m/n/10 )$ is a dif-fer-en-tiable func-tion (re-call the hill
--like 3-D graph I showed
+Overfull \hbox (2.40663pt too wide) in paragraph at lines 41--42
+[]\T1/futs/b/n/10 ASSUMPTION 3.1 Prop-er-ties of the Pro-duc-tion Func-tion \T1
+/futs/m/n/10 (Jehle & Reny pp.127) 
  []
 
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 13.24796pt on input line 186.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 186.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 13.24796pt on input line 186.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 186.
+Missing character: There is no ’ in font futr8t!
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 186.
+Overfull \hbox (2.1296pt too wide) in paragraph at lines 56--57
+[]\T1/futs/b/n/10 Conditional in-put de-mand \T1/futs/m/n/10 is sim-i-lar to Hi
+ck-sian de-mands for con-sumers 
+ []
 
+Missing character: There is no ’ in font futr8t!
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\alpha' on input line 186.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 186.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 186.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 186.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 186.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\endgroup' on input line 186.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@@over' on input line 186.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 186.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 186.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 221.
-See the caption package documentation for explanation.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 246.
-See the caption package documentation for explanation.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 282.
-See the caption package documentation for explanation.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 316.
-See the caption package documentation for explanation.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 324.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\sigma' on input line 324.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 324.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 324.
+Package mdframed Warning: You got a bad break
+(mdframed)                because the last box will be empty
+(mdframed)                you have to change it manually
+(mdframed)                by changing the text, the space
+(mdframed)                or something else on input line 83.
 
 [1
 
-]
-Package mdframed Info: Box was splittet wrong
- starting loop to iterate the splitting point
-(mdframed)              on input line 355.
- [2] [3] [4] [5] [6]
-Overfull \hbox (5.28943pt too wide) in paragraph at lines 377--378
-[]\T1/futs/m/n/10 In this case, Deb be-lieves $\FML/futmi/m/it/10 x$ \T1/futs/m
-/n/10 and $\FML/futmi/m/it/10 y$ \T1/futs/m/n/10 are the same prod-uct but with
- dif-fer-ent amount
- []
-
-Missing character: There is no ： in font futb8t!
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 408.
-See the caption package documentation for explanation.
-
-Missing character: There is no ： in font futb8t!
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 462.
-See the caption package documentation for explanation.
-
-Missing character: There is no ： in font futb8t!
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 510.
-See the caption package documentation for explanation.
-
-Missing character: There is no ： in font futb8t!
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 559.
-See the caption package documentation for explanation.
-
-
-Overfull \hbox (10.44815pt too wide) in paragraph at lines 558--559
- [] 
- []
-
-[7] [8]
-Package mdframed Info: Box was splittet wrong
- starting loop to iterate the splitting point
-(mdframed)              on input line 573.
- [9] [10]
-File: ./pic/4.cereq.png Graphic file (type bmp)
-<./pic/4.cereq.png>
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 660.
-See the caption package documentation for explanation.
-
-[11] [12]
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 719.
-See the caption package documentation for explanation.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 743.
-See the caption package documentation for explanation.
-
-
-Overfull \hbox (3.05734pt too wide) in paragraph at lines 742--743
- [][] 
- []
-
-[13]
-Missing character: There is no ô in font futmii!
-Missing character: There is no ô in font futmii!
-Package mdframed Info: Box was splittet wrong
- starting loop to iterate the splitting point
-(mdframed)              on input line 818.
- [14] [15] [16]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 868.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 868.
- ("Seminar 4.aux")
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 868.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 868.
-Package rerunfilecheck Info: File `"Seminar 4".out' has not changed.
+] [2]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 128.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 128.
+ ("Seminar 5.aux")
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 128.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 128.
+Package rerunfilecheck Info: File `"Seminar 5".out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 868.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 128.
  ) 
 Here is how much of TeX's memory you used:
- 31346 strings out of 414071
- 597391 string characters out of 2893980
- 1012836 words of memory out of 3000000
- 48336 multiletter control sequences out of 15000+200000
- 615731 words of font info for 103 fonts, out of 3000000 for 9000
+ 30962 strings out of 414071
+ 589017 string characters out of 2893980
+ 919367 words of memory out of 3000000
+ 47961 multiletter control sequences out of 15000+200000
+ 599983 words of font info for 85 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 60i,12n,91p,961b,1286s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,6n,91p,961b,471s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Seminar 4.pdf (16 pages).
+Output written on Seminar 5.pdf (2 pages).
