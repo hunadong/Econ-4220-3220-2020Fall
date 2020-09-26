@@ -28,8 +28,71 @@
 \maketitle
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{landscape}
+\section*{Production Duality}
+
+
+\vspace{3mm}
+{\scriptsize
+\usetikzlibrary{arrows.meta}
+\tikzset{%
+  >={Latex[width=1mm,length=1mm]},
+  % Specifications for style of nodes:
+            base/.style = {rectangle, rounded corners, draw=black,
+                           minimum width=2cm, minimum height=1cm,
+                           text centered, font=\sffamily},
+  Starts/.style = {base, fill=blue!30},
+         process/.style = {base, minimum width=2.5cm, fill=orange!15,
+                           font=\ttfamily},
+}
+\begin{tikzpicture}[node distance=2cm,
+every node/.style={fill=white, font=\sffamily}, align=center]
+\node (start) [Starts] {Profit Maximization: \\ $\max_{(x,y) \ge 0} \ py - wx, s.t.  f(x) \ge y$};
+\node (1) [process, below of=start] {Output Supply Function: \\ $y^* \equiv y(p,w)$ \\  \\Input Demand Functions: \\ $x^* \equiv x(p,w)$};
+\node (2) [process, below of=1] {Profit Function: \\ $\pi (p,w) =  py^* - wx^*$};
+
+\node (3) [process, left of=2,xshift=-1.5cm,yshift=1cm]  {Hotelling's lemma (pp.148): \\ $y_(p,w) = \frac{\partial \pi(p,w)}{\partial p}$ \\  \\   $x_i(p,w) = - \frac{\partial \pi(p,w)}{\partial w_i}$};
+
+
+\draw[->]  (start) -- (1);
+\draw[->] (1) -- (2);
+\draw[dashed]  (2) --  (3);
+\draw[dashed]  (3) --  (1);
+
+
+{\tiny
+\path (start) to  node {solution $x^*, y^*$} (1); 
+\path (1) to  node {maximized value} (2); 
+}
+  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\node (start2) [Starts, right of = 1, xshift =6cm, yshift=2cm] {Cost Minimization: \\ $\min_{x \in \R^n_+} \ w x, s.t. f(x) \ge y$};
+\node (21) [process, below of=start2] {Conditional Input Demand: \\ $x(w,y)$};
+\node (22) [process, below of=21] {Cost Function: \\ $c(w,y) = w x(w,y)$};
+\node (23) [process, right of=22,xshift=1.5cm,yshift=1cm]  {Shephard's lemma(pp.37): \\ $\frac{\partial c(w^0,y^0)}{\partial w_i} = x_i(w^0,y^0)$};
+\node (24) [process, below of=22] {Production Function (pp.144): \\ $f(x) \equiv max\{y \ge 0 | wx \ge c(w,y), \forall w \gg 0 \}$};
+\draw[->]  (start2) -- (21);
+\draw[->]  (21) -- (22);
+\draw[dashed]  (22) --  (23);
+\draw[dashed]  (23) --  (21);
+\draw[->] (22) --  (24);
+{\tiny
+\path (start2) to  node {solution $x^*$} (21); 
+\path (21) to  node {minimized value} (22); 
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\node (31) [process, right of=1,xshift=2cm,yshift=02cm] {FOC(pp.146): \\ $\frac{\partial f(x^*) / \partial x_i}{\partial f(x^*) / \partial x_j} = \frac{w_i}{w_j}$};
+
+\draw[dashed]  (start) --  (31);
+\draw[dashed]  (31) --  (start2);
+
+\end{tikzpicture}
+}
+\end{landscape}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Jehle \& Reny 3.35}
 
 Calculate the \textbf{cost function} and the \textbf{conditional input demands} for the linear production function,
@@ -37,13 +100,18 @@ $y = \Sigma^n_{i=1} \alpha_1 x_i$.
 
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
 
+\textbf{Production Function}(Jehle \& Reny pp.127)
+
+We use a function $y = f(x)$ to denote $y$ units of a certain commodity is produced using input $x$, where $x \in \R^n_+, y \in \R^1_+$
+
+\vspace{2mm}
 
 \textbf{ASSUMPTION 3.1 Properties of the Production Function} (Jehle \& Reny pp.127)
 
 The production function, $f : \R^n_+ \to \R_+$ , is continuous, strictly increasing, and strictly
 quasiconcave on $\R^n_+$, and $f (0) = 0$.
 
-
+\vspace{2mm}
 
 \textbf{DEFINITION 3.5 The Cost Function} (Jehle \& Reny pp.136)
 
