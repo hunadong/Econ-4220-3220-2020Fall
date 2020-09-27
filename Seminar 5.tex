@@ -51,7 +51,7 @@ every node/.style={fill=white, font=\sffamily}, align=center]
 \node (1) [process, below of=start] {Output Supply Function: \\ $y^* \equiv y(p,w)$ \\  \\Input Demand Functions: \\ $x^* \equiv x(p,w)$};
 \node (2) [process, below of=1] {Profit Function: \\ $\pi (p,w) =  py^* - wx^*$};
 
-\node (3) [process, left of=2,xshift=-1.5cm,yshift=1cm]  {Hotelling's lemma (pp.148): \\ $y_(p,w) = \frac{\partial \pi(p,w)}{\partial p}$ \\  \\   $x_i(p,w) = - \frac{\partial \pi(p,w)}{\partial w_i}$};
+\node (3) [process, left of=2,xshift=-1.5cm,yshift=1cm]  {Hotelling's lemma (pp.148): \\ $y(p,w) = \frac{\partial \pi(p,w)}{\partial p}$ \\  \\   $x_i(p,w) = - \frac{\partial \pi(p,w)}{\partial w_i}$};
 
 
 \draw[->]  (start) -- (1);
@@ -96,7 +96,7 @@ every node/.style={fill=white, font=\sffamily}, align=center]
 \section{Jehle \& Reny 3.35}
 
 Calculate the \textbf{cost function} and the \textbf{conditional input demands} for the linear production function,
-$y = \Sigma^n_{i=1} \alpha_1 x_i$.
+$y = \Sigma^n_{i=1} \alpha_i x_i$.
 
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
 
@@ -121,11 +121,58 @@ $$c(w,y) \equiv \min_{x \in \R^n_+} w \cdot x , \ \ s.t. \ \ f(x) \ge y.$$
 The solution $x(w, y)$ is referred to as the firm’s \textbf{conditional input demand}, because it is conditional on the level of output $y$.
 
 \begin{itemize}
-\item  \textbf{Conditional input demand} is similar to Hicksian demands for consumers
-\item  The difference is that cost minimization may not lead to profit maximization.
+\item  \textbf{Conditional input demand} is similar to Hicksian demands for consumers.
 \end{itemize}
+
+\vspace{2mm}
+
+Here the linear production function $y = \Sigma^n_{i=1} \alpha_i x_i$ is very similar to the "\textbf{perfect substitution}" preference in Seminar 4.
+
+\begin{itemize}
+
+\item  The product can be produced by any input $x_i$, the only difference is that for each unit of input, different $x_i$ produces different amount $\alpha_i$ of the output. 
+
+\item  The Marginal Rate of Technical Substitution of input $x_j$ for input $x_i$ is $MRTS_{ij} = \frac{\partial f(x)/ \partial x_i}{\partial f(x)/ \partial x_j} = \frac{\alpha_i}{\alpha_j}$.
+
+\end{itemize}
+
+An example: an apple jam factory has 2 types of input, "single apple ($x_1$)" and "2-apple pack ($x_2$)".
+
+\begin{itemize}
+\item With a "single apple", the factory can produce a bottle of apple jam;
+\item with a "2-apple pack", 2 bottles.
+\item The production function is $y = 1 \cdot x_1 + 2 \cdot x_2$
+\end{itemize}
+
+How will the factory choose? Similarly to consumers' preference substitution preference, the factory will spend all money on the "cheapest per unit" input. 
+
+Denote the price for $x_1$ and $x_2$ as $w_1$, $w_2$
+\begin{itemize}
+\item If $\frac{w_1}{1} = \frac{w_2}{2}$, the factory doesn't care which to use;
+\item If $\frac{w_1}{1} < \frac{w_2}{2}$, single apple is cheaper;
+\item If $\frac{w_1}{1} > \frac{w_2}{2}$, 2-apple pack is cheaper.
+\end{itemize}
+
 \end{mdframed}
 
+
+Denote the price for input $x_i$  as $w_i$. Define $\omega = min \{\frac{w_1}{\alpha_1}, \frac{w_2}{\alpha_2}, \dots ,\frac{w_n}{\alpha_n}\} $
+
+\vspace{2mm}
+
+If $\omega$ is the price of only one input $x_j$, the firm will only use input $x_j$ to minimize its cost. 
+
+\begin{itemize}
+\item Thus $y = \alpha_j x_j$ can minimize the cost, and $x_j = \frac{y}{\alpha_j}$ is the conditional input demands.
+\item The cost function $c(w,y) = w_j \frac{y}{\alpha_j} = \omega y$.
+\end{itemize}
+
+
+If $\omega$ is the price of several inputs $x_m, m = 1,2, \dots, M$, the firm can freely combine $x_m$ to minimize its cost, as long as  $\Sigma^M_{m=1} \alpha_m x_m = y$.
+
+\vspace{2mm}
+
+For cost funtion, let's assume $\frac{w_1}{\alpha_1} = \frac{w_2}{\alpha_2}= \dots =\frac{w_M}{\alpha_M} = \omega$, then $\omega$ is the price for $1$ single apple, for example. Again, to produce $y$ bottles of jam, you need the same number of single apples. The cost function is thus $\omega y$
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Jehle \& Reny 3.46}
@@ -135,17 +182,31 @@ The solution $x(w, y)$ is referred to as the firm’s \textbf{conditional input 
 \item Verify Theorem 3.8 for the associated output supply and input demand functions.
 \end{itemize}
 
+\subsection{Verify Theorem 3.7}
+
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
 
 \textbf{DEFINITION 3.7 The Profit Function} (Jehle \& Reny pp.148)
 
-The firm’s profit function depends only on input and output prices and is defined as the
-maximum-value function,
-
-
-
+The firm’s profit function depends only on input and output prices and is defined as the maximum-value function.
 
 \textbf{THEOREM 3.7 Properties of the Profit Function} (Jehle \& Reny pp.148)
+
+If $f$ satisfies Assumption 3.1, then for $p \ge 0$ and $w \ge 0$, the profit function $\pi (p,w)$, where well-defined, is continuous and
+
+\begin{enumerate}
+
+\item Increasing in $p$,
+\item Decreasing in $w$,
+\item Homogeneous of degree one in $(p,w)$,
+\item Convex in $(p,w)$,
+\item Differentiable in $(p,w)$ 
+\item Moreover, under the additional assumption that $f$ is strictly concave \\ (Hotelling's lemma),
+
+$$y(p,w) = \frac{\partial \pi(p,w)}{\partial p},\ and \ \ x_i(p,w) = - \frac{\partial \pi(p,w)}{\partial w_i}. \ \ \ \ i = 1,2, \dots , n.$$
+
+
+\end{enumerate}
 
 
 \end{mdframed}
@@ -153,11 +214,41 @@ maximum-value function,
 
 
 
+\subsection{Verify Theorem 3.8}
 
 
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
 
 \textbf{THEOREM 3.8 Properties of Output Supply and Input Demand Functions} (Jehle \& Reny pp.149)
+
+Suppose that $f$ is a strictly concave production function satisfying Assumption 3.1 and that its associated profit function, $\pi(p, y)$, is twice continuously differentiable. Then, for all $p > 0$ and $w \gg 0$ where it is well defined:
+
+\begin{enumerate}
+
+\item Homogeneity of degree zero:
+$$y(tp,tw) = y (p,w), \forall t > 0,$$
+$$x_i(tp,tw) = x_i(p,w), \forall t > 0 \ and \  i = 1,\dots, n.$$
+\item Own-price effects:
+$$\frac{\partial y(p,w)}{\partial p} \ge 0,$$
+$$\frac{\partial x_i(p,w)}{\partial w_i} \le 0, \ \forall i = 1,\dots, n. $$
+
+\item The substitution matrix is symmetric and positive semidefinite.
+
+\begin{equation}
+\left(
+    \begin{array}{cccc}
+    \frac{\partial y(p,w)}{\partial p} & \frac{\partial y(p,w)}{\partial w_1} & \cdots & \frac{\partial y(p,w)}{\partial w_n} \\
+    \frac{\partial x_1(p,w)}{\partial p} & \frac{\partial x_1(p,w)}{\partial w_1} & \cdots & \frac{\partial x_1(p,w)}{\partial w_n} \\
+    \vdots    &    \vdots & \ddots &   \vdots \\
+    \frac{\partial x_n(p,w)}{\partial p} & \frac{\partial x_n(p,w)}{\partial w_1} & \cdots & \frac{\partial x_n(p,w)}{\partial w_n} \\
+    \end{array}
+    \right)
+\label{eq:subst}   
+\end{equation}
+
+
+\end{enumerate}
+
 
 \end{mdframed}
 
