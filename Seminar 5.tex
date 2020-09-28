@@ -47,8 +47,8 @@
 }
 \begin{tikzpicture}[node distance=2cm,
 every node/.style={fill=white, font=\sffamily}, align=center]
-\node (start) [Starts] {Profit Maximization: \\ $\max_{(x,y) \ge 0} \ py - wx, s.t.  f(x) \ge y$};
-\node (1) [process, below of=start] {Output Supply Function: \\ $y^* \equiv y(p,w)$ \\  \\Input Demand Functions: \\ $x^* \equiv x(p,w)$};
+\node (start) [Starts] {Profit Maximization: \\ $\max_{(x,y) \ge 0} \ py - wx, s.t. y \le f(x)$};
+\node (1) [process, below of=start] {Output Supply Function: \\ $y^* \equiv y(p,w)$ \\ Input Demand Functions: \\ $x^* \equiv x(p,w)$};
 \node (2) [process, below of=1] {Profit Function: \\ $\pi (p,w) =  py^* - wx^*$};
 
 \node (3) [process, left of=2,xshift=-1.5cm,yshift=1cm]  {Hotelling's lemma (pp.148): \\ $y(p,w) = \frac{\partial \pi(p,w)}{\partial p}$ \\  \\   $x_i(p,w) = - \frac{\partial \pi(p,w)}{\partial w_i}$};
@@ -61,7 +61,7 @@ every node/.style={fill=white, font=\sffamily}, align=center]
 
 
 {\tiny
-\path (start) to  node {solution $x^*, y^*$} (1); 
+\path (start) to  node {Let $y = f(x)$, solution $x^*, y^*$} (1); 
 \path (1) to  node {maximized value} (2); 
 }
   
@@ -70,7 +70,7 @@ every node/.style={fill=white, font=\sffamily}, align=center]
 \node (start2) [Starts, right of = 1, xshift =6cm, yshift=2cm] {Cost Minimization: \\ $\min_{x \in \R^n_+} \ w x, s.t. f(x) \ge y$};
 \node (21) [process, below of=start2] {Conditional Input Demand: \\ $x(w,y)$};
 \node (22) [process, below of=21] {Cost Function: \\ $c(w,y) = w x(w,y)$};
-\node (23) [process, right of=22,xshift=1.5cm,yshift=1cm]  {Shephard's lemma(pp.37): \\ $\frac{\partial c(w^0,y^0)}{\partial w_i} = x_i(w^0,y^0)$};
+\node (23) [process, right of=22,xshift=1.5cm,yshift=1cm]  {Shephard's lemma(pp.138): \\ $\frac{\partial c(w^0,y^0)}{\partial w_i} = x_i(w^0,y^0)$};
 \node (24) [process, below of=22] {Production Function (pp.144): \\ $f(x) \equiv max\{y \ge 0 | wx \ge c(w,y), \forall w \gg 0 \}$};
 \draw[->]  (start2) -- (21);
 \draw[->]  (21) -- (22);
@@ -78,14 +78,20 @@ every node/.style={fill=white, font=\sffamily}, align=center]
 \draw[dashed]  (23) --  (21);
 \draw[->] (22) --  (24);
 {\tiny
-\path (start2) to  node {solution $x^*$} (21); 
+\path (start2) to  node {Let $f(x) = y$,solution $x^*$} (21); 
 \path (21) to  node {minimized value} (22); 
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\node (31) [process, right of=1,xshift=2cm,yshift=02cm] {FOC(pp.146): \\ $\frac{\partial f(x^*) / \partial x_i}{\partial f(x^*) / \partial x_j} = \frac{w_i}{w_j}$};
+\node (31) [process, right of=1,xshift=2cm,yshift=0.8cm] {FOC(pp.146): \\ $\frac{\partial f(x^*) / \partial x_i}{\partial f(x^*) / \partial x_j} = \frac{w_i}{w_j}$ \\ Constraint: \\ $f(x) \iff y$};
 
-\draw[dashed]  (start) --  (31);
-\draw[dashed]  (31) --  (start2);
+
+\draw[<-]  (2) --  (22);
+\draw[<->]  (1) --  (21);
+
+\path (22) to  node[above] {$\pi (p,w) = py(p,w) - c(w, y(p,w))$}  (2); 
+
+
+
 
 \end{tikzpicture}
 }
@@ -229,12 +235,29 @@ $$\max_{x \ge 0} p(x_1^\rho + x_2^\rho)^{\frac{\beta}{\rho}} - w_1x_1 - w_2x_2$$
 FOC are given in the textbook pp. 151. 
 
 The $y^*$ solved is the \textbf{output supply function}:
-$$y^* = (p\beta)^{-\beta /(\beta - 1)}(w_1^r + w_2^r)^{\beta / r(\beta -1)}$$
+\begin{equation}
+y^* = (p\beta)^{-\frac{\beta}{\beta - 1}}(w_1^r + w_2^r)^{\frac{\beta}{r(\beta - 1)}}
+    \label{eq:E5}   
+\end{equation}
+
+(You'll compare the output function with equation \ref{eq:check1} derived from cost minimization.)
 
 The $x^*$ solved is the \textbf{input demand function}:
-$$x_i^* = w_i^r  (p\beta)^{-1 /(\beta - 1)}(w_1^r + w_2^r)^{(\rho -\beta) / \rho(\beta -1)}$$
 
-The profit function is thus $$\pi = py^* - wx^* = p^{-1/(\beta - 1)} (w_1^r + w_2^r)^{\beta / r(\beta -1)}\beta^{-\beta /(\beta - 1)}(1-\beta)$$
+\begin{equation}
+x_i^* = w_i^{\frac{1}{\rho -1}}  (p\beta)^{\frac{-1}{\beta - 1}}(w_1^r + w_2^r)^{\frac{\rho -\beta}{\rho(\beta -1)}}
+    \label{eq:E6}   
+\end{equation}
+
+
+
+The profit function is thus:
+\begin{equation}
+\pi = py^* - wx^* = p^{-\frac{1}{\beta - 1}} (w_1^r + w_2^r)^{\frac{\beta}{r(\beta - 1)}}\beta^{-\frac{\beta}{\beta - 1}}(1-\beta)
+    \label{eq:E7}   
+\end{equation}
+
+(You'll compare the profit function with equation \ref{eq:check2} derived from cost minimization.)
 
 \textbf{THEOREM 3.7 Properties of the Profit Function} (Jehle \& Reny pp.148)
 
@@ -250,19 +273,83 @@ If $f$ satisfies Assumption 3.1, then for $p \ge 0$ and $w \ge 0$, the profit fu
 \item Moreover, under the additional assumption that $f$ is strictly concave \\ (Hotelling's lemma),
 
 $$y(p,w) = \frac{\partial \pi(p,w)}{\partial p},\ and \ \ x_i(p,w) = - \frac{\partial \pi(p,w)}{\partial w_i}. \ \ \ \ i = 1,2, \dots , n.$$
-
-
 \end{enumerate}
+\end{mdframed}
 
+\textbf{1.Increasing in $p$}
+
+For $\pi(p,w) = py^* - wx^* = p^{-\frac{1}{\beta - 1}} (w_1^r + w_2^r)^{\frac{\beta}{r(\beta - 1)}}\beta^{-\frac{\beta}{\beta - 1}}(1-\beta)$,
+\begin{align*}
+\frac{\partial \pi(p, w)}{\partial p} &= (-\frac{1}{\beta - 1})p^{-\frac{1}{\beta - 1}-1} (w_1^r + w_2^r)^{\frac{\beta}{r(\beta - 1)}}\beta^{-\frac{\beta}{\beta - 1}}(1-\beta) \\
+&= p^{\frac{\beta}{1 - \beta}} (w_1^r + w_2^r)^{\frac{\beta}{r(\beta - 1)}}\beta^{-\frac{\beta}{\beta - 1}} \\
+&= (p\beta)^{\frac{\beta}{1 - \beta}} (w_1^r + w_2^r)^{\frac{\beta}{r(\beta - 1)}}
+\end{align*}
+
+When $0<\beta <1$, $\frac{\partial \pi(p, w)}{\partial p} \ge 0 $
+
+\vspace{3mm}
+\textbf{2.Decreasing in $w$}
+
+\begin{align*}
+\frac{\partial \pi(p, w)}{\partial w_i} &= 
+p^{-\frac{1}{\beta - 1}} [\frac{\beta}{r(\beta - 1)}](w_1^r + w_2^r)^{\frac{\beta}{r(\beta - 1)} -1} r w_i^{r-1}\beta^{-\frac{\beta}{\beta - 1}}(1-\beta) \\
+&= p^{-\frac{1}{\beta - 1}} [-\beta](w_1^r + w_2^r)^{\frac{\beta}{r(\beta - 1)} -1} w_i^{r-1}\beta^{-\frac{\beta}{\beta - 1}} \\
+&= p^{-\frac{1}{\beta - 1}} [-1](w_1^r + w_2^r)^{\frac{\beta}{\frac{\rho}{\rho -1}(\beta - 1)} -1} w_i^{\frac{\rho}{\rho -1}-1}\beta^{1-\frac{\beta}{\beta - 1}} \\
+&= -p^{-\frac{1}{\beta - 1}}(w_1^r + w_2^r)^{\frac{\beta}{\frac{\rho}{\rho -1}(\beta - 1)} -1} w_i^{\frac{1}{\rho -1}}\beta^{-\frac{1}{\beta - 1}} \\
+&= -(p\beta)^{-\frac{1}{\beta - 1}}(w_1^r + w_2^r)^{\frac{(\rho -1)\beta}{\rho(\beta - 1)} -1} w_i^{\frac{1}{\rho -1}}\\
+&= -(p\beta)^{-\frac{1}{\beta - 1}}(w_1^r + w_2^r)^{\frac{\rho -\beta}{\rho(\beta-1)} }w_i^{\frac{1}{\rho -1}}
+\end{align*}
+
+$i = 1,2$.
+
+When $0<\beta <1$, $\frac{\partial \pi(p, w)}{\partial w_i} \le 0 $
+
+\vspace{3mm}
+\textbf{3.Homogeneous of degree one in $(p,w)$}
+
+\begin{align*}
+\pi(tp,tw) &= (tp)^{-\frac{1}{\beta - 1}} [(tw_1)^r + (tw_2)^r]^{\frac{\beta}{r(\beta - 1)}}\beta^{-\frac{\beta}{\beta - 1}}(1-\beta) \\
+&= t^{-\frac{1}{\beta - 1}}p^{-\frac{1}{\beta - 1}} t^{\frac{\beta}{(\beta - 1)}} [(w_1)^r + (w_2)^r]^{\frac{\beta}{r(\beta - 1)}}\beta^{-\frac{\beta}{\beta - 1}}(1-\beta) \\
+&= t^{-\frac{1}{\beta - 1} + \frac{\beta}{(\beta - 1)}}p^{-\frac{1}{\beta - 1}} [(w_1)^r + (w_2)^r]^{\frac{\beta}{r(\beta - 1)}}\beta^{-\frac{\beta}{\beta - 1}}(1-\beta) \\
+&= tp^{-\frac{1}{\beta - 1}} [(w_1)^r + (w_2)^r]^{\frac{\beta}{r(\beta - 1)}}\beta^{-\frac{\beta}{\beta - 1}}(1-\beta) \\
+&= t^1\pi(p,w) 
+\end{align*}
+
+\vspace{3mm}
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+\textbf{4.Convex in $(p,w)$}
+Higher-dimension proof not required in exam
+
+Recall one-dimension condition: 
+
+Convex functions (Jehle \& Reny pp.542):
+
+$f : D \to \R \ $ is a convex function if for all $x^1, x^2 \in D$,
+
+$$f(x^t) \le tf(x^1) + (1 - t)f(x^2), \ \forall t \in [0, 1].$$
+
+Where $x^t \equiv tx^1 + (1-t)x^2, t \in [0,1].$
+
+\vspace{2mm}
+{\centering
+\includegraphics[width=0.8\textwidth]{5.convex}
+\captionof{figure}{Convex function}
+\label{fig:convex}}
+\vspace{2mm}
+
+\textbf{5.Differentiable in $(p,w)$}
+Higher-dimension proof not required in exam.
+
+Recall one-dimension condition: derivative exists at $x^0 \Rightarrow$ Differentiable at $x^0$.
 
 \end{mdframed}
 
+\vspace{3mm}
+\textbf{6.Hotelling's lemma}
 
-
-
+We already calculated the derivatives. Compare them with equation \ref{eq:E5} and \ref{eq:E6}.
 %***************************************************
 \subsection{Verify Theorem 3.8}
-
 
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
 
@@ -292,12 +379,60 @@ $$\frac{\partial x_i(p,w)}{\partial w_i} \le 0, \ \forall i = 1,\dots, n. $$
     \right)
 \label{eq:subst}   
 \end{equation}
-
-
 \end{enumerate}
-
-
 \end{mdframed}
+
+
+Copy from Equation \ref{eq:E5}  and Equation \ref{eq:E6},
+
+\textbf{Output supply function}:
+$$
+y(p,w) = (p\beta)^{-\frac{\beta}{\beta - 1}}(w_1^r + w_2^r)^{\frac{\beta}{r(\beta - 1)}}
+$$
+
+\textbf{Input demand function}:
+$$
+x_i(p,w) = w_i^{\frac{1}{\rho -1}}  (p\beta)^{\frac{-1}{\beta - 1}}(w_1^r + w_2^r)^{\frac{\rho -\beta}{\rho(\beta -1)}}
+$$
+
+\vspace{3mm}
+\textbf{1.Homogeneity of degree zero}
+
+\begin{align*}
+y(tp,tw) &= (tp\beta)^{-\frac{\beta}{\beta - 1}}[(tw_1)^r + (tw_2)^r]^{\frac{\beta}{r(\beta - 1)}} \\
+ &= t^{-\frac{\beta}{\beta - 1}}(p\beta)^{-\frac{\beta}{\beta - 1}} t^{\frac{\beta}{(\beta - 1)}} (w_1^r + w_2^r)^{\frac{\beta}{r(\beta - 1)}} \\
+ &=t^0(p\beta)^{-\frac{\beta}{\beta - 1}}(w_1^r + w_2^r)^{\frac{\beta}{r(\beta - 1)}} \\
+  &=t^0 y(p,w) 
+\end{align*}
+
+\begin{align*}
+x_i(tp,tw) &= (tw_i)^{\frac{1}{\rho -1}}  (tp\beta)^{\frac{-1}{\beta - 1}}[(tw_1)^r + (tw_2)^r]^{\frac{\rho -\beta}{\rho(\beta -1)}} \\
+&= t^{\frac{1}{\rho -1}} w_i^{\frac{1}{\rho -1}} t^{\frac{-1}{\beta -1}} (p\beta)^{\frac{-1}{\beta - 1}} t^{r\frac{\rho -\beta}{\rho(\beta -1)}} (w_1^r + w_2^r)^{\frac{\rho -\beta}{\rho(\beta -1)}} \\
+ &=t^{\frac{1}{\rho -1} + \frac{-1}{\beta -1} + \frac{\rho}{\rho - 1}\frac{\rho -\beta}{\rho(\beta -1)}} w_i^{\frac{1}{\rho -1}}  (p\beta)^{\frac{-1}{\beta - 1}}(w_1^r + w_2^r)^{\frac{\rho -\beta}{\rho(\beta -1)}} \\
+  &=t^0 x_i(p,w)
+\end{align*}
+
+$i = 1,2$.
+
+
+\vspace{3mm}
+\textbf{2.Own-price effects}
+
+$$\frac{\partial y(p,w)}{\partial p} =(-\frac{\beta}{\beta - 1})p^{-\frac{\beta}{\beta - 1} - 1} (\beta)^{-\frac{\beta}{\beta - 1}}(w_1^r + w_2^r)^{\frac{\beta}{r(\beta - 1)}}$$
+
+When $\beta \in (0,1), \frac{\partial y(p,w)}{\partial p} \ge 0$.
+
+
+$$\frac{\partial x_i(p,w)}{\partial w_i} =
+$$
+
+
+
+
+
+\vspace{3mm}
+\textbf{3.Substitution matrix}
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -396,27 +531,133 @@ c(w,y) = w_1x_1 + w_2x_2 &= w_1y^{\frac{1}{\beta}} (\frac{w_1^{\frac{\rho}{\rho 
 \end{align*}
 
 Where $r = \frac{\rho}{\rho -1}$
-%***************************************************
-\subsection{$\max_y py - c(w, y)$ }
-
 
 %***************************************************
-\subsection{$\pi (p,w) = py(p,w) - c(w, y(p,w))$}
+\subsection{Solve $\max_y py - c(w, y)$ }
 
+$$py - c(w, y) = py - y^{\frac{1}{\beta}}{(w_1^r + w_2^r)^{\frac{1}{r}}} $$
+
+FOC:
+
+$$\frac{d(py - y^{\frac{1}{\beta}}{(w_1^r + w_2^r)^{\frac{1}{r}}})}{dy}= p - \frac{1}{\beta}y^{\frac{1}{\beta} - 1} (w_1^r + w_2^r)^{\frac{1}{r}} = 0$$
+
+\begin{equation}
+\therefore y^{\frac{1- \beta}{\beta}} = p \beta (w_1^r + w_2^r)^{-\frac{1}{r}}  \Rightarrow y =  (p \beta)^{\frac{\beta}{1- \beta}} (w_1^r + w_2^r)^{^{\frac{\beta}{r(\beta - 1)}}}
+    \label{eq:check1}   
+\end{equation}
 
 %***************************************************
-\subsection{FOC}
+\subsection{Check $\pi (p,w) = py(p,w) - c(w, y(p,w))$}
 
+\textbf{1.output function}
+
+Compare the output function \ref{eq:check1} with \ref{eq:E5}, the results are the same.
+
+\textbf{1.Profit function}
+
+\begin{align}
+\begin{split}
+py(p,w) - c(w, y(p,w)) &= p[(p \beta)^{\frac{\beta}{1- \beta}} (w_1^r + w_2^r)^{^{\frac{\beta}{r(\beta - 1)}}}] \\ 
+&\ \ \ \ \ \ \ \ - [(p \beta)^{\frac{\beta}{1- \beta}} (w_1^r + w_2^r)^{^{\frac{\beta}{r(\beta - 1)}}}]^{\frac{1}{\beta}}{(w_1^r + w_2^r)^{\frac{1}{r}}} \\
+&= p^{\frac{1}{1- \beta}} \beta^{\frac{\beta}{1- \beta}}(w_1^r + w_2^r)^{^{\frac{\beta}{r(\beta - 1)}}} \\ 
+&\ \ \ \ \ \ \ \ - (p\beta)^{\frac{1}{1- \beta}} (w_1^r + w_2^r)^{\frac{1}{r(\beta - 1)}}(w_1^r + w_2^r)^{\frac{1}{r}} \\
+&= p^{\frac{1}{1- \beta}} \beta^{\frac{\beta}{1- \beta}}(w_1^r + w_2^r)^{^{\frac{\beta}{r(\beta - 1)}}} - (p\beta)^{\frac{1}{1- \beta}} (w_1^r + w_2^r)^{\frac{\beta}{r(\beta - 1)}} \\
+&= [p^{\frac{1}{1- \beta}} \beta^{\frac{\beta}{1- \beta}} - (p\beta)^{\frac{1}{1- \beta}}] (w_1^r + w_2^r)^{\frac{\beta}{r(\beta - 1)}} \\
+&= [p^{\frac{1}{1- \beta}} \beta^{\frac{\beta}{1- \beta}} - p^{\frac{1}{1- \beta}} \beta^{\frac{1}{1- \beta}}] (w_1^r + w_2^r)^{\frac{\beta}{r(\beta - 1)}} \\
+&= [ \beta^{\frac{\beta}{1- \beta}} -\beta^{\frac{1}{1- \beta}}] p^{\frac{1}{1- \beta}}(w_1^r + w_2^r)^{\frac{\beta}{r(\beta - 1)}} \\
+&= [ 1 -\beta^1] \beta^{\frac{\beta}{1- \beta}} p^{\frac{1}{1- \beta}}(w_1^r + w_2^r)^{\frac{\beta}{r(\beta - 1)}} \\
+&= p^{\frac{1}{1- \beta}}(w_1^r + w_2^r)^{\frac{\beta}{r(\beta - 1)}} \beta^{\frac{\beta}{1- \beta}}(1 -\beta^1)
+\end{split}
+\label{eq:check2}   
+\end{align}
+
+Compare the result \ref{eq:check2} with the profit function \ref{eq:E7} obtained from profit maximization problem.
+
+\begin{center}
+\textbf{Profit maximization $\iff$  Cost minimization}
+\end{center}
+
+%***************************************************
+\subsection{Marginal Cost and output}
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+
+We already know the cost function given output $y$:
+$$c(w,y) = y^{\frac{1}{\beta}}{(w_1^r + w_2^r)^{\frac{1}{r}}} $$
+
+Forget that we already know \textbf{Profit maximization $\iff$  Cost minimization} for now.
+
+To maximize our profit, we want instead the difference between $py$ and $c(w,y)$(the least cost for every given $y$) to be as big as possible,i.e.:
+$$\max_{y} py - c(w,y)$$
+
+As a price receiver (competitive firm), how should we change $y$ to achieve this?
+
+FOC:
+$$\frac{d(py - c(w,y))}{dy} = p - \frac{dc(w,y)}{dy}=0$$
+
+SOC:
+
+$$\frac{d^2(py - c(w,y))}{dy^2} = - \frac{d^2c(w,y)}{dy^2} \le 0 \Rightarrow \frac{d^2c(w,y)}{dy^2} \ge 0$$
+
+Figure \ref{fig:soc} is a very nice plot showing why FOC is not enough for "maximum poit":
+
+\vspace{2mm}
+{\centering
+\includegraphics[width=0.8\textwidth]{5.soc}
+\captionof{figure}{Second order condition}
+\label{fig:soc}}
+\vspace{2mm}
+
+(The Figure is from \href{https://kenndanielso.github.io/mlrefined/blog_posts/7_Second_order_methods/7_8_Second_order_condition.html}{Intuiting the condition by example})
+
+
+We choose the level $y^*$ of output such that 
+$$\frac{dc(w,y)}{dy}= p$$
+(Marginal cost = price). And,
+$\frac{d^2c(w,y)}{dy^2} \ge 0$
+(Marginal cost increasing in scale)
+
+\vspace{2mm}
+{\centering
+\includegraphics[width=0.8\textwidth]{5.mc}
+\captionof{figure}{Marginal cost and price}
+\label{fig:mc}}
+\vspace{2mm}
+
+\end{mdframed}
+
+Given $c(w,y) = y^{\frac{1}{\beta}}{(w_1^r + w_2^r)^{\frac{1}{r}}} $,
+
+$$MC=\frac{dc(w,y)}{dy}= \frac{1}{\beta}  y^{\frac{1}{\beta} - 1}{(w_1^r + w_2^r)^{\frac{1}{r}}}$$
+
+$$\frac{d MC}{dy} = \frac{1}{\beta}(\frac{1}{\beta} - 1)  y^{\frac{1}{\beta} - 2}{(w_1^r + w_2^r)^{\frac{1}{r}}}$$
+
+
+If $\beta >1$, $\frac{d MC}{dy} < 0$. The solution is therefore minimized profit, instead of maximized profit.
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+Intuitively, $MC=\frac{1}{\beta}  y^{\frac{1}{\beta} - 1}{(w_1^r + w_2^r)^{\frac{1}{r}}}$ is decreasing in $y$ when $\beta > 1$, the more you produce, the less cost you need to pay for 1 more unit output. You will therefore continue to produce $+\infty$.
+\end{mdframed}
 
 %***************************************************
 \subsection{Sketch}
 
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\draw[thick,<->] (0,7) node[left]{$\$$}--(0,0)--(10,0) node[right]{$y$};
+\node [below left] at (0,0) {$0$};
+\draw(1,6) ..controls (2,5) and (5,3).. (9,3) node[right]{$MC$};
+\draw [blue] (0,4)--(10,4) ;
+\draw (4.16,0)--(4.16,4) ;
+\node[left,blue] at (0,4) {$p$} ;
+\node[below] at (4.16,0) {$y^*$} ;
 
+\end{tikzpicture}
+\captionof{figure}{Decreasing MC and p}
+\label{fig:mc}
+\end{center}
+\vspace{2mm}
 
-
-
-
-
-
+If you stop at $y^*$, you lose the most!
 
 \end{document}
