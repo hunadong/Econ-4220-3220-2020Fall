@@ -124,7 +124,11 @@ The solution $x(w, y)$ is referred to as the firm’s \textbf{conditional input 
 \item  \textbf{Conditional input demand} is similar to Hicksian demands for consumers.
 \end{itemize}
 
+\end{mdframed}
+
 \vspace{2mm}
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
 
 Here the linear production function $y = \Sigma^n_{i=1} \alpha_i x_i$ is very similar to the "\textbf{perfect substitution}" preference in Seminar 4.
 
@@ -181,14 +185,56 @@ For cost funtion, let's assume $\frac{w_1}{\alpha_1} = \frac{w_2}{\alpha_2}= \do
 \item Verify Theorem 3.7 for the profit function obtained in Example 3.5. 
 \item Verify Theorem 3.8 for the associated output supply and input demand functions.
 \end{itemize}
-
+%***************************************************
 \subsection{Verify Theorem 3.7}
 
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
 
 \textbf{DEFINITION 3.7 The Profit Function} (Jehle \& Reny pp.148)
 
-The firm’s profit function depends only on input and output prices and is defined as the maximum-value function.
+$$\pi (p,w) \equiv \max_{(x,y) \ge 0} py - wx, \ \ s.t. y \le f(x)$$
+
+\textbf{Note,} $y \le f(x)$ means "you can only decide to produce what's possible to be produced":
+
+\begin{itemize}
+\item Assume you want to set an optimal output $y$, forget input $x$ for now;
+\item You can "waste", i.e., output $y < f(x)$ is possible. Input is not efficiently used for technology $f(x)$;
+\item You can't produce more than what your technology $f(x)$ allows, i.e.  $y \ngtr f(x)$.
+\end{itemize}
+
+It's not easy to solve the maximization problem directly because there are 2 variable, $y$ and $x$ (again, $y$ is \textbf{NOT} 
+necessarily to be $f(x)$, but it can't exceed $f(x)$).
+
+Since to waste will definitely reduce profit (you have some cost but don't produce anything), you will always avoid wasting by
+making fully use of your technology, i.e. $y = f(x)$. Then the profit maximization problem is transformed into:
+
+$$\pi (p,w) = \max_{x \ge 0} p f(x) - wx$$
+
+No constraint anymore! The function has only one variable, input $x$. FOC will solve the problem.
+
+
+In \textbf{Example 3.5} (Jehle \& Reny pp.151), the CES production function is:
+
+$$y = (x_1^\rho + x_2^\rho)^{\frac{\beta}{\rho}}$$
+
+Where $\beta < 1$ and $0 \ne \rho <1$. To obtain the profit function, we need to solve the maximization problem:
+
+
+$$\max_{(x,y) \ge 0} py - wx, \ \ s.t. \ \ y \le (x_1^\rho + x_2^\rho)^{\frac{\beta}{\rho}}$$
+
+Again, we don't waste, i.e. $ y = (x_1^\rho + x_2^\rho)^{\frac{\beta}{\rho}}$, the problem above is then:
+
+$$\max_{x \ge 0} p(x_1^\rho + x_2^\rho)^{\frac{\beta}{\rho}} - w_1x_1 - w_2x_2$$
+
+FOC are given in the textbook pp. 151. 
+
+The $y^*$ solved is the \textbf{output supply function}:
+$$y^* = (p\beta)^{-\beta /(\beta - 1)}(w_1^r + w_2^r)^{\beta / r(\beta -1)}$$
+
+The $x^*$ solved is the \textbf{input demand function}:
+$$x_i^* = w_i^r  (p\beta)^{-1 /(\beta - 1)}(w_1^r + w_2^r)^{(\rho -\beta) / \rho(\beta -1)}$$
+
+The profit function is thus $$\pi = py^* - wx^* = p^{-1/(\beta - 1)} (w_1^r + w_2^r)^{\beta / r(\beta -1)}\beta^{-\beta /(\beta - 1)}(1-\beta)$$
 
 \textbf{THEOREM 3.7 Properties of the Profit Function} (Jehle \& Reny pp.148)
 
@@ -200,7 +246,7 @@ If $f$ satisfies Assumption 3.1, then for $p \ge 0$ and $w \ge 0$, the profit fu
 \item Decreasing in $w$,
 \item Homogeneous of degree one in $(p,w)$,
 \item Convex in $(p,w)$,
-\item Differentiable in $(p,w)$ 
+\item Differentiable in $(p,w)$.
 \item Moreover, under the additional assumption that $f$ is strictly concave \\ (Hotelling's lemma),
 
 $$y(p,w) = \frac{\partial \pi(p,w)}{\partial p},\ and \ \ x_i(p,w) = - \frac{\partial \pi(p,w)}{\partial w_i}. \ \ \ \ i = 1,2, \dots , n.$$
@@ -214,6 +260,7 @@ $$y(p,w) = \frac{\partial \pi(p,w)}{\partial p},\ and \ \ x_i(p,w) = - \frac{\pa
 
 
 
+%***************************************************
 \subsection{Verify Theorem 3.8}
 
 
@@ -257,24 +304,112 @@ $$\frac{\partial x_i(p,w)}{\partial w_i} \le 0, \ \forall i = 1,\dots, n. $$
 \section{Jehle \& Reny 3.49}
 
 \begin{enumerate}
-\item Derive the \textbf{cost function} for the production function in Example 3.5. 
+\item Derive the \textbf{cost function} for the production function in Example 3.5 . 
 
 \item Solve $\max_y py - c(w, y)$ 
 
 \item Compare its solution, $y(p,w)$, to the solution in (E.5). Check that $\pi (p,w) = py(p,w) - c(w, y(p,w))$. 
 
-\item Supposing that $\beta> 1$, confirm our conclusion that profits are minimised when the
+\item Supposing that $\beta > 1$, confirm our conclusion that profits are minimised when the
 first-order conditions are satisfied by showing that marginal cost is decreasing at the solution. 
 
 \item Sketch your results.
 
 \end{enumerate}
 
+%***************************************************
+\subsection{Cost function}
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+CES  production function in Example 3.5 : $y = (x_1^\rho + x_2^\rho)^{\frac{\beta}{\rho}}$, $\beta < 1$ and $0 \ne \rho <1$
+
+Cost function: $c(w,y) \equiv \min_{x \in \R^n_+} w \cdot x , \ \ s.t. \ \ f(x) \ge y.$
+\end{mdframed}
 
 
+$$c(w,y) = \min_{x \in \R^n_+} w_1x_1 + w_2x_2 , \ \ s.t. \ \ (x_1^\rho + x_2^\rho)^{\frac{\beta}{\rho}} \ge y$$
+
+No corner solution.
+
+\begin{itemize}
+\item Obviously $x_1,x_2$ can't both be $0$ to produce $y>0$.
+\item $\frac{\partial f(x)}{\partial x_i} = \beta (x_1^\rho + x_2^\rho)^{(\frac{\beta}{\rho}) - 1}x_i^{\rho - 1}$. If $\rho \in (0,1),\beta > 0$, $\lim_{x_i \to 0}\frac{\partial f(x)}{\partial x_i} = +\infty$. 
+\begin{itemize}
+\item If $\rho \in (0,1),\beta < 0$, the production function doesn't make sense since $\lim_{x \to (0,0)} f(x) = + \infty$
+\item  If  $\rho < 0$, the production function is not defined at $x_i = 0$
+\end{itemize}
+
+\item $f(x) = y$ is binding: $f(x)$ is increasing in $x$, to reduce cost, we shouldn't produce more than required ($y$).
+\end{itemize}
+
+$$L =  w_1x_1 + w_2x_2 + \lambda [y -  (x_1^\rho + x_2^\rho)^{\frac{\beta}{\rho}}] $$ 
+
+FOC:
+
+\begin{equation}
+    \begin{cases}
+\frac{\partial L}{\partial x_1} =w_1 - \lambda \beta (x_1^\rho + x_2^\rho)^{(\frac{\beta}{\rho}) - 1}x_1^{\rho - 1}= 0 \\
+\frac{\partial L}{\partial x_2} =w_2 - \lambda \beta (x_1^\rho + x_2^\rho)^{(\frac{\beta}{\rho}) - 1}x_2^{\rho - 1} = 0 \\
+y -  (x_1^\rho + x_2^\rho)^{\frac{\beta}{\rho}} = 0
+    \end{cases}
+    \nonumber
+\end{equation}
+
+Simplify:
+
+\begin{equation}
+    \begin{cases}
+ w_1 = \lambda \beta (x_1^\rho + x_2^\rho)^{(\frac{\beta}{\rho}) - 1}x_1^{\rho - 1} \\
+ w_2 =\lambda \beta (x_1^\rho + x_2^\rho)^{(\frac{\beta}{\rho}) - 1}x_2^{\rho - 1} \\
+(x_1^\rho + x_2^\rho)^{\frac{\beta}{\rho}} = y
+    \end{cases}
+    \label{eq:3_49_foc}   
+\end{equation}
+
+Taking the ratio between the first two gives:
+
+$$\frac{w_1}{w_2}= (\frac{x_1}{x_2})^{\rho - 1} \Rightarrow x_1 = (\frac{w_1}{w_2})^{\frac{1}{\rho - 1}} x_2$$
+
+Substituting in the third gives:
+
+\begin{align*}
+\{[(\frac{w_1}{w_2})^{\frac{1}{\rho - 1}} x_2]^\rho + x_2^\rho\}^{\frac{\beta}{\rho}} &=y \\
+[(\frac{w_1}{w_2})^{\frac{\rho}{\rho - 1}} x_2^\rho + x_2^\rho]^{\frac{\beta}{\rho}} &=y \\
+[(\frac{w_1}{w_2})^{\frac{\rho}{\rho - 1}} + 1]^{\frac{\beta}{\rho}} x_2^\beta &=y \\
+x_2 &= (\frac{y}{[(\frac{w_1}{w_2})^{\frac{\rho}{\rho - 1}} + 1]^{\frac{\beta}{\rho}} })^{\frac{1}{\beta}} \\
+ &= y^{\frac{1}{\beta}} [\frac{1}{(\frac{w_1}{w_2})^{\frac{\rho}{\rho - 1}} + 1}]^{\frac{1}{\rho}} \\
+&= y^{\frac{1}{\beta}} [\frac{1}{(\frac{w_1}{w_2})^{\frac{\rho}{\rho - 1}} + 1}]^{\frac{1}{\rho}} \\
+&= y^{\frac{1}{\beta}} (\frac{w_2^{\frac{\rho}{\rho - 1}}}{w_1^{\frac{\rho}{\rho - 1}} + w_2^{\frac{\rho}{\rho - 1}}})^{\frac{1}{\rho}} \\
+\Rightarrow x_1 &= (\frac{w_1}{w_2})^{\frac{1}{\rho - 1}} x_2  \\
+&= y^{\frac{1}{\beta}} (\frac{w_1^{\frac{\rho}{\rho - 1}}   }{w_2^{\frac{\rho}{\rho - 1}}   } \frac{w_2^{\frac{\rho}{\rho - 1}}}{w_1^{\frac{\rho}{\rho - 1}} + w_2^{\frac{\rho}{\rho - 1}}})^{\frac{1}{\rho}}  \\
+&=y^{\frac{1}{\beta}} (\frac{w_1^{\frac{\rho}{\rho - 1}}}{w_1^{\frac{\rho}{\rho - 1}} + w_2^{\frac{\rho}{\rho - 1}}})^{\frac{1}{\rho}} 
+\end{align*}
+
+Cost function: 
+\begin{align*}
+c(w,y) = w_1x_1 + w_2x_2 &= w_1y^{\frac{1}{\beta}} (\frac{w_1^{\frac{\rho}{\rho - 1}}}{w_1^{\frac{\rho}{\rho - 1}} + w_2^{\frac{\rho}{\rho - 1}}})^{\frac{1}{\rho}}  +w_2 y^{\frac{1}{\beta}} (\frac{w_2^{\frac{\rho}{\rho - 1}}}{w_1^{\frac{\rho}{\rho - 1}} + w_2^{\frac{\rho}{\rho - 1}}})^{\frac{1}{\rho}} \\
+&= w_1y^{\frac{1}{\beta}} \frac{w_1^{\frac{1}{\rho - 1}}}{(w_1^{\frac{\rho}{\rho - 1}} + w_2^{\frac{\rho}{\rho - 1}})^{\frac{1}{\rho}}}  +w_2 y^{\frac{1}{\beta}} \frac{w_2^{\frac{1}{\rho - 1}}}{(w_1^{\frac{\rho}{\rho - 1}} + w_2^{\frac{\rho}{\rho - 1}})^{\frac{1}{\rho}}} \\
+&=y^{\frac{1}{\beta}} [\frac{w_1^{(\frac{1}{\rho - 1}+1)}}{(w_1^{\frac{\rho}{\rho - 1}} + w_2^{\frac{\rho}{\rho - 1}})^{\frac{1}{\rho}}} + \frac{w_2^{(\frac{1}{\rho - 1}+1)}}{(w_1^{\frac{\rho}{\rho - 1}} + w_2^{\frac{\rho}{\rho - 1}})^{\frac{1}{\rho}}}] \\
+&=y^{\frac{1}{\beta}}\frac{w_1^r+w_1^r}{(w_1^r + w_2^r)^{\frac{1}{\rho}}} \\
+&=y^{\frac{1}{\beta}}{(w_1^r + w_2^r)^{1 - \frac{1}{\rho}}} \\
+&=y^{\frac{1}{\beta}}{(w_1^r + w_2^r)^{\frac{1}{r}}} \\
+\end{align*}
+
+Where $r = \frac{\rho}{\rho -1}$
+%***************************************************
+\subsection{$\max_y py - c(w, y)$ }
 
 
+%***************************************************
+\subsection{$\pi (p,w) = py(p,w) - c(w, y(p,w))$}
 
+
+%***************************************************
+\subsection{FOC}
+
+
+%***************************************************
+\subsection{Sketch}
 
 
 
