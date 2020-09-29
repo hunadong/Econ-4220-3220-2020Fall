@@ -219,7 +219,7 @@ Concave functions (Jehle \& Reny pp.534):
 
 $f : D \to \R \ $ is a concave function if for all $x^1, x^2 \in D$,
 
-$$f(x^t) \ge tf(x^1) + (1 − t)f(x^2), \ \forall t \in [0, 1].$$
+$$f(x^t) \ge tf(x^1) + (1 - t)f(x^2), \ \forall t \in [0, 1].$$
 
 Where $x^t \equiv tx^1 + (1-t)x^2, t \in [0,1].$
 
@@ -458,7 +458,7 @@ Marshallian demand functions $x^* = x(p, y)$ is the solutions
 to the utility maximization problem (JR. pp.21).
 \end{mdframed}
 
-There is no interior solutions:
+There is no corner solution:
 
 \begin{itemize}
 \item The function is strictly increasing so the budget balancedness holds. 
@@ -571,18 +571,24 @@ How to define complements and substitutes? If $\frac{\partial x_b}{\partial p_a}
 
 Here is an example:
 
-As fruits, apple and banana seems to be "substitutes", i.e. when apple 
-price increases, we tend to buy fewer apples and more bananas($\frac{\partial x_b}{\partial p_a} > 0$).
+\begin{itemize}
+\item As fruits, apple and banana seems to be "substitutes", i.e. when apple price increases, we tend to buy fewer apples and more bananas($\frac{\partial x_b}{\partial p_a} > 0$).
 
-However, since apples are very expensive, ony a few apples cost so much money that you have less money for bananas. As a result, you buy fewer apples and fewer bananas ($\frac{\partial x_b}{\partial p_a} < 0$).
+\item However, since apples are very expensive, ony a few apples cost so much money that you have less money for bananas. As a result, you buy fewer apples and fewer bananas ($\frac{\partial x_b}{\partial p_a} < 0$).
 
+\item Things get more complex when banana is inferior, which leads to a positive income effect when apple price increase. 
+\end{itemize}
+
+\begin{center}
 \textbf{Substitute effects may be "covered" by the income effects}
+\end{center}
+
 
 To precisely describe "substitutes" we need to define:
 
 \begin{itemize}
 \item Gross substitutes: $\frac{\partial x_b}{\partial p_a} > 0$
-\item Net substitutes: $\frac{\partial x(\bar{u})^h_b}{\partial p_a} > 0$
+\item Net substitutes: $\frac{\partial x^h_b(\bar{u})}{\partial p_a} > 0$
 \end{itemize}
 
 \end{mdframed}
