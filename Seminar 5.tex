@@ -185,6 +185,166 @@ If $\omega$ is the price of several inputs $x_m, m = 1,2, \dots, M$, the firm ca
 For cost funtion, let's assume $\frac{w_1}{\alpha_1} = \frac{w_2}{\alpha_2}= \dots =\frac{w_M}{\alpha_M} = \omega$, then $\omega$ is the price for $1$ single apple, for example. Again, to produce $y$ bottles of jam, you need the same number of single apples. The cost function is thus $\omega y$
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Another production \& cost function example from exam 2019 Q1(b): HydroP}
+
+To produce electricity $E$, firm HydroP uses water $W$ and a plant $P$ as
+main inputs. It operates in a unique location, so that no further plants can be
+built. Without the plant the production is $0$. With the plant, electricity can be
+produced according to the following production function:
+
+
+\begin{equation}
+E=
+    \begin{cases}
+0, \ \ \ \ if \ \ W \le \underbar{W} \\
+4W, \ \ \ \ if \ \   \underbar{W} \le   W \le \bar{W} \\
+3\bar{W}, \ \ \ \ if \ \ \bar{W} \le W \\
+    \end{cases}
+    \label{eq:hydro}   
+\end{equation}
+
+%***************************************************
+\subsection{a) Function property}
+
+\textbf{ [5\%] Is this production function: continuous? (strictly) increasing? (strictly) quasiconcave? increasing/decreasing/constant returns
+to scale?}
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+
+When $W = \underbar{W}$, the production function value is $0$ and $4\underbar{W}$. Therefore $\underbar{W} = 0$.
+
+But the guideline online treated "$W \le \underbar{W}$" as "W < \underbar{W}", which is incorrect.
+
+\begin{center}
+\begin{tikzpicture}[scale=1]
+\draw[thick,<->] (0,9) node[left]{$E$}--(0,0)--(2,0)node[below]{$\bar{W}$} -- (4,0) node[below,blue]{Too much water}--(6,0) node[right]{$W$};
+\draw[thick] (-5,0) --(0,0);
+\draw[thick] (0,-1) -- (0,-0.2)node[right]{$0(\underbar{W})$} --(0,0);
+\draw[thick, blue] (-4,0) -- (-2.2,0)node[below]{Water below the turbine} --(0,0) ;
+\draw[thick, blue] (0,0) -- (2,8);
+\draw[thick, blue] (2,6) -- (5,6);
+\draw[dashed] (2,8.5) -- (2,0);
+\draw[fill,blue] (2,8) circle [radius =0.06];
+\draw [blue]  (2,6) circle [radius =0.06];
+\end{tikzpicture}
+\captionof{figure}{HydroP's Production function}
+\label{fig:hydro}
+\end{center}
+\vspace{2mm}
+
+Obviously, the production function is:
+\begin{itemize}
+\item not continuous at $(\bar{W},0)$
+\item not increasing in $(-\infty,0)$ and $(\bar{W},+\infty)$
+\item quasiconcave: $f (x^t) \ge min[f (x^1), f (x^2)]$ for all $t ∈ [0, 1]$.
+\item not strictly quasiconcave: sometimes $f (x^t) = min[f (x^1), f (x^2)]$
+\item return to scale uncertain, "jump" around $(0,0)$ and $(\bar{W},0)$
+\end{itemize}
+\end{mdframed}
+
+Answer:
+
+The production function is:
+\begin{itemize}
+\item not continuous
+\item not increasing and therefore not strictly increasing
+\item quasiconcave but not strictly quasiconcave
+\item return to scale uncertain, sometimes increase, sometimes constant or decrease.
+\end{itemize}
+
+
+\begin{mdframed}[backgroundcolor=yellow!20,linecolor=white]
+\begin{itemize}
+\item Draw sketch for unusual function!
+\item Don't be wordy, don't prove unnecessarily 
+\end{itemize}
+\end{mdframed}
+
+%***************************************************
+\subsection{b) Cost function}
+
+\textbf{[7\%] Determine the cost function for this firm (let the price of
+water be and let K be the cost of the plant). Is the cost function
+continuous?}
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+Cost function: $c(w,y) \equiv \min_{x \in \R^n_+} w \cdot x , \ \ s.t. \ \ f(x) \ge y.$
+
+\begin{itemize}
+\item It is always the minimized value function
+\item It's a function of input price $w$ and output amount $y$
+\item There can be fixed cost in the short run.
+\end{itemize}
+
+In this question, the only input is water, with a price of $p_w$. There is also a fixed cost $K$ if you
+build the plant. We can write the cost function as $c(p_w,K,E)$
+
+\vspace{3mm}
+
+Now let's find the miminum cost with different output amount $E$ on our sketch.
+
+\vspace{3mm}
+
+\textbf{When $E=0$}, you will not build the plant to minimize your cost, $c(p_w,K,0) = 0$
+
+\vspace{3mm}
+
+\textbf{When $E \in (0,4\bar{W}]$}, you must build the plant. For any output $E$, you need  $\frac{E}{4}$ water,
+which costs $p_w\frac{E}{4}$.
+
+\begin{itemize}
+\item Can you produce more than $4\bar{W}$? No, that's not allowed by your technology, the plant.
+\item Will you use water more than $\bar{W}$? No, that's not cost minimized. You always choose the most
+"economical" way to minimize the cost. Don't forget you're looking for the \textbf{cost function}
+\end{itemize}
+
+\end{mdframed}
+
+The cost function is:
+
+
+\begin{equation}
+c(p_w,K,E)=
+    \begin{cases}
+0, \ \ \ \ if \ \ E = 0 \\
+K + p_w\frac{E}{4}, \ \ \ \ if \ \   0 <  E \le 4\bar{W} \\
+    \end{cases}
+    \label{eq:hydro_c}   
+\end{equation}
+
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+Again, note $\underbar{W} = 0$. Compare the result with the \href{https://www.uio.no/studier/emner/sv/oekonomi/ECON4220/previous-exams/econ32_4220_2019h_sensorveiledning.pdf}{online guideline}. 
+
+\begin{itemize}
+\item Based on the guideline's understanding of the question, is it possible to produce $E \in (0, 4\underbar{W})$
+\end{itemize}
+\end{mdframed}
+
+
+%***************************************************
+\subsection{c) Integrability}
+\textbf{ [5\%] Can one recover the original production function from the
+cost function? Why not?}
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+Observe function \ref{eq:hydro_c}, can you guess what is the production function $f(x)$?
+
+\textbf{When $E=0$}, there is no cost and no output, $f(0) = 0$
+
+\textbf{When $E \in (0,4\bar{W}]$}, we know $K$ is fixed cost, $p_w$ is the price of your input,  $\frac{E}{4}$ is the
+amount of water you used to generate electricity (output) $E$. Thus $$f(\frac{E}{4}) = E \Rightarrow f(x) = 4x$$
+
+\begin{itemize}
+\item Can you know the production function is $f(x) = 3\bar{W}$ when $x > \bar{W}$? No, you can't imagine that from the cost function.
+\item Since cost function is always the minimized value function, the production function recovered from a cost function is only the "most efficient" part. Any non- cost -minimization technology can't be recovered. 
+\end{itemize}
+\end{mdframed}
+
+
+No. Because when $x > \bar{W}$, the production is never cost minimizing, while  cost function can only reflect the technology minimizing the cost.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Jehle \& Reny 3.46}
 
 \begin{itemize}
@@ -372,9 +532,9 @@ $$\frac{\partial x_i(p,w)}{\partial w_i} \le 0, \ \forall i = 1,\dots, n. $$
 \left(
     \begin{array}{cccc}
     \frac{\partial y(p,w)}{\partial p} & \frac{\partial y(p,w)}{\partial w_1} & \cdots & \frac{\partial y(p,w)}{\partial w_n} \\
-    \frac{\partial x_1(p,w)}{\partial p} & \frac{\partial x_1(p,w)}{\partial w_1} & \cdots & \frac{\partial x_1(p,w)}{\partial w_n} \\
+    \frac{-\partial x_1(p,w)}{\partial p} & \frac{-\partial x_1(p,w)}{\partial w_1} & \cdots & \frac{-\partial x_1(p,w)}{\partial w_n} \\
     \vdots    &    \vdots & \ddots &   \vdots \\
-    \frac{\partial x_n(p,w)}{\partial p} & \frac{\partial x_n(p,w)}{\partial w_1} & \cdots & \frac{\partial x_n(p,w)}{\partial w_n} \\
+    \frac{-\partial x_n(p,w)}{\partial p} & \frac{-\partial x_n(p,w)}{\partial w_1} & \cdots & \frac{-\partial x_n(p,w)}{\partial w_n} \\
     \end{array}
     \right)
 \label{eq:subst}   
@@ -414,7 +574,6 @@ x_i(tp,tw) &= (tw_i)^{\frac{1}{\rho -1}}  (tp\beta)^{\frac{-1}{\beta - 1}}[(tw_1
 
 $i = 1,2$.
 
-
 \vspace{3mm}
 \textbf{2.Own-price effects}
 
@@ -422,19 +581,104 @@ $$\frac{\partial y(p,w)}{\partial p} =(-\frac{\beta}{\beta - 1})p^{-\frac{\beta}
 
 When $\beta \in (0,1), \frac{\partial y(p,w)}{\partial p} \ge 0$.
 
+\begin{align*}
+\frac{\partial x_i(p,w)}{\partial w_1} 
+&=\frac{1}{\rho -1}w_1^{\frac{1}{\rho -1} -1} (p\beta)^{\frac{-1}{\beta - 1}}
+(w_1^r + w_2^r)^{\frac{\rho -\beta}{\rho(\beta -1)}} +  
+w_1^{\frac{1}{\rho -1}}  (p\beta)^{\frac{-1}{\beta - 1}} \frac{\rho -\beta}{\rho(\beta -1)}(w_1^r + w_2^r)^{\frac{\rho -\beta}{\rho(\beta -1)} -1} r w_1^{r -1} \\
+&=\frac{1}{\rho -1}w_1^{\frac{1}{\rho -1} -1} (p\beta)^{\frac{-1}{\beta - 1}}
+(w_1^r + w_2^r)^{\frac{\rho -\beta}{\rho(\beta -1)}} +  
+w_1^{\frac{1}{\rho -1} + r -1}  (p\beta)^{\frac{-1}{\beta - 1}} \frac{\rho -\beta}{\rho(\beta -1)}(w_1^r + w_2^r)^{\frac{\rho -\beta}{\rho(\beta -1)} -1}  \frac{\rho}{\rho -1} \\
+&=\frac{1}{\rho -1}w_1^{\frac{1}{\rho -1} -1} (p\beta)^{\frac{-1}{\beta - 1}}
+(w_1^r + w_2^r)^{\frac{\rho -\beta}{\rho(\beta -1)}} +  
+w_1^{\frac{1}{\rho -1} + r -1}  (p\beta)^{\frac{-1}{\beta - 1}} \frac{\rho -\beta}{(\rho -1)(\beta -1)}(w_1^r + w_2^r)^{\frac{\rho -\beta}{\rho(\beta -1)} -1}   \\
+&= [\frac{1}{\rho -1} (w_1^r + w_2^r) + w_1^r \frac{\rho -\beta}{(\rho -1)(\beta -1)}] 
+w_1^{\frac{1}{\rho -1} -1} (w_1^r + w_2^r)^{\frac{\rho -\beta}{\rho(\beta -1)} -1}(p\beta)^{\frac{-1}{\beta - 1}} \\
+&= [(\frac{\beta -1}{(\rho -1)(\beta -1)} + \frac{\rho -\beta}{(\rho -1)(\beta -1)}) w_1^r + \frac{1}{\rho -1} w_2^r] 
+w_1^{\frac{1}{\rho -1} -1} (w_1^r + w_2^r)^{\frac{\rho -\beta}{\rho(\beta -1)} -1}(p\beta)^{\frac{-1}{\beta - 1}} \\
+&= [\frac{1}{\beta -1} w_1^r + \frac{1}{\rho -1} w_2^r] 
+w_1^{\frac{1}{\rho -1} -1} (w_1^r + w_2^r)^{\frac{\rho -\beta}{\rho(\beta -1)} -1}(p\beta)^{\frac{-1}{\beta - 1}}
+\end{align*}
 
-$$\frac{\partial x_i(p,w)}{\partial w_i} =
+
+Similarly, we have $$\frac{\partial x_i(p,w)}{\partial w_2} = [\frac{1}{\beta -1} w_1^r + \frac{1}{\rho -1} w_2^r] 
+w_2^{\frac{1}{\rho -1} -1} (w_1^r + w_2^r)^{\frac{\rho -\beta}{\rho(\beta -1)} -1}(p\beta)^{\frac{-1}{\beta - 1}}
 $$
 
+When $\beta \in (0,1), \rho<1, \frac{\partial y(p,w)}{\partial w_i} \le 0$ ,$i = 1,2$.
 
+\begin{mdframed}[backgroundcolor=yellow!20,linecolor=white]
+1. Assign some value to the parameters and variables to verify your calculation:
 
+\begin{itemize}
+\item Let, for example, $p = 2, \rho = -1, \beta = 0.5, w_1 = w_2 = 2$, then $r =  \frac{\rho}{\rho -1} = 0.5 , \frac{\rho -\beta}{\rho(\beta -1)} = -3$
+\item Calculate the first line of $\frac{\partial x_i(p,w)}{\partial w_1}$ and the simplified result in the last line, they are
+the same ( $- \frac{5}{256}$)
+\end{itemize}
+2. In exam, leave it to the last if the calculation is very heavy and you find the result seems to be wrong.
 
+3. We will NOT repeatedly punish you for wrong results, i.e., if the wrong results in step $1$ lead to mistakes in the rest steps, as long as your method is correct, you will get the point for the rest part. 
+
+For example, a question asks you to calculate Elasticity of Substitution and  what substitution relationship the result implies.The correct answer is "$ES = + \infty$, perfect substitution". 
+\begin{itemize}
+\item   If you calculated it wrongly and have "$ES = 0$, no substitution", you will get points from "no substitution", the "correct" conclusion based on your wrong $ES$
+\item   If you calculated it wrongly and have "$ES = 0$", but argue "$ES = 0$" implies "perfect substitution", then it's
+totally wrong and you get no point, even though the conclusion "perfect substitution" is the same as the solution.
+\end{itemize}
+
+\end{mdframed}
 
 \vspace{3mm}
 \textbf{3.Substitution matrix}
 
+Proof not really required in exam. But it may be helpful to understand it.
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+
+According to Hotelling's lemma,
+$$y(p,w) = \frac{\partial \pi(p,w)}{\partial p},\ and \ \ x_i(p,w) = - \frac{\partial \pi(p,w)}{\partial w_i}. \ \ \ \ i = 1,2, \dots , n.$$
+
+We can rewrite:
+
+$$\frac{\partial y(p,w)}{\partial p} = \frac{\partial^2 \pi(p,w)}{\partial p^2}$$
+$$\frac{\partial y(p,w)}{\partial w_i} = \frac{\partial^2 \pi(p,w)}{\partial p \partial w_i}$$
+$$-\frac{\partial x_i(p,w)}{\partial p} = \frac{\partial^2 \pi(p,w)}{\partial w_i \partial p }$$
+$$-\frac{\partial x_i(p,w)}{\partial w_j} = \frac{\partial^2 \pi(p,w)}{\partial w_i \partial w_j}$$
+
+The Substitution matrix is therefore:
+
+\begin{equation}
+\left(
+    \begin{array}{cccc}
+    \frac{\partial^2 \pi(p,w)}{\partial p^2} & \frac{\partial^2 \pi(p,w)}{\partial p \partial w_1} & \cdots & \frac{\partial^2 \pi(p,w)}{\partial p \partial w_n} \\
+    \frac{\partial^2 \pi(p,w)}{\partial w_1 \partial p } & \frac{\partial^2 \pi(p,w)}{\partial w_1^2} & \cdots & \frac{\partial^2 \pi(p,w)}{\partial w_1 \partial w_n} \\
+    \vdots    &    \vdots & \ddots &   \vdots \\
+    \frac{\partial^2 \pi(p,w)}{\partial w_n \partial p } &  \frac{\partial^2 \pi(p,w)}{\partial w_n \partial w_1} & \cdots &  \frac{\partial^2 \pi(p,w)}{\partial w_n^2} \\
+    \end{array}
+    \right)
+\label{eq:subst_s}   
+\end{equation}
 
 
+According to Young's theorem (Jehle \& Reny pp.557),$\frac{\partial^2 \pi(p,w)}{\partial p \partial w_i} = \frac{\partial^2 \pi(p,w)}{\partial w_i \partial p }$ , the matrix must be symmetric.
+
+To prove the matrix is positive semideﬁnite is not required in exam, but you need to know the definition:
+
+\textbf{Positive semidefinite}(Jehle \& Reny pp.559): a $n \times n$ metrix $A$ is positive semidefinite if for
+all vectors $z \in R^n$, $z^TAz \ge 0$
+
+Assume matrix $S$ is a Substitution matrix,
+\begin{itemize}
+\item Let $z = (1,0 , \dots, 0)^T$, $$z^T S z = \frac{\partial y(p,w)}{\partial p} \ge 0$$
+\item Let $z = (0,1 , \dots, 0)^T$, $$z^T S z = \frac{-\partial x_1(p,w)}{\partial w_1}  \ge 0$$
+\item $\dots$
+\end{itemize}
+
+\end{mdframed}
+
+You can find the diagonal elements of a positive semideﬁnite matrix is always non-negative.
+
+The conclusion above is the same as the so-called "Own-price effects" we have proved.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Jehle \& Reny 3.49}
 
@@ -551,7 +795,7 @@ $$\frac{d(py - y^{\frac{1}{\beta}}{(w_1^r + w_2^r)^{\frac{1}{r}}})}{dy}= p - \fr
 
 \textbf{1.output function}
 
-Compare the output function \ref{eq:check1} with \ref{eq:E5}, the results are the same.
+Compare the output function \ref{eq:check1} with function \ref{eq:E5}, the results are the same.
 
 \textbf{1.Profit function}
 
@@ -637,6 +881,7 @@ If $\beta >1$, $\frac{d MC}{dy} < 0$. The solution is therefore minimized profit
 
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
 Intuitively, $MC=\frac{1}{\beta}  y^{\frac{1}{\beta} - 1}{(w_1^r + w_2^r)^{\frac{1}{r}}}$ is decreasing in $y$ when $\beta > 1$, the more you produce, the less cost you need to pay for 1 more unit output. You will therefore continue to produce $+\infty$.
+
 \end{mdframed}
 
 %***************************************************
