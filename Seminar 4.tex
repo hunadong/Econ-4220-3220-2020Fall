@@ -36,8 +36,8 @@ It contains the following key points:
 \begin{enumerate}
 \item The |slop| of indifference curve is \textbf{Marginal Rate of Substitution} ($MRS$);
 \item $MRS$ shows the relative importance of the two commodities;
-\item The relationship between $MRS_{12}$ and $\frac{x_2}{x_1}$ shows the \textbf{substitution relationship} between the two commodities;
-\item The relationship between $MRS_{12}$ and $\frac{x_2}{x_1}$ can be expressed by \textbf{Elasticity of Substitution} $\sigma_{12}$
+\item The relation between $MRS_{12}$ and $\frac{x_2}{x_1}$ shows the \textbf{substitution status} between the two commodities;
+\item The relation between $MRS_{12}$ and $\frac{x_2}{x_1}$ can be expressed by \textbf{Elasticity of Substitution} $\sigma_{12}$
 \end{enumerate}
 
 After this part you will understand:
@@ -59,16 +59,6 @@ can be easily generalized to MRTS.
 \draw[thick,<->] (0,12) node[left]{$x_2$}--(0,0)--(12,0) node[right]{$x_1$};
 \node [below left] at (0,0) {$0$};
 
-% \draw(2,9.44)--(4,5.84);
-% \draw(9.44,2)--(5.84,4);
-
-% \node[right] at (3.05,7.7) {$x^1$};
-% \draw[fill] (3.05,7.56) circle [radius =0.04];
-% \node[right] at (7.5,3.3) {$x^2$};
-% \draw[fill] (7.56,3.05) circle [radius =0.04];
-
-% \tkzDefPoint(2,9.44){A}
-% \tkzDefPoint(4,5.84){B}
 \tkzDefPoint(2,10){A}
 \tkzDefPoint(4.25,5.84){B}
 \tkzDefPoint(2,5.84){C}
@@ -81,20 +71,13 @@ can be easily generalized to MRTS.
 \tkzMarkAngle[fill=yellow, opacity=0.8](A,B,C)
 \tkzLabelAngle[pos= 1.3,red](A,B,C){$\alpha$}
 
-% \draw [thick,blue] (A) -- (2,10);
-% \draw [thick,blue] (B) -- (4.25,5.84);
-
 \node[left] at (2,7.5) {$\Delta x_2$};
 \node[below] at (3,5.84) {$\Delta x_1$};
 
-% \tkzDefPoint(5.84,4){D}
-% \tkzDefPoint(9.44,2){E}
 \tkzDefPoint(7.85,2.95){D}
 \tkzDefPoint(10,2){E}
 \tkzDefPoint(7.85,2){F}
 \draw [blue] (D)--(E)--(F)--cycle;
-% \draw [thick,blue] (D) -- (5.84,4.25);
-% \draw [thick,blue] (E) -- (10,2);
 \node[above,blue] at (D) {D} ;
 \draw[fill,blue] (D) circle [radius =0.04];
 \node[above,blue] at (E) {E} ;
@@ -130,7 +113,7 @@ When we move along $u(x_1,x_2)=\bar{u}$, we can observe the following facts:
 
 \begin{itemize}
 \item How to calculate $\alpha = - \frac{\Delta x_2}{\Delta x_1}$ ?
-\item How to describe the relationship between $\alpha$ and $\frac{x_2}{x_1}$ ?
+\item How to describe the relation between $\alpha$ and $\frac{x_2}{x_1}$ ?
 \end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -186,7 +169,7 @@ Here the word "Technical" refers to the technology $f(x)$.
 \section{$\alpha$ and $\frac{x_2}{x_1}$}
 
 
-The relationship between $\alpha$ and $\frac{x_2}{x_1}$ also reflects the substitution nature of the two commodities. Note that we can use angles to express $\frac{x_2}{x_1}$. For example, in Figure \ref{fig:bent}, $\angle AOB = \frac{AB}{OB} = \frac{x^1_2}{x^1_1}$. Similarly,  $\angle COD = \frac{CD}{OD} = \frac{x^2_2}{x^2_1}$.
+The relation between $\alpha$ and $\frac{x_2}{x_1}$ also reflects the substitution nature of the two commodities. Note that we can use angles to express $\frac{x_2}{x_1}$. For example, in Figure \ref{fig:bent}, $\angle AOB = \frac{AB}{OB} = \frac{x^1_2}{x^1_1}$. Similarly,  $\angle COD = \frac{CD}{OD} = \frac{x^2_2}{x^2_1}$.
 
 \begin{center}
 \begin{tikzpicture}[scale=0.5]
@@ -323,12 +306,12 @@ We already know with Leontief preference, you believe $x_1$ and $x_2$ are totall
 
 \section{Elasticity of Substitution $\sigma_{12}$}
 
-We can use "\textbf{Elasticity}" to describe the relationship between $\alpha$ and $\frac{x_2}{x_1}$.
+We can use "\textbf{Elasticity of Substitution}" to describe the relation between $\alpha$ and $\frac{x_2}{x_1}$.
 
 \begin{align*}
-Elasticity &= [\frac{1\% \ change \  of \ MRS}{1\% \ change \ of \ \frac{x_2}{x_1}}]^{-1} \\
+ES &= [\frac{? \ \% \ change \  of \ MRS}{1\% \ change \ of \ \frac{x_2}{x_1}}]^{-1} \\
 &= [\frac{\frac{d MRTS}{MRTS}}{\frac{d(x_2/x_1)}{x_2/x_1}}]^{-1} \\
-&= [\frac{d ln(MRTS)}{d ln(x_2/x_1)}]^{-1}
+&= [\frac{d ln(MRS)}{d ln(x_2/x_1)}]^{-1}
 \end{align*}
 
 \begin{itemize}
@@ -356,7 +339,7 @@ $$\sigma_{12}(x_1,x_2) \equiv (\frac{d ln MRTS_{12}(r)}{dln r})^{-1}$$
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{An example from exam 2019 Q1(b)}
+\section{An example from exam 2019 Q1(a)}
 
 Deb and Frank have the following utility functions
 $U_D = x_D + 2y_D$ and $U_F = x^\alpha_Fy^{1-\alpha}_F$, with $\alpha \in (0,1)$
