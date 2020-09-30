@@ -217,9 +217,9 @@ But the guideline online treated "$W \le \underbar{W}$" as "W < \underbar{W}", w
 
 \begin{center}
 \begin{tikzpicture}[scale=1]
-\draw[thick,<->] (0,9) node[left]{$E$}--(0,0)--(2,0)node[below]{$\bar{W}$} -- (4,0) node[below,blue]{Too much water}--(6,0) node[right]{$W$};
+\draw[thick,<->] (0,9) node[left]{$E$} -- (0,6) node[left]{$3\bar{W}$} --(0,0)--(2,0)node[below]{$\bar{W}$} -- (4,0) node[below,blue]{Too much water}--(6,0) node[right]{$W$};
 \draw[thick] (-5,0) --(0,0);
-\draw[thick] (0,-1) -- (0,-0.2)node[right]{$0(\underbar{W})$} --(0,0);
+\draw[thick] (0,-1) -- (0,-0.3)node[right]{$0(\underbar{W})$} --(0,0);
 \draw[thick, blue] (-4,0) -- (-2.2,0)node[below]{Water below the turbine} --(0,0) ;
 \draw[thick, blue] (0,0) -- (2,8);
 \draw[thick, blue] (2,6) -- (5,6);
@@ -299,6 +299,19 @@ which costs $p_w\frac{E}{4}$.
 \end{itemize}
 
 \end{mdframed}
+
+\begin{mdframed}[backgroundcolor=yellow!20,linecolor=white]
+Many students lost points because they didn't know what is the "variable" of a cost function $c(w,y)$.
+
+\begin{itemize}
+\item A common mistake is: $c = \dots , \ if \ \ W \in (0,3\bar{W})$. Note $W$ is input (water) amount, not a variable of cost function.
+\item Ask yourself, what is the input price $w$ here? What is the product amount $y$ here?
+
+\end{itemize}
+
+
+\end{mdframed}
+
 
 The cost function is:
 
@@ -645,7 +658,7 @@ $$\frac{\partial y(p,w)}{\partial w_i} = \frac{\partial^2 \pi(p,w)}{\partial p \
 $$-\frac{\partial x_i(p,w)}{\partial p} = \frac{\partial^2 \pi(p,w)}{\partial w_i \partial p }$$
 $$-\frac{\partial x_i(p,w)}{\partial w_j} = \frac{\partial^2 \pi(p,w)}{\partial w_i \partial w_j}$$
 
-The Substitution matrix is therefore:
+The Substitution matrix is therefore the Hessian Matrix (check seminar 2) of the Profit Function $\pi(p,w)$:
 
 \begin{equation}
 \left(
@@ -661,6 +674,8 @@ The Substitution matrix is therefore:
 
 
 According to Young's theorem (Jehle \& Reny pp.557),$\frac{\partial^2 \pi(p,w)}{\partial p \partial w_i} = \frac{\partial^2 \pi(p,w)}{\partial w_i \partial p }$ , the matrix must be symmetric.
+
+As a convex function, Profit Function $\pi(p,w)$ must have a positive semidefinite Hessian Matrix.
 
 To prove the matrix is positive semideﬁnite is not required in exam, but you need to know the definition:
 
@@ -793,7 +808,7 @@ $$\frac{d(py - y^{\frac{1}{\beta}}{(w_1^r + w_2^r)^{\frac{1}{r}}})}{dy}= p - \fr
 %***************************************************
 \subsection{Check $\pi (p,w) = py(p,w) - c(w, y(p,w))$}
 
-\textbf{1.output function}
+\textbf{1.Output function}
 
 Compare the output function \ref{eq:check1} with function \ref{eq:E5}, the results are the same.
 
