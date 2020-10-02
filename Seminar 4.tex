@@ -19,7 +19,9 @@
 \usepackage{mdframed,caption,xcolor}
 \usepackage{tikz,tkz-euclide}
 
-\title{Seminar 4. Elasticity of Substitution}
+\title{Seminar 4. Elasticity of Substitution  \\
+\large (and a bonus for Choice with Uncertainty)}
+
 \author{Xiaoguang Ling \\  \href{xiaoguang.ling@econ.uio.no}{xiaoguang.ling@econ.uio.no}}
 \date{\today}
 
@@ -36,8 +38,8 @@ It contains the following key points:
 \begin{enumerate}
 \item The |slop| of indifference curve is \textbf{Marginal Rate of Substitution} ($MRS$);
 \item $MRS$ shows the relative importance of the two commodities;
-\item The relationship between $MRS_{12}$ and $\frac{x_2}{x_1}$ shows the \textbf{substitution relationship} between the two commodities;
-\item The relationship between $MRS_{12}$ and $\frac{x_2}{x_1}$ can be expressed by \textbf{Elasticity of Substitution} $\sigma_{12}$
+\item The relation between $MRS_{12}$ and $\frac{x_2}{x_1}$ shows the \textbf{substitution status} between the two commodities;
+\item The relation between $MRS_{12}$ and $\frac{x_2}{x_1}$ can be expressed by \textbf{Elasticity of Substitution} $\sigma_{12}$
 \end{enumerate}
 
 After this part you will understand:
@@ -59,16 +61,6 @@ can be easily generalized to MRTS.
 \draw[thick,<->] (0,12) node[left]{$x_2$}--(0,0)--(12,0) node[right]{$x_1$};
 \node [below left] at (0,0) {$0$};
 
-% \draw(2,9.44)--(4,5.84);
-% \draw(9.44,2)--(5.84,4);
-
-% \node[right] at (3.05,7.7) {$x^1$};
-% \draw[fill] (3.05,7.56) circle [radius =0.04];
-% \node[right] at (7.5,3.3) {$x^2$};
-% \draw[fill] (7.56,3.05) circle [radius =0.04];
-
-% \tkzDefPoint(2,9.44){A}
-% \tkzDefPoint(4,5.84){B}
 \tkzDefPoint(2,10){A}
 \tkzDefPoint(4.25,5.84){B}
 \tkzDefPoint(2,5.84){C}
@@ -81,20 +73,13 @@ can be easily generalized to MRTS.
 \tkzMarkAngle[fill=yellow, opacity=0.8](A,B,C)
 \tkzLabelAngle[pos= 1.3,red](A,B,C){$\alpha$}
 
-% \draw [thick,blue] (A) -- (2,10);
-% \draw [thick,blue] (B) -- (4.25,5.84);
-
 \node[left] at (2,7.5) {$\Delta x_2$};
 \node[below] at (3,5.84) {$\Delta x_1$};
 
-% \tkzDefPoint(5.84,4){D}
-% \tkzDefPoint(9.44,2){E}
 \tkzDefPoint(7.85,2.95){D}
 \tkzDefPoint(10,2){E}
 \tkzDefPoint(7.85,2){F}
 \draw [blue] (D)--(E)--(F)--cycle;
-% \draw [thick,blue] (D) -- (5.84,4.25);
-% \draw [thick,blue] (E) -- (10,2);
 \node[above,blue] at (D) {D} ;
 \draw[fill,blue] (D) circle [radius =0.04];
 \node[above,blue] at (E) {E} ;
@@ -130,7 +115,7 @@ When we move along $u(x_1,x_2)=\bar{u}$, we can observe the following facts:
 
 \begin{itemize}
 \item How to calculate $\alpha = - \frac{\Delta x_2}{\Delta x_1}$ ?
-\item How to describe the relationship between $\alpha$ and $\frac{x_2}{x_1}$ ?
+\item How to describe the relation between $\alpha$ and $\frac{x_2}{x_1}$ ?
 \end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -186,7 +171,7 @@ Here the word "Technical" refers to the technology $f(x)$.
 \section{$\alpha$ and $\frac{x_2}{x_1}$}
 
 
-The relationship between $\alpha$ and $\frac{x_2}{x_1}$ also reflects the substitution nature of the two commodities. Note that we can use angles to express $\frac{x_2}{x_1}$. For example, in Figure \ref{fig:bent}, $\angle AOB = \frac{AB}{OB} = \frac{x^1_2}{x^1_1}$. Similarly,  $\angle COD = \frac{CD}{OD} = \frac{x^2_2}{x^2_1}$.
+The relation between $\alpha$ and $\frac{x_2}{x_1}$ also reflects the substitution nature of the two commodities. Note that we can use angles to express $\frac{x_2}{x_1}$. For example, in Figure \ref{fig:bent}, $\angle AOB = \frac{AB}{OB} = \frac{x^1_2}{x^1_1}$. Similarly,  $\angle COD = \frac{CD}{OD} = \frac{x^2_2}{x^2_1}$.
 
 \begin{center}
 \begin{tikzpicture}[scale=0.5]
@@ -323,12 +308,15 @@ We already know with Leontief preference, you believe $x_1$ and $x_2$ are totall
 
 \section{Elasticity of Substitution $\sigma_{12}$}
 
-We can use "\textbf{Elasticity}" to describe the relationship between $\alpha$ and $\frac{x_2}{x_1}$.
+We want to know the relation between $\alpha$ and $\gamma$, i.e. $MRS$ and $\frac{x_2}{x_1}$:
+\begin{itemize}
+\item "$1\% \ change \ of \ \frac{x_2}{x_1} $" will lead to how many percent change of $MRS$.
+\end{itemize}
 
 \begin{align*}
-Elasticity &= [\frac{1\% \ change \  of \ MRS}{1\% \ change \ of \ \frac{x_2}{x_1}}]^{-1} \\
-&= [\frac{\frac{d MRTS}{MRTS}}{\frac{d(x_2/x_1)}{x_2/x_1}}]^{-1} \\
-&= [\frac{d ln(MRTS)}{d ln(x_2/x_1)}]^{-1}
+ES &= [\frac{some \ \ \% \ change \  of \ MRS}{some \  \ \% \ change \ of \ \frac{x_2}{x_1}}]^{-1} \\
+&= [\frac{\frac{d MRS}{MRS}}{\frac{d(x_2/x_1)}{x_2/x_1}}]^{-1} \\
+&= [\frac{d ln(MRS)}{d ln(x_2/x_1)}]^{-1}
 \end{align*}
 
 \begin{itemize}
@@ -356,7 +344,7 @@ $$\sigma_{12}(x_1,x_2) \equiv (\frac{d ln MRTS_{12}(r)}{dln r})^{-1}$$
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{An example from exam 2019 Q1(b)}
+\section{An example from exam 2019 Q1(a)}
 
 Deb and Frank have the following utility functions
 $U_D = x_D + 2y_D$ and $U_F = x^\alpha_Fy^{1-\alpha}_F$, with $\alpha \in (0,1)$
@@ -572,7 +560,7 @@ $$x^h \to x= \frac{\$}{2kr}$$
 
 \end{mdframed}
 
-Answer: The elasticity of substitution for Deb is infinite due to pefect substitution.
+Answer: The elasticity of substitution for Deb is infinite due to perfect substitution.
 
 Assume there is a cheaper commodity, like $y$ in Day 2.
 \begin{itemize}
@@ -600,9 +588,9 @@ Question: What is the implication of Leontief preference's ES for the income and
 \newpage
 
 Since you are here...
-\section{exam 2019 Q1(c)-(d) - Choice with uncertainty}
+\section{exam 2019 Q1(a) c)- d) - Choice with uncertainty}
 
-\subsection{exam 2019 Q1(c) [5\%] }
+\subsection{exam 2019 Q1(a) c) [5\%] }
 
 c)Suppose that $x$ and $y$ measure the same commodity in two
 different states of the world, say states $X$ and $Y$. 
@@ -646,7 +634,7 @@ When $\alpha = \frac{1}{3}$, $E(U_F) =\frac{1}{3} ln x_F +  \frac{2}{3} ln y_F$ 
 
 Deb and Frank believe the possibilities of the two states are the same.
 
-\subsection{exam 2019 Q1(d) [5\%] }
+\subsection{exam 2019 Q1(a) d) [5\%] }
 
 \begin{itemize}
 \item Compute Deb's certainty equivalent at her endowment. 
@@ -681,6 +669,57 @@ The utility function of Frank with no uncertainty is $u = ln x$, thus
 
 $$R_a(w) = -\frac{-\frac{1}{w^2}}{\frac{1}{w}}=\frac{1}{w}$$
 
+\newpage 
+
+\section{exam 2017 Part 1. Q5 - Certainty Equivalent}
+
+Emilia's vN-M utility function is $u(c_1,c_2,\pi_1, \pi_2) = \pi_1 \sqrt{c_1} + \pi_2 \sqrt{c_2}$
+, where $c_1$ and $c_1$ are
+monetary payoffs in states $1$ and $2$ and $\pi_1$ and $\pi_1$ are the probabilities associated to such states.
+Emilia is offered the possibility to take a gamble that pays either $36$ or $64$ with equal probability.
+What is Emilia’s reservation price for this gamble? What is her risk premium?
+Consider now a gamble that pays $4$ times as much in each state (i.e., $4 \times 36$ and $4 \times 64$). Would
+Emilia be willing to pay $4$ times as much for such a gamble? 
+
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+Parse the question in plain language:
+
+\begin{itemize}
+\item Emilia's utitlity with no uncertainty is $u(c) = \sqrt{c}$, $c$ is money.
+\item Now there are uncertainty: $2$ states with the same possibility, i.e. $\frac{1}{2}$ and $\frac{1}{2}$
+\item Money in the two states: $c_1 = 36$, $c_2 = 64$
+
+\end{itemize}
+
+"Reservation price" is the price you want to pay to play the gamble, which is the same as "certainty equivalent".
+\end{mdframed}
+
+\textbf{1. Certainty equivalent}
+
+$$E(u) = \frac{1}{2}\sqrt{36} +  \frac{1}{2}\sqrt{64} =7$$
+$$u(CE) = \sqrt{CE}$$
+
+Let $u(CE) = E(u)$, we have $$\sqrt{CE} = 7 \Rightarrow CE = 49$$
+
+Emilia can pay as much as $49$ to play the gamble.
+
+\vspace{4mm}
+
+\textbf{2. Risk Premium}
+
+ Risk Premium $= E(c) - CE$
+
+ $$E(c)= \frac{1}{2} \times 36 + \frac{1}{2} \times 64 = 50$$
+ $$P = 50 - 49 = 1$$
+
+\textbf{3. $4$ times as much}
+
+$$E(u) = \frac{1}{2}\sqrt{4 \times 36} +  \frac{1}{2}\sqrt{4 \times 64} =2 \times 7$$
+
+$$\sqrt{CE} = 2 \times 7 \Rightarrow CE = 4 \times49$$
+
+Yes, Emilia is willing to pay $4$ times as much for such a gamble.
 
 
 \newpage
