@@ -31,6 +31,16 @@
 \begin{landscape}
 \section*{Production Duality}
 
+\vspace{3mm}
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+The dual relation between product maximization problem and cost minimization problem is simpler than consumers' theory. 
+
+\begin{itemize}
+\item Given $y = f(x)$, profit function is only a function of $x$. That's why minimizing the cost will maximize the profit at the same time.
+\end{itemize}
+
+\end{mdframed}
 
 \vspace{3mm}
 {\scriptsize
@@ -70,7 +80,7 @@ every node/.style={fill=white, font=\sffamily}, align=center]
 \node (start2) [Starts, right of = 1, xshift =6cm, yshift=2cm] {Cost Minimization: \\ $\min_{x \in \R^n_+} \ w x, s.t. f(x) \ge y$};
 \node (21) [process, below of=start2] {Conditional Input Demand: \\ $x(w,y)$};
 \node (22) [process, below of=21] {Cost Function: \\ $c(w,y) = w x(w,y)$};
-\node (23) [process, right of=22,xshift=1.5cm,yshift=1cm]  {Shephard's lemma(pp.138): \\ $\frac{\partial c(w^0,y^0)}{\partial w_i} = x_i(w^0,y^0)$};
+\node (23) [process, right of=22,xshift=1.5cm,yshift=1cm]  {Shephard's lemma(pp.138): \\ $x_i(w^0,y^0) = \frac{\partial c(w^0,y^0)}{\partial w_i}$};
 \node (24) [process, below of=22] {Production Function (pp.144): \\ $f(x) \equiv max\{y \ge 0 | wx \ge c(w,y), \forall w \gg 0 \}$};
 \draw[->]  (start2) -- (21);
 \draw[->]  (21) -- (22);
@@ -82,7 +92,7 @@ every node/.style={fill=white, font=\sffamily}, align=center]
 \path (21) to  node {minimized value} (22); 
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\node (31) [process, right of=1,xshift=2cm,yshift=0.8cm] {FOC(pp.146): \\ $\frac{\partial f(x^*) / \partial x_i}{\partial f(x^*) / \partial x_j} = \frac{w_i}{w_j}$ \\ Constraint: \\ $f(x) \iff y$};
+\node (31) [process, right of=1,xshift=2cm,yshift=0.8cm] {FOC(pp.146): \\ $\frac{\partial f(x^*) / \partial x_i}{\partial f(x^*) / \partial x_j} = \frac{w_i}{w_j}$ \\ Given: \\ $f(x) = y$};
 
 
 \draw[<-]  (2) --  (22);
@@ -142,7 +152,7 @@ Here the linear production function $y = \Sigma^n_{i=1} \alpha_i x_i$ is very si
 
 \item  The product can be produced by any input $x_i$, the only difference is that for each unit of input, different $x_i$ produces different amount $\alpha_i$ of the output. 
 
-\item  The Marginal Rate of Technical Substitution of input $x_j$ for input $x_i$ is $MRTS_{ij} = \frac{\partial f(x)/ \partial x_i}{\partial f(x)/ \partial x_j} = \frac{\alpha_i}{\alpha_j}$.
+\item  The Marginal Rate of Technical Substitution of input $x_j$ for input $x_i$ is constant: $MRTS_{ij} = \frac{\partial f(x)/ \partial x_i}{\partial f(x)/ \partial x_j} = \frac{\alpha_i}{\alpha_j}$.
 
 \end{itemize}
 
@@ -154,7 +164,7 @@ An example: an apple jam factory has 2 types of input, "single apple ($x_1$)" an
 \item The production function is $y = 1 \cdot x_1 + 2 \cdot x_2$
 \end{itemize}
 
-How will the factory choose? Similarly to consumers' preference substitution preference, the factory will spend all money on the "cheapest per unit" input. 
+How will the factory choose? Similarly to consumers' preference substitution preference, the factory will spend all money on the "cheapest per unit (of output)" input. 
 
 Denote the price for $x_1$ and $x_2$ as $w_1$, $w_2$
 \begin{itemize}
@@ -182,7 +192,7 @@ If $\omega$ is the price of several inputs $x_m, m = 1,2, \dots, M$, the firm ca
 
 \vspace{2mm}
 
-For cost funtion, let's assume $\frac{w_1}{\alpha_1} = \frac{w_2}{\alpha_2}= \dots =\frac{w_M}{\alpha_M} = \omega$, then $\omega$ is the price for $1$ single apple, for example. Again, to produce $y$ bottles of jam, you need the same number of single apples. The cost function is thus $\omega y$
+For cost funtion, let's assume $\frac{w_1}{\alpha_1} = \frac{w_2}{\alpha_2}= \dots =\frac{w_M}{\alpha_M} = \omega$, then $\omega$ is the price for $1$ single apple (the input needed to produce $1$ bottle of jam), for example. Again, to produce $y$ bottles of jam, you need the same number ($y$) of single apples. The cost function is thus $\omega y$
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Another production \& cost function example from exam 2019 Q1(b): HydroP}
@@ -277,7 +287,7 @@ Cost function: $c(w,y) \equiv \min_{x \in \R^n_+} w \cdot x , \ \ s.t. \ \ f(x) 
 \end{itemize}
 
 In this question, the only input is water, with a price of $p_w$. There is also a fixed cost $K$ if you
-build the plant. We can write the cost function as $c(p_w,K,E)$
+build the plant. The output is electricity $E$. We can write the cost function as $c(p_w,K,E)$
 
 \vspace{3mm}
 
@@ -289,7 +299,7 @@ Now let's find the miminum cost with different output amount $E$ on our sketch.
 
 \vspace{3mm}
 
-\textbf{When $E \in (0,4\bar{W}]$}, you must build the plant. For any output $E$, you need  $\frac{E}{4}$ water,
+\textbf{When $E \in (0,4\bar{W}]$}, you must build the plant with a fixed cost $K$. Besides, for any output $E$, you need  $\frac{E}{4}$ water,
 which costs $p_w\frac{E}{4}$.
 
 \begin{itemize}
@@ -384,12 +394,12 @@ $$\pi (p,w) \equiv \max_{(x,y) \ge 0} py - wx, \ \ s.t. y \le f(x)$$
 It's not easy to solve the maximization problem directly because there are 2 variable, $y$ and $x$ (again, $y$ is \textbf{NOT} 
 necessarily to be $f(x)$, but it can't exceed $f(x)$).
 
-Since to waste will definitely reduce profit (you have some cost but don't produce anything), you will always avoid wasting by
+Since to waste will definitely reduce profit (you have some cost but don't produce anything), as a price reveiver, you will always avoid wasting by
 making fully use of your technology, i.e. $y = f(x)$. Then the profit maximization problem is transformed into:
 
 $$\pi (p,w) = \max_{x \ge 0} p f(x) - wx$$
 
-No constraint anymore! The function has only one variable, input $x$. FOC will solve the problem.
+No constraint anymore! The function has only one variable, input $x$. FOC will (usually) solve the problem.
 
 
 In \textbf{Example 3.5} (Jehle \& Reny pp.151), the CES production function is:
@@ -489,9 +499,12 @@ When $0<\beta <1$, $\frac{\partial \pi(p, w)}{\partial w_i} \le 0 $
 \end{align*}
 
 \vspace{3mm}
-\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
 \textbf{4.Convex in $(p,w)$}
 Higher-dimension proof not required in exam
+
+For $1$-dimension function $f(x)$:
+
+$$f(x) \ \ is \ \ convex \ \iff f''(x) \ge 0$$
 
 Recall one-dimension condition: 
 
@@ -511,11 +524,11 @@ Where $x^t \equiv tx^1 + (1-t)x^2, t \in [0,1].$
 \vspace{2mm}
 
 \textbf{5.Differentiable in $(p,w)$}
+
 Higher-dimension proof not required in exam.
 
 Recall one-dimension condition: derivative exists at $x^0 \Rightarrow$ Differentiable at $x^0$.
 
-\end{mdframed}
 
 \vspace{3mm}
 \textbf{6.Hotelling's lemma}
@@ -625,8 +638,7 @@ When $\beta \in (0,1), \rho<1, \frac{\partial y(p,w)}{\partial w_i} \le 0$ ,$i =
 
 \begin{itemize}
 \item Let, for example, $p = 2, \rho = -1, \beta = 0.5, w_1 = w_2 = 2$, then $r =  \frac{\rho}{\rho -1} = 0.5 , \frac{\rho -\beta}{\rho(\beta -1)} = -3$
-\item Calculate the first line of $\frac{\partial x_i(p,w)}{\partial w_1}$ and the simplified result in the last line, they are
-the same ( $- \frac{5}{256}$)
+\item Calculate the first line of $\frac{\partial x_i(p,w)}{\partial w_1}$ and the simplified result in the last line, they should be the same ( $- \frac{5}{256}$)
 \end{itemize}
 2. In exam, leave it to the last if the calculation is very heavy and you find the result seems to be wrong.
 
@@ -869,12 +881,18 @@ Figure \ref{fig:soc} is a very nice plot showing why FOC is not enough for "maxi
 
 (The Figure is from \href{https://kenndanielso.github.io/mlrefined/blog_posts/7_Second_order_methods/7_8_Second_order_condition.html}{Intuiting the condition by example})
 
+\vspace{3mm}
 
-We choose the level $y^*$ of output such that 
+By FOC, we choose the level $y^*$ of output such that 
 $$\frac{dc(w,y)}{dy}= p$$
 (Marginal cost = price). And,
-$\frac{d^2c(w,y)}{dy^2} \ge 0$
+
+By SOC, we also require 
+
+$$\frac{d^2c(w,y)}{dy^2} \ge 0$$
+
 (Marginal cost increasing in scale)
+
 
 \vspace{2mm}
 {\centering
