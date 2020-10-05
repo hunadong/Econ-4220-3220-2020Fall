@@ -36,12 +36,96 @@
 Derive the excess demand function $z(p)$ for the economy in Example 5.1. Verify that it satisfies
 Walras' law.
 
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+
+Suppose we have a good-exchange economy,
+
+\begin{itemize}
+\item $I$ is the set of all the individuals (consumers) in the economy,
+\item The prices of all $n$ commodities is expressed by a vector $p = (p_1, p_2, \dots, p_n)$,
+\item Every consumer has some endowments in the form of commodities expressed by a vector $e^i = (e^i_1,e^i_2,\dots,e^i_n)$,
+\item $p\cdot e^i$ is the income of consumer $i$,
+\end{itemize}
+
+Assume (Assumption 5.1 on pp.203) that every consumer has a utility function $u^i$, which is continuous, strongly increasing, and strictly quasiconcave on $\R^n_{+}$.
+
+\begin{itemize}
+\item By solving consumer $i$'s' utility maximization problem, consumer $i$'s Marshallian demand function is $x^i(p,p\cdot e^i) = (x^i_1,x^i_2,\dots,x^i_n)$
+\end{itemize}
+
+\textbf{General Equilibrium}: When demand equal to supply in \textbf{every market} (market for every commodity), we would say that the system of markets is in General Equilibrium.
+
+\vspace{2mm}
+
+We use \textbf{Excess Demand} to describe "demand equal to supply".
+\vspace{2mm}
+
+\textbf{DEFINITION 5.4 Aggregate Excess Demand} (Jehle \& Reny pp.204)
+
+The aggregate excess demand function for good $k$ is the real-valued function,
+$$z_k(p) \equiv \Sigma_{i \in I } x^i_k(p,p\cdot e^i) - \Sigma_{i \in I } e^i_k$$
+
+Where,
+\begin{itemize}
+\item $\Sigma_{i \in I } x^i_k(p,p\cdot e^i)$ is the summation of all consumers' Marshallian demand for commodity $k$,
+\item $\Sigma_{i \in I } e^i_k$ is the total amount of commodity $k$ in this economy.
+\end{itemize}
+
+When $z_k(p) > 0$, the aggregate demand for good $k$ exceeds the aggregate endowment of good $k$ and so there is excess demand for good k. When $z_k(p) < 0$, there is excess supply of good $k$. That's why $z_k(p)$ is called "Excess Demand" for $k$.
+\vspace{2mm}
+
+The \textbf{aggregate excess demand function} is a vector-valued function,
+$$z_(p) \equiv [z_1(p),z_2(p),\dots,z_n(p)]$$
+
+\vspace{2mm}
+
+
+When $\exists$ $p^* \in \R^n_{++}$ s.t. $z(p^*) = 0$, we say
+Walrasian Equilibrium (WE) exists. A WE in a barter economy includes a price vector $p^*$ and an allocation (e.g. Marshallian demand) vector $x(p^*,p^*\cdot e)$.
+
+\vspace{4mm}
+
+THEOREM 5.2 Properties of Aggregate Excess Demand Functions (pp.204)
+
+If for each consumer $i$, $u^i$ satisfies Assumption 5.1, then for all $p \gg 0$,
+
+
+\begin{enumerate}
+\item Continuity: $z(.)$ is continuous at $p$.
+\item Homogeneity: $z(\lambda p) = z(p) \ \ \forall \lambda > 0$.
+\item Walras' law: $p \cdot z(p) = 0$.
+\end{enumerate}
+\end{mdframed}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Jehle \& Reny 5.5 - WEA and Edgeworth box}
 
-In Example 5.1, calculate the consumers’ Walrasian equilibrium allocations and illustrate in an
+In Example 5.1, calculate the consumers' Walrasian equilibrium allocations and illustrate in an
 Edgeworth box. Sketch in the contract curve and identify the core.
+
+
+%***************************************************
+\subsection{WEA}
+
+
+
+
+%***************************************************
+\subsection{Edgeworth box}
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+\textbf{Contract curve} The curve that links the two consumers' indifference curves' tangent point.
+
+\textbf{Core} Given some endowment $e$, the core of the economy is the set of all feasible allocations that are not against ("blocked") by any consumers (a formal definition is on pp.200-201).
+
+\end{mdframed}
+
+
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Jehle \& Reny 5.11 - Pareto-efficient allocations and WEA}
 
@@ -57,7 +141,32 @@ $$u^2(x_1,x_2) = ln(x_1) + 2 ln(x_2) \ \ \ and \ \ \  e^2 = (3,6)$$
 \item Verify that the WEA you found in part (c) is in the core.
 \end{enumerate}
 
+%***************************************************
+\subsection{Pareto-efficient allocations}
 
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+\textbf{Pareto-efficient allocations}
+
+
+
+\end{mdframed}
+
+
+
+%***************************************************
+\subsection{Core}
+
+
+
+
+%***************************************************
+\subsection{WEA}
+
+
+
+
+%***************************************************
+\subsection{WEA is in the core}
 
 
 

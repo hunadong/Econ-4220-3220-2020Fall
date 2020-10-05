@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2020.8.31)  5 OCT 2020 20:00
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2020.8.31)  5 OCT 2020 21:43
 entering extended mode
 **"./Seminar 6.tex"
 ("Seminar 6.tex"
@@ -1447,8 +1447,7 @@ ls-angles.tex
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-obj
 -eu-triangles.tex
 2020/03/18 3.06c tkz-obj-eu-triangles.tex
-))
-No file "Seminar 6".aux.
+)) ("Seminar 6.aux")
 \openout1 = `"Seminar 6.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
@@ -1462,6 +1461,7 @@ LaTeX Font Info:    ... okay on input line 26.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 2
 6.
+
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
@@ -1518,12 +1518,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 26.
 LaTeX Info: Redefining \pageref on input line 26.
 LaTeX Info: Redefining \nameref on input line 26.
+ ("Seminar 6.out") ("Seminar 6.out")
 \@outlinefile=\write4
 \openout4 = `"Seminar 6.out"'.
-
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
 
 LaTeX Font Info:    Redeclaring math accent \widehat on input line 26.
 LaTeX Font Info:    Redeclaring math accent \widetilde on input line 26.
@@ -1550,6 +1547,7 @@ Package gensymb Info: Using \textohm for \ohm on input line 26.
 Package gensymb Info: Using \textmu for \micro on input line 26.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
+
 ABD: EveryShipout initializing macros
 LaTeX Font Info:    Trying to load font information for FML+futmi on input line
  29.
@@ -1615,26 +1613,32 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 6.99199pt on input line 36.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 5.51999pt on input line 36.
-Missing character: There is no ’ in font futr8t!
- [1
 
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 77.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 77.
+Overfull \hbox (3.68694pt too wide) in paragraph at lines 45--46
+[]\T1/futs/m/n/10 The prices of all $\FML/futmi/m/it/10 n$ \T1/futs/m/n/10 com-
+modi-ties is ex-pressed by a vec-tor $\FML/futmi/m/it/10 p \FMS/futm/m/n/10 ^^8
+1 \T1/futs/m/n/10 (\FML/futmi/m/it/10 p[]; p[]; [] ; p[]\T1/futs/m/n/10 )$, 
+ []
+
+[1
+
+] [2] [3]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 185.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 185.
  ("Seminar 6.aux")
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 77.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 77.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 185.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 185.
 Package rerunfilecheck Info: File `"Seminar 6".out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 77.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 185.
  ) 
 Here is how much of TeX's memory you used:
- 30961 strings out of 414493
- 589281 string characters out of 2902447
- 920334 words of memory out of 3000000
- 47544 multiletter control sequences out of 15000+200000
- 598633 words of font info for 89 fonts, out of 3000000 for 9000
+ 30975 strings out of 414493
+ 589483 string characters out of 2902447
+ 928449 words of memory out of 3000000
+ 47552 multiletter control sequences out of 15000+200000
+ 606833 words of font info for 91 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 60i,6n,91p,961b,341s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,6n,91p,961b,472s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Seminar 6.pdf (1 page).
+Output written on Seminar 6.pdf (3 pages).
