@@ -95,7 +95,112 @@ If for each consumer $i$, $u^i$ satisfies Assumption 5.1, then for all $p \gg 0$
 \item Homogeneity: $z(\lambda p) = z(p) \ \ \forall \lambda > 0$.
 \item Walras' law: $p \cdot z(p) = 0$.
 \end{enumerate}
+
+\vspace{4mm}
+
+\textbf{THEOREM 5.5 Existence of Walrasian Equilibrium}
+
+If each consumer's utility function satisfies Assumption 5.1, and
+$\Sigma_{i=1}^{I} e^i \gg 0$, then there exists at least one price vector, $p^* \gg 0$, such that $z(p^*)$.
+
+
 \end{mdframed}
+
+
+\vspace{2mm}
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+\textbf{Example 5.1 on pp.211}
+
+In a simple two-person economy, consumers 1 and 2 have identical CES utility functions,
+$$u^i(x_1,x_2) = x^\rho_1 + x^\rho_2, \ \ \ i= 1,2$$
+where $\rho \in (0,1)$.
+
+The initial endowments are $e^1 = (1,0), e^2 = (0,1)$.
+
+\vspace{2mm}
+
+\textbf{Does WE exist?}
+
+Yes. The requirements of Theorem 5.5 are satisfied.
+
+\begin{itemize}
+\item $\Sigma_{i=1}^{2} e^i = (1,0) + (0,1) = (1,1) \gg 0$
+\item $u^i(x_1,x_2) = x^\rho_1 + x^\rho_2$ is strongly increasing and strictly quasiconcave on $\R^n_{+}$ when $\rho \in (0,1)$
+\end{itemize}
+
+
+\textbf{How to find WE? }
+
+We let $z(p)=0$ to find $p$.
+
+\vspace{2mm}
+
+\textbf{How to find WEA? }
+
+By substituting $p^*$ and $y^* = p^*e$ into $x(p,y)$.
+
+\end{mdframed}
+
+%***************************************************
+\subsection{Excess demand function $z(p)$}
+
+
+From Example 1.11 on pp.26, we know the Marshallian demands of consumer $i$ for commodity $1$ and commodity $2$ are:
+
+$$x^i_1(p,y^i) = \frac{p^{r-1}_1y^i}{p_1^r+p_2^r},$$
+$$x^i_2(p,y^i) = \frac{p^{r-1}_2y^i}{p_1^r+p_2^r}.$$
+
+where $r= \frac{\rho}{\rho-1},\ i = 1,2$.
+
+Given any price vector $p = (p_1,p_2)$, and initial endowment $e^1 = (1,0), e^2 = (0,1)$, we know the income of the two consumers are 
+$$y^1= p(1,0)' = p_1$$
+$$y^2= p(0,1)' = p_2$$
+
+According to Deffinition 5.4, we have aggregated excess demand for commodity $1$:
+
+\begin{align*}
+z_1(p) &= \Sigma_{i=1}^2 x^i_1(p,p\cdot e^i) - \Sigma_{i=1}^2 e^i_1 \\
+&= [x^1_1(p,p_1) + x^2_1(p,p_2)] -  (e^1_1+e^2_1) \\
+&= ( \frac{p^{r-1}_1 p_1}{p_1^r+p_2^r} + \frac{p^{r-1}_1 p_2}{p_1^r+p_2^r}) - (1+0) \\
+&= \frac{p^{r-1}_1 (p_1+p_2)}{p_1^r+p_2^r} -1
+\end{align*}
+
+Similarly, the aggregated excess demand for commodity $2$ is:
+
+\begin{align*}
+z_2(p) &= \Sigma_{i=1}^2 x^i_2(p,p\cdot e^i) - \Sigma_{i=1}^2 e^i_2 \\
+&= [x^1_2(p,p_1) + x^2_2(p,p_2)] -  (e^1_2+e^2_2) \\
+&= ( \frac{p^{r-1}_2 p_1}{p_1^r+p_2^r} + \frac{p^{r-1}_2 p_2}{p_1^r+p_2^r}) - (1+0) \\
+&= \frac{p^{r-1}_2 (p_1+p_2)}{p_1^r+p_2^r} -1
+\end{align*}
+
+Thus, the  \textbf{Aggregated Excess Demand Function} is vector:
+
+$$z(p) = (z_1(p),z_2(p)) = (\frac{p^{r-1}_1 (p_1+p_2)}{p_1^r+p_2^r} -1,\frac{p^{r-1}_2 (p_1+p_2)}{p_1^r+p_2^r} -1)$$
+
+
+\begin{mdframed}[backgroundcolor=yellow!20,linecolor=white]
+Note Aggregated Excess Demand Function $z(p)$ is a vector, and each element corresponds with one commodity.
+\end{mdframed}
+
+%***************************************************
+\subsection{Walras' law}
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+\begin{itemize}
+\item Walras' law: $p \cdot z(p) = 0$.
+\end{itemize}
+\end{mdframed}
+
+\begin{align*}
+p \cdot z(p) &= (p_1,p_2)(z_1(p),z_2(p))' \\
+&= p_1 [\frac{p^{r-1}_1 (p_1+p_2)}{p_1^r+p_2^r} -1] + p_2 [\frac{p^{r-1}_2 (p_1+p_2)}{p_1^r+p_2^r} -1] \\
+&= [\frac{p^r_1 (p_1+p_2)}{p_1^r+p_2^r} -p_1] + [\frac{p^{r}_2 (p_1+p_2)}{p_1^r+p_2^r} -p_2]  \\
+&= \frac{(p^r_1+p^r_2) (p_1+p_2)}{p_1^r+p_2^r} -p_1 - p_2 \\
+&=0
+\end{align*}
+
 
 
 
@@ -109,6 +214,38 @@ Edgeworth box. Sketch in the contract curve and identify the core.
 %***************************************************
 \subsection{WEA}
 
+We already have $z(p)$. Now let $z(p)=0$ to find $p^*$.
+
+When $ (z_1(p),z_2(p)) = (0,0)$, we have:
+(Note I omitted star below for simplicity, but you should know only $p^*$ leads to $z(p)=0$)
+$$\frac{p^{r-1}_1 (p_1+p_2)}{p_1^r+p_2^r} =1, \ \ \frac{p^{r-1}_2 (p_1+p_2)}{p_1^r+p_2^r} =1$$
+
+For the first commodity:
+
+\begin{align*}
+\frac{p^{-r}_1}{p^{-r}_1}\frac{p^{r-1}_1 (p_1+p_2)}{p_1^r+p_2^r} &=1 \\
+\frac{p^{-1}_1 (p_1+p_2)}{(p_1/p_1)^r+(p_2/p_1)^r} &=1 \\
+\frac{1+p_2/p_1}{1+(p_2/p_1)^r} &=1 \\
+1+\frac{p_2}{p_1} &=1+(\frac{p_2}{p_1})^r \\
+(\frac{p_2}{p_1})^{r-1} = 1
+\end{align*}
+
+We know $r-1 = \frac{\rho}{\rho-1} -1 = \frac{1}{\rho-1} \ne 0$, $p \gg 0$. Then $\frac{p_2}{p_1} = 1$
+
+Similarly, for the second commodity, we have  $\frac{p_1}{p_2} = 1$
+
+To conclude, the WE price $p^*$ is $(p^*_1.p^*_2) \ s.t.\ p^*_1=p^*_2$. Let's just denote the $p^*_1=p^*_2 = a$, the demands under the price $p^*$ are:
+
+$$x^i_1(p,a) = \frac{a^{r-1} a}{a^r+a^r} = 0.5 ,$$
+$$x^i_2(p,a) = \frac{a^{r-1} a}{a^r+a^r} = 0.5.$$
+$i = 1,2$. The WEA is thus $x^* = ((0.5,0.5),(0.5,0.5))$
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+
+\begin{itemize}
+\item Only relative price $\frac{p_1}{p_2}$ matters, since you can always "rescale" the prices;
+\item To describe WE, you need to denote both $p^*$ and WEA.
+\end{itemize}
+\end{mdframed}
 
 
 
@@ -123,7 +260,35 @@ Edgeworth box. Sketch in the contract curve and identify the core.
 \end{mdframed}
 
 
+\begin{figure}
 
+\begin{tikzpicture}[scale=1.3]
+
+\draw (0,0) node [align=center, below] {\scriptsize Origin for\\ \scriptsize person A} -- (0,7) -- (7,7) node [align=center, right] {\scriptsize Origin for\\ \scriptsize person $B$} -- (6.9,0) -- (0,0);
+
+\node [right] at (6.9,2.2) {\rotatebox{90}{\scriptsize Good $Y$}};
+\node [below,left] at (4.2,-.3) {\scriptsize Good $X$};
+\draw (1.3,4.7) to [out=-70, in=145] (3.7,1.4) to [out=-35, in=165] (6.9,0);
+\node [left] at (2.8,2) {\scriptsize $C$};
+\draw (2.8,4.7) to [out=-20, in=135] (4.9,3.4) to [out=-45, in=115] (6.9,0);
+\node [right] at (5,3.5) {\scriptsize $C'$};
+\draw (2.8,4.2) to [out=-15, in=135] (4.4,3.2) to [out=-45, in=110] (5.6,1.3);
+% \node [left] at (2.8,4.3) {\scriptsize $U'_B$};
+% \draw (3,3.9) to [out=-60, in=140] (3.8,2.8) to [out=-40, in=175] (5.5,2);
+% \node [left] at (3,3.9) {\scriptsize $U_A'$};
+\node [above] at (3.8,2.8) {\scriptsize $S$};
+\node [below] at (5.2,2) {\scriptsize $Q$};
+\draw plot [smooth] coordinates {(2.8,3.3) (3.8,2.8) (4.7,1.3)};
+\node [left] at (2.8,3.3) {\scriptsize $U_B^*$};
+\draw plot [smooth] coordinates {(2.72,2.2) (3.8,2.8) (5,3.3)};
+% \node [left] at (1.4,4.3) {\scriptsize $U_A$};
+% \node [right] at (4,4.2) {\scriptsize $U_B$};
+
+\end{tikzpicture}
+
+\caption{The core}
+
+\end{figure}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

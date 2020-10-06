@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2020.8.31)  5 OCT 2020 21:43
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2020.8.31)  6 OCT 2020 22:31
 entering extended mode
 **"./Seminar 6.tex"
 ("Seminar 6.tex"
@@ -1622,23 +1622,37 @@ modi-ties is ex-pressed by a vec-tor $\FML/futmi/m/it/10 p \FMS/futm/m/n/10 ^^8
 
 [1
 
-] [2] [3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 185.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 185.
+] [2]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 146.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 146.
+
+[3] [4]
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.25598pt on input line 267.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.25598pt on input line 267.
+ [5] [6] [7]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 350.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 350.
  ("Seminar 6.aux")
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 185.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 185.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 350.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 350.
 Package rerunfilecheck Info: File `"Seminar 6".out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 185.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 350.
  ) 
 Here is how much of TeX's memory you used:
- 30975 strings out of 414493
- 589483 string characters out of 2902447
- 928449 words of memory out of 3000000
- 47552 multiletter control sequences out of 15000+200000
- 606833 words of font info for 91 fonts, out of 3000000 for 9000
+ 31071 strings out of 414493
+ 591631 string characters out of 2902447
+ 929449 words of memory out of 3000000
+ 47648 multiletter control sequences out of 15000+200000
+ 614779 words of font info for 100 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 60i,6n,91p,961b,472s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,9n,91p,961b,796s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Seminar 6.pdf (3 pages).
+Output written on Seminar 6.pdf (7 pages).
