@@ -263,7 +263,7 @@ $i = 1,2$. The WEA is thus $x^* = ((0.5,0.5),(0.5,0.5))$
 \draw [->,blue] (0,0)  -- (0,8) node [left] {$x^1_2$};
 
 \draw [blue] (1,5) to [out=-70, in=145] (3.5,1.5) to [out=-35, in=165] (7,0);
-\draw [blue] (3.5,5.6) to [out=-70, in=145] (4.68,3.64) to [out=-35, in=165] (6.5,2.7);
+\draw [blue] (3.5,6.1) to [out=-70, in=145] (4.5,4.5) to [out=-35, in=165] (6.5,3.5);
 
 \draw  (0,7) -- (7,0);
 \node[below] at (3.5,3) {\tiny{Budget}};
@@ -283,33 +283,34 @@ $i = 1,2$. The WEA is thus $x^* = ((0.5,0.5),(0.5,0.5))$
 
 \begin{center}
 \begin{tikzpicture}[scale=1.1]
-\draw [->,blue] (0,0) node [below] {0}  -- (8,0) node [below] {$x^1_1$};
+\draw [->,blue] (0,0) node [left] {$0^1$}  -- (8,0) node [below] {$x^1_1$};
 \draw [->,blue] (0,0)  -- (0,8) node [left] {$x^1_2$};
 
-\draw [->,red] (7,7) node [right] {0} -- (-1,7) node [below] {$x^2_1$};
+\draw [->,red] (7,7) node [right] {$0^2$} -- (-1,7) node [below] {$x^2_1$};
 \draw [->,red] (7,7) -- (7,-1) node [left] {$x^2_2$};
 
 
 \draw [blue] (1,5) to [out=-70, in=145] (3.5,1.5) to [out=-35, in=165] (7,0);
-\draw [blue] (3.5,5.6) to [out=-70, in=145] (4.68,3.64) to [out=-35, in=165] (6.5,2.7);
+\draw [blue] (3.5,6.1) to [out=-70, in=145] (4.5,4.5) to [out=-35, in=165] (6.5,3.5);
 
-\draw [red] (2.8,4.7) to [out=-20, in=135] (4.9,3.4) to [out=-45, in=115] (7,0);
+\draw [red] (2.8,5.5) to [out=-20, in=135] (5,4) to [out=-45, in=115] (7,0);
 
-\draw plot [smooth] coordinates {(1,1) (3.8,2.8) (6,6)};
-\draw [ultra thick] plot [smooth] coordinates {(2.8,2.05) (3.8,2.8) (4.55,3.75)};
+\draw plot [smooth] coordinates {(1,1.7) (3.3,3.4) (5.5,6.5)};
+\draw [ultra thick] plot [smooth] coordinates {(2.3,2.57) (3.3,3.4) (4.28,4.68)};
 
-\node [right] at (6,6) {\scriptsize $C'$};
-\node [left] at (1,1) {\scriptsize $C$};
-\draw[fill] (4.55,3.75) circle [radius =0.03];
+\node [below] at (1,1.7) {\scriptsize contract curve};
+\draw[fill] (4.28,4.68) circle [radius =0.03];
 
 \node[above] at (7.6,0) {$e=(1,1)$};
 \draw[fill,yellow] (7,0) circle [radius =0.05];
+\node[left] at (3.45,3.55) {\scriptsize WEA};
+\draw[fill,yellow] (3.45,3.55) circle [radius =0.05];
 
 \draw  (0,7) -- (7,0);
 
 \end{tikzpicture}
 \captionof{figure}{The core}
-\label{fig:c1}
+\label{fig:core}
 \end{center}
 
 
@@ -332,41 +333,273 @@ $$u^2(x_1,x_2) = ln(x_1) + 2 ln(x_2) \ \ \ and \ \ \  e^2 = (3,6)$$
 \subsection{Pareto-efficient allocations}
 
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
-\textbf{Pareto-efficient allocations}
+\textbf{DEFINITION 5.1 Pareto-Efficient Allocations} (Jehle \& Reny pp.199)
 
+A feasible allocation, $x \in F(e)$, is Pareto efficient if there is no other feasible allocation, $y \in F(e)$, such that $y^i \succsim^i x^i$ for all consumers, $i$, with at least one preference strict.
 
+\begin{itemize}
+\item Feasible: $F(e) = \{x| \Sigma_{i \in I}x^i = \Sigma_{i \in I}e^i \}$, possible and no waste.
+\item No improvement without harming anyone.
+
+\end{itemize}
 
 \end{mdframed}
 
+We can use the fact that only the points (allocations) on the contract curve in a 
+Edgeworth box are both feasible and pareto-efficient.
 
+Denote the allocation for the two consumers is $(x^1,x^2)$, where
+$x^1 = (x^1_1,x^1_2),x^2 = (x^2_1,x^2_2)$. Feasible implies:
+\begin{equation}
+    \begin{cases}
+x^1_1+x^2_1= e^1_1 +e^2_1 = 18+3 =21 \\
+x^1_2+x^2_2= e^1_2 +e^2_2 = 4+6 =10
+    \end{cases}
+\label{eq:fe}
+\end{equation}
+
+Besides, all points on the contract curve are tangent points of 
+indifference curves representing $u^1$ and $u^2$ $\Rightarrow$ given
+any allocation $(x^1,x^2)$ on the contract curve, the slopes (MRS) of the two indifference curves passing through the allocation are the same, i.e. $MRS^1_{12} |_{x^1} = MRS^2_{12}|_{x^2}$
+
+$$MRS^1_{12} = \frac{\partial u^1(x) / \partial x_1}{\partial u^1(x) / \partial x_2} = \frac{2x_1x_2^2}{2x_1^2x_2} = \frac{x_2}{x_1}$$
+
+$$MRS^2_{12} = \frac{\partial u^2(x) / \partial x_1}{\partial u^2(x) / \partial x_2} = \frac{1/x_1}{2/x_2} = \frac{x_2}{2x_1}$$
+
+Thus 
+\begin{equation}
+MRS^1_{12} |_{x^1} = MRS^2_{12}|_{x^2} \Rightarrow
+\frac{x^1_2}{x^1_1} = \frac{x^2_2}{2x^2_1}
+\label{eq:mrs}
+\end{equation}
+
+Equition \ref{eq:fe} and equition \ref{eq:mrs} describe the pareto-efficient allocation (Note we don't assume any utility level here like what the solution sketch did).
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+You can also use's Paolo's method to solve:
+
+$$\max_{(x^1,x^2) \in F(e)} u^1(x^1_1,x^1_2), \ \ s.t. \ \ u^2(x^2_1,x^2_2) \ge \bar{u}$$
+
+The intuition is the same: pareto-efficient means maximizing consumer 1's utility without harming consumer 2's utility.
+
+\end{mdframed}
 
 %***************************************************
 \subsection{Core}
+In a Edgeworth box, the core of the economy is the
+part of \textbf{contract curve intersecting with the "lens-shaped" area}, which is constructed by the two indifference curve passing through the initial allocation.
 
+\vspace{2mm}
 
+Contract curve implies the allocations in the core must satisfy
+equition \ref{eq:fe} and equition \ref{eq:mrs} we just solved.
+In addition, the "lens-shaped" area means:
 
+\begin{equation}
+    \begin{cases}
+u^1(x^1_1,x^1_2) = (x^1_1 x^1_2)^2 \ge u^1(18,4) = (18 \times 4)^2=72^2 \\
+u^2(x^2_1,x^2_2) = ln(x^2_1) + 2ln(x^2_2) \ge u^2(3,6)=ln3 +2ln6 =ln108
+    \end{cases}
+    \nonumber
+\end{equation}
+
+Simplify:
+\begin{equation}
+    \begin{cases}
+x^1_1 x^1_2 \ge 72 \\
+x^2_1 (x^2_2)^2 \ge 108
+    \end{cases}
+\label{eq:lens}
+\end{equation}
+
+To sum up, equition \ref{eq:fe}, \ref{eq:mrs} and \ref{eq:lens} all together  describe the core of the economy.
 
 %***************************************************
 \subsection{WEA}
 
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
 
+We can follow what we did in exercise 5.4 and 5.5 to find WEA
+(we need to assume price vector $p=(p_1,p_2)$):
+
+\begin{enumerate}
+\item Solve Marshallian demands $x^i(p,y)$ by Lagrangian
+\item Construct Aggregated Excess Demand Function $z(p)$ 
+\item Solve WE $p^*$ by letting $z(p) = 0$
+\item Substitute $p^*$ and the income given $p^*$ back to $x^i(p,y)$, you get WEA.
+\end{enumerate}
+\end{mdframed}
+
+\vspace{3mm}
+
+\textbf{Step 1. Marshallian demands $x^i(p,y)$}
+
+\vspace{3mm}
+
+(1) Consumer 1's utility maximization problem:
+
+$$L^1 = (x_1x_2)^2 + \lambda (18p_1 +4p_2 - p_1x_1 -p_2x_2) $$
+
+FOC:
+
+\begin{equation}
+    \begin{cases}
+\frac{\partial L^1}{\partial x_1} = 0  \Rightarrow 2x_2^2x_1 = \lambda p_1 \\
+\frac{\partial L^1}{\partial x_2} = 0  \Rightarrow 2x_1^2x_2 = \lambda p_2 \\
+18p_1 +4p_2 = p_1x_1 + p_2x_2
+    \end{cases}
+    \nonumber
+\end{equation}
+
+Take ratio of the first two conditions,
+
+$$\frac{x_2}{x_1} = \frac{p_1}{p_2} \Rightarrow x_2 = \frac{p_1}{p_2}  x_1$$
+
+Substituting into budget constraint,
+
+$$18p_1 +4p_2 = p_1x_1 + p_2\frac{p_1}{p_2}   \Rightarrow x^1_1 =\frac{9p_1+2p_2}{p_1}$$
+
+Thus $x^1_2 = \frac{9p_1+2p_2}{p_2}$ 
+
+(2) Consumer 2's utility maximization problem:
+
+\vspace{3mm}
+
+$$L^2 = ln x_1 + 2ln x_2 + \lambda (3p_1 +6p_2 - p_1x_1 -p_2x_2) $$
+
+FOC:
+
+\begin{equation}
+    \begin{cases}
+\frac{\partial L^2}{\partial x_1} = 0  \Rightarrow \frac{1}{x_1} = \lambda p_1 \\
+\frac{\partial L^2}{\partial x_2} = 0  \Rightarrow \frac{2}{x_2} = \lambda p_2 \\
+3p_1 +6p_2 = p_1x_1 + p_2x_2
+    \end{cases}
+    \nonumber
+\end{equation}
+
+Take ratio of the first two conditions,
+
+$$\frac{x_2}{2x_1} = \frac{p_1}{p_2} \Rightarrow x_2 = \frac{2p_1}{p_2}  x_1$$
+
+Substituting into budget constraint,
+
+$$3p_1 +6p_2 = p_1x_1 + p_2\frac{2p_1}{p_2}  x_1   \Rightarrow x_1 =\frac{p_1+2p_2}{p_1}$$
+
+Thus $x_2 = \frac{2p_1+4p_2}{p_2}$ 
+
+To sum up, the Marshallian demands for the two consumers are:
+
+
+\begin{equation}
+    \begin{cases}
+x^1_1 = \frac{9p_1+2p_2}{p_1} \\
+x^1_2 = \frac{9p_1+2p_2}{p_2}  \\
+    \end{cases}
+, \ \
+    \begin{cases}
+x^2_1 = \frac{p_1+2p_2}{p_1} \\
+x^2_2 = \frac{2p_1+4p_2}{p_2}  \\
+    \end{cases}
+\label{eq:demand}
+\end{equation}
+
+\vspace{3mm}
+
+\textbf{Step 2.Aggregated Excess Demand Function $z(p)$}
+
+\vspace{3mm}
+
+$z(p) = (z_1(p),z_2(p))$. For commodity 1, we have
+
+$$z_1(p) = x^1_1 + x^2_1 - (e^1_1 + e^2_1)= \frac{9p_1+2p_2}{p_1} + \frac{p_1+2p_2}{p_1} - (18 +3) = \frac{10p_1+4p_2}{p_1}-21 $$
+$$z_2(p) = x^1_2 + x^2_2 - (e^1_2 + e^2_2) = \frac{9p_1+2p_2}{p_2}  + \frac{2p_1+4p_2}{p_2}  - (4+6) = \frac{11p_1+6p_2}{p_2} -10$$
+
+\textbf{Step 3. $z(p) = 0$}
+
+
+$$z_1(p) = \frac{10p_1+4p_2}{p_1}-21 =0 \Rightarrow \frac{p_1^*}{p_2^*} = \frac{4}{11}$$
+
+$$z_1(p) = \frac{11p_1+6p_2}{p_2} -10 =0 \Rightarrow \frac{p_1^*}{p_2^*} = \frac{4}{11}$$
+
+
+We have $\frac{p_1^*}{p_2^*} = \frac{4}{11}$
+
+\textbf{Step 4. Back to $x^i(p,y)$ with $\frac{p_1^*}{p_2^*}$}
+
+
+Substituting $\frac{p_1^*}{p_2^*} = \frac{4}{11}$ back to equition \ref{eq:demand},
+
+
+\begin{equation}
+    \begin{cases}
+x^{1*}_1 = \frac{9p^*_1+2p^*_2}{p^*_1} = 9+ 2\frac{p_2^*}{p_1^*} = \frac{29}{2} \\
+x^{1*}_2 = \frac{9p^*_1+2p^*_2}{p^*_2} = 9\frac{p_1^*}{p_2^*} +2 =
+\frac{58}{11}    \end{cases}
+, \ \
+    \begin{cases}
+x^{2*}_1 = \frac{p_1+2p_2}{p_1} =1 + 2\frac{p_2^*}{p_1^*} = \frac{13}{2} \\
+x^{2*}_2 = \frac{2p_1+4p_2}{p_2} =  2\frac{p_1^*}{p_2^*} +4= \frac{52}{11}\\
+    \end{cases}
+\label{eq:wea}
+\end{equation}
+
+
+Therefore the WEA is $$[(\frac{29}{2},\frac{58}{11} ),(\frac{13}{2},\frac{52}{11})]$$
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+
+An interchangeable method in Paolo's sketch (to avoid writing down Lagrangian) is to use $\frac{p^*_1}{p^*_2} = MRS^1_{12} |_{x^{1*}} = MRS^2_{12}|_{x^{2*}}$ and budget constraint directly. 
+
+\end{mdframed}
 
 
 %***************************************************
 \subsection{WEA is in the core}
 
+As we have showed, any allocation in the core must satisfy equition \ref{eq:fe}, \ref{eq:mrs} and \ref{eq:lens}. Let's copy the three equitions below:
 
+\vspace{2mm}
 
+1. Feasible
+\begin{equation}
+    \begin{cases}
+x^1_1+x^2_1= e^1_1 +e^2_1 = 18+3 =21 \\
+x^1_2+x^2_2= e^1_2 +e^2_2 = 4+6 =10
+    \end{cases}
+\nonumber
+\end{equation}
 
+Obviously, WEA $[(\frac{29}{2},\frac{58}{11} ),(\frac{13}{2},\frac{52}{11})]$ satisfies the condition
+($\frac{29}{2}+\frac{13}{2}=21,\frac{58}{11} +\frac{52}{11}=10$).
 
+\vspace{2mm}
 
+2. Contract curve
 
+\begin{equation}
+MRS^1_{12} |_{x^1} = MRS^2_{12}|_{x^2} \Rightarrow
+\frac{x^1_2}{x^1_1} = \frac{x^2_2}{2x^2_1}
+\nonumber
+\end{equation}
 
+$$\frac{x^1_2}{x^1_1} = \frac{\frac{58}{11}}{\frac{29}{2}} = \frac{4}{11}$$
 
+$$\frac{x^2_2}{2x^2_1} = \frac{\frac{52}{11}}{2 \times \frac{13}{2}}= \frac{4}{11}$$
 
+\vspace{2mm}
 
+3. Lens-shaped area
+\begin{equation}
+    \begin{cases}
+x^1_1 x^1_2 \ge 72 \\
+x^2_1 (x^2_2)^2 \ge 108    \end{cases}
+\nonumber
+\end{equation}
 
+$$x^1_1 x^1_2 = \frac{29}{2} \frac{58}{11} = \frac{29^2}{11} \approx 76.45 \ge 72$$
 
+$$x^2_1 x^2_2 = \frac{13}{2} (\frac{52}{11})^2  \approx 145.26 \ge 108$$
 
 
 \end{document}
