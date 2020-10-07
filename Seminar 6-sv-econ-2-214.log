@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.6.29) (preloaded format=xelatex 2020.9.1)  7 OCT 2020 14:16
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.6.29) (preloaded format=xelatex 2020.9.1)  7 OCT 2020 12:34
 entering extended mode
 **"./Seminar 6.tex"
 ("Seminar 6.tex"
@@ -1442,11 +1442,7 @@ eu-show.tex
 (C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-obj-
 eu-triangles.tex
 2020/03/18 3.06c tkz-obj-eu-triangles.tex
-)) ("Seminar 6.aux"
-
-LaTeX Warning: Label `fig:c1' multiply defined.
-
-)
+)) ("Seminar 6.aux")
 \openout1 = `"Seminar 6.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
@@ -1460,7 +1456,8 @@ LaTeX Font Info:    ... okay on input line 26.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 2
 6.
- (C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmr.fd
+
+(C:\Users\xiaogual\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 26.
@@ -1628,43 +1625,32 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 146.
 
 [3] [4]
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 279.
-See the caption package documentation for explanation.
-
-[5]
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.25598pt on input line 301.
+(Font)              scaled to size 6.25598pt on input line 276.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.25598pt on input line 301.
+(Font)              scaled to size 6.25598pt on input line 276.
 
+Overfull \hbox (3.22267pt too wide) in paragraph at lines 294--295
+[][] 
+ []
 
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 311.
-See the caption package documentation for explanation.
-
-[6] [7]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 372.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 372.
+[5] [6] [7]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 357.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 357.
  ("Seminar 6.aux")
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 372.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 372.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 357.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 357.
 Package rerunfilecheck Info: File `"Seminar 6".out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 372.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 357.
  ) 
 Here is how much of TeX's memory you used:
- 31076 strings out of 414071
- 591582 string characters out of 2893980
- 926461 words of memory out of 3000000
- 48075 multiletter control sequences out of 15000+200000
- 616251 words of font info for 96 fonts, out of 3000000 for 9000
+ 31075 strings out of 414071
+ 591586 string characters out of 2893980
+ 926391 words of memory out of 3000000
+ 48074 multiletter control sequences out of 15000+200000
+ 612029 words of font info for 95 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 60i,9n,91p,961b,815s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,9n,91p,961b,764s stack positions out of 5000i,500n,10000p,200000b,50000s
 
 Output written on Seminar 6.pdf (7 pages).
