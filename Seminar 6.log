@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2020.8.31)  7 OCT 2020 23:14
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2020.8.31)  8 OCT 2020 07:56
 entering extended mode
 **"./Seminar 6.tex"
 ("Seminar 6.tex"
@@ -1522,10 +1522,6 @@ LaTeX Info: Redefining \nameref on input line 26.
 \@outlinefile=\write4
 \openout4 = `"Seminar 6.out"'.
 
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
-
 LaTeX Font Info:    Redeclaring math accent \widehat on input line 26.
 LaTeX Font Info:    Redeclaring math accent \widetilde on input line 26.
 LaTeX Info: Redefining \microtypecontext on input line 26.
@@ -1551,6 +1547,7 @@ Package gensymb Info: Using \textohm for \ohm on input line 26.
 Package gensymb Info: Using \textmu for \micro on input line 26.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
+
 ABD: EveryShipout initializing macros
 LaTeX Font Info:    Trying to load font information for FML+futmi on input line
  29.
@@ -1646,49 +1643,7 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 312.
 See the caption package documentation for explanation.
 
-[6]
-
-LaTeX Warning: Reference `eq:fe' on page 7 undefined on input line 376.
-
-
-LaTeX Warning: Reference `eq:mrs' on page 7 undefined on input line 376.
-
-[7]
-
-LaTeX Warning: Reference `eq:fe' on page 8 undefined on input line 395.
-
-
-LaTeX Warning: Reference `eq:mrs' on page 8 undefined on input line 395.
-
-
-LaTeX Warning: Reference `eq:fe' on page 8 undefined on input line 415.
-
-
-LaTeX Warning: Reference `eq:mrs' on page 8 undefined on input line 415.
-
-
-LaTeX Warning: Reference `eq:lens' on page 8 undefined on input line 415.
-
-[8] [9]
-
-LaTeX Warning: Reference `eq:demand' on page 10 undefined on input line 531.
-
-
-Overfull \hbox (3.48703pt too wide) in paragraph at lines 552--553
-[]\T1/futs/m/n/10 An in-ter-change-able method in Paolo's sketch (to avoid writ
--ing down La-grangian)
- []
-
-
-LaTeX Warning: Reference `eq:fe' on page 10 undefined on input line 560.
-
-
-LaTeX Warning: Reference `eq:mrs' on page 10 undefined on input line 560.
-
-
-LaTeX Warning: Reference `eq:lens' on page 10 undefined on input line 560.
-
-[10] [11]
+[6] [7] [8] [9] [10] [11]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 605.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 605.
  ("Seminar 6.aux")
@@ -1696,20 +1651,13 @@ Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 605.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 605.
 Package rerunfilecheck Info: File `"Seminar 6".out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 605.
  ) 
 Here is how much of TeX's memory you used:
- 31071 strings out of 414493
- 591667 string characters out of 2902447
- 929334 words of memory out of 3000000
- 47648 multiletter control sequences out of 15000+200000
+ 31075 strings out of 414493
+ 591702 string characters out of 2902447
+ 929709 words of memory out of 3000000
+ 47652 multiletter control sequences out of 15000+200000
  611055 words of font info for 92 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
  60i,9n,91p,961b,815s stack positions out of 5000i,500n,10000p,200000b,50000s
