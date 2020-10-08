@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2020.8.31)  2 OCT 2020 17:31
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2020.8.31)  8 OCT 2020 10:10
 entering extended mode
 **"./Seminar 5.tex"
 ("Seminar 5.tex"
@@ -1686,41 +1686,49 @@ Overfull \hbox (3.07231pt too wide) in paragraph at lines 262--263
  []
 
 [5]
-Package mdframed Info: Not enough space on this page on input line 271.
+Package mdframed Info: Not enough space on this page on input line 345.
  [6]
 Package mdframed Info: Not enough space on this page on input line 345.
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
-(mdframed)              on input line 460.
+(mdframed)              on input line 404.
  [7] [8] [9]
 File: ./pic/5.convex.png Graphic file (type bmp)
 <./pic/5.convex.png>
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 522.
+(caption)                particular \caption on input line 530.
 See the caption package documentation for explanation.
 
 [10] [11]
-Overfull \hbox (59.77173pt too wide) detected at line 627
+Overfull \hbox (59.77173pt too wide) detected at line 642
 []
  []
 
+[12]
+
+Package mdframed Warning: You got a bad break
+(mdframed)                because the last box will be empty
+(mdframed)                you have to change it manually
+(mdframed)                by changing the text, the space
+(mdframed)                or something else on input line 669.
+
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
-(mdframed)              on input line 654.
-[12]
+(mdframed)              on input line 669.
+[13]
 Missing character: There is no ﬁ in font futr8t!
- [13]
+ [14]
 Missing character: There is no ﬁ in font futr8t!
 
-Overfull \hbox (5.13069pt too wide) in paragraph at lines 708--710
+Overfull \hbox (5.13069pt too wide) in paragraph at lines 723--725
 []\T1/futs/m/n/10 The con-clu-sion above is the same as the so-called "Own-pric
 e ef-fects" we have proved. 
  []
 
-[14]
-Overfull \hbox (43.79482pt too wide) in paragraph at lines 744--745
+
+Overfull \hbox (43.79482pt too wide) in paragraph at lines 759--760
 []\T1/futs/m/n/10 If $\FML/futmi/m/it/10 ^^Z \FMS/futm/m/n/10 2 \T1/futs/m/n/10
  (0\FML/futmi/m/it/10 ; \T1/futs/m/n/10 1)\FML/futmi/m/it/10 ; ^^L \FMS/futm/m/
 n/10 ^^82 \T1/futs/m/n/10 0$, the pro-duc-tion func-tion doesn't make sense sin
@@ -1728,98 +1736,78 @@ ce $[][] \FML/futmi/m/it/10 f\T1/futs/m/n/10 (\FML/futmi/m/it/10 x\T1/futs/m/n/
 10 ) \FMS/futm/m/n/10 ^^81
  []
 
-[15] [16]
+[15] [16] [17]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 807.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathop' on input line 807.
+(hyperref)                removing `math shift' on input line 822.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathgroup' on input line 807.
+(hyperref)                removing `\mathop' on input line 822.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\symoperators' on input line 807.
+(hyperref)                removing `\mathgroup' on input line 822.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\nmlimits@' on input line 807.
+(hyperref)                removing `\symoperators' on input line 822.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 807.
+(hyperref)                removing `\nmlimits@' on input line 822.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 807.
+(hyperref)                removing `subscript' on input line 822.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 821.
+(hyperref)                removing `math shift' on input line 822.
 
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\pi' on input line 821.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 821.
-
-[17]
-Overfull \hbox (11.80559pt too wide) in paragraph at lines 861--862
-[]\T1/futs/m/n/10 To max-i-mize our profit, we want in-stead the dif-fer-ence b
-e-tween $\FML/futmi/m/it/10 py$ \T1/futs/m/n/10 and $\FML/futmi/m/it/10 c\T1/fu
-ts/m/n/10 (\FML/futmi/m/it/10 w; y\T1/futs/m/n/10 )$(the
- []
-
+[18]
 File: ./pic/5.soc.png Graphic file (type bmp)
 <./pic/5.soc.png>
 
+
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 878.
+(caption)                particular \caption on input line 904.
 See the caption package documentation for explanation.
 
 File: ./pic/5.mc.png Graphic file (type bmp)
 <./pic/5.mc.png>
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 900.
+(caption)                particular \caption on input line 935.
 See the caption package documentation for explanation.
 
-Package mdframed Info: Box was splittet wrong
- starting loop to iterate the splitting point
-(mdframed)              on input line 904.
-[18] [19]
+[19] [20]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 934.
+(caption)                particular \caption on input line 969.
 See the caption package documentation for explanation.
 
-[20] [21]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 941.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 941.
+[21] [22]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 976.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 976.
  ("Seminar 5.aux")
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 941.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 941.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 976.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 976.
 Package rerunfilecheck Info: File `"Seminar 5".out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 941.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 976.
  ) 
 Here is how much of TeX's memory you used:
  31289 strings out of 414493
  594860 string characters out of 2902447
- 943163 words of memory out of 3000000
+ 936164 words of memory out of 3000000
  47845 multiletter control sequences out of 15000+200000
  624864 words of font info for 104 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
  60i,16n,91p,961b,965s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Seminar 5.pdf (21 pages).
+Output written on Seminar 5.pdf (22 pages).

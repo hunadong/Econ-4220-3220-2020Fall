@@ -192,7 +192,7 @@ If $\omega$ is the price of several inputs $x_m, m = 1,2, \dots, M$, the firm ca
 
 \vspace{2mm}
 
-For cost funtion, let's assume $\frac{w_1}{\alpha_1} = \frac{w_2}{\alpha_2}= \dots =\frac{w_M}{\alpha_M} = \omega$, then $\omega$ is the price for $1$ single apple (the input needed to produce $1$ bottle of jam), for example. Again, to produce $y$ bottles of jam, you need the same number ($y$) of single apples. The cost function is thus $\omega y$
+For cost funtion, since $\frac{w_1}{\alpha_1} = \frac{w_2}{\alpha_2}= \dots =\frac{w_M}{\alpha_M} = \omega$, $\omega$ is the price for $1$ single apple (the input needed to produce $1$ bottle of jam), for example. Again, to produce $y$ bottles of jam, you need the same number ($y$) of single apples. The cost function is thus $\omega y$
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Another production \& cost function example from exam 2019 Q1(b): HydroP}
@@ -248,7 +248,7 @@ Obviously, the production function is:
 \item not increasing in $(-\infty,0)$ and $(\bar{W},+\infty)$
 \item quasiconcave: $f (x^t) \ge min[f (x^1), f (x^2)]$ for all $t ∈ [0, 1]$.
 \item not strictly quasiconcave: sometimes $f (x^t) = min[f (x^1), f (x^2)]$
-\item return to scale uncertain, "jump" around $(0,0)$ and $(\bar{W},0)$
+\item return to scale (pp.132 $f(tx) \ ? \ tf(x)$) uncertain, "jump" around $(0,0)$ and $(\bar{W},0)$
 \end{itemize}
 \end{mdframed}
 
@@ -310,18 +310,6 @@ which costs $p_w\frac{E}{4}$.
 
 \end{mdframed}
 
-\begin{mdframed}[backgroundcolor=yellow!20,linecolor=white]
-Many students lost points because they didn't know what is the "variable" of a cost function $c(w,y)$.
-
-\begin{itemize}
-\item A common mistake is: $c = \dots , \ if \ \ W \in (0,3\bar{W})$. Note $W$ is input (water) amount, not a variable of cost function.
-\item Ask yourself, what is the input price $w$ here? What is the product amount $y$ here?
-
-\end{itemize}
-
-
-\end{mdframed}
-
 
 The cost function is:
 
@@ -342,6 +330,18 @@ Again, note $\underbar{W} = 0$. Compare the result with the \href{https://www.ui
 \begin{itemize}
 \item Based on the guideline's understanding of the question, is it possible to produce $E \in (0, 4\underbar{W})$
 \end{itemize}
+\end{mdframed}
+
+\begin{mdframed}[backgroundcolor=yellow!20,linecolor=white]
+Many students lost points because they didn't know what is the "variable" of a cost function $c(w,y)$.
+
+\begin{itemize}
+\item A common mistake is: $c = \dots , \ if \ \ W \in (0,3\bar{W})$. Note $W$ is input (water) amount, not a variable of cost function.
+\item Ask yourself, what is the input price $w$ here? What is the product amount $y$ here?
+
+\end{itemize}
+
+
 \end{mdframed}
 
 
@@ -401,6 +401,11 @@ $$\pi (p,w) = \max_{x \ge 0} p f(x) - wx$$
 
 No constraint anymore! The function has only one variable, input $x$. FOC will (usually) solve the problem.
 
+\end{mdframed}
+
+\vspace{2mm}
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
 
 In \textbf{Example 3.5} (Jehle \& Reny pp.151), the CES production function is:
 
@@ -441,6 +446,12 @@ The profit function is thus:
 \end{equation}
 
 (You'll compare the profit function with equation \ref{eq:check2} derived from cost minimization.)
+
+\end{mdframed}
+
+\vspace{2mm}
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
 
 \textbf{THEOREM 3.7 Properties of the Profit Function} (Jehle \& Reny pp.148)
 
@@ -500,13 +511,9 @@ When $0<\beta <1$, $\frac{\partial \pi(p, w)}{\partial w_i} \le 0 $
 
 \vspace{3mm}
 \textbf{4.Convex in $(p,w)$}
-Higher-dimension proof not required in exam
 
-For $1$-dimension function $f(x)$:
+* Higher-dimension proof not required in exam
 
-$$f(x) \ \ is \ \ convex \ \iff f''(x) \ge 0$$
-
-Recall one-dimension condition: 
 
 Convex functions (Jehle \& Reny pp.542):
 
@@ -517,15 +524,23 @@ $$f(x^t) \le tf(x^1) + (1 - t)f(x^2), \ \forall t \in [0, 1].$$
 Where $x^t \equiv tx^1 + (1-t)x^2, t \in [0,1].$
 
 \vspace{2mm}
+
 {\centering
 \includegraphics[width=0.8\textwidth]{5.convex}
 \captionof{figure}{Convex function}
 \label{fig:convex}}
+
+\vspace{2mm}
+
+For $1$-dimension function $f(x)$:
+
+$$f(x) \ \ is \ \ convex \ \iff f''(x) \ge 0$$
+
 \vspace{2mm}
 
 \textbf{5.Differentiable in $(p,w)$}
 
-Higher-dimension proof not required in exam.
+* Higher-dimension proof not required in exam.
 
 Recall one-dimension condition: derivative exists at $x^0 \Rightarrow$ Differentiable at $x^0$.
 
@@ -806,6 +821,25 @@ Where $r = \frac{\rho}{\rho -1}$
 %***************************************************
 \subsection{Solve $\max_y py - c(w, y)$ }
 
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+
+We already know the cost function given output $y$:
+$$c(w,y) = y^{\frac{1}{\beta}}{(w_1^r + w_2^r)^{\frac{1}{r}}} $$
+
+Forget that we already know \textbf{Profit maximization $\iff$  Cost minimization} for now.
+
+To maximize our profit, we want instead the difference between $py$ and $c(w,y)$ \\ (the least cost for every given $y$) to be as big as possible,i.e.:
+$$\max_{y} py - c(w,y)$$
+
+As a price receiver (competitive firm), how should we change $y$ to achieve this?
+
+If you're sure there is only one solution, and the question asks you to find the maximum point, then FOC is enough:
+
+$$\frac{d(py - c(w,y))}{dy} = p - \frac{dc(w,y)}{dy}=0$$
+
+
+\end{mdframed}
+
 $$py - c(w, y) = py - y^{\frac{1}{\beta}}{(w_1^r + w_2^r)^{\frac{1}{r}}} $$
 
 FOC:
@@ -818,7 +852,7 @@ $$\frac{d(py - y^{\frac{1}{\beta}}{(w_1^r + w_2^r)^{\frac{1}{r}}})}{dy}= p - \fr
 \end{equation}
 
 %***************************************************
-\subsection{Check $\pi (p,w) = py(p,w) - c(w, y(p,w))$}
+\subsection{Compare with profit maximization problem}
 
 \textbf{1.Output function}
 
@@ -853,22 +887,14 @@ Compare the result \ref{eq:check2} with the profit function \ref{eq:E7} obtained
 
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
 
-We already know the cost function given output $y$:
-$$c(w,y) = y^{\frac{1}{\beta}}{(w_1^r + w_2^r)^{\frac{1}{r}}} $$
+FOC may be not enough:
 
-Forget that we already know \textbf{Profit maximization $\iff$  Cost minimization} for now.
+\begin{itemize}
+\item FOC is not sufficient for maximum/minimum point (sometimes it is \href{https://en.wikipedia.org/wiki/Inflection_point}{Inflection Point}).
+\item When FOC has more than 2 solutions, FOC is not enough to determine which is the local maximum/minimum point.
+\end{itemize}
 
-To maximize our profit, we want instead the difference between $py$ and $c(w,y)$(the least cost for every given $y$) to be as big as possible,i.e.:
-$$\max_{y} py - c(w,y)$$
-
-As a price receiver (competitive firm), how should we change $y$ to achieve this?
-
-FOC:
-$$\frac{d(py - c(w,y))}{dy} = p - \frac{dc(w,y)}{dy}=0$$
-
-SOC:
-
-$$\frac{d^2(py - c(w,y))}{dy^2} = - \frac{d^2c(w,y)}{dy^2} \le 0 \Rightarrow \frac{d^2c(w,y)}{dy^2} \ge 0$$
+\vspace{2mm}
 
 Figure \ref{fig:soc} is a very nice plot showing why FOC is not enough for "maximum poit":
 
@@ -883,11 +909,20 @@ Figure \ref{fig:soc} is a very nice plot showing why FOC is not enough for "maxi
 
 \vspace{3mm}
 
-By FOC, we choose the level $y^*$ of output such that 
+We therefore need to check SOC:
+
+$$\frac{d^2(py - c(w,y))}{dy^2} = - \frac{d^2c(w,y)}{dy^2} \le 0 \Rightarrow \frac{d^2c(w,y)}{dy^2} \ge 0$$
+
+\vspace{3mm}
+
+To sum up:
+
+
+(1) By FOC, we choose the level $y^*$ of output such that 
 $$\frac{dc(w,y)}{dy}= p$$
 (Marginal cost = price). And,
 
-By SOC, we also require 
+(2) By SOC, we also require 
 
 $$\frac{d^2c(w,y)}{dy^2} \ge 0$$
 
