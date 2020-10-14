@@ -28,6 +28,56 @@
 \maketitle
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+
+Different types of games require different refinement methods
+to find the equilibria.
+\section*{Complete Information}
+
+\subsection*{\hspace{4mm} Static}
+
+\begin{itemize}
+\item Nash Equilibrium (NE)
+\item Pure strategy \& Mixed strategy
+\item Repeated game \& trigger strategy
+\end{itemize}
+
+
+\subsection*{\hspace{4mm}Sequential}
+\hspace{4mm} Empty threat 
+\begin{itemize}	
+\item Sub-game Perfect Nash Equilibrium (SPNE)
+\item Backward-induction method (perfect information/recall)
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Incomplete Information}
+At least one player does not know who its opponents are.
+\begin{itemize}
+\item Exogenous shock: nature decides player's type.
+\item Players must assign probability (belief) to the type of its opponent.
+\end{itemize}
+\subsection*{\hspace{4mm} Static}
+\begin{itemize}
+\item Bayesian Nash Equilibrium (BNE)
+\item Bayesian normal form
+\item Pure strategy \& Mixed strategy
+
+\end{itemize}
+
+\subsection*{\hspace{4mm} Sequential}
+More information can be obtained from the opponent's strategy
+$\Rightarrow$ Probability (belief) can be adjusted dynamically.
+\begin{itemize}
+\item Perfect Bayesian (Nash) Equilibrium (PBE)
+\item Screening: player \textbf{without} private information move first (e.g. Insurance plan to screen risky clients; Contract to screen low-capacity workers).
+\item Signaling: player \textbf{with} private information move first (High-risk clients pretend to be low-risk client).
+\item Pooling \& Separating equilibrium.
+\end{itemize}
+
+
+
+\end{mdframed}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -58,7 +108,7 @@ Best response set if opponent chooses $7$: $\{1\}$ \\
 Best response set if opponent chooses $8$: $\{0,1,2,3,4,5,6,7,8\}$
 
 
-\begin{table}
+\begin{table}[htbp]
 \setlength{\extrarowheight}{2pt}
 \begin{tabular}{cc|c|c|c|c|c|c|c|c|c|}
   & \multicolumn{3}{c}{} & \multicolumn{4}{c}{Player $2$} & \multicolumn{3}{c}{} \\
