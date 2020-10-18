@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2020.8.31)  18 OCT 2020 20:22
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2020.8.31)  18 OCT 2020 22:15
 entering extended mode
 **"./Seminar 7.tex"
 ("Seminar 7.tex"
@@ -1740,37 +1740,54 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 See the caption package documentation for explanation.
 
 [16]
-Overfull \hbox (1.53902pt too wide) in paragraph at lines 719--719
+Overfull \hbox (2.78769pt too wide) in paragraph at lines 722--723
+[]$\FML/futmi/m/it/12 F$ \T1/futs/m/n/12 chooses a func-tion that to any non-ne
+gative wage $\FML/futmi/m/it/12 w$ \T1/futs/m/n/12 de-ter-mines
+ []
+
+[17]
+Overfull \hbox (1.53902pt too wide) in paragraph at lines 735--735
 []\T1/futs/b/n/12 Find the sub-game per-fect equi-lib-rium (equi-lib-ria?) of t
 he game. 
  []
 
 
-Overfull \hbox (7.74898pt too wide) in paragraph at lines 721--724
-\T1/futs/m/n/12 Maximizing the firm's pay-off yields $\FML/futmi/m/it/12 L\T1/f
-uts/m/n/12 (\FML/futmi/m/it/12 w\T1/futs/m/n/12 ) \FMS/futm/m/n/12 ^^81 []$ \T1
-/futs/m/n/12 for $\FML/futmi/m/it/12 w \FMS/futm/m/n/12 ^^T \T1/futs/m/n/12 100
-$ and $\FML/futmi/m/it/12 L\T1/futs/m/n/12 (\FML/futmi/m/it/12 w\T1/futs/m/n/12
- ) \FMS/futm/m/n/12 ^^81
+Overfull \hbox (43.1351pt too wide) detected at line 740
+[] \FMS/futm/m/n/12 ^^81 [] ^^81 \T1/futs/m/n/12 100 \FMS/futm/m/n/12 ^^@ \T1/f
+uts/m/n/12 2\FML/futmi/m/it/12 L \FMS/futm/m/n/12 ^^@ \FML/futmi/m/it/12 w \FMS
+/futm/m/n/12 ^^81 \T1/futs/m/n/12 0 \FMS/futm/m/n/12 ) \FML/futmi/m/it/12 L\T1/
+futs/m/n/12 (\FML/futmi/m/it/12 w\T1/futs/m/n/12 ) \FMS/futm/m/n/12 ^^81 \T1/fu
+ts/m/n/12 50 \FMS/futm/m/n/12 ^^@ \T1/futs/m/n/12 0\FML/futmi/m/it/12 :\T1/futs
+/m/n/12 5\FML/futmi/m/it/12 w
  []
 
-[17] [18]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 740.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 740.
+
+Overfull \hbox (0.83817pt too wide) in paragraph at lines 763--764
+[]\T1/futs/m/n/12 "Both par-ties pre-fer to any SPNE out-come" means Pareto im-
+prove-
+ []
+
+[18]
+Package mdframed Info: Not enough space on this page on input line 820.
+ [19]
+Package mdframed Info: Not enough space on this page on input line 820.
+ [20]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 841.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 841.
  ("Seminar 7.aux")
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 740.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 740.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 841.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 841.
 Package rerunfilecheck Info: File `"Seminar 7".out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 740.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 841.
  ) 
 Here is how much of TeX's memory you used:
- 31271 strings out of 414493
- 594689 string characters out of 2902447
- 955844 words of memory out of 3000000
- 47833 multiletter control sequences out of 15000+200000
+ 31272 strings out of 414493
+ 594700 string characters out of 2902447
+ 955968 words of memory out of 3000000
+ 47834 multiletter control sequences out of 15000+200000
  610913 words of font info for 92 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
  60i,8n,91p,961b,1197s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Seminar 7.pdf (18 pages).
+Output written on Seminar 7.pdf (20 pages).
