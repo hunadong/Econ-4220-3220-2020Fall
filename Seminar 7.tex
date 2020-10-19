@@ -39,24 +39,22 @@ the questions!
 
 \section*{Complete Information}
 
-Players have the symmetric information (no private information)
-
-
+Players have symmetric information (no private information) and
 know clearly which "type" their opponents are.
 
 
 \subsection*{\hspace{4mm} Static (Watson Part II)}
 \hspace{4mm} Players act simultaneously and independently.
 \begin{itemize}
-\item Rationality \& Nash Equilibrium (NE)
-\item Pure/Mixed strategy
+\item Belief, Pure/Mixed strategy
+\item Rationality, Dominance \& Nash Equilibrium (NE)
 \item Repeated game \& trigger strategy
 \end{itemize}
 
-
 \subsection*{\hspace{4mm} Dynamic (Watson Part III)}
-\hspace{4mm} Empty threat: not every NE are realistic, refinement needed.
+\hspace{4mm} One move after another.
 \begin{itemize}	
+\item Empty threat: not every NE are realistic, refinement needed.
 \item Subgame Perfect Nash Equilibrium (SPNE)
 \item Imperfect innformation: examine every subgame by hand (Watson pp. 190)
 \item Perfect information: backward-induction method
@@ -82,7 +80,7 @@ At least one player does not know which type his/her opponents are.
 
 \hspace{4mm}  $\Rightarrow$ Probability (belief) can be adjusted dynamically (updated).
 \begin{itemize}
-\item Perfect Bayesian (Nash) Equilibrium (PBE)
+\item Perfect Bayesian (Nash) Equilibrium (PBNE)
 \item Screening: player \textbf{without} private information move first (e.g. Insurance scheme to screen risky clients; Contract to rule out low-capacity workers).
 \item Signaling: player \textbf{with} private information move first (High-risk clients pretend to be of low-risk).
 \item Pooling \& Separating equilibrium.
@@ -103,7 +101,7 @@ Narrative like "player 2 acts before/after player 1" is definitely dynamic. You 
 
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Problem 1 - Simultaneous and sequential moves with complete information}
+\section{Problem 1 - Simultaneous and sequential moves with complete information (static and dynamic pizza game)}
 
 
 You and a friend are in a restaurant, and the owner offers both of you an 8-slice pizza under
@@ -151,7 +149,7 @@ We don't assume any belief for now.
 
 Let's find BR together in the normal form:
 
-\captionof{table}{Normal form for pizza game}
+\captionof{table}{Normal form for the pizza game}
 \label{tab:pizza}
 \begin{tabular}{cc|c|c|c|c|c|c|c|c|c|}
   & \multicolumn{3}{c}{} & \multicolumn{4}{c}{P$2$} & \multicolumn{3}{c}{} \\
@@ -183,7 +181,7 @@ BR set if opponent chooses $7$: $\{1\}$ \\
 BR set if opponent chooses $8$: $\{0,1,2,3,4,5,6,7,8\}$
 
 \vspace{4mm}
-Or: 
+You can also write: 
 \vspace{4mm}
 
 BR set if opponent chooses $n$, $n \in [0,7]$ : $\{8-n\}$ \\
@@ -202,7 +200,7 @@ for each player $i$. That is, $u_i (s_i , s_{−i}) \ge u_i (s'_i , s_{−i})$ f
 
 \vspace{4mm}
 
-In one word, in a NE, the \text{strategy is}(note: strategy is a plan, not a choice) the BRs for every play. 
+In one word, in a NE, the \text{strategy is}(note: strategy is a plan that can contain many contingent choices, see also question \ref{subsec:stragey}) the BRs for every player. 
 
 \begin{itemize}
 \item We can find NE based on the BR we found in question \ref{subsec:br}. 
@@ -213,7 +211,12 @@ In one word, in a NE, the \text{strategy is}(note: strategy is a plan, not a cho
 NE: $(0,8),(1,7),(2,6),(3,5),(4,4),(5,3),(6,2),(7,1),(8,0),(8,8)$
 %
 
-\newpage
+
+\begin{mdframed}[backgroundcolor=yellow!20,linecolor=white]
+Be careful, unless the question asks you to find "pure-strategy NE", always take mixed-strategy into consideration! So called pure strategy is only a special case of belief assginment, i.e. it is a mixed strategy with probability being 1.
+\end{mdframed}
+
+
 
 \large{Reconsider the situation above, but assume now that \textbf{player 1 makes her demand before
 player 2} makes his demand. Player 2 observes player 1's demand before making his choice.}
@@ -222,6 +225,7 @@ player 2} makes his demand. Player 2 observes player 1's demand before making hi
 %
 %***************************************************
 \subsection{Explain what a strategy is for player 2 in this game with sequential moves.}
+\label{subsec:stragey}
 
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
 
@@ -247,14 +251,14 @@ There are 4 strategies for player 2 : $s_2 =HH'$, $s_2 =HL'$, $s_2 =LH'$, and $s
 \begin{itemize}
 \item $H$ and $H'$ are the same choice for player 2, but under 2 different conditions (how player 1 moves).
 \item $HH'$ means "when player 1 chooses $H$, player 2 chooses $H$; when player 1 chooses $L$, player 2 also chooses $H$". 
-\item We use $H'$ instead of $H$ just to avoid ambiguity.
+\item We use $H'$ instead of $H$ just to distinguish the two conditions.
 \end{itemize}
 
 Player 2's strategy has a form of ``$s_2 = [s_2(s_1 = H),s_2(s_1 = L)]$'', where $s_2(s_1 = H)$ can be either $H$ or $L$, and $s_2(s_1 = L)$ can be either $H'$ or $L'$. There are $2 \times 2 = 4$ different strategies.
 
 \vspace{3mm}
 
-Now think, in the pizza problem
+Now think, in the pizza problem:
 
 \end{mdframed}
 
@@ -268,13 +272,9 @@ where each $s_2(s_1 = n)$ can take 9 values in $[0,8]$ ($9^9$ strategies in tota
 
 
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
-\textbf{Strategy Set/Space} (Watson pp.23)
+This seems redundant but it's necessary to represent all the information, which is critical for an equilibrium. See question \ref{subsec:ne}.
 
-We use $S_i$ to denote the strategy set/space for player $i$ (a set comprising each of the possible strategies of player $i$ in the game):
-
-$$S_1 = \{H,L\}$$
-$$S_1 = \{HH',HL',LH',LL'\}$$
-
+\medskip 
 
 Here is another example to show the problem more clearly.
 
@@ -284,6 +284,12 @@ Here is another example to show the problem more clearly.
 \label{fig:f15_4}}
 \vspace{2mm}
 \end{center}
+
+\textbf{Strategy Set/Space} (Watson pp.23)
+
+We use $S_i$ to denote the strategy set/space for player $i$ (a set comprising each of the possible strategies of player $i$ in the game).
+
+\medskip 
 
 In the original game, player 1 has 4 single strategies. The strategy space $S_1 = \{UA,UB,DA,DB\}$; while player 2 only has 2 strategies, $S_2 = \{X,Y\}$.
 
@@ -307,7 +313,7 @@ In the original game, player 1 has 4 single strategies. The strategy space $S_1 
 understand why we need to refine NE to SPNE for a dynamic game.}
 \medskip
 
-A NE is a state in which nobody can improve his/her payoff by deviating from his/her own strategy.
+A NE is a state in which nobody can improve his/her payoff by deviating from his/her own strategy unilaterally.
 
 \smallskip
 
@@ -325,7 +331,7 @@ Take a NE $(2,6)$ in Table \ref{tab:pizza} for example.
 \item When player 1 chooses 2 first, the best response for player 2 is to choose 6;
 \item To make sure player 1 will not deviate from choosing 2, we must "eliminate" player 1's incentive to deviate, i.e. let $u_1(s_1=2,s_2) \ge u_1(s_1 \ne 2,s_2)$.
 \item A strategy $s_2$ such as $(4,8,\textcolor{red}{6},6,5,4,3,2,1)$ achieves such a NE. 
-\item Note the red \textcolor{red}{6} is the result (payoff) but note a "strategy". A strategy is a complete contingent plan. Here includes both the result player 2 wants (\textcolor{red}{6}) and the threat part ("if you choose less than 2, fine; if you choose more than 2, I'll let you have nothing").
+\item Note the red \textcolor{red}{6} is the outcome (payoff) but not a "strategy". A strategy is a complete contingent plan. Here includes both the result player 2 wants (\textcolor{red}{6}) and the threat part ("if you choose less than 2, fine; if you choose more than 2, I'll let you have nothing").
 \end{itemize}
 
 We find $(2,(4,8,\textcolor{red}{6},6,5,4,3,2,1))$ is a dynamic NE.
@@ -341,7 +347,7 @@ $$s^\ast_2(s_1) \in \{0,1,2,3,4,5,6,7,8\}\ \  if \ \ s_1 < s^\ast_1$$
 
 The static NE $(8,8)$ is a little different to rewrite, but the idea is the same.
 \begin{itemize}
-\item When player 1 chooses 8 first, any natural number in $[0,1]$ is a best response of player 2. Thus 8 is one of the best responses of player 2.
+\item When player 1 chooses 8 first, any natural number in $[0,8]$ is a best response of player 2. Thus 8 is one of the best responses of player 2.
 \item To make sure player 1 not deviating, player 2 must ruin player 1's incentive again. "If you don't choose 8, you get nothing either, then why deviate?"
 \end{itemize}
 
@@ -349,7 +355,7 @@ $$s^\ast_1 = 8 \ \ \ \ and$$
 $$s^\ast_2(s_1) > 8 - s_1 \ \ if  \ \ s_1 \in \{1,2,3,4,5,6,7,8\}$$
 $$s^\ast_2(s_1) \in \{0,1,2,3,4,5,6,7,8\} \ \ if  \ \ s_1 = 0$$
 
-To conclude, static NE is exactly the payoff result of dynamic NE. 
+To conclude, the static NE is exactly the payoff outcome of the dynamic NE. 
 Dynamic NE are strategies that keep static NE stable.
 \end{mdframed}
 
@@ -395,7 +401,7 @@ It is a best response for player 2, given that player 1 demands all the 8 pieces
 The NE found in Subquestion \ref{subsec:spne} sound good, but is player 2's threat like "if you choose more than 2, I'll let you have nothing" valid? 
 
 \begin{itemize}
-\item If player 2 chooses 7, and the game is played only once, what will player 1 do to maximize  utility (BR)?
+\item If player 1 chooses 7, and the game is played only once, what will player 2 do to maximize  utility (BR)?
 \item "To give in and accept the 1 piece pizza left by player 1" is BR for player 2.
 \end{itemize}
 
@@ -411,7 +417,7 @@ those that player i does not believe (ex ante) will be reached in the game.
 
 \medskip
 
-\textbf{SPNE} (Watson pp.189) A strategy profile is called a subgame perfect Nash equilibrium (SPNE) if it specifies a Nash equilibrium in every subgame of the original game.
+\textbf{SPNE} (Watson pp.189): A strategy profile is called a subgame perfect Nash equilibrium (SPNE) if it specifies a Nash equilibrium in every subgame of the original game.
 
 \begin{itemize}
 \item  SPE is a NE
@@ -464,7 +470,9 @@ Therefore player 1 will never choose less than 7.
 
 \smallskip
 
-Then how about player 1 chooses 8? In this case, player 2 get nothing, no matter what he/she chooses. But on the other hand, player 2 can freely (there is nothing to lose, anyway) choose any pieces more than 0 to punish greedy player 2. As a result, we have SPNE:
+Then how about player 1 chooses 8? In this case, player 2 get nothing, no matter what he/she chooses. But on the other hand, player 2 can freely (there is nothing to lose, anyway) choose any pieces more than 0 to punish the greedy player 2 (ruin everything). 
+
+As a result, we have SPNE:
 
 $$(7,(8,7,6,5,4,3,2,1,n)), \ n \in \{1,2,3,4,5,6,7,8\}$$
 
@@ -632,16 +640,17 @@ $\Rightarrow x^*= 3, y^*=2 \ \Rightarrow \ NE=(3,2)$
 \textbf{rationalizable strategies}(Watson pp.70): The set of strategies that
 survive iterated dominance is therefore called the rationalizable strategies.
 
-\textbf{Dominance}(Watson pp.50): A pure strategy $s_i$ of player $i$ is dominated if there is a strategy (pure or mixed) $\sigma_i \in \Delta S_i$ such that $u_i(\sigma_i , s_{−i}) > u_i (s_i , s_{−i})$, for all strategy profiles $s_{−i} \in S_{−i}$ of the other players.
+\textbf{Dominance}(Watson pp.50): A pure strategy $s_i$ of player $i$ is dominated if there is a strategy (\textbf{pure or mixed}) $\sigma_i \in \Delta S_i$ such that $u_i(\sigma_i , s_{−i}) > u_i (s_i , s_{−i})$, for all strategy profiles $s_{−i} \in S_{−i}$ of the other players.
 
 \end{mdframed}
 
-Since $BR_1(y) = 1+y$, ll the numbers in $(-\infty,+\infty)$ can be the best response of player 1 sometimes;
+\begin{itemize}
+\item Since $BR_1(y) = 1+y$, all the numbers in $(-\infty,+\infty)$ can be the best response of player 1 sometimes;
+\item Since $BR_2(x) = 5-x$, all the numbers  in $(-\infty,+\infty)$ can be the best response of player 2 sometimes too.
 
-Since $BR_2(x) = 5-x$
-All the numbers  in $(-\infty,+\infty)$ can be the best response of player 2 sometimes too.
+\end{itemize}
 
-Therefore there is no dominated strategy (a number that can never be BR) for the two players
+Therefore there is no dominated strategy (a number that can never be BR) for the two players.
 
 The set of rationalizable strategies is $(-\infty, +\infty) \times (-\infty, +\infty) = (-\infty, +\infty)$.
 
@@ -695,12 +704,8 @@ When player 2 is \textbf{indifferent}(recall the pizza game) to $a$ and $b$, the
 
 $$(out,(b,b)),(out,(a,b)),(in,(b,a)),(in,(a,a))$$
 
-($(a,b)$ means $s_2(out)=a s_2(in)=b$)
+Here $(a,b)$ means $s_2(out)=a, s_2(in)=b$.
 
-
-\vspace{-6pt}
-
-\bigskip
 
 \section{Problem 5- Firm-union bargaining}
 
@@ -752,7 +757,7 @@ $$\frac{d^2 U^U(L,w)}{d L^2} = -1<0$$
 When $w=50$, $L(50)=50-0.5\times50 =25$
 
 
-SPNE: $(25, (always \ 50))$
+SPNE: $(50-0.5\times w, (always \ 50))$
 
 %
 %***************************************************
@@ -760,7 +765,7 @@ SPNE: $(25, (always \ 50))$
 equilibrium outcome? }
 
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
-"Both parties prefer to any SPNE outcome" means Pareto improvement exists.
+"An outcome that both parties prefer to any SPNE outcome" means Pareto improvement exists.
 
 \medskip
 
@@ -775,22 +780,23 @@ $$\frac{d U^T(L)}{d L} = \frac{d L(100-L)}{d L} = 100-2L =0 \Rightarrow L = 50$$
 SOC: 
 $$\frac{d^2 U^T(L)}{d L^2} = -2<0$$
 
-Therefor(1e $U^T_{max} = 50 00-50) =2500$.
+Therefor $U^T_{max} = 50 (100-50) =2500$.
 
 \medskip
 
-Compare with SPNE $(25, (always \ \ 50))$:
+Compare with SPNE $(50-0.5\times w, (always \ 50))$:
 
 $$U^F_{SPNE} = 25(100-25)-50\times 25 = 625$$
 $$U^U_{SPNE} = 50 \times 25 = 1250$$
+$$U^T_{SPNE} = 625 + 1250 = 1875$$
 
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
-$$U^T_{SPNE} = 625 + 1250 = 1875$$
+
 Obviously, if the firm cooperate with the union, the joint surplus is more than the one in SPNE.
 
 \medskip
 
-Now let's check if it's possible to allocate $U^T_{max} = 2500$ s.t. at leat one player's welfare is more than SPNE outcome, without harming the other player (Pareto improvement).
+Now let's check if it's possible to allocate $U^T_{max} = 2500$ between the firm and the union s.t. at least one player's welfare is more than SPNE outcome, without harming the other player (Pareto improvement).
 
 \end{mdframed}
 
@@ -815,7 +821,7 @@ Actually, at this employment level ($L=50$), any wage $w \in [25,37.5]$ would le
 equilbrium outcome.}
 
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
-SPNE are NE without "empty threat". To find a NE different from SPME, we can start by making empty threat.
+SPNE are NE without "empty threat". To find a NE different from SPME, we can start by making an empty threat.
 
 \end{mdframed}
 
@@ -833,7 +839,7 @@ L(w)=
 For such a threat, the union's BR is to accept $w=20$. 
 Note also $50-0.5w$ is the BR of the firm. Then both of the two players will not deviate.
 
-The NE is (the threat above, always $20$). It is not a SPNE.
+(the threat above, always $20$) is a NE but not a SPNE.
 
 
 
