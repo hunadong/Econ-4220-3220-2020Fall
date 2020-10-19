@@ -29,55 +29,108 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Problem 1} \textit{(True or False?)}
+\section{Problem 1 - BR and UD} 
 
 For each of the statements, if true, try to explain why, and if false, provide a
 counter-example.
-%
-\begin{itemize}
-%
-\item[(a)] In a finite normal-form game, if a pure strategy of a
-player is not a best response to any belief that the player has about the strategies played by his opponents, then this pure strategy is strictly dominated by another \textit{pure} strategy.\\ \textit{False. Consider
+
+\bigskip
+
+(a) In a finite normal-form game, if a pure strategy of a
+player is not a best response to any belief that the player has about the strategies played by his opponents, then this pure strategy is strictly dominated by another \textit{pure} strategy.\\
+
+\medskip
+
+False. Consider:
+
 \begin{center}
-$
-\begin{array}{c|c|c|}
- & d & e \\
-\hline
-a & 3,- & 0,- \\
-\hline
-b & 0,- & 3,- \\
-\hline
-c & 1,- & 1,- \\
-\hline
-\end{array}
-$
+\captionof{table}{BR and UD for a 2-player normal form game}
+\label{tab:brud}
+\begin{tabular}{cc|c|c|}
+  & \multicolumn{1}{c}{} & \multicolumn{2}{c}{$P2$}  \\
+  & \multicolumn{1}{c}{} & \multicolumn{1}{c}{$d$} & \multicolumn{1}{c}{$e$} \\\cline{3-4}
+            & $a$ & $(3,-)$ & $(0,-)$ \\   \cline{3-4}  
+   $P1$ & $b$ & $(0,-)$ & $(3,-)$ \\   \cline{3-4}
+            & $c$ & $(1,-)$ & $(1,-)$ \\   \cline{3-4}
+
+\end{tabular}
 \end{center}
-The pure strategy $c$ is not a best response to any belief about $d$ and $e$. (To see this, let $p$ be the probability assigned to $d$ and $1-p$ the probability assigned to $e$. Then $b$ is the unique best response if $0 \leq p < \tfrac12$, $a$ and $b$ are both best responses if $p = \tfrac12$, and $a$ is the unique best response if $\tfrac12 < p \leq 1$. But $c$ is not strictly dominated by the pure strategies $a$ or $b$.}
-%
-\item[(b)] In a finite normal-form game, if a pure strategy of a
-player is not a best response to any belief that the player has about the strategies played by his opponents, then this pure strategy is strictly dominated by some \textit{mixed} strategy.
-\\ \textit{True. In the example above the pure strategy $c$ is strictly dominated by a mixture of $a$ and $b$, for example if each of these pure strategies is played with probability $\tfrac12$. However, it is difficult (and outside the scope of this course) to provide a formal proof of this result. In particular, in games with three or more player, the result requires that a player might have correlated beliefs about the strategies played by his opponents.}
-%
+
+The pure strategy $c$ is not a best response to any belief about $d$ and $e$.
+
+\smallskip
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+The correct statement is (Watson pp.58):
+
+\begin{itemize}
+\item In a finite two-player game,$B_1 = UD_1$ and $B_2 = UD_2$
+\item For any finite game, $B_i \subset UD_i$ and $B^C_i = UD_i$ for $i = 1, 2,\cdots, n$.
 \end{itemize}
-\vspace{-6pt}
+
+Procedure for calculating $B_i$ (also $UD_i$) for two-player matrix games:
+
+\begin{enumerate}
+\item Look for strategies that are best responses to the simplest beliefs -- those beliefs that put all probability on just one of the other player's strategies.These best responses are obviously in the set $B_i$ so they are also in $UD_i$ .
+\item Look for strategies that are dominated by other pure strategies; these dominated strategies are not in $UD_i$ and thus they are also not in $B_i$.
+\item Test each remaining strategy to see if it is dominated by a mixed strategy. This final step is the most difficult, but if you are lucky, then you will rarely have to perform it.
+
+\end{enumerate}
+
+Let's look for $BR_1$ (which is also $UD_1$) in Table \ref{tab:brud}.
+
+\begin{enumerate}
+\item $BR_1(d)=a$, $BR_1(e)=b$, thus ${a,b}$ are obviously in the set $B_i$ (and $UD_i$).
+\item ${c}$ is not dominated by any other pure strategies.
+\item Can ${c}$ be dominated by a mixed strategy of $a,b$? Yes, for example, a mix strategy between ${a,b}$ with probability $(0.5,0.5)$ yeilds expected payoff $(1.5,1.5)$
+\end{enumerate}
+
+More precisely, let $q$ be the probability assigned to $a$ and $1-q$ the probability assigned to $b$.If ${c}$ is dominated by a mixed strategy of $d$ and $e$, we must have:
+
+$$q\times 3 + (1-q)\times 0 > 1 \Rightarrow q > \tfrac13 $$
+$$q\times 0 + (1-q)\times 3 >1 \Rightarrow p < \tfrac23 $$
+
+That is, if $q\in (\tfrac13,\tfrac23)$, ${c}$ is dominated by a mixed strategy of $a$ and $b$.
+
+\end{mdframed}
 
 
+%
+(b) In a finite normal-form game, if a pure strategy of a
+player is not a best response to any belief that the player has about the strategies played by his opponents, then this pure strategy is strictly dominated by some \textit{mixed} strategy.
+
+\medskip
+
+True for a two-player game. In a finite two-player game,$B_1 = UD_1$ and $B_2 = UD_2$. A non-BR must not be UD either, thus it must be dominated by some strategy.
+
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+It is outside the scope of this course to provide a formal proof of this result. In particular, in games with three or more player, the result requires that a player might have correlated beliefs about the strategies played by his opponents.
+
+\smallskip
+
+Read Watson pp.423 if you're interested in games with more than 2 players.
+\end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section{Problem 2 - Penalty kick} 
 
-\section{Problem 2} \textit{(Penalty kick)}
+(Jehle and Reny pp.367, Problem 7.13)
 
-Jehle and Reny pp.367, Problem 7.13
+Consider the penalty kick in soccer. There are two players, the goalie and the striker. 
+\begin{itemize}
+\item The striker has two strategies: kick to the goalie's right ($R$) or to the goalie's left ($L$). 
+\item The goalie has two strategies: move left ($L$) or move right ($R$). 
+\end{itemize}
 
-Consider the penalty kick in soccer. There are two players, the goalie and the striker. The striker has
-two strategies: kick to the goalie’s right ($R$) or to the goalie’s left ($L$). The goalie has two strategies:
-move left ($L$) or move right ($R$). Let $\alpha$ be the probability that the kick is stopped when both choose
-L and let $\beta$ be the probability that the kick is stopped when both choose $R$. Assume that $0 < \alpha <
-\beta < 1$. Consequently, the striker is more skilled at kicking to the goalie’s left. The payoff matrix is
-as follows.
+Let $\alpha$ be the probability that the kick is stopped when both choose
+L, and let $\beta$ be the probability that the kick is stopped when both choose $R$. 
+
+Assume that $0 < \alpha < \beta < 1$. Consequently, the striker is more skilled at kicking to the goalie's left. The payoff matrix is as follows.
 
 \begin{center}
-{\includegraphics[width=0.8\textwidth]{8.q7_13}
+{\includegraphics[width=0.5\textwidth]{8.q7_13}
 \label{fig:q7_13}
 \vspace{2mm}}
 \end{center}
@@ -85,40 +138,43 @@ as follows.
 
 (a) Before analysing this game, informally answer the following questions.
 
-(i) Would you expect a striker who is more skilled at kicking to the goalie’s left than to his
-right, to score more often when he kicks to the goalie’s left?
+\begin{itemize}
+\item (i) Would you expect a striker who is more skilled at kicking to the goalie's left than to his
+right, to score more often when he kicks to the goalie's left?
+\item (ii) If a striker's ability to score when kicking to the goalie's left rises (i.e. $\alpha$ decreases) how will this affect the percentage of times the striker scores when he chooses to kick to the goalie's left? Will it affect his scoring percentage when he kicks right?
 
-(ii) If a striker’s ability to score when kicking to the goalie’s left rises (i.e. α decreases) how will
-this affect the percentage of times the striker scores when he chooses to kick to the goalie’s
-left? Will it affect his scoring percentage when he kicks right?
+\end{itemize}
+
+
 
 (b) Find the unique Nash equilibrium.
-\textit{Both players choose $L$ with probability $\tfrac{\beta}{\alpha + \beta}$. To see this, let $p$ be the probability that the Goalie moves $L$ and $1-p$ the probability that the Golie moves $R$, and let $q$ be the probability that the Striker kicks $L$ and $1-q$ the probability that the Striker kicks $R$. \smash{This yields the following payoffs:}
+
+Both players choose $L$ with probability $\tfrac{\beta}{\alpha + \beta}$. To see this, let $p$ be the probability that the Goalie moves $L$ and $1-p$ the probability that the Golie moves $R$, and let $q$ be the probability that the Striker kicks $L$ and $1-q$ the probability that the Striker kicks $R$. This yields the following payoffs:
     \begin{itemize}
     \item If Goalie moves $L$: $q\alpha$.
     \item If Goalie moves $R$: $(1-q)\beta$.
     \item If Striker kicks $L$: $p(1-\alpha) + (1-p) = 1 - p\alpha$.
     \item If Striker kicks $R$: $p + (1-p)(1-\beta) = p + 1 - p - \beta + p\beta = 1 - (1-p)\beta$.
     \end{itemize}
-    Thus, the Goalie is indifferent if $q\alpha = (1-q)\beta$. Therefore, $q$ must satisfy that $q(\alpha+\beta) = \beta$ or $q = \frac{\beta}{\alpha+\beta}$. And the Striker is indifferent if $p\alpha = (1-p)\beta$. Therefore, $p$ must satisfy that $p(\alpha+\beta) = \beta$ or $p = \frac{\beta}{\alpha+\beta}$.}
+    Thus, the Goalie is indifferent if $q\alpha = (1-q)\beta$. Therefore, $q$ must satisfy that $q(\alpha+\beta) = \beta$ or $q = \frac{\beta}{\alpha+\beta}$. And the Striker is indifferent if $p\alpha = (1-p)\beta$. Therefore, $p$ must satisfy that $p(\alpha+\beta) = \beta$ or $p = \frac{\beta}{\alpha+\beta}$.
     
-(c) Answer again the questions in part (a). Based upon this, would it be wise to judge a striker’s
+(c) Answer again the questions in part (a). Based upon this, would it be wise to judge a striker's
 relative scoring ability in kicking left versus right by comparing the fraction of times he scores
 when he kicks right versus the fraction of times he scores when he kicks left?
 
-\textit{(i) In the Nash equilibrium, the scoring probability is $1 - \tfrac{\alpha \beta}{\alpha + \beta}$ for both $L$ and $R$, since the goalie goes more often to the striker's good side. \\ (ii) When $\alpha$ decreases, the scoring probabilities for $L$ and $R$ are increased, but remain the same, equal to $1 - \tfrac{\alpha \beta}{\alpha + \beta}$. Therefore, it is not wise to judge a striker’s relative scoring ability in kicking left versus right by comparing the fraction of times he scores when he kicks right versus the fraction of times he scores when he kicks left scoring ability.}
+\textit{(i) In the Nash equilibrium, the scoring probability is $1 - \tfrac{\alpha \beta}{\alpha + \beta}$ for both $L$ and $R$, since the goalie goes more often to the striker's good side. \\ (ii) When $\alpha$ decreases, the scoring probabilities for $L$ and $R$ are increased, but remain the same, equal to $1 - \tfrac{\alpha \beta}{\alpha + \beta}$. Therefore, it is not wise to judge a striker's relative scoring ability in kicking left versus right by comparing the fraction of times he scores when he kicks right versus the fraction of times he scores when he kicks left scoring ability.}
 
 (d) Show that knowing the fraction of times a goal was scored when both players chose L and the
 fraction of times a goal was scored when both players chose R would permit you to correctly
-deduce the player’s scoring ability when kicking left and right.
+deduce the player's scoring ability when kicking left and right.
 
 \textit{The probability of scoring if both choose $L$ is $1 – \alpha$, and the probability of scoring if both choose $R$ is $1 – \beta$. Since $1 – \alpha > 1 – \beta$, this shows correctly that the kicker is more skilled when choosing $L$.}
 
-(e) Could you correctly deduce the player’s scoring ability when kicking left and right if you only
-had access to the striker’s choice? If not, what can be deduced?
+(e) Could you correctly deduce the player's scoring ability when kicking left and right if you only
+had access to the striker's choice? If not, what can be deduced?
 
-(f) Could you correctly deduce the player’s scoring ability when kicking left versus right if you only
-had access to the goalie’s choice? If not, what can be deduced?
+(f) Could you correctly deduce the player's scoring ability when kicking left versus right if you only
+had access to the goalie's choice? If not, what can be deduced?
 
 
 
