@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2020.8.31)  19 OCT 2020 22:37
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2020.8.31)  24 OCT 2020 21:44
 entering extended mode
 **"./Seminar 8.tex"
 ("Seminar 8.tex"
@@ -1627,30 +1627,62 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 ] [2]
 File: ./pic/8.q7_13.png Graphic file (type bmp)
 <./pic/8.q7_13.png>
- [3]
+
+Overfull \hbox (2.06143pt too wide) in paragraph at lines 139--139
+[][]\T1/futs/b/n/12 (a) Be-fore analysing this game, in-for-mally an-swer the f
+ol-low-ing ques-
+ []
+
+[3]
+Package mdframed Info: Not enough space on this page on input line 230.
+ [4]
+Package mdframed Info: Not enough space on this page on input line 230.
+
+Overfull \hbox (14.51926pt too wide) in paragraph at lines 239--240
+[]\T1/futs/m/n/10 When $\FML/futmi/m/it/10 ^^K$ \T1/futs/m/n/10 de-creases, the
+ scor-ing prob-a-bil-i-ties for $\FML/futmi/m/it/10 L$ \T1/futs/m/n/10 and $\FM
+L/futmi/m/it/10 R$ \T1/futs/m/n/10 are in-creased, but $\FML/futmi/m/it/10 Pr\T
+1/futs/m/n/10 (\FML/futmi/m/it/10 score\FMS/futm/m/n/10 j\FML/futmi/m/it/10 L\T
+1/futs/m/n/10 ) \FMS/futm/m/n/10 ^^81
+ []
+
+
+Overfull \hbox (7.90546pt too wide) in paragraph at lines 246--246
+\T1/futs/b/n/12 would per-mit you to cor-rectly de-duce the player's scor-ing a
+bil-ity when
+ []
+
 Missing character: There is no – in font futr8t!
 Missing character: There is no – in font futr8t!
 Missing character: There is no – in font futr8t!
 Missing character: There is no – in font futr8t!
- [4] [5]
+Missing character: There is no – in font futr8t!
+Missing character: There is no – in font futr8t!
+[5]
+Overfull \hbox (2.258pt too wide) in paragraph at lines 294--296
+\T1/futs/m/n/10 (Why no in-cen-tive to de-vi-ate?) No sym-met-ric pure strat-eg
+y Nash equi-lib-rium. (Why?) 
+ []
+
+[6]
 Missing character: There is no − in font futr8t!
- [6]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 297.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 297.
+ [7] [8]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 397.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 397.
  ("Seminar 8.aux")
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 297.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 297.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 397.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 397.
 Package rerunfilecheck Info: File `"Seminar 8".out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 297.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 397.
  ) 
 Here is how much of TeX's memory you used:
  31009 strings out of 414493
- 589895 string characters out of 2902447
+ 589891 string characters out of 2902447
  929553 words of memory out of 3000000
  47576 multiletter control sequences out of 15000+200000
- 610873 words of font info for 92 fonts, out of 3000000 for 9000
+ 610913 words of font info for 92 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 60i,7n,91p,961b,474s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,9n,91p,961b,474s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Seminar 8.pdf (6 pages).
+Output written on Seminar 8.pdf (8 pages).

@@ -136,70 +136,170 @@ Assume that $0 < \alpha < \beta < 1$. Consequently, the striker is more skilled 
 \end{center}
 
 
-(a) Before analysing this game, informally answer the following questions.
+\subsection*{(a) Before analysing this game, informally answer the following questions.}
 
 \begin{itemize}
-\item (i) Would you expect a striker who is more skilled at kicking to the goalie's left than to his
-right, to score more often when he kicks to the goalie's left?
-\item (ii) If a striker's ability to score when kicking to the goalie's left rises (i.e. $\alpha$ decreases) how will this affect the percentage of times the striker scores when he chooses to kick to the goalie's left? Will it affect his scoring percentage when he kicks right?
+\item Would you expect a striker who is more skilled at kicking to the goalie's left than to his right, to score more often when he kicks to the goalie's left?
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+Will there be any dominated strategy in the end? No.
+\end{mdframed}
+
+
+\item If a striker's ability to score when kicking to the goalie's left rises (i.e. $\alpha$ decreases) how will this affect the percentage of times the striker scores when he chooses to kick to the goalie's left? Will it affect his scoring percentage when he kicks right?
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+Improvement is a good thing anyway. 
+\end{mdframed}
 
 \end{itemize}
 
 
 
-(b) Find the unique Nash equilibrium.
 
-Both players choose $L$ with probability $\tfrac{\beta}{\alpha + \beta}$. To see this, let $p$ be the probability that the Goalie moves $L$ and $1-p$ the probability that the Golie moves $R$, and let $q$ be the probability that the Striker kicks $L$ and $1-q$ the probability that the Striker kicks $R$. This yields the following payoffs:
-    \begin{itemize}
-    \item If Goalie moves $L$: $q\alpha$.
-    \item If Goalie moves $R$: $(1-q)\beta$.
-    \item If Striker kicks $L$: $p(1-\alpha) + (1-p) = 1 - p\alpha$.
-    \item If Striker kicks $R$: $p + (1-p)(1-\beta) = p + 1 - p - \beta + p\beta = 1 - (1-p)\beta$.
-    \end{itemize}
-    Thus, the Goalie is indifferent if $q\alpha = (1-q)\beta$. Therefore, $q$ must satisfy that $q(\alpha+\beta) = \beta$ or $q = \frac{\beta}{\alpha+\beta}$. And the Striker is indifferent if $p\alpha = (1-p)\beta$. Therefore, $p$ must satisfy that $p(\alpha+\beta) = \beta$ or $p = \frac{\beta}{\alpha+\beta}$.
-    
-(c) Answer again the questions in part (a). Based upon this, would it be wise to judge a striker's
-relative scoring ability in kicking left versus right by comparing the fraction of times he scores
-when he kicks right versus the fraction of times he scores when he kicks left?
+\subsection*{(b) Find the unique Nash equilibrium.}
 
-\textit{(i) In the Nash equilibrium, the scoring probability is $1 - \tfrac{\alpha \beta}{\alpha + \beta}$ for both $L$ and $R$, since the goalie goes more often to the striker's good side. \\ (ii) When $\alpha$ decreases, the scoring probabilities for $L$ and $R$ are increased, but remain the same, equal to $1 - \tfrac{\alpha \beta}{\alpha + \beta}$. Therefore, it is not wise to judge a striker's relative scoring ability in kicking left versus right by comparing the fraction of times he scores when he kicks right versus the fraction of times he scores when he kicks left scoring ability.}
+Let $p$ be the probability that the Goalie moves $L$ and $1-p$ the probability that the Golie moves $R$, and let $q$ be the probability that the Striker kicks $L$ and $1-q$ the probability that the Striker kicks $R$. This yields the following payoffs:
 
-(d) Show that knowing the fraction of times a goal was scored when both players chose L and the
-fraction of times a goal was scored when both players chose R would permit you to correctly
-deduce the player's scoring ability when kicking left and right.
+\newpage
 
-\textit{The probability of scoring if both choose $L$ is $1 – \alpha$, and the probability of scoring if both choose $R$ is $1 – \beta$. Since $1 – \alpha > 1 – \beta$, this shows correctly that the kicker is more skilled when choosing $L$.}
+For Goalie:
+\begin{itemize}
+\item If moves $L$: $E(U^G_L)= q \alpha + (1-q) \times 0 = q \alpha$.
+\item If moves $R$: $E(U^G_R)=q \times 0 + (1-q) \beta =(1-q) \beta$.
+\end{itemize}
 
-(e) Could you correctly deduce the player's scoring ability when kicking left and right if you only
-had access to the striker's choice? If not, what can be deduced?
+For Kicker
+\begin{itemize}
+\item If kicks $L$: $E(U^K_L) = p (1-\alpha) + (1-p)\times 1 = 1 - p\alpha$.
+\item If kicks $R$: $E(U^K_R) = p\times 1 + (1-p)(1-\beta) = p + 1 - p - \beta + p\beta = 1 - (1-p)\beta$.
+\end{itemize}
 
-(f) Could you correctly deduce the player's scoring ability when kicking left versus right if you only
-had access to the goalie's choice? If not, what can be deduced?
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+Recall: In a finite two-player game,$B_1 = UD_1$ and $B_2 = UD_2$
+
+No dominated response can be BR. To achieve so, the players must let the opponent be indifferent.
+\end{mdframed}
 
 
+$$E(U^G_L) = E(U^G_R) \Rightarrow  q(\alpha+\beta) = \beta \Rightarrow q=\frac{\beta}{\alpha+\beta}$$
+ 
+$$E(U^K_L) = E(U^K_R) \Rightarrow 1- p\alpha = 1-(1-p)\beta \Rightarrow p = \frac{\beta}{\alpha+\beta}$$
+
+ 
+NE: both players choose $L$ with probability $\tfrac{\beta}{\alpha + \beta}$, and $R$ with probability $\tfrac{\alpha}{\alpha + \beta}$. 
+
+   
+\subsection*{(c) Answer again the questions in part (a).}
+
+ Based upon this, would it be wise to judge a striker's relative scoring ability in kicking left versus right by comparing the fraction of times he scores when he kicks right versus the fraction of times he scores when he kicks left?
+
+\medskip
+
+\textbf{(i) Will the kicker score more often at left?}
+
+$Pr(score|L) = Pr($Goalie moves to R$) + Pr($Goalie moves to L \&  failed to stop it$)$
+\smallskip
+
+Thus, 
+\begin{align*}
+Pr(score|L) &= (1-q) + q \times (1-\alpha) \\
+&= (1-\tfrac{\beta}{\alpha + \beta}) + \tfrac{\beta}{\alpha + \beta} (1-\alpha) \\
+&= 1- \tfrac{\alpha \beta }{\alpha + \beta} 
+\end{align*}
+
+
+$Pr(score|R) = Pr($Goalie moves to L$) + Pr($Goalie moves to R \&  failed to stop it$)$
+
+\smallskip
+
+Thus, 
+
+\begin{align*}
+Pr(score|R) &= q + (1-q)\times (1-\beta)  \\
+&= \tfrac{\beta}{\alpha + \beta} + (1-\tfrac{\beta}{\alpha + \beta}) (1-\beta) \\
+&=  1- \tfrac{\alpha \beta }{\alpha + \beta}
+\end{align*}
+
+In the Nash equilibrium, the scoring probability is the same for both $L$ and $R$.
+
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+The Kicker is better at Left, but the goalie is aware of that and goes more often to the Left.
+
+\end{mdframed}
+
+
+\textbf{(ii) If the striker's ability to score when kicking left rises ($\alpha$ decreases), how will this affect $Pr(score|L)$ and $Pr(score|R)$}
+
+\smallskip
+
+We already know $$Pr(score|L) = Pr(score|R)= 1- \tfrac{\alpha \beta }{\alpha + \beta} =  1- \tfrac{\beta }{1 + \frac{\beta}{\alpha}}$$
+
+When $\alpha$ decreases, the scoring probabilities for $L$ and $R$ are increased, but $Pr(score|L) = Pr(score|R)$ still holds for NE.
+
+\medskip
+
+Therefore, it is not wise to judge a striker's relative scoring ability in kicking left versus right by comparing the fraction of times he scores when he kicks right or left.
+
+
+\subsection*{(d) Show that knowing the $Pr(score|$both L$)$ and $Pr(score|$both R$)$ would permit you to correctly deduce the player's scoring ability when kicking left and right.}
+
+The probability of scoring if both choose $L$ is $1 – \alpha$, and the probability of scoring if both choose $R$ is $1 – \beta$. 
+
+
+Once you konw the relation between $1 – \alpha$ and $1 – \beta$, you also know the relation between $\alpha$ and $\beta $. For example: $1 – \alpha > 1 – \beta \iff \alpha <  \beta $, Kicker is better at Left.
+
+
+\subsection*{(e) Could you correctly deduce the player's scoring ability kicking left versus right if you only had access to the striker's choice? If not, what can be deduced?}
+
+The striker's choice at NE is $(\tfrac{\beta}{\alpha + \beta},\tfrac{\alpha}{\alpha + \beta})$.
+Once you know relation between $\tfrac{\beta}{\alpha + \beta}$ and $\tfrac{\alpha}{\alpha + \beta}$, you also know the relation between $\alpha$ and $\beta $.
+
+
+\subsection*{(f) Could you correctly deduce the player's scoring ability when kicking left versus right if you only had access to the goalie's choice? If not, what can be deduced?}
+
+The same as (e)
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
 
-\section{Problem 3} \textit{(Reporting a crime)}
+\section{Problem 3 - Reporting a crime}
 
 A crime is observed by a group of $n$ people. Each person would like the police to be informed
 but prefers that someone else make the phone call. Specifically, suppose that each person
 attaches the value $v$ to the police being informed and bears the cost $c$ if she makes the
 phone call, where $v > c > 0$.
 
+\subsection*{(a) Model this situation as normal form game.}  
+
+
+ Players: $N = \{1, \dots , n \}$ \\ 
+ Strategy set for each player: $\{A, I \}$, where $A$: action and $I$: inaction \\ 
+ Payoff function: 
+
 \begin{itemize}
-\item[(a)] Model this situation as normal form game. \textit{ \\ Players: $N = \{1, \dots , n \}$ \\ Strategy set for each player: $\{A, I \}$, where $A$: action and $I$: inaction \\ Payoff function: $0$ if self and others choose $I$; $v-c$ if self chooses $A$; $v$ is self chooses $I$ and some other chooses $A$.}
-%
-\item[(b)] Find the set of pure strategy Nash equilibria. \textit{ \\ $n$ different asymmetric pure strategy Nash equilibria where exactly one chooses $A$. (Why no incentive to deviate?) No symmetric pure strategy Nash equilibrium. (Why?)}
-%
-\item[(c)] Find the symmetric mixed strategy Nash equilibrium. \textit{ \\ In a mixed strategy mixed strategy Nash equilibrium, the players must be indifferent between $A$ and $I$:$$v-c = 0 \cdot \text{Prob}\{\text{no one else calls}\} + v \cdot \text{Prob}\{\text{at least one other calls}\} \, ,$$implying that $v-c = v \cdot (1 - \text{Prob}\{\text{no one else calls}\})$ so that $$\text{Prob}\{\text{no one else calls}\} = \tfrac{c}{v} \, .$$If we denote the probability of choosing $A$ by $p$, this implies$$\tfrac{c}{v} = (1-p)^{n-1} \quad \text{or} \quad p = 1 - \left( \tfrac{c}{v} \right)^\frac1{n-1} \, .$$ }
-%
-\item[(d)] In the symmetric mixed strategy Nash equilibrium, how does the probability that the
-police will be called vary with the number of people $n$? \textit{ \\ The probability that no one calls is the product of the probability that one does not call ($1 - p = \left( \tfrac{c}{v} \right)^\frac1{n-1}$) and the probability that no one else calls ($\tfrac{c}{v}$). The latter does not vary with $n$, while the former increases with $n$. Therefore, the probability that no one calls increases with $n$, so that probability that someone calls decreases with $n$. This is one explanation of the so-called ``bystander effect''.}
-%
+\item $0$ if self and others choose $I$; 
+\item $v-c$ if self chooses $A$; 
+\item $v$ is self chooses $I$ and some other chooses $A$.
 \end{itemize}
-\vspace{-6pt}
+
+
+
+
+%
+\subsection*{(b) Find the set of pure strategy Nash equilibria. } 
+
+ $n$ different asymmetric pure strategy Nash equilibria where exactly one chooses $A$. (Why no incentive to deviate?) No symmetric pure strategy Nash equilibrium. (Why?)
+%
+\subsection*{(c) Find the symmetric mixed strategy Nash equilibrium.}
+ In a mixed strategy mixed strategy Nash equilibrium, the players must be indifferent between $A$ and $I$:$$v-c = 0 \cdot \text{Prob}\{\text{no one else calls}\} + v \cdot \text{Prob}\{\text{at least one other calls}\} \, ,$$implying that $v-c = v \cdot (1 - \text{Prob}\{\text{no one else calls}\})$ so that $$\text{Prob}\{\text{no one else calls}\} = \tfrac{c}{v} \, .$$If we denote the probability of choosing $A$ by $p$, this implies$$\tfrac{c}{v} = (1-p)^{n-1} \quad \text{or} \quad p = 1 - \left( \tfrac{c}{v} \right)^\frac1{n-1} \, .$$ 
+%
+\subsection*{(d) In the symmetric mixed strategy NE, how does the $Pr(called)$ vary with the number of people $n$?}  
+
+The probability that no one calls is the product of the probability that one does not call ($1 - p = \left( \tfrac{c}{v} \right)^\frac1{n-1}$) and the probability that no one else calls ($\tfrac{c}{v}$). The latter does not vary with $n$, while the former increases with $n$. Therefore, the probability that no one calls increases with $n$, so that probability that someone calls decreases with $n$. This is one explanation of the so-called ``bystander effect''.
+%
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
