@@ -151,7 +151,7 @@ Will there be any dominated strategy in the end? No. The goalie knows clearly ab
 \item If a striker's ability to score when kicking to the goalie's left rises (i.e. $\alpha$ decreases) how will this affect the percentage of times the striker scores when he chooses to kick to the goalie's left? Will it affect his scoring percentage when he kicks right?
 
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
-Improvement is a good thing anyway. 
+Improvement on kicking skills is a good thing for the kicker anyway. But the goalie is always watching!
 \end{mdframed}
 
 \end{itemize}
@@ -409,24 +409,58 @@ the player may threat the opponent by choosing which NE to take in period 2.
 Consider the following normal form game.
 
 \begin{center}
-$
-\begin{array}{c|c|c|c|}
-& L & C & R \\
-\hline
-U & 1,1 & 4,0 & 5,0 \\
-\hline
-M & 0,4 & 3,3 & 6,2 \\
-\hline
-D & 0,5 & 2,6 & 5,5 \\
-\hline\end{array}
-$
+\captionof{table}{Infinitely repeated game}
+\label{tab:infi}
+\begin{tabular}{cc|c|c|c|}
+  & \multicolumn{1}{c}{} & \multicolumn{3}{c}{$P2$}  \\
+  & \multicolumn{1}{c}{} & \multicolumn{1}{c}{$L$} & \multicolumn{1}{c}{$C$} & \multicolumn{1}{c}{$R$} \\\cline{3-5}
+            & $U$ & $(1,1)$ & $(4,0)$  & $(5,0)$ \\   \cline{3-5}  
+      $P1$  & $M$ & $(0,4)$ & $(3,3)$  & $(6,2)$ \\   \cline{3-5}
+            & $D$ & $(0,5)$ & $(2,6)$  & $(5,5)$ \\   \cline{3-5}
+
+\end{tabular}
 \end{center}
 
-Assume now that this game is repeated infinitely many times. Assume furthermore that the players in each round can observe choices made in earlier rounds and that their payoff is the sum of payoffs discounted by the discount factor   $\delta$ (where $0 < \delta < 1$). Show that there exists a subgame perfect Nash equilibrium leading to the outcome path
+Assume now that this game is repeated \textbf{infinitely} many times. Assume furthermore that the players in each round can observe choices made in earlier rounds and that their payoff is the sum of payoffs discounted by the discount factor   $\delta$ (where $0 < \delta < 1$). Show that there exists a subgame perfect Nash equilibrium leading to the outcome path
 $$(D, R), (D, R), (D, R), (D, R), \dots $$
-if $\delta \geq 1/5$. \\ \textit{Consider the strategy profile determined by player 1 beginning with $D$ and player 2 with $R$ and that both player continue with this as long as only $D$ and $R$ have been played before. If not, player 1 plays $U$ and player 2 plays $L$. Deviating yields a short-run gain of $1$ and perpetual future loss of $4$. The present value of the short-run gain does not exceed the present value of the perpetual future loss if $\delta \geq \tfrac15$.}
+if $\delta \geq 1/5$. 
+
+\bigskip
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+We can see (D,R) is not a NE. Actually, the only static pure strategy NE is (U,L). But in an infinitely repeated game, a trigger strategy can achieve (D,R) as long as the punish for devication is strong enough.
+\end{mdframed}
+
+Consider the strategy profile determined by player 1 beginning with $D$ and player 2 with $R$ and that both players continue with this as long as only $D$ and $R$ have been played before. 
+
+\medskip
+
+If any one deviates, player 1 plays $U$ and player 2 plays $L$, forever.
+(Deviating yields a short-run gain of $1$ and perpetual future loss of $4$.) 
+
+\medskip
+
+Suppose in period $t$ one player deviates, starting from period $t$, the player's payoff is:
+
+$$U_{divi} = 6 + 1\times \delta + 1\times \delta^2 + \cdots = 5 + \frac{1}{1-\delta}$$
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+Watson pp.297
+
+$$v \equiv 1 + \delta + \delta^2 + \delta^3 + \cdots = 1 + \delta ( 1 + \delta +\delta^2 + \delta^3 + \cdots) = 1 + \delta v$$
+
+Therefore $$v= \frac{1}{1-\delta}$$
+\end{mdframed}
+
+While continue with (D,R) from period $t$ yields:
+
+$$U_{conti} = 5 + 5\times \delta + 5\times \delta^2 + \cdots = \frac{5}{1-\delta}$$
+
+No one will deviate if $$U_{conti} \ge U_{divi} \iff \frac{5}{1-\delta} \ge 5 + \frac{1}{1-\delta} \iff  \delta \ge \frac{1}{5} $$
 
 
+
+The present value of the short-run gain does not exceed the present value of the perpetual future loss if $\delta \geq \tfrac15$.
 
 
 \section{Problem 6 - Infinitely repeated price competition}
@@ -435,26 +469,51 @@ if $\delta \geq 1/5$. \\ \textit{Consider the strategy profile determined by pla
 
 
 Consider the Bertrand oligopoly model, where $n$ firms simultaneously and independently
-select their prices, $p_1 , p_2 , \cdots , p_n$ , in a market. (These prices are
-greater than or equal to $0$.) Consumers observe these prices and only purchase
+select their prices, $p_1 , p_2 , \cdots , p_n$ , in a market ($p_i \ge 0$). 
+
+\smallskip
+
+Consumers observe these prices and only purchase
 from the firm (or firms) with the lowest price $p$, according to the demand
-curve $Q = 110 − p$, where $p = min{p_1 , p_2 , \cdots , p_n}$. That is, the firm with
-the lowest price gets all of the sales. If the lowest price is offered by more than
-one firm, then these firms equally share the quantity demanded $Q$. Assume
-that firms must supply the quantities demanded of them and that production
-takes place at a constant cost of $10$ per unit. (That is, the cost function for each
-firm is $c (q) = 10q)$. Determining the Nash equilibrium of this game was the
-subject of a previous exercise.
+curve $Q = 110 - p$, where $p = min\{p_1 , p_2 , \cdots , p_n\}$. That is, the firm with the lowest price gets all of the sales. 
+
+\smallskip
+
+If the lowest price is offered by more than
+one firm, then these firms equally share the quantity demanded $Q$. 
+
+\smallskip
+
+Assume that firms must supply the quantities demanded of them and that production takes place at a constant cost of $10$ per unit. (That is, the cost function for each firm is $c (q) = 10q)$. 
+
+\smallskip
+
+Determining the NE of this game was the subject of a previous exercise (\textbf{Read Watson pp.115-117}).
 
 
+\subsection*{Additional question}
+
+What is the lowest price $\underline{p}$ in a NE if the game is played only once? And what is the profits of the firms in a NE in this case? 
 
 
+If any price $p_j>10$, firm $i$ can always take the whole market by setting 
+price $0 \le p_i <p_j$. In the end, if one firm must produce, it will set
+$p_i = MC = 10$.
 
+\smallskip
 
-with the following additional question, to be answered before part (a):
+This is the lowest price $p$ and also the NE price.
 
-What is the lowest price $\underline{p}$ in a Nash equilibrium if the game is played only once?
-And what is the profits of the firms in a Nash equilibrium in this case? \\ \textit{In a Nash equilibrium at least two firms $i$ set $p_i = 10$ and that is minimum price. For the rest, see Watson, p.~464.}
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+
+In the Bertrand model, firms always have the incentive to undercut each other’s prices as long as price exceeds the marginal
+cost of production because a firm can grab the entire market by doing so. 
+
+\medskip
+
+Compare with the Cournot model on Watson pp. 113-114
+
+\end{mdframed}
 
 \subsection*{(a) Infinitely repeated scenario}
 
@@ -462,21 +521,56 @@ Suppose that this game is infinitely repeated. (The firms play the
 game each period, for an infinite number of periods.) Define $\delta$  as the
 discount factor for the firms. Imagine that the firms wish to sustain
 a collusive arrangement in which they all select the monopoly price
-$p^M = 60$ each period. 
-
-What strategies might support this behavior in
+$p^M = 60$ each period. What strategies might support this behavior in
 equilibrium? 
+
+\medskip 
 
 (Do not solve for conditions under which equilibrium
 occurs. Just explain what the strategies are. Remember, this requires
-specifying how the firms punish each other. Use the Nash equilibrium
+specifying how the firms punish each other. Use the NE
 price as punishment.)
 
-\subsection*{(b) Derive a condition on $n$ and $\delta$ that guarantees that collusion can be
-sustained.}
+\bigskip
 
-\subsection*{(c) What does your answer to part (b) imply about the optimal size of
-cartels?}
+All firms set price to be 60. If nobody deviate, keep the price; if anyone deviate, the others choose 10 forever.
+
+\subsection*{(b) Derive a condition on $n$ and $\delta$ that guarantees that collusion can be sustained.}
+
+By collusion, the price is 60, the demand is $Q = 110 -p = 110- 60 =50$, and the
+market is shared by $n$ firms.
+
+\smallskip
+
+For any single firm, it can produce $\frac{1}{n}(110-60)$ with a MC of 10 kr.
+
+\smallskip
+
+Therefore, at any period $a$, any firm $i$ can obtain profit:
 
 
+$$U^{\text{collusion}}_{i,t=a} = Q_i (p-MC) = \frac{1}{n}(110-60) (60-10) = \frac {2500}{n} $$
+
+Starting from period $t$ until forever, the firm $i$'s discounted profit via collusion is:
+
+$$\Sigma^{\infty}_{i,t=a} U^{\text{collusion}}_{i,t}= \frac {2500}{n} + \frac {2500}{n} \delta + \frac {2500}{n}\delta^2 + \cdots = \frac {2500}{n} \frac{1}{1-\delta}$$
+
+
+By deviating in period $t$, the firm can obtain the whole firm by setting the price slightly less than $60$, say, $p_i = 60 -\epsilon$. The production $Q = 110 - p_i = 50 + \epsilon$, and the profit is $(50 + \epsilon)(60 -\epsilon -10)=2500 - \epsilon^2$. Since $\epsilon$ can be extremely small, we just ignore it here.
+
+\smallskip
+
+But later on, there will be no profit since all the others choose price $p=10=MC$. 
+
+Therefore, starting from period $t$ until forever, the firm $i$'s discounted profit via deviation is:
+
+$$\Sigma^{\infty}_{i,t=a} U^{\text{deviate}}_{i,t}= 2500  + 0 =2500$$
+
+The collusion can be sustained when $$\Sigma^{\infty}_{i,t=a} U^{\text{collusion}}_{i,t} \ge \Sigma^{\infty}_{i,t=a} U^{\text{deviate}}_{i,t}$$
+
+That is $\frac {2500}{n} \frac{1}{1-\delta} \ge 2500 \Rightarrow \delta \ge 1 -\frac{1}{n}$
+
+\subsection*{(c) What does your answer to part (b) imply about the optimal size of cartels?}
+
+The greater $n$ is, the closer $\delta$ is to $1$. $\delta = 1$ means the firms believe tomorrow is as important as today, which is not realistic. Cartels are less likely to sustain when size increases.
 \end{document}
