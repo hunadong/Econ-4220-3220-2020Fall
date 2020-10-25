@@ -1,7 +1,7 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2020.8.31)  22 OCT 2020 15:04
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2020.8.31)  25 OCT 2020 21:04
 entering extended mode
-**"./Seminar 5.tex"
-("Seminar 5.tex"
+**"./Seminar 8.tex"
+("Seminar 8.tex"
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-08-07>
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -1447,12 +1447,8 @@ ls-angles.tex
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-obj
 -eu-triangles.tex
 2020/03/18 3.06c tkz-obj-eu-triangles.tex
-)) ("Seminar 5.aux"
-
-LaTeX Warning: Label `fig:mc' multiply defined.
-
-)
-\openout1 = `"Seminar 5.aux"'.
+)) ("Seminar 8.aux")
+\openout1 = `"Seminar 8.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
 LaTeX Font Info:    ... okay on input line 26.
@@ -1465,7 +1461,8 @@ LaTeX Font Info:    ... okay on input line 26.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 2
 6.
- (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmr.fd
+
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 26.
@@ -1521,9 +1518,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 26.
 LaTeX Info: Redefining \pageref on input line 26.
 LaTeX Info: Redefining \nameref on input line 26.
- ("Seminar 5.out") ("Seminar 5.out")
+ ("Seminar 8.out") ("Seminar 8.out")
 \@outlinefile=\write4
-\openout4 = `"Seminar 5.out"'.
+\openout4 = `"Seminar 8.out"'.
 
 LaTeX Font Info:    Redeclaring math accent \widehat on input line 26.
 LaTeX Font Info:    Redeclaring math accent \widetilde on input line 26.
@@ -1603,211 +1600,98 @@ Package microtype Info: Loading generic protrusion settings for font family
 i-print.def
 File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
 
-) [1
-
-]
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 40.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 40.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 40.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 40.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 40.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 40.
-LaTeX Font Info:    Trying to load font information for T1+lmss on input line 6
-0.
-
-(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmss.fd
-File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmss' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.25598pt on input line 60.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.25598pt on input line 60.
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 6
-1.
+Underfull \hbox (badness 10000) in paragraph at lines 39--41
 
-(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmtt' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-
-[2
-
-]
-Overfull \hbox (2.10744pt too wide) in paragraph at lines 125--126
-[]\T1/futs/b/n/10 ASSUMPTION 3.1 Prop-er-ties of the Pro-duc-tion Func-tion \T1
-/futs/m/n/10 (Jehle & Reny pp.127) 
  []
 
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 47.
+See the caption package documentation for explanation.
+
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 49.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 49.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 49.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 9.19998pt on input line 49.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.99199pt on input line 49.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 49.
+[1
+
+] [2]
+File: ./pic/8.q7_13.png Graphic file (type bmp)
+<./pic/8.q7_13.png>
+
+Overfull \hbox (2.06143pt too wide) in paragraph at lines 139--139
+[][]\T1/futs/b/n/12 (a) Be-fore analysing this game, in-for-mally an-swer the f
+ol-low-ing ques-
+ []
+
+[3]
+Package mdframed Info: Not enough space on this page on input line 232.
+ [4]
+Package mdframed Info: Not enough space on this page on input line 232.
+
+Overfull \hbox (14.51926pt too wide) in paragraph at lines 241--242
+[]\T1/futs/m/n/10 When $\FML/futmi/m/it/10 ^^K$ \T1/futs/m/n/10 de-creases, the
+ scor-ing prob-a-bil-i-ties for $\FML/futmi/m/it/10 L$ \T1/futs/m/n/10 and $\FM
+L/futmi/m/it/10 R$ \T1/futs/m/n/10 are in-creased, but $\FML/futmi/m/it/10 Pr\T
+1/futs/m/n/10 (\FML/futmi/m/it/10 score\FMS/futm/m/n/10 j\FML/futmi/m/it/10 L\T
+1/futs/m/n/10 ) \FMS/futm/m/n/10 ^^81
+ []
+
+
+Overfull \hbox (7.90546pt too wide) in paragraph at lines 248--248
+\T1/futs/b/n/12 would per-mit you to cor-rectly de-duce the player's scor-ing a
+bil-ity when
+ []
+
+Missing character: There is no – in font futr8t!
+Missing character: There is no – in font futr8t!
+Missing character: There is no – in font futr8t!
+Missing character: There is no – in font futr8t!
+Missing character: There is no – in font futr8t!
+Missing character: There is no – in font futr8t!
+[5] [6] [7]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 412.
+See the caption package documentation for explanation.
+
+[8]
+Overfull \hbox (17.79276pt too wide) in paragraph at lines 476--479
+\T1/futs/m/n/10 low-est price $\FML/futmi/m/it/10 p$\T1/futs/m/n/10 , ac-cord-i
+ng to the de-mand curve $\FML/futmi/m/it/10 Q \FMS/futm/m/n/10 ^^81 \T1/futs/m/
+n/10 110 \FMS/futm/m/n/10 ^^@ \FML/futmi/m/it/10 p$\T1/futs/m/n/10 , where $\FM
+L/futmi/m/it/10 p \FMS/futm/m/n/10 ^^81 \FML/futmi/m/it/10 min\FMS/futm/m/n/10 
+f\FML/futmi/m/it/10 p[]; p[]; []  ; p[]\FMS/futm/m/n/10 g$\T1/futs/m/n/10 .
+ []
+
+[9]
 Missing character: There is no ’ in font futr8t!
-
-Overfull \hbox (2.68239pt too wide) in paragraph at lines 140--141
-[]\T1/futs/b/n/10 Conditional in-put de-mand \T1/futs/m/n/10 is sim-i-lar to Hi
-ck-sian de-mands for con-sumers. 
- []
-
-Package mdframed Info: Box was splittet wrong
- starting loop to iterate the splitting point
-(mdframed)              on input line 176.
-[3
-
-]
-Overfull \hbox (15.33084pt too wide) in paragraph at lines 198--198
-[]\T1/futs/b/n/14.4 Another pro-duc-tion & cost func-tion ex-am-ple from exam
- []
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 240.
-See the caption package documentation for explanation.
-
-
-Overfull \hbox (5.63615pt too wide) in paragraph at lines 239--240
- [] 
- []
-
-Missing character: There is no ∈ in font futr8t!
-[4]
-Overfull \hbox (3.07231pt too wide) in paragraph at lines 262--263
-[]\T1/futs/m/n/10 return to scale un-cer-tain, some-times in-crease, some-times
- con-stant or de-crease. 
- []
-
-[5]
-Package mdframed Info: Not enough space on this page on input line 345.
- [6]
-Package mdframed Info: Not enough space on this page on input line 345.
-Package mdframed Info: Box was splittet wrong
- starting loop to iterate the splitting point
-(mdframed)              on input line 404.
- [7] [8] [9]
-File: ./pic/5.convex.png Graphic file (type bmp)
-<./pic/5.convex.png>
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 530.
-See the caption package documentation for explanation.
-
-[10] [11]
-Overfull \hbox (59.77173pt too wide) detected at line 642
-[]
- []
-
-[12]
-
-Package mdframed Warning: You got a bad break
-(mdframed)                because the last box will be empty
-(mdframed)                you have to change it manually
-(mdframed)                by changing the text, the space
-(mdframed)                or something else on input line 669.
-
-Package mdframed Info: Box was splittet wrong
- starting loop to iterate the splitting point
-(mdframed)              on input line 669.
-[13]
-Missing character: There is no ﬁ in font futr8t!
- [14]
-Missing character: There is no ﬁ in font futr8t!
-
-Overfull \hbox (5.13069pt too wide) in paragraph at lines 723--725
-[]\T1/futs/m/n/10 The con-clu-sion above is the same as the so-called "Own-pric
-e ef-fects" we have proved. 
- []
-
-
-Overfull \hbox (43.79482pt too wide) in paragraph at lines 759--760
-[]\T1/futs/m/n/10 If $\FML/futmi/m/it/10 ^^Z \FMS/futm/m/n/10 2 \T1/futs/m/n/10
- (0\FML/futmi/m/it/10 ; \T1/futs/m/n/10 1)\FML/futmi/m/it/10 ; ^^L \FMS/futm/m/
-n/10 ^^82 \T1/futs/m/n/10 0$, the pro-duc-tion func-tion doesn't make sense sin
-ce $[][] \FML/futmi/m/it/10 f\T1/futs/m/n/10 (\FML/futmi/m/it/10 x\T1/futs/m/n/
-10 ) \FMS/futm/m/n/10 ^^81
- []
-
-[15] [16] [17]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 822.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathop' on input line 822.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathgroup' on input line 822.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\symoperators' on input line 822.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\nmlimits@' on input line 822.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 822.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 822.
-
-[18]
-File: ./pic/5.soc.png Graphic file (type bmp)
-<./pic/5.soc.png>
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 904.
-See the caption package documentation for explanation.
-
-File: ./pic/5.mc.png Graphic file (type bmp)
-<./pic/5.mc.png>
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 935.
-See the caption package documentation for explanation.
-
-[19] [20]
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 969.
-See the caption package documentation for explanation.
-
-[21] [22]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 976.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 976.
- ("Seminar 5.aux")
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 976.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 976.
-Package rerunfilecheck Info: File `"Seminar 5".out' has not changed.
+ [10] [11]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 576.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 576.
+ ("Seminar 8.aux")
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 576.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 576.
+Package rerunfilecheck Info: File `"Seminar 8".out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 976.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 576.
  ) 
 Here is how much of TeX's memory you used:
- 31289 strings out of 414493
- 594860 string characters out of 2902447
- 936164 words of memory out of 3000000
- 47845 multiletter control sequences out of 15000+200000
- 624864 words of font info for 104 fonts, out of 3000000 for 9000
+ 31011 strings out of 414493
+ 589941 string characters out of 2902447
+ 929599 words of memory out of 3000000
+ 47578 multiletter control sequences out of 15000+200000
+ 619113 words of font info for 94 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 60i,16n,91p,961b,965s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,10n,91p,961b,474s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Seminar 5.pdf (22 pages).
+Output written on Seminar 8.pdf (11 pages).
