@@ -142,7 +142,9 @@ Assume that $0 < \alpha < \beta < 1$. Consequently, the striker is more skilled 
 \item Would you expect a striker who is more skilled at kicking to the goalie's left than to his right, to score more often when he kicks to the goalie's left?
 
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
-Will there be any dominated strategy in the end? No.
+Will there be any dominated strategy in the end? No. The goalie knows clearly about the kicker's skill, and will pay more attention to the left side too.
+
+
 \end{mdframed}
 
 
@@ -291,41 +293,118 @@ phone call, where $v > c > 0$.
 %
 \subsection*{(b) Find the set of pure strategy Nash equilibria. } 
 
- $n$ different asymmetric pure strategy Nash equilibria where exactly one chooses $A$. (Why no incentive to deviate?) No symmetric pure strategy Nash equilibrium. (Why?)
-%
-\subsection*{(c) Find the symmetric mixed strategy Nash equilibrium.}
- In a mixed strategy mixed strategy Nash equilibrium, the players must be indifferent between $A$ and $I$:$$v-c = 0 \cdot \text{Prob}\{\text{no one else calls}\} + v \cdot \text{Prob}\{\text{at least one other calls}\} \, ,$$implying that $v-c = v \cdot (1 - \text{Prob}\{\text{no one else calls}\})$ so that $$\text{Prob}\{\text{no one else calls}\} = \tfrac{c}{v} \, .$$If we denote the probability of choosing $A$ by $p$, this implies$$\tfrac{c}{v} = (1-p)^{n-1} \quad \text{or} \quad p = 1 - \left( \tfrac{c}{v} \right)^\frac1{n-1} \, .$$ 
-%
-\subsection*{(d) In the symmetric mixed strategy NE, how does the $Pr(called)$ vary with the number of people $n$?}  
+There are $n$ different asymmetric pure strategy Nash equilibria where exactly one chooses $A$:
 
-The probability that no one calls is the product of the probability that one does not call ($1 - p = \left( \tfrac{c}{v} \right)^\frac1{n-1}$) and the probability that no one else calls ($\tfrac{c}{v}$). The latter does not vary with $n$, while the former increases with $n$. Therefore, the probability that no one calls increases with $n$, so that probability that someone calls decreases with $n$. This is one explanation of the so-called ``bystander effect''.
-%
+$$(A,I,I,\cdots,I)$$
+$$(I,A,I,\cdots,I)$$
+$$\cdots$$
+$$(I,I,I,\cdots,A)$$
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+
+Check the payoff to see if there is any incentive to deviate from the NE. For example, the payoff for
+$(A,I,I,\cdots,I)$ is $(v-c,v,v,\cdots,v)$.
+
+\begin{itemize}
+\item Will player 1 deviate (from A to I)? No, deviation leads to lower payoff (from $v-c$ to $0$)
+\item Will any other player deviate (from I to A)? No, deviation leads to lower payoff ($v$ to $v-c$)
+\end{itemize}
+
+Using the same method, it's clear that "nobody acts" $(I,I,I,\cdots,I)$ and "more than 1 act" $(I,A,A,\cdots,I)$ are
+unstable.
+\end{mdframed}
+
+
+\subsection*{(c) Find the symmetric mixed strategy Nash equilibrium.}
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+If there is a dominated strategy, the player will assgin 0 probability to it. Therefore:
+\end{mdframed}
+
+In a mixed strategy mixed strategy Nash equilibrium, the players must be \textbf{indifferent between $A$ and $I$}.
+\begin{align*}
+& U^i_A = v-c \\  
+&E(U^i_I) = 0 \times Pr(\text{no one else acts}) + v \times  Pr(\text{at least one else acts}) \\
+&= 0 + v \times [1- Pr(\text{no one other acts})]
+\end{align*}
+$$U^i_A = E(U^i_I) \Rightarrow v-c = v [1- Pr(\text{no one else acts})]\Rightarrow Pr(\text{no one else acts}) = \frac{c}{v}$$
+If we denote the probability of choosing $A$ by $p$, choosing $I$ by $1-p$ (note by "symmetric", we assume all individuals are identical and independent), 
+this implies:
+
+$$Pr(\text{no one else acts}) = (1-p)^{n-1} \Rightarrow \frac{c}{v}= (1-p)^{n-1} \Rightarrow  p = 1 - \left( \tfrac{c}{v} \right)^\frac1{n-1}$$ 
+
+
+\subsection*{(d) In the symmetric mixed strategy NE, how does the \\ $Pr(\text{the police  will  be  called})$ vary with the number of people $n$?}  
+
+\begin{align*}
+Pr(\text{the police  will  be  called}) &= 1 - Pr(\text{nobody acts})  \\
+&= 1- (1-p)^n \\
+&= 1- \left( \tfrac{c}{v} \right)^\frac n{n-1} \\
+&= 1- \left( \tfrac{c}{v} \right)^\frac 1{1-\tfrac 1n}
+\end{align*}
+
+\begin{itemize}
+\item $\tfrac{c}{v} \in (0,1)$
+\item $\frac 1{1-\tfrac 1n} > 1$, and decreasing in $n$.
+\end{itemize}
+
+$\left( \tfrac{c}{v} \right)^\frac 1{1-\tfrac 1n}$ is increasing in $n$, thus $Pr(\text{the police  will be called})$ is decreasing in $n$.
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+This is one explanation of the so-called ``bystander effect''.
+\end{mdframed}
+
+\begin{mdframed}[backgroundcolor=yellow!20,linecolor=white]
+
+Examples can be helpful to avoid mistakes. If there are only 2 people, $1-\left( \tfrac{c}{v} \right)^\frac 1{1-\tfrac 1 2} =1- \left( \tfrac{c}{v} \right)^2$; if there are infinite people,  $1- \left( \tfrac{c}{v} \right)^\frac 1{1-\tfrac 1 2} =1- \tfrac{c}{v}$.
+
+\smallskip
+You can also use derivatives to show monotonicity.
+\end{mdframed}
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Problem 4} \textit{(Finitely repeated game)}
+\section{Problem 4 - Finitely repeated game}
 
-Watson Exercise pp. Q22.4 
+(Watson Exercise pp.308 Q22.4)
 
 If its stage game has exactly one Nash equilibrium, how many subgame
-perfect equilibria does a two-period, repeated game have? Explain. Would
-your answer change if there were T periods, where T is any finite integer?
+perfect equilibria does a two-period, repeated game have? Explain. 
+
+\smallskip
+
+Would your answer change if there were $T$ periods, where $T$ is any finite integer?
+
+\bigskip
 
 
+\begin{itemize}
+\item For a two-period game: In period 2, subgame perfection requires play of the \textbf{only} NE
+of the stage game. Thus, the only subgame perfect equilibrium the stage NE in both periods. 
 
-In period 2, subgame perfection requires play of the only Nash equilibrium
-of the stage game. As there is only one Nash equilibrium of the stage game,
-selection of the Nash equilibrium to be played in period 2 cannot influence
-incentives in period 1. Thus, the only subgame perfect equilibrium is play
-of the Nash equilibrium of the stage game in both periods. For any finite
-T, the logic from the two-period case applies, and the answer does not
+\item For any finite T, the logic from the two-period case applies, and the answer does not
 change.
+
+\end{itemize}
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+As there is only one NE of the stage game,
+selection of the NE to be played in period 2 cannot influence
+incentives in period 1.
+
+\medskip 
+
+If there are more than one NE in period 2, 
+the player may threat the opponent by choosing which NE to take in period 2.
+
+\end{mdframed}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Problem 5} \textit{(Infinitely repeated game)}
+\section{Problem 5 - Infinitely repeated game}
 
 Consider the following normal form game.
 
@@ -350,9 +429,9 @@ if $\delta \geq 1/5$. \\ \textit{Consider the strategy profile determined by pla
 
 
 
-\section{Problem 6} \textit{(Infinitely repeated price competition)}
+\section{Problem 6 - Infinitely repeated price competition}
 
-Watson pp.318 Exercise 23.1, 
+(Watson pp.318 Exercise 23.1)
 
 
 Consider the Bertrand oligopoly model, where $n$ firms simultaneously and independently
@@ -377,21 +456,27 @@ with the following additional question, to be answered before part (a):
 What is the lowest price $\underline{p}$ in a Nash equilibrium if the game is played only once?
 And what is the profits of the firms in a Nash equilibrium in this case? \\ \textit{In a Nash equilibrium at least two firms $i$ set $p_i = 10$ and that is minimum price. For the rest, see Watson, p.~464.}
 
-(a) Suppose that this game is infinitely repeated. (The firms play the
+\subsection*{(a) Infinitely repeated scenario}
+
+Suppose that this game is infinitely repeated. (The firms play the
 game each period, for an infinite number of periods.) Define $\delta$  as the
 discount factor for the firms. Imagine that the firms wish to sustain
 a collusive arrangement in which they all select the monopoly price
-$p^M = 60$ each period. What strategies might support this behavior in
-equilibrium? (Do not solve for conditions under which equilibrium
+$p^M = 60$ each period. 
+
+What strategies might support this behavior in
+equilibrium? 
+
+(Do not solve for conditions under which equilibrium
 occurs. Just explain what the strategies are. Remember, this requires
 specifying how the firms punish each other. Use the Nash equilibrium
 price as punishment.)
 
-(b) Derive a condition on $n$ and $\delta$ that guarantees that collusion can be
-sustained.
+\subsection*{(b) Derive a condition on $n$ and $\delta$ that guarantees that collusion can be
+sustained.}
 
-(c) What does your answer to part (b) imply about the optimal size of
-cartels?
+\subsection*{(c) What does your answer to part (b) imply about the optimal size of
+cartels?}
 
 
 \end{document}
