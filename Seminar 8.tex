@@ -37,11 +37,12 @@ counter-example.
 \bigskip
 
 (a) In a finite normal-form game, if a pure strategy of a
-player is not a best response to any belief that the player has about the strategies played by his opponents, then this pure strategy is strictly dominated by another \textit{pure} strategy.\\
+player is \textbf{not a best response} to any belief that the player has about the strategies played by his opponents, then this pure strategy is strictly dominated by another \textbf{pure} strategy.\\
 
 \medskip
 
-False. Consider:
+False. It may be dominated by mixed strategies.
+Consider:
 
 \begin{center}
 \captionof{table}{BR and UD for a 2-player normal form game}
@@ -65,27 +66,38 @@ The correct statement is (Watson pp.58):
 
 \begin{itemize}
 \item In a finite two-player game,$B_1 = UD_1$ and $B_2 = UD_2$
-\item For any finite game, $B_i \subset UD_i$ and $B^C_i = UD_i$ for $i = 1, 2,\cdots, n$.
+\item For finite games with more than 2 players, read Watson Appendix B (pp.423) if you're interested.
 \end{itemize}
+
+And Dominance is defined as:
+
+\textbf{Dominance}(Watson pp.50): A pure strategy $s_i$ of player $i$ is dominated if there is a strategy (\textbf{pure or mixed}) $\sigma_i \in \Delta S_i$ such that $u_i(\sigma_i , s_{−i}) > u_i (s_i , s_{−i})$, for all strategy profiles $s_{−i} \in S_{−i}$ of the other players.
+
+\medskip
+
+A more general question can be: find $B_i$ for any possible belief.
+(don't forget mixed strategies)
+
+\medskip
 
 Procedure for calculating $B_i$ (also $UD_i$) for two-player matrix games:
 
 \begin{enumerate}
 \item Look for strategies that are best responses to the simplest beliefs -- those beliefs that put all probability on just one of the other player's strategies.These best responses are obviously in the set $B_i$ so they are also in $UD_i$ .
 \item Look for strategies that are dominated by other pure strategies; these dominated strategies are not in $UD_i$ and thus they are also not in $B_i$.
-\item Test each remaining strategy to see if it is dominated by a mixed strategy. This final step is the most difficult, but if you are lucky, then you will rarely have to perform it.
+\item Test each remaining strategy to see if it is dominated by a \textbf{mixed strategy}. This final step is the most difficult, but if you are lucky, then you will rarely have to perform it.
 
 \end{enumerate}
 
 Let's look for $BR_1$ (which is also $UD_1$) in Table \ref{tab:brud}.
 
 \begin{enumerate}
-\item $BR_1(d)=a$, $BR_1(e)=b$, thus ${a,b}$ are obviously in the set $B_i$ (and $UD_i$).
+\item $BR_1(d)=a$, $BR_1(e)=b$, thus ${a,b}$ are obviously in the set $B_1$ (and $UD_1$).
 \item ${c}$ is not dominated by any other pure strategies.
 \item Can ${c}$ be dominated by a mixed strategy of $a,b$? Yes, for example, a mix strategy between ${a,b}$ with probability $(0.5,0.5)$ yeilds expected payoff $(1.5,1.5)$
 \end{enumerate}
 
-More precisely, let $q$ be the probability assigned to $a$ and $1-q$ the probability assigned to $b$.If ${c}$ is dominated by a mixed strategy of $d$ and $e$, we must have:
+More precisely, let $q$ be the probability assigned to $a$ and $1-q$ the probability assigned to $b$.If ${c}$ is dominated by a mixed strategy of $a$ and $b$, we must have:
 
 $$q\times 3 + (1-q)\times 0 > 1 \Rightarrow q > \tfrac13 $$
 $$q\times 0 + (1-q)\times 3 >1 \Rightarrow p < \tfrac23 $$
@@ -97,11 +109,11 @@ That is, if $q\in (\tfrac13,\tfrac23)$, ${c}$ is dominated by a mixed strategy o
 
 %
 (b) In a finite normal-form game, if a pure strategy of a
-player is not a best response to any belief that the player has about the strategies played by his opponents, then this pure strategy is strictly dominated by some \textit{mixed} strategy.
+player is not a best response to any belief that the player has about the strategies played by his opponents, then this pure strategy is strictly dominated by some \textbf{mixed} strategy.
 
 \medskip
 
-True for a two-player game. In a finite two-player game,$B_1 = UD_1$ and $B_2 = UD_2$. A non-BR must not be UD either, thus it must be dominated by some strategy.
+True for a two-player game. In a finite two-player game,$B_1 = UD_1$ and $B_2 = UD_2$. A non-BR must not be UD either, thus it must be dominated by some strategy (recall: a so called pure strategy is simply a mixed strategy will $Pr=1$).
 
 
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
@@ -109,7 +121,7 @@ It is outside the scope of this course to provide a formal proof of this result.
 
 \smallskip
 
-Read Watson pp.423 if you're interested in games with more than 2 players.
+Read Watson Appendix B (pp.423) if you're interested in games with more than 2 players.
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -161,6 +173,11 @@ Improvement on kicking skills is a good thing for the kicker anyway. But the goa
 
 \subsection*{(b) Find the unique Nash equilibrium.}
 
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+Obviously $L$ and $R$ are not dominated by each other (as pure strategies) for the two players. Now consider the 
+mixed strategy case.
+\end{mdframed}
+
 Let $p$ be the probability that the Goalie moves $L$ and $1-p$ the probability that the Golie moves $R$, and let $q$ be the probability that the Striker kicks $L$ and $1-q$ the probability that the Striker kicks $R$. This yields the following payoffs:
 
 \newpage
@@ -178,9 +195,8 @@ For Kicker
 \end{itemize}
 
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
-Recall: In a finite two-player game,$B_1 = UD_1$ and $B_2 = UD_2$
-
-No dominated response can be BR. To achieve so, the players must let the opponent be indifferent.
+To make the mixed strategy rational, the players must be indifferent bweteen $L$ and $R$. Otherwise one strategy must be
+dominated by another.
 \end{mdframed}
 
 
@@ -200,8 +216,11 @@ NE: both players choose $L$ with probability $\tfrac{\beta}{\alpha + \beta}$, an
 
 \textbf{(i) Will the kicker score more often at left?}
 
+\medskip
+
 $Pr(score|L) = Pr($Goalie moves to R$) + Pr($Goalie moves to L \&  failed to stop it$)$
-\smallskip
+
+\medskip
 
 Thus, 
 \begin{align*}
@@ -213,7 +232,7 @@ Pr(score|L) &= (1-q) + q \times (1-\alpha) \\
 
 $Pr(score|R) = Pr($Goalie moves to L$) + Pr($Goalie moves to R \&  failed to stop it$)$
 
-\smallskip
+\medskip
 
 Thus, 
 
@@ -234,11 +253,11 @@ The Kicker is better at Left, but the goalie is aware of that and goes more ofte
 
 \textbf{(ii) If the striker's ability to score when kicking left rises ($\alpha$ decreases), how will this affect $Pr(score|L)$ and $Pr(score|R)$}
 
-\smallskip
+\medskip
 
 We already know $$Pr(score|L) = Pr(score|R)= 1- \tfrac{\alpha \beta }{\alpha + \beta} =  1- \tfrac{\beta }{1 + \frac{\beta}{\alpha}}$$
 
-When $\alpha$ decreases, the scoring probabilities for $L$ and $R$ are increased, but $Pr(score|L) = Pr(score|R)$ still holds for NE.
+When $\alpha$ decreases, the scoring probabilities for $L$ and $R$ are increased, but $Pr(score|L) = Pr(score|R)$ still holds for the NE.
 
 \medskip
 
@@ -247,10 +266,10 @@ Therefore, it is not wise to judge a striker's relative scoring ability in kicki
 
 \subsection*{(d) Show that knowing the $Pr(score|$both L$)$ and $Pr(score|$both R$)$ would permit you to correctly deduce the player's scoring ability when kicking left and right.}
 
-The probability of scoring if both choose $L$ is $1 – \alpha$, and the probability of scoring if both choose $R$ is $1 – \beta$. 
+The probability of scoring if both choose $L$ is $1 - \alpha$, and the probability of scoring if both choose $R$ is $1 - \beta$. 
 
 
-Once you konw the relation between $1 – \alpha$ and $1 – \beta$, you also know the relation between $\alpha$ and $\beta $. For example: $1 – \alpha > 1 – \beta \iff \alpha <  \beta $, Kicker is better at Left.
+Once you konw the relation between $1 - \alpha$ and $1 - \beta$, you also know the relation between $\alpha$ and $\beta $. For example: $1 - \alpha > 1 - \beta \iff \alpha <  \beta $, Kicker is better at Left.
 
 
 \subsection*{(e) Could you correctly deduce the player's scoring ability kicking left versus right if you only had access to the striker's choice? If not, what can be deduced?}
@@ -306,8 +325,8 @@ Check the payoff to see if there is any incentive to deviate from the NE. For ex
 $(A,I,I,\cdots,I)$ is $(v-c,v,v,\cdots,v)$.
 
 \begin{itemize}
-\item Will player 1 deviate (from A to I)? No, deviation leads to lower payoff (from $v-c$ to $0$)
-\item Will any other player deviate (from I to A)? No, deviation leads to lower payoff ($v$ to $v-c$)
+\item Will player 1 deviate (from A to I)? No, deviation leads to a lower payoff (from $v-c$ to $0$)
+\item Will any other player deviate (from I to A)? No, deviation leads to a lower payoff ($v$ to $v-c$)
 \end{itemize}
 
 Using the same method, it's clear that "nobody acts" $(I,I,I,\cdots,I)$ and "more than 1 act" $(I,A,A,\cdots,I)$ are
@@ -325,7 +344,7 @@ In a mixed strategy mixed strategy Nash equilibrium, the players must be \textbf
 \begin{align*}
 & U^i_A = v-c \\  
 &E(U^i_I) = 0 \times Pr(\text{no one else acts}) + v \times  Pr(\text{at least one else acts}) \\
-&= 0 + v \times [1- Pr(\text{no one other acts})]
+&= 0 + v \times [1- Pr(\text{no one else acts})]
 \end{align*}
 $$U^i_A = E(U^i_I) \Rightarrow v-c = v [1- Pr(\text{no one else acts})]\Rightarrow Pr(\text{no one else acts}) = \frac{c}{v}$$
 If we denote the probability of choosing $A$ by $p$, choosing $I$ by $1-p$ (note by "symmetric", we assume all individuals are identical and independent), 
@@ -428,7 +447,7 @@ if $\delta \geq 1/5$.
 \bigskip
 
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
-We can see (D,R) is not a NE. Actually, the only static pure strategy NE is (U,L). But in an infinitely repeated game, a trigger strategy can achieve (D,R) as long as the punish for devication is strong enough.
+We can see $(D,R)$ is not a NE for any stage. Actually, the only static pure strategy NE for a stage game is $(U,L)$. But in an infinitely repeated game, a trigger strategy can achieve $(D,R)$ as long as the punish for devication is strong enough.
 \end{mdframed}
 
 Consider the strategy profile determined by player 1 beginning with $D$ and player 2 with $R$ and that both players continue with this as long as only $D$ and $R$ have been played before. 
@@ -458,10 +477,13 @@ $$U_{conti} = 5 + 5\times \delta + 5\times \delta^2 + \cdots = \frac{5}{1-\delta
 
 No one will deviate if $$U_{conti} \ge U_{divi} \iff \frac{5}{1-\delta} \ge 5 + \frac{1}{1-\delta} \iff  \delta \ge \frac{1}{5} $$
 
-
-
 The present value of the short-run gain does not exceed the present value of the perpetual future loss if $\delta \geq \tfrac15$.
 
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+A high $\delta$ means the players value the future more.
+\end{mdframed}
+
+\newpage
 
 \section{Problem 6 - Infinitely repeated price competition}
 
@@ -495,6 +517,7 @@ Determining the NE of this game was the subject of a previous exercise (\textbf{
 
 What is the lowest price $\underline{p}$ in a NE if the game is played only once? And what is the profits of the firms in a NE in this case? 
 
+\bigskip
 
 If any price $p_j>10$, firm $i$ can always take the whole market by setting 
 price $0 \le p_i <p_j$. In the end, if one firm must produce, it will set
@@ -502,7 +525,7 @@ $p_i = MC = 10$.
 
 \smallskip
 
-This is the lowest price $p$ and also the NE price.
+This is the lowest price $\underline{p}$ and also the NE price.
 
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
 
@@ -572,5 +595,11 @@ That is $\frac {2500}{n} \frac{1}{1-\delta} \ge 2500 \Rightarrow \delta \ge 1 -\
 
 \subsection*{(c) What does your answer to part (b) imply about the optimal size of cartels?}
 
-The greater $n$ is, the closer $\delta$ is to $1$. $\delta = 1$ means the firms believe tomorrow is as important as today, which is not realistic. Cartels are less likely to sustain when size increases.
+The greater $n$ is, the closer $\delta$ is to $1$, which means the condition is stricter. Cartels are less likely to sustain when size increases.
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+$\delta = 1$ means the firms believe tomorrow is as important as today, which is not realistic
+\end{mdframed}
+
+
 \end{document}
