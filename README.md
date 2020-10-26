@@ -11,4 +11,4 @@
 * Folder **mathDept_template** is a nice template from the department of Mathematics (UiO)
 * Folder **pic** contains all the pictures, labeled with seminar number.
 
-## Feel free to clone and creat a new branch if you want. We can keep different branches parallel. 
+## Feel free to clone and create a new branch if you want. We can keep different branches parallel. 
