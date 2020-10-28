@@ -19,7 +19,7 @@
 \usepackage{mdframed,caption,xcolor}
 \usepackage{tikz,tkz-euclide}
 
-\title{Seminar 9.}
+\title{Seminar 9.Incomplete information in Static Games}
 \author{Xiaoguang Ling \\  \href{xiaoguang.ling@econ.uio.no}{xiaoguang.ling@econ.uio.no}}
 \date{\today}
 
@@ -28,12 +28,273 @@
 \maketitle
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Problem 1 - Bayesian normal form}
+
+Consider the following two normal form games. Assume that \textbf{only player $1$ knows} which game is being played, while player $2$ thinks that the two games are \textbf{equally likely}.\vspace{-21pt}
+
+\begin{center}
+Game $1$ \vspace{6pt}
+
+$
+\begin{array}{c|c|c|}
+ & L & R \\
+\hline
+U & 0,0 & 4,2 \\
+\hline
+D & 2,6 & 0,8 \\
+\hline
+\end{array}
+$
+\end{center}
+
+\begin{center}
+Game $2$ \vspace{6pt}
+
+$
+\begin{array}{c|c|c|}
+ & L & R \\
+\hline
+U' & 0,2 & 0,0 \\
+\hline
+D' & 2,0 & 2,2 \\
+\hline
+\end{array}
+$
+\end{center}
+
+\subsection*{(a) Model this situation in an ex ante perspective by specifying the Bayesian normal form.}
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+
+Who has contingent strategies?
+
+\begin{itemize}
+\item Player 1 has private information (Game 1 or Game 2 is played), therefore has $2 \times 2 = 4$ types of contingent strategies,
+\item Player 2 doesn't know either which game is played (incomplete) or how player 1 moves (static), thus can only choose $L$ or $R$.
+\end{itemize}
+\end{mdframed}
+
+\begin{center}
+$
+\begin{array}{c|c|c|}
+ & L & R \\
+\hline
+UU' & 0,1 & 2,1 \\
+\hline
+UD' & 1,0 & 3,2 \\
+\hline
+DU' & 1,4 & 0,4 \\
+\hline
+DD' & 2,3 & 1,5 \\
+\hline
+\end{array}
+$
+\end{center}
+%
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+
+We calculate the payoff according to player 2's belief. For example, the 
+payoff for $(UU',L)$ is (0,1):
+$$U^1= 0.5 \times 0 +  0.5 \times 0 =0$$
+$$U^2= 0.5 \times 0 +  0.5 \times 2 =1$$
+
+
+Note: the question is slightly different from those in Watson textbook.
+\medskip
+
+In the textbook, it often says
+the nature moves with probability $(Pr_1,Pr_2)$, i.e. both of the two players have expected payoff.
+Here only player 2 has to guess, while player 1 doesn't need to. 
+\medskip
+
+Although the question can be solved in the same way, you may wonder if it's reasonable to calculate player 1's "expected payoff" according to player 2's belief.
+
+\medskip
+
+\textbf{The payoff in the Bayesian noraml form is actually player 2's imagination.}
+
+\begin{itemize}
+\item Player 2 believes player 1 has the expected payoff $U^1 = 0.5 \times \cdots + 0.5 \times \cdots$, and player 1 knows what player 2 believes.
+\item In the view of player 1, there is actually no expected payoff, since the which game to play is determined for him/her.
+\end{itemize}
+
+
+We calculate player 1's "expected payoff" according to player 2's belief for 2 reasons:
+
+\begin{itemize}
+\item Player 2 believes player 1 has this payoff, and acts according to it. This will in return affect palyer 1's behavior.
+\item Even though player 1's "expected payoff" is calcualted by $U^1 = 0.5 \times \cdots + 0.5 \times \cdots$, what it reflects is actually his/her peference given which game is played. For example:
+
+\begin{itemize}
+\item We know if Game 1 is played and player 2 chooses L, then $D \succsim U$ for player 1.
+\item In the Bayesian normal form, this preference is reflected by: if player 2 chooses L, $DU' \succsim UU'$, $DD' \succsim UD'$, i.e. no matter $U'$ or $D'$ is chosen in Game 2, once Game 1 is played and player 2 chooses L,  $D \succsim U$.
+\end{itemize}
+(Actually player 1's  preference can be preserved by any belief ($0<Pr<1$) of player 2. )
+
+\end{itemize}
+
+Anyway, the method is the same, simply calculate the expected payoff according to the belief for both of the two players.
+\end{mdframed}
 
 
 
+\subsection*{(b) For the Bayesian normal form found in part (a), determine a Nash equilibrium. Is there more than one Nash equilibrium?}
+
+$(UD',R)$ is the unique Nash equilibrium.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Problem 2 - Bayesian normal form}
+
+Consider the following two variants of a battle-of-the-sexes game. The game at the top --
+variant (i) -- is of the usual kind where both players wish to meet each other, while the one
+at the bottom -- variant (ii) -- has the unusual feature that $1$ wishes to avoid 2.\vspace{-6pt}
+
+\begin{center}
+Variant (i) \vspace{6pt}
+
+$
+\begin{array}{c|c|c|}
+ & O & M \\
+\hline
+O & 3,1 & 0,0 \\
+\hline
+M & 0,0 & 1,3 \\
+\hline
+\end{array}
+$
+\end{center}
+
+\begin{center}
+Variant (ii) \vspace{6pt}
+
+$
+\begin{array}{c|c|c|}
+ & O & M \\
+\hline
+O' & 0,1 & 3,0 \\
+\hline
+M' & 1,0 & 0,3 \\
+\hline
+\end{array}
+$
+\end{center}
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+The payoff is 
+\end{mdframed}
+
+
+%
+\subsection*{(a) For each of these games, determine the set of (pure) rationalizable strategies for each
+player, and the set of pure-strategy and/or mixed-strategy Nash equilibria.}
+
+All strategies are rationalizable. Nash equilibria: (i) $(O,O)$, $(M,M)$, $\left( \left( \tfrac34, \tfrac14 \right), \left( \tfrac14, \tfrac34 \right) \right)$. (ii) $\left( \left( \tfrac34, \tfrac14 \right), \left( \tfrac34, \tfrac14 \right) \right)$.
+
+
+To derive the mixed-strategy Nash equilibrium in variant (i), let $p$ the probability of $1$ choosing $O$ and $q$ being the probability of $2$ choosing $O$. Payoff for $1$ choosing $O$ is: $3q$ and the payoff for $1$ choosing $M$ is $1-q$. They are equally good if $3q = 1-q$, which is equivalent to $q = \tfrac14$ (and $1-q=\tfrac34$). Payoff for $2$ choosing $O$ is: $p$ and the payoff for $2$ choosing $M$ is $3(1-p)$. They are equally good if $p = 3(1-p)$, which is equivalent to $p = \tfrac34$ (and $1-p=\tfrac14$).
+
+
+To derive the mixed-strategy Nash equilibrium in variant (ii), let $p$ the probability of $1$ choosing $O'$ and $q$ being the probability of $2$ choosing $O$. Payoff for $1$ choosing $O'$ is: $3(1-q)$ and the payoff for $1$ choosing $M'$ is $q$. They are equally good if $3(1-q) = q$, which is equivalent to $q = \tfrac34$ (and $1-q=\tfrac14$). Payoff for $2$ choosing $O$ is: $p$ and the payoff for $2$ choosing $M$ is $3(1-p)$. They are equally good if $p = 3(1-p)$, which is equivalent to $p = \tfrac34$ (and $1-p=\tfrac14$).
+
+%
+\subsection*{(b) Assume next that only player $1$ knows which game is being played, while player $2$ thinks that
+the two games are equally likely. Model this situation in an ex ante perspective by specifying
+the Bayesian normal form.}
+
+\begin{center}
+$
+\begin{array}{c|c|c|}
+ & O & M \\
+\hline
+OO' & \tfrac32,1 & \tfrac32,0 \\
+\hline
+OM' & 2,\tfrac12 & 0,\tfrac32 \\
+\hline
+MO' & 0,\tfrac12 & 2,\tfrac32 \\
+\hline
+MM' & \tfrac12,0 & \tfrac12,3 \\
+\hline
+\end{array}
+$
+\end{center}
+%
+\subsection*{(c) For the Bayesian normal form found in part (b), determine the set of
+(pure) rationalizable strategies for each player, and the set of pure-strategy and/or
+mixed-strategy Nash equilibria. }
+
+All strategies except $MM'$ are rationalizable.
+
+Nash equilibria: $(MO', M)$, $\left( \left( \tfrac12, \tfrac12, 0, 0 \right), \left( \tfrac34, \tfrac14 \right) \right)$,  $\left( \left( \tfrac12, 0, \tfrac12, 0 \right), \left( \tfrac14, \tfrac34 \right) \right)$. 
+
+\textit{To derive the mixed-strategy Nash equilibria, let $q$ being the probability of $2$ choosing $O$. Payoff for $1$ choosing $OO'$ is: $\tfrac32 q + \tfrac32 (1-q) = \tfrac32$. Payoff for $1$ choosing $OM'$ is: $2 q$. Payoff for $1$ choosing $MO'$ is: $2 (1-q)$. Payoff for $1$ choosing $MM'$ is: $\tfrac12 q + \tfrac12 (1-q) = \tfrac12$. Clearly, $MM'$ cannot be a best response.}
+
+\textit{$OO'$ and $OM'$ are both best responses if $\tfrac32 = $2$ q$, which is equivalent to $q = \tfrac34$  (and $1-q=\tfrac14$). To show that $\left( \left( \tfrac12, \tfrac12, 0, 0 \right), \left( \tfrac34, \tfrac14 \right) \right)$ is a mixed-strategy Nash equilibrium, let $p$ be the probability of $1$ choosing $OO'$ and $1-p$ the probability of $1$ choosing $OM'$. Then payoff for $2$ choosing $O$ is $p + \tfrac12 (1-p)$ and the payoff for $2$ choosing $M$ is $\tfrac32 (1-p)$. They are equally good if $p + \tfrac12 (1-p) = \tfrac32 (1-p)$, which is equivalent to $p = \tfrac12$ (and $1-p = \tfrac12$).}
+
+\textit{$OO'$ and $MO'$ are both best responses if $\tfrac32 = $2$ (1-q)$, which is equivalent to $q = \tfrac14$ (and $1-q=\tfrac34$). To show that $\left( \left( \tfrac12, 0, \tfrac12, 0 \right), \left( \tfrac14, \tfrac34 \right) \right)$ is a mixed-strategy Nash equilibrium, let $p'$ be the probability of $1$ choosing $OO'$ and $1-p'$ the probability of $1$ choosing $MO'$. Then payoff for $2$ choosing $O$ is $p' + \tfrac12 (1-p')$ and the payoff for $2$ choosing $M$ is $\tfrac32 (1-p')$. They are equally good if $p' + \tfrac12 (1-p') = \tfrac32 (1-p')$, which is equivalent to $p' = \tfrac12$ (and $1-p' = \tfrac12$).}
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Problem 3 - Rationalizability in incomplete information games}
+
+(Watson Exercise 26.3 pp.~469-470)
+Suppose that nature selects A with probability $1>2$ and B with probability
+$1>2$. If nature selects A, then players $1$ and $2$ interact according to matrix
+``A.'' If nature selects B, then the players interact according to matrix ``B.''
+These matrices are pictured here. Suppose that, before the players select
+their actions, player $1$ observes nature's choice. That is, player $1$ knows
+from which matrix the payoffs are drawn, and player $1$ can condition his
+or her decision on this knowledge. Player $2$ does not know which matrix is
+being played when he or she selects between L and R.
+
+\subsection*{(a)} Draw the extensive-form representation of this game. Also represent
+this game in Bayesian normal form. Compute the set of rationalizable
+strategies and find the Nash equilibria.
 
 
 
+\subsection*{(b)} Consider a three-player interpretation of this strategic setting in which each of player 1's types is modeled as a separate player. That is, the
+game is played by players 1A, 1B, and 2. Assume that player 1A's
+payoff is zero whenever nature chooses B; likewise, player 1B's payoff
+is zero whenever nature selects A. Depict this version of the game in the
+extensive form (remember that payoff vectors consist of three numbers)
+and in the normal form. Compute the set of rationalizable strategies and
+find the Nash equilibria.
 
+
+
+\subsection*{(c)} Explain why the predictions of parts (a) and (b) are the same in regard
+to equilibrium but different in regard to rationalizability. (Hint: The
+answer has to do with the scope of the players' beliefs.)
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Problem 4 - Differentiated duopoly}
+
+(Watson Exercise 26.5 pp.~470.)
+
+Consider a differentiated duopoly market in which firms compete by selecting
+prices and produce to fill orders. Let p1 be the price chosen by firm
+1 and let p2 be the price of firm 2. Let q1 and q2 denote the quantities demanded
+(and produced) by the two firms. Suppose that the demand for firm
+1 is given by $q_1 = 22 − 2p_1 + p_2$ , and the demand for firm $2$ is given by
+$q_2 = 22 − 2p_2 + p_1$ . Firm $1$ produces at a constant marginal cost of 10 and
+no fixed cost. Firm $2$ produces at a constant marginal cost of c and no fixed
+cost. The payoffs are the firms' individual profits.
+
+\subsection*{(a)} The firms' strategies are their prices. Represent the normal form by
+writing the firms' payoff functions.
+\subsection*{(b)} Calculate the firms' best-response functions.
+\subsection*{(c)} Suppose that $c = 10$ so the firms are identical (the game is symmetric).
+Calculate the Nash equilibrium prices.
+\subsection*{(d)} Now suppose that firm $1$ does not know firm 2's marginal cost c. With
+probability $1>2$ nature picks $c = 14$, and with probability 1>2 nature
+picks $c = 6$. Firm $2$ knows its own cost (that is, it observes nature's
+move), but firm $1$ only knows that firm 2's marginal cost is either 6 or
+$14$ (with equal probabilities). Calculate the best-response functions of
+player $1$ and the two types ($c = 6$ and $c = 14$) of player $2$ and calculate
+the Bayesian Nash equilibrium quantities.
 
 \end{document}
