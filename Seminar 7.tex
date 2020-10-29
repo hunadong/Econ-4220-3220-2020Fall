@@ -127,24 +127,23 @@ opponent?}
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
 \textbf{Best Response} (Watson pp.54)
 
-Suppose player $i$ has a belief $\theta_{−i} \in \Delta S_{−i}$ about the strategies played
+Suppose player $i$ has a belief $\theta_{-i} \in \Delta S_{-i}$ about the strategies played
 by the other players. Player $i$'s strategy $s_i \in S_i$ is a best response if
-$u_i (s_i , \theta_{−i} ) \ge u_i (s'_i , \theta_{−i})$ for every $s'_i \in S_i$
+$u_i (s_i , \theta_{-i} ) \ge u_i (s'_i , \theta_{-i})$ for every $s'_i \in S_i$
 
 \vspace{4mm}
 
 Terms and notations(Watson pp.37):
 \begin{itemize}
 \item Belief: a player's assessment about the strategies of the others,i.e. probability distributions such as $(1/2,1/6,2/6)$ for 3 strategies $U,M,D$ of the opponent.
-\item $\Delta S_{−i}$: the set of probability distributions over the strategies of all the players except player $i$ .
+\item $\Delta S_{-i}$: the set of probability distributions over the strategies of all the players except player $i$ .
 \end{itemize}
 
 In one word, the strategies bringing the highest payoff given the belief of the player.
 
 \vspace{4mm}
 
-The question wants you to find each palyer's  BR for \textbf{each of the possible demands} for his/her opponent.
-We don't assume any belief for now.
+The question wants you to find each palyer's  BR for \textbf{each of the possible demands} for his/her opponent. We only think about the belief that the opponent chooses a certain piece with probability $=1$ instead of any belief $\in (0,1)$, i.e. don't think about mixed strategies here.
 
 \newpage
 
@@ -196,7 +195,7 @@ BR set if opponent chooses $8$: $\{0,1,2,3,4,5,6,7,8\}$ \\
 
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
 A strategy profile $s \in S$ is a Nash equilibrium if and only if $s_i \in BR_i(s_{-i})$
-for each player $i$. That is, $u_i (s_i , s_{−i}) \ge u_i (s'_i , s_{−i})$ for every  $s'_i \in S_i$
+for each player $i$. That is, $u_i (s_i , s_{-i}) \ge u_i (s'_i , s_{-i})$ for every  $s'_i \in S_i$
  and each player $i$.
 
 \vspace{4mm}
@@ -214,7 +213,7 @@ NE: $(0,8),(1,7),(2,6),(3,5),(4,4),(5,3),(6,2),(7,1),(8,0),(8,8)$
 
 
 \begin{mdframed}[backgroundcolor=yellow!20,linecolor=white]
-Be careful, unless the question asks you to find "pure-strategy NE", always take mixed-strategy into consideration! So called pure strategy is only a special case of belief assginment, i.e. it is a mixed strategy with probability being 1.
+Be careful, unless the question asks you to find "pure-strategy NE", always take mixed-strategy into consideration! So called pure strategy is only a special case of belief assginment, i.e. it is a mixed strategy with probability being 1 for a certain choice.
 \end{mdframed}
 
 
@@ -330,7 +329,7 @@ Take a NE $(2,6)$ in Table \ref{tab:pizza} for example.
 
 \begin{itemize}
 \item When player 1 chooses 2 first, the best response for player 2 is to choose 6;
-\item To make sure player 1 will not deviate from choosing 2, we must "eliminate" player 1's incentive to deviate, i.e. let $u_1(s_1=2,s_2) \ge u_1(s_1 \ne 2,s_2)$.
+\item To make sure player 1 will not deviate from choosing 2, player 1 must "eliminate" player 1's incentive to deviate, i.e. let $u_1(s_1=2,s_2) \ge u_1(s_1 \ne 2,s_2)$.
 \item A strategy $s_2$ such as $(4,8,\textcolor{red}{6},6,5,4,3,2,1)$ achieves such a NE. 
 \item Note the red \textcolor{red}{6} is the outcome (payoff) but not a "strategy". A strategy is a complete contingent plan. Here includes both the result player 2 wants (\textcolor{red}{6}) and the threat part ("if you choose less than 2, fine; if you choose more than 2, I'll let you have nothing").
 \end{itemize}
@@ -641,7 +640,7 @@ $\Rightarrow x^*= 3, y^*=2 \ \Rightarrow \ NE=(3,2)$
 \textbf{rationalizable strategies}(Watson pp.70): The set of strategies that
 survive iterated dominance is therefore called the rationalizable strategies.
 
-\textbf{Dominance}(Watson pp.50): A pure strategy $s_i$ of player $i$ is dominated if there is a strategy (\textbf{pure or mixed}) $\sigma_i \in \Delta S_i$ such that $u_i(\sigma_i , s_{−i}) > u_i (s_i , s_{−i})$, for all strategy profiles $s_{−i} \in S_{−i}$ of the other players.
+\textbf{Dominance}(Watson pp.50): A pure strategy $s_i$ of player $i$ is dominated if there is a strategy (\textbf{pure or mixed}) $\sigma_i \in \Delta S_i$ such that $u_i(\sigma_i , s_{-i}) > u_i (s_i , s_{-i})$, for all strategy profiles $s_{-i} \in S_{-i}$ of the other players.
 
 \end{mdframed}
 
