@@ -486,21 +486,6 @@ Normal form:
 \end{center}
 \vspace{2mm}
 
-\textbf{Rationalizable strategies}
-\vspace{2mm}
-
-When player 2 choose L, the BR for player $1B$ is $D'$ (dominates $U'$), and the BR for player $1A$ is $U$ (dominates $D$).
-
-When player 2 choose R, the BR for player $1A$ is $D$ (dominates $U$), and the BR for player $1B$ is $U'$ (dominates $D'$).
-
-As a result, all 
-
-
-
-
-find the NE
-
-
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
 Although there are 3 players, player 2 still doesn't know who he/she is playing with. As a result, the payoff is in player 2's imagination, and player $1A$,$1B$ know how player 2 thinks clearly (an \textit{ex ante} perspective).
 
@@ -525,27 +510,66 @@ the matrix for player $1B$ and player $2$, and player $1A$ joins as another play
 
 \end{mdframed}
 
+\subsubsection*{Rationalizable strategies}
+\vspace{2mm}
 
-\subsection*{(c)} Explain why the predictions of parts (a) and (b) are the same in regard
+\textbf{For player $1A$ and $1B$:}
+
+When player $2$ choose $L$,  $D'$ dominates $U'$, and $U$ dominates $D$. (($U$,$D'$) survives iterated dominance)
+
+When player $2$ choose $R$, $D$ dominates $U$, and  $U'$ dominates $D'$. (($D$,$U'$) survives iterated dominance)
+
+As a result, all the strategies for $1A$ and $1B$ can be BR.
+
+\medskip
+
+\textbf{For Player $2$:} 
+
+Neither $L$ nor $R$ is dominated by the other action. Therefore both of the two 
+actions are rationalizable.
+
+\medskip
+
+\textbf{In conclusion}: the rationalizable strategy set is: $\{(U,D),(U',D'),(L,R)\}$.
+
+\subsubsection*{Find the NE}
+By backward induction, if player $2$ chooses $L$, the payoff is $1$ (by $(U,D',L)$); if player $2$ chooses $R$, the payoff is $2$ (by $(D,U',R)$). Thus player $2$ will choose $R$ and the NE is $(D,U',R)$.
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+Note although player $2$ will only choose $R$ by backward induction, $R$ doesn't dominate $L$. Dominance means "always better no matter how the opponents act". Obviously, under some conditions $L$ yields more payoff than $R$.
+\end{mdframed}
+
+
+
+\subsection*{(c) 2-player view \& 3-player view}
+Explain why the predictions of parts (a) and (b) are the same in regard
 to equilibrium but different in regard to rationalizability. (Hint: The
 answer has to do with the scope of the players' beliefs.)
 
 
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+In the Bayesian normal form (in part(a)), $DD'$ strictly dominates $UU'$. That means that $DD'$ is better than $UU'$ independently of what beliefs player $1$ has about the choice of player 2. 
 
+This is true because player $1$ is one person and has a coherently belief. 
 
-n the Bayesian normal form (which is analyzed in (a)), Dd strictly dominates Uu. That means that Dd is better than Uu independently of what beliefs player 1 has about the choice of player 2. Note that the two types of player 1 have the same belief of what player 2 will do.
- 
-In the 3-player version in (b),
+\medskip
 
- type A of player 1 prefers U to D if he believes player 2 will choose L, and type B of player 1 prefers u to d if he believes player 2 will choose R. So they may end up making U and u as rational choices, since they may believe that player 2 does different things.
- 
-This does not matter for equilibrium since the two types of player 1 always believes in equilibrium that player 2 will choose his equilibrium strategy.
+If we use the view of 3 players, then palyer $1$ are 2 different people, then $(DD',L)$ means both player $1A$ and player $1B$ think player $2$ will choose $L$, and $(DD',R)$ means both player $1A$ and $1B$ think player 2 will choose $R$.
 
+\medskip
 
-In the "3-palyer view", palyer $1A$ and $1B$ game with each other as separate individuals. Without tink about player 1, palyer $1A$ and $1B$ 
+What if player $1A$ and player $1B$ have different belief? For example, player $1A$ believes player $2$ chooses $L$, then $U$ is prefered; and at the same time, player $1B$ believes player $2$ chooses $R$, then $U'$ is prefered.
+\medskip
 
+In this case, (U,U') is chosen separetely, not dominated!
 
+\medskip
 
+This belief separation  doesn't affect NE because both player $1A$ and player $1B$ must agree that by backward induction, player $2$ will choose $R$. 
+\end{mdframed}
+
+In part (b), the beliefs of players $1A$ and $1B$ do not have to
+coincide, so they may end up making $U$ and $U'$ as rational choices based on their separated beliefs. While in NE, the beliefs of player $1A$ and $1B$ are the same (by backward induction).
 
 
 \newpage
@@ -558,29 +582,21 @@ Consider a differentiated duopoly market in which firms compete by selecting
 prices and produce to fill orders. Let $p_1$ be the price chosen by firm
 1 and let $p_2$ be the price of firm 2. Let $q_1$ and $q_2$ denote the quantities demanded
 (and produced) by the two firms. Suppose that the demand for firm
-1 is given by $q_1 = 22 − 2p_1 + p_2$ , and the demand for firm $2$ is given by
-$q_2 = 22 − 2p_2 + p_1$ . Firm $1$ produces at a constant marginal cost of 10 and
+1 is given by $q_1 = 22 - 2p_1 + p_2$ , and the demand for firm $2$ is given by
+$q_2 = 22 - 2p_2 + p_1$ . Firm $1$ produces at a constant marginal cost of 10 and
 no fixed cost. Firm $2$ produces at a constant marginal cost of c and no fixed
 cost. The payoffs are the firms' individual profits.
 
-
-
-\subsection*{(a) payoff functions} The firms' strategies are their prices. Represent the normal form by writing the firms' payoff functions.
-
-\bigskip
+\subsection*{(a) Payoff functions} The firms' strategies are their prices. Represent the normal form by writing the firms' payoff functions.
 
 \begin{align*}
 U^1 &= p_1 q_1 - 10 q_1 \\
-&= p_1(22 − 2p_1 + p_2) -10(22 − 2p_1 + p_2) \\
+&= p_1(22 - 2p_1 + p_2) -10(22 - 2p_1 + p_2) \\
 &= 22P_1 -2p_1^2 + p_1p_2 - 220 + 20p_1 -10p_2 \\
-&= -2p_1^2 +p_1p_2 + 42p_1 - 10p_2 -220
-\end{align*}
-
-
-
-\begin{align*}
+&= -2p_1^2 +p_1p_2 + 42p_1 - 10p_2 -220\\
+\\
 U^2 &= p_2 q_2 - c q_2 \\
-&= p_1(22 − 2p_2 + p_1) -c(22 − 2p_2 + p_1) \\
+&= p_1(22 - 2p_2 + p_1) -c(22 - 2p_2 + p_1) \\
 &= 22P_2 -2p_2^2 + p_1p_2 - 22c + 2cp_2 -cp_1 \\
 &= -2p_2^2 +p_1p_2 -cp_1 + (22+2c)p_2 -22c
 \end{align*}
@@ -603,18 +619,15 @@ SOC:
 
 $$\frac{\partial^2 U^2}{\partial p^2_2} = -4 <0$$
 
-
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
 For payoff functions, we use FOC \& SOC to find the BR functions. Be clear about what is variable an what is parameter. See also seminar 7 problem 3.
 \end{mdframed}
 
-
 \subsection*{(c) Complete information} Suppose that $c = 10$ so the firms are identical (the game is symmetric). Calculate the NE prices.
 
-\bigskip
+\medskip
 
 When $c = 10$, we have:
-
 
 \begin{align*}
 p^*_1 = \frac{42+p_2}{4} \\
@@ -644,46 +657,53 @@ With different MC, firm 2 can set different (contingent) price, while firm 1 can
 
 \end{mdframed}
 
-For player 2:
+\textbf{For player 2:}
 
-(1) When $c=c^H=14$
+\medskip
 
-(I omitted the superscript $^H$ of $p_2$ and $c$ for simpliciy. )
+\textbf{$\quad $ (1) When $c=c^H=14$}
+
+\smallskip
+
+$\quad $(I omitted the superscript $^H$ of $p_2$ and $c$ for simpliciy. )
 \begin{align*}
 U^{2H} &= -2p_2^2 +p_1p_2 -cp_1 + (22+2c)p_2 -22c \quad \quad \text{(the result from question a.)}  \\
 &= -2p_2^2 +p_1p_2 -14p_1 + 50p_2 -22 \times 14
 \end{align*}
 
-FOC:
+$\quad $FOC:
 
 $$\frac{\partial U^{2H}}{\partial p_2} = 0 \Rightarrow -4p^{H*}_2+ 50 + p_1 = 0 \Rightarrow p^{H*}_2 = \frac{50+p_1}{4}$$
 
-SOC:
+$\quad $SOC:
 
-$$\frac{\partial^2 U^{2H}}{\partial p^2_1} = -4 <0$$
+$$\frac{\partial^2 U^{2H}}{\partial p^2_2} = -4 <0$$
 
 
 
-(2)When $c=c^L=6$
+\textbf{$\quad $(2)When $c=c^L=6$}
 
-(I omitted the superscript $^L$ of $p_2$ and $c$ for simpliciy.)
+\smallskip
+
+$\quad $ (I omitted the superscript $^L$ of $p_2$ and $c$ for simpliciy.)
+
 \begin{align*}
 U^{2L} &= -2p_2^2 +p_1p_2 -cp_1 + (22+2c)p_2 -22c \quad \quad \text{(the result from question a.)}  \\
 &= -2p_2^2 +p_1p_2 -6p_1 + 34p_2 -22 \times 6
 \end{align*}
 
 
-FOC:
+$\quad $FOC:
 
 $$\frac{\partial U^{2L}}{\partial p_2} = 0 \Rightarrow -4p^{L*}_2+ 34 + p_1 = 0 \Rightarrow p^{L*}_2 = \frac{34+p_1}{4}$$
 
-SOC:
+$\quad $SOC:
 
-$$\frac{\partial^2 U^{2L}}{\partial p^2_1} = -4 <0$$
-
-
+$$\frac{\partial^2 U^{2L}}{\partial p^2_2} = -4 <0$$
 
 
+
+\textbf{For player 1:}
 
 \begin{align*}
 E(U^1)&= 0.5 U^1(p_1,p_2^H) + 0.5 U^1(p_1,p_2^L) \\
@@ -691,13 +711,28 @@ E(U^1)&= 0.5 U^1(p_1,p_2^H) + 0.5 U^1(p_1,p_2^L) \\
 &=-2p_1^2 + 42p_1 +(p_1 -10)(0.5p^H_2 + 0.5p^L_2) -220
 \end{align*}
 
+$\quad $FOC:
+
+$$\frac{\partial U^{1}}{\partial p_1} = 0 \Rightarrow -4p^{*}_1+ 42 +(0.5p^H_2 + 0.5p^L_2) = 0 \Rightarrow p^{*}_1 = \frac{42 + 0.5(p^H_2 + p^L_2)}{4}$$
+
+$\quad $SOC:
+
+$$\frac{\partial^2 U^{1}}{\partial p^2_1} = -4 <0$$
 
 
+\textbf{NE: Denote the NE as $(p^*_1,p^{*H}_2,p^{*L}_2)$}, we have
 
 
+$$p^{*}_1 = \frac{42 + 0.5(p^{*H}_2 + p^{*L}_2)}{4}= \frac{42 + 0.5(\frac{50+p_1}{4} + \frac{34+p_1}{4})}{4} $$
 
+Therefore: 
 
-
+\begin{equation}
+    \begin{cases}
+p^*_1 = 14 \\ p^{*H}_2 = 16 \\ p^{*L}_2 =12
+    \end{cases}
+\nonumber
+\end{equation}
 
 
 
