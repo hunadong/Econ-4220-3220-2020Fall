@@ -94,7 +94,7 @@ Let's look for $BR_1$ (which is also $UD_1$) in Table \ref{tab:brud}.
 \begin{enumerate}
 \item $BR_1(d)=a$, $BR_1(e)=b$, thus ${a,b}$ are obviously in the set $B_1$ (and $UD_1$).
 \item ${c}$ is not dominated by any other pure strategies.
-\item Can ${c}$ be dominated by a mixed strategy of $a,b$? Yes, for example, a mix strategy between ${a,b}$ with probability $(0.5,0.5)$ yeilds expected payoff $(1.5,1.5)$
+\item Can ${c}$ be dominated by a mixed strategy of $a,b$? Yes (and it must be, accoding to Watson pp.58), for example, a mix strategy between ${a,b}$ with probability $(0.5,0.5)$ yeilds expected payoff $(1.5,1.5)$
 \end{enumerate}
 
 More precisely, let $q$ be the probability assigned to $a$ and $1-q$ the probability assigned to $b$.If ${c}$ is dominated by a mixed strategy of $a$ and $b$, we must have:
@@ -113,7 +113,7 @@ player is not a best response to any belief that the player has about the strate
 
 \medskip
 
-True for a two-player game. In a finite two-player game,$B_1 = UD_1$ and $B_2 = UD_2$. A non-BR must not be UD either, thus it must be dominated by some strategy (recall: a so called pure strategy is simply a mixed strategy will $Pr=1$).
+True for a two-player game. In a finite two-player game,$B_1 = UD_1$ and $B_2 = UD_2$. A non-BR must not be UD either, thus it must be dominated by some strategy (recall: a so called pure strategy is simply a mixed strategy with belief like $(1,0,\cdots)$).
 
 
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
@@ -224,7 +224,7 @@ $Pr(score|L) = Pr($Goalie moves to R$) + Pr($Goalie moves to L \&  failed to sto
 
 Thus, 
 \begin{align*}
-Pr(score|L) &= (1-q) + q \times (1-\alpha) \\
+Pr(score|L) &= (1-p) + p \times (1-\alpha) \\
 &= (1-\tfrac{\beta}{\alpha + \beta}) + \tfrac{\beta}{\alpha + \beta} (1-\alpha) \\
 &= 1- \tfrac{\alpha \beta }{\alpha + \beta} 
 \end{align*}
@@ -237,7 +237,7 @@ $Pr(score|R) = Pr($Goalie moves to L$) + Pr($Goalie moves to R \&  failed to sto
 Thus, 
 
 \begin{align*}
-Pr(score|R) &= q + (1-q)\times (1-\beta)  \\
+Pr(score|R) &= p + (1-p)\times (1-\beta)  \\
 &= \tfrac{\beta}{\alpha + \beta} + (1-\tfrac{\beta}{\alpha + \beta}) (1-\beta) \\
 &=  1- \tfrac{\alpha \beta }{\alpha + \beta}
 \end{align*}
@@ -302,8 +302,8 @@ phone call, where $v > c > 0$.
 
 \begin{itemize}
 \item $0$ if self and others choose $I$; 
-\item $v-c$ if self chooses $A$; 
-\item $v$ is self chooses $I$ and some other chooses $A$.
+\item $v-c$ if self choose $A$; 
+\item $v$ is self choose $I$ and some other choose $A$.
 \end{itemize}
 
 
