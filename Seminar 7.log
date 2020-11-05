@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2020.8.31)  29 OCT 2020 15:27
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2020.8.31)  5 NOV 2020 12:51
 entering extended mode
 **"./Seminar 7.tex"
 ("Seminar 7.tex"
@@ -1750,13 +1750,13 @@ gative wage $\FML/futmi/m/it/12 w$ \T1/futs/m/n/12 de-ter-mines
  []
 
 [17]
-Overfull \hbox (1.53902pt too wide) in paragraph at lines 740--740
+Overfull \hbox (1.53902pt too wide) in paragraph at lines 745--745
 []\T1/futs/b/n/12 Find the sub-game per-fect equi-lib-rium (equi-lib-ria?) of t
 he game. 
  []
 
 
-Overfull \hbox (43.1351pt too wide) detected at line 745
+Overfull \hbox (43.1351pt too wide) detected at line 750
 [] \FMS/futm/m/n/12 ^^81 [] ^^81 \T1/futs/m/n/12 100 \FMS/futm/m/n/12 ^^@ \T1/f
 uts/m/n/12 2\FML/futmi/m/it/12 L \FMS/futm/m/n/12 ^^@ \FML/futmi/m/it/12 w \FMS
 /futm/m/n/12 ^^81 \T1/futs/m/n/12 0 \FMS/futm/m/n/12 ) \FML/futmi/m/it/12 L\T1/
@@ -1766,24 +1766,37 @@ ts/m/n/12 50 \FMS/futm/m/n/12 ^^@ \T1/futs/m/n/12 0\FML/futmi/m/it/12 :\T1/futs
  []
 
 
-Overfull \hbox (5.07901pt too wide) in paragraph at lines 768--769
+Overfull \hbox (5.07901pt too wide) in paragraph at lines 773--774
 []\T1/futs/m/n/12 "An out-come that both par-ties pre-fer to any SPNE out-come"
  means
  []
 
+
+Package mdframed Warning: You got a bad break
+(mdframed)                because the last box will be empty
+(mdframed)                you have to change it manually
+(mdframed)                by changing the text, the space
+(mdframed)                or something else on input line 779.
+
 [18]
-Package mdframed Info: Not enough space on this page on input line 826.
- [19]
-Package mdframed Info: Not enough space on this page on input line 826.
+Overfull \hbox (4.90663pt too wide) in paragraph at lines 810--813
+[]\T1/futs/m/n/12 (1) If we keep the firm in-tact ($\FML/futmi/m/it/12 U$ \T1/f
+uts/m/n/12 ben-e-fits the most), i.e. let $\FML/futmi/m/it/12 U[] \FMS/futm/m/n
+/12 ^^81 \FML/futmi/m/it/12 U[] \FMS/futm/m/n/12 ^^81
+ []
+
+Package mdframed Info: Not enough space on this page on input line 831.
+[19]
+Package mdframed Info: Not enough space on this page on input line 831.
  [20]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 847.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 847.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 852.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 852.
  ("Seminar 7.aux")
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 847.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 847.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 852.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 852.
 Package rerunfilecheck Info: File `"Seminar 7".out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 847.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 852.
  ) 
 Here is how much of TeX's memory you used:
  31273 strings out of 414493
