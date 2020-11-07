@@ -28,7 +28,132 @@
 \maketitle
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Problem 1 - Screening and signaling}
 
+Consider again the strategic situation described in Problem 1 of the set for the nineth seminar, where only player 1 knows which game is being played, while player 2 thinks that the two games are equally likely.
+\subsection{(a) Screening} Assume now that player 2 acts before player 1, and that 2's choice can be observed by 1 before he makes his choice. Show that there is a unique subgame perfect Nash equilibrium. 
+\subsection{(b) Signaling} Assume now that player 1 acts before player 2, and that 1's choice can be observed by 2 before she makes her choice. Show that there is a unique separating perfect Bayesian equilibrium.
+
+\bigskip
+
+\section{Problem 2 - Sequential moves and incomplete information; Perfect
+Bayesian equilibrium}
+
+Consider the situation of Problem 1 of the eighth seminar, but assume now in addition that the pizza comes in 5
+different sizes, each with $x$ slices, where $x \in \{4, 6, 8, 10, 12\}$. Player 1 observes $x$
+before making her demand, while players 2 only observes player 1's demand, but not $x$, before
+having to make his own demand. Before observing player 1's demand, player 2 thinks that the 5
+different pizza sizes are equally likely, but he may infer something from her demand.
+%
+
+%
+\subsection{(a) Explain what a strategy is for player 1 in this game of incomplete information.} 
+%
+\subsection{(b) perfect Bayesian
+equilibrium} Show that the following strategy for player 1 can be part of a perfect Bayesian
+equilibrium: $s_1(4) = 2$, $s_1(6) = 3$, $s_1(8) = 4$, $s_1(10) = 5$, $s_1(12) = 11$. Specify
+both player 2's strategy and player 2's beliefs. 
+%
+\subsection{(c) Are there other perfect Bayesian equilibria in this game?} %
+
+
+\bigskip
+
+\section{Problem 3 - Challenging an incumbent}
+
+Consider a market where there is an incumbent firm and a challenger. The challenger is
+\textit{strong} with probability $\tfrac12$ and \textit{weak} with probability $\tfrac12$; it knows its type, but the incumbent
+does not. The challenger may either \textit{prepare} itself for battle or remain \textit{unprepared}. The
+incumbent observes the challenger's preparedness, but not its type, and chooses whether to
+\textit{fight} ($F$) or \textit{acquiesce} ($A$). The extensive form and the payoffs are given by the following
+figure. The challenger's payoff is listed first, the incumbent's second.
+
+
+\bigskip
+
+\begin{tikzpicture}[scale=1.4,font=\footnotesize]
+
+\tikzset{
+% Two node styles for game trees: solid and solid
+solid node/.style={circle,draw,inner sep=1.5,fill=black},
+hollow node/.style={circle,draw,inner sep=1.5}}
+
+
+% Specify spacing for each level of the tree
+
+\tikzstyle{level 1}=[level distance=12mm,sibling distance=25mm]
+
+\tikzstyle{level 2}=[level distance=15mm,sibling distance=15mm]
+
+\tikzstyle{level 3}=[level distance=17mm,sibling distance=10mm]
+
+% The Tree
+
+\node(0)[hollow node,label=right:{Nature}]{}
+
+child[grow=up]{node[solid node,label=above:{
+\begin{tabular}{c}
+\textcolor{red}{Challenger} \\ \\
+\end{tabular}}] {}
+child[grow=left]{node(1)[solid node,label=above:{$p$}]{}
+child{node[solid node,label=left:{$(4,1)$}]{} edge from parent node [above]{$A$}}
+child{node[solid node,label=left:{$(2,-1)$}]{} edge from parent node [below]{$F$}}
+edge from parent node [above]{Prepared}}
+child[grow=right]{node(3)[solid node,label=above:{$q$}]{}
+child{node[solid node,label=right:{$(3,-1)$}]{} edge from parent node [below]{$F'$}}
+child{node[solid node,label=right:{$(5,1)$}]{} edge from parent node [above]{$A'$}}
+edge from parent node [above]{Unprepared}
+}
+edge from parent node [right]{$\tfrac12$} node [midway, above, sloped] (TextNode){Strong}
+}
+child[grow=down]{node[solid node,label=below:{\begin{tabular}{c}
+\\ \textcolor{red}{Challenger}
+\end{tabular}}] {}
+child[grow=left]{node(2)[solid node,label=below:{$1-p$}]{}
+child{node[solid node,label=left:{$(2,2)$}]{} edge from parent node [above]{$A$}}
+child{node[solid node,label=left:{$(0,3)$}]{} edge from parent node [below]{$F$}}
+edge from parent node [below]{Prepared'}
+}
+child[grow=right]{node(4)[solid node,label=below:{$1-q$}]{}
+child{node[solid node,label=right:{$(3,3)$}]{} edge from parent node [below]{$F'$}}
+child{node[solid node,label=right:{$(5,2)$}]{} edge from parent node [above]{$A'$}}
+edge from parent node [below]{Unprepared'}
+}
+edge from parent node [right]{$\tfrac12$} node[midway, below, sloped] (TextNode){Weak}
+};
+
+
+% information set
+% \draw[dashed,rounded corners=10]($(1) + (-.45,.45)$)rectangle($(2) +(.45,-.45)$);
+% \draw[dashed,rounded corners=10]($(3) + (-.45,.45)$)rectangle($(4) +(.45,-.45)$);
+
+\draw [dashed] (2) -- (1) node [midway, above, sloped, blue] (TextNode) {Incumbent};
+\draw [dashed] (3) -- (4) node [midway, above, sloped, blue] (TextNode) {Incumbent};
+
+%   \draw (nodeA) -- (nodeB) node [midway, above, sloped] (TextNode) {path text};
+% % specify mover at 2nd information set
+% \node at ($(1)!.5!(2)$) [above, sloped]{Incumbent};
+% \node at ($(3)!.5!(4)$) {Incumbent};
+%  %  
+\end{tikzpicture}
+
+\medskip
+
+\subsection{(a) What are the (pure) strategies for the challenger?} 
+
+
+
+\subsection{(b) Why is there no perfect Bayesian equilibrium where the weak challenger chooses
+\textit{Prepared}$'$ ? }
+
+
+\subsection{(c) Separating}Show that there is a perfect Bayesian equilibrium where the strong challenger chooses
+\textit{Prepared} and the weak challenger chooses \textit{Unprepared}$'$. 
+
+
+\subsection{(d) Pooling}Show that there is a perfect Bayesian equilibrium where the strong challenger chooses
+\textit{Unprepared} and the weak challenger chooses \textit{Unprepared}$'$. What do we call such an
+equilibrium? 
 
 
 
