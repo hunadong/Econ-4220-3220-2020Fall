@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.6.29) (preloaded format=xelatex 2020.9.1)  7 NOV 2020 15:49
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.6.29) (preloaded format=xelatex 2020.9.1)  8 NOV 2020 16:51
 entering extended mode
 **"./Seminar 10.tex"
 ("Seminar 10.tex"
@@ -1595,19 +1595,29 @@ File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
 
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 43.
+(Font)              scaled to size 9.19998pt on input line 36.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 43.
+(Font)              scaled to size 6.99199pt on input line 36.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 43.
+(Font)              scaled to size 5.51999pt on input line 36.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 43.
+(Font)              scaled to size 9.19998pt on input line 36.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 43.
+(Font)              scaled to size 6.99199pt on input line 36.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 43.
+(Font)              scaled to size 5.51999pt on input line 36.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 7.35999pt on input line 1.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.25598pt on input line 1.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 7.35999pt on input line 1.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.25598pt on input line 1.
+ [1
 
-Overfull \hbox (7.83533pt too wide) in paragraph at lines 42--48
+] [2]
+Overfull \hbox (7.83533pt too wide) in paragraph at lines 243--249
 \T1/futs/m/n/10 tion that the pizza comes in 5 dif-fer-ent sizes, each with $\F
 ML/futmi/m/it/10 x$ \T1/futs/m/n/10 slices, where $\FML/futmi/m/it/10 x \FMS/fu
 tm/m/n/10 2 f\T1/futs/m/n/10 4\FML/futmi/m/it/10 ; \T1/futs/m/n/10 6\FML/futmi/
@@ -1615,60 +1625,49 @@ m/it/10 ; \T1/futs/m/n/10 8\FML/futmi/m/it/10 ; \T1/futs/m/n/10 10\FML/futmi/m/
 it/10 ; \T1/futs/m/n/10 12\FMS/futm/m/n/10 g$\T1/futs/m/n/10 .
  []
 
-[1
-
-]
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 1.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.25598pt on input line 1.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 1.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.25598pt on input line 1.
-
-Overfull \hbox (5.41905pt too wide) in paragraph at lines 147--147
+[3]
+Overfull \hbox (5.41905pt too wide) in paragraph at lines 328--328
 []\T1/futs/b/n/12 (b) Why is there no per-fect Bayesian equi-lib-rium where the
  weak
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 147.
+(hyperref)                removing `math shift' on input line 328.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 147.
+(hyperref)                removing `math shift' on input line 328.
 
 
-Overfull \hbox (4.84933pt too wide) in paragraph at lines 150--152
+Overfull \hbox (4.84933pt too wide) in paragraph at lines 331--333
 \T1/futs/m/n/10 Show that there is a per-fect Bayesian equi-lib-rium where the 
 strong chal-lenger chooses
  []
 
 
-Overfull \hbox (4.84933pt too wide) in paragraph at lines 154--157
+Overfull \hbox (4.84933pt too wide) in paragraph at lines 335--338
 \T1/futs/m/n/10 Show that there is a per-fect Bayesian equi-lib-rium where the 
 strong chal-lenger chooses
  []
 
-[2] [3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 163.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 163.
+[4] [5]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 344.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 344.
  ("Seminar 10.aux")
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 163.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 163.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 344.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 344.
 Package rerunfilecheck Info: File `"Seminar 10".out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 163.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 344.
  ) 
 Here is how much of TeX's memory you used:
- 31202 strings out of 414071
- 593660 string characters out of 2893980
- 925393 words of memory out of 3000000
- 48199 multiletter control sequences out of 15000+200000
- 624066 words of font info for 105 fonts, out of 3000000 for 9000
+ 31264 strings out of 414071
+ 594619 string characters out of 2893980
+ 940101 words of memory out of 3000000
+ 48261 multiletter control sequences out of 15000+200000
+ 628166 words of font info for 106 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 60i,10n,91p,962b,1412s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,12n,91p,962b,1653s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Seminar 10.pdf (3 pages).
+Output written on Seminar 10.pdf (5 pages).
