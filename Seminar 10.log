@@ -1,7 +1,7 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2020.8.31)  5 NOV 2020 14:00
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2020.8.31)  10 NOV 2020 21:08
 entering extended mode
-**"./Seminar 8.tex"
-("Seminar 8.tex"
+**"./Seminar 10.tex"
+("Seminar 10.tex"
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-08-07>
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -1447,8 +1447,8 @@ ls-angles.tex
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-obj
 -eu-triangles.tex
 2020/03/18 3.06c tkz-obj-eu-triangles.tex
-)) ("Seminar 8.aux")
-\openout1 = `"Seminar 8.aux"'.
+)) ("Seminar 10.aux")
+\openout1 = `"Seminar 10.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
 LaTeX Font Info:    ... okay on input line 26.
@@ -1518,9 +1518,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 26.
 LaTeX Info: Redefining \pageref on input line 26.
 LaTeX Info: Redefining \nameref on input line 26.
- ("Seminar 8.out") ("Seminar 8.out")
+ ("Seminar 10.out") ("Seminar 10.out")
 \@outlinefile=\write4
-\openout4 = `"Seminar 8.out"'.
+\openout4 = `"Seminar 10.out"'.
 
 LaTeX Font Info:    Redeclaring math accent \widehat on input line 26.
 LaTeX Font Info:    Redeclaring math accent \widetilde on input line 26.
@@ -1601,103 +1601,82 @@ i-print.def
 File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
 
 )
-Underfull \hbox (badness 10000) in paragraph at lines 39--41
-
- []
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 48.
-See the caption package documentation for explanation.
-
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 50.
+(Font)              scaled to size 9.19998pt on input line 36.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 50.
+(Font)              scaled to size 6.99199pt on input line 36.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 50.
+(Font)              scaled to size 5.51999pt on input line 36.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 50.
+(Font)              scaled to size 9.19998pt on input line 36.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 50.
+(Font)              scaled to size 6.99199pt on input line 36.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 50.
-
-Overfull \hbox (8.17656pt too wide) in paragraph at lines 69--70
-[]\T1/futs/m/n/10 For fi-nite games with more than 2 play-ers, read Wat-son Ap-
-pendix B (pp.423)
- []
-
-Missing character: There is no − in font futr8t!
-Missing character: There is no − in font futr8t!
-Missing character: There is no − in font futr8t!
-Missing character: There is no − in font futr8t!
-Package mdframed Info: Box was splittet wrong
- starting loop to iterate the splitting point
-(mdframed)              on input line 107.
-[1
+(Font)              scaled to size 5.51999pt on input line 36.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 7.35999pt on input line 1.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.25598pt on input line 1.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 7.35999pt on input line 1.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.25598pt on input line 1.
+ [1
 
 ] [2]
-File: ./pic/8.q7_13.png Graphic file (type bmp)
-<./pic/8.q7_13.png>
-
-Overfull \hbox (2.06143pt too wide) in paragraph at lines 151--151
-[][]\T1/futs/b/n/12 (a) Be-fore analysing this game, in-for-mally an-swer the f
-ol-low-ing ques-
- []
-
-[3]
-Package mdframed Info: Not enough space on this page on input line 251.
- [4]
-Package mdframed Info: Not enough space on this page on input line 251.
-
-Overfull \hbox (14.51926pt too wide) in paragraph at lines 260--261
-[]\T1/futs/m/n/10 When $\FML/futmi/m/it/10 ^^K$ \T1/futs/m/n/10 de-creases, the
- scor-ing prob-a-bil-i-ties for $\FML/futmi/m/it/10 L$ \T1/futs/m/n/10 and $\FM
-L/futmi/m/it/10 R$ \T1/futs/m/n/10 are in-creased, but $\FML/futmi/m/it/10 Pr\T
-1/futs/m/n/10 (\FML/futmi/m/it/10 score\FMS/futm/m/n/10 j\FML/futmi/m/it/10 L\T
-1/futs/m/n/10 ) \FMS/futm/m/n/10 ^^81
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 332.
+ [3] [4] [5]
+Overfull \hbox (7.83533pt too wide) in paragraph at lines 363--369
+\T1/futs/m/n/10 tion that the pizza comes in 5 dif-fer-ent sizes, each with $\F
+ML/futmi/m/it/10 x$ \T1/futs/m/n/10 slices, where $\FML/futmi/m/it/10 x \FMS/fu
+tm/m/n/10 2 f\T1/futs/m/n/10 4\FML/futmi/m/it/10 ; \T1/futs/m/n/10 6\FML/futmi/
+m/it/10 ; \T1/futs/m/n/10 8\FML/futmi/m/it/10 ; \T1/futs/m/n/10 10\FML/futmi/m/
+it/10 ; \T1/futs/m/n/10 12\FMS/futm/m/n/10 g$\T1/futs/m/n/10 .
  []
 
 
-Overfull \hbox (7.90546pt too wide) in paragraph at lines 267--267
-\T1/futs/b/n/12 would per-mit you to cor-rectly de-duce the player's scor-ing a
-bil-ity when
+Overfull \hbox (13.69739pt too wide) in paragraph at lines 373--375
+\T1/futs/m/n/10 Player 1's strat-egy is con-tin-gent on the size of pizza ($\FM
+L/futmi/m/it/10 x$\T1/futs/m/n/10 ), i.e. $\FML/futmi/m/it/10 s[]\T1/futs/m/n/1
+0 (\FML/futmi/m/it/10 x\T1/futs/m/n/10 )$, where $\FML/futmi/m/it/10 x \FMS/fut
+m/m/n/10 2 f\T1/futs/m/n/10 4\FML/futmi/m/it/10 ; \T1/futs/m/n/10 6\FML/futmi/m
+/it/10 ; \T1/futs/m/n/10 8\FML/futmi/m/it/10 ; \T1/futs/m/n/10 10\FML/futmi/m/i
+t/10 ; \T1/futs/m/n/10 12\FMS/futm/m/n/10 g$\T1/futs/m/n/10 . 
  []
 
-[5] [6] [7]
+[6] [7] [8]
+Package mdframed Info: Not enough space on this page on input line 529.
 
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 431.
-See the caption package documentation for explanation.
-
-[8] [9]
-Overfull \hbox (17.79276pt too wide) in paragraph at lines 498--501
-\T1/futs/m/n/10 low-est price $\FML/futmi/m/it/10 p$\T1/futs/m/n/10 , ac-cord-i
-ng to the de-mand curve $\FML/futmi/m/it/10 Q \FMS/futm/m/n/10 ^^81 \T1/futs/m/
-n/10 110 \FMS/futm/m/n/10 ^^@ \FML/futmi/m/it/10 p$\T1/futs/m/n/10 , where $\FM
-L/futmi/m/it/10 p \FMS/futm/m/n/10 ^^81 \FML/futmi/m/it/10 min\FMS/futm/m/n/10 
-f\FML/futmi/m/it/10 p[]; p[]; []  ; p[]\FMS/futm/m/n/10 g$\T1/futs/m/n/10 .
+Overfull \hbox (4.84933pt too wide) in paragraph at lines 543--545
+\T1/futs/m/n/10 Show that there is a per-fect Bayesian equi-lib-rium where the 
+strong chal-lenger chooses
  []
 
-Missing character: There is no ’ in font futr8t!
-[10] [11]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 605.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 605.
- ("Seminar 8.aux")
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 605.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 605.
-Package rerunfilecheck Info: File `"Seminar 8".out' has not changed.
+
+Overfull \hbox (4.84933pt too wide) in paragraph at lines 558--561
+\T1/futs/m/n/10 Show that there is a per-fect Bayesian equi-lib-rium where the 
+strong chal-lenger chooses
+ []
+
+[9] [10]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 597.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 597.
+ ("Seminar 10.aux")
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 597.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 597.
+Package rerunfilecheck Info: File `"Seminar 10".out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 605.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 597.
  ) 
 Here is how much of TeX's memory you used:
- 31007 strings out of 414493
- 589876 string characters out of 2902447
- 934599 words of memory out of 3000000
- 47575 multiletter control sequences out of 15000+200000
- 615033 words of font info for 93 fonts, out of 3000000 for 9000
+ 31273 strings out of 414493
+ 595031 string characters out of 2902447
+ 975966 words of memory out of 3000000
+ 47848 multiletter control sequences out of 15000+200000
+ 630916 words of font info for 111 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 60i,10n,91p,961b,478s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,12n,91p,962b,1655s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Seminar 8.pdf (11 pages).
+Output written on Seminar 10.pdf (10 pages).

@@ -127,24 +127,23 @@ opponent?}
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
 \textbf{Best Response} (Watson pp.54)
 
-Suppose player $i$ has a belief $\theta_{−i} \in \Delta S_{−i}$ about the strategies played
+Suppose player $i$ has a belief $\theta_{-i} \in \Delta S_{-i}$ about the strategies played
 by the other players. Player $i$'s strategy $s_i \in S_i$ is a best response if
-$u_i (s_i , \theta_{−i} ) \ge u_i (s'_i , \theta_{−i})$ for every $s'_i \in S_i$
+$u_i (s_i , \theta_{-i} ) \ge u_i (s'_i , \theta_{-i})$ for every $s'_i \in S_i$
 
 \vspace{4mm}
 
 Terms and notations(Watson pp.37):
 \begin{itemize}
 \item Belief: a player's assessment about the strategies of the others,i.e. probability distributions such as $(1/2,1/6,2/6)$ for 3 strategies $U,M,D$ of the opponent.
-\item $\Delta S_{−i}$: the set of probability distributions over the strategies of all the players except player $i$ .
+\item $\Delta S_{-i}$: the set of probability distributions over the strategies of all the players except player $i$ .
 \end{itemize}
 
 In one word, the strategies bringing the highest payoff given the belief of the player.
 
 \vspace{4mm}
 
-The question wants you to find each palyer's  BR for \textbf{each of the possible demands} for his/her opponent.
-We don't assume any belief for now.
+The question wants you to find each palyer's  BR for \textbf{each of the possible demands} for his/her opponent. We only think about the belief that the opponent chooses a certain piece with probability $=1$ instead of any belief $\in (0,1)$, i.e. don't think about mixed strategies here.
 
 \newpage
 
@@ -196,7 +195,7 @@ BR set if opponent chooses $8$: $\{0,1,2,3,4,5,6,7,8\}$ \\
 
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
 A strategy profile $s \in S$ is a Nash equilibrium if and only if $s_i \in BR_i(s_{-i})$
-for each player $i$. That is, $u_i (s_i , s_{−i}) \ge u_i (s'_i , s_{−i})$ for every  $s'_i \in S_i$
+for each player $i$. That is, $u_i (s_i , s_{-i}) \ge u_i (s'_i , s_{-i})$ for every  $s'_i \in S_i$
  and each player $i$.
 
 \vspace{4mm}
@@ -214,7 +213,7 @@ NE: $(0,8),(1,7),(2,6),(3,5),(4,4),(5,3),(6,2),(7,1),(8,0),(8,8)$
 
 
 \begin{mdframed}[backgroundcolor=yellow!20,linecolor=white]
-Be careful, unless the question asks you to find "pure-strategy NE", always take mixed-strategy into consideration! So called pure strategy is only a special case of belief assginment, i.e. it is a mixed strategy with probability being 1.
+Be careful, unless the question asks you to find "pure-strategy NE", always take mixed-strategy into consideration! So called pure strategy is only a special case of belief assginment, i.e. it is a mixed strategy with probability being 1 for a certain choice.
 \end{mdframed}
 
 
@@ -330,7 +329,7 @@ Take a NE $(2,6)$ in Table \ref{tab:pizza} for example.
 
 \begin{itemize}
 \item When player 1 chooses 2 first, the best response for player 2 is to choose 6;
-\item To make sure player 1 will not deviate from choosing 2, we must "eliminate" player 1's incentive to deviate, i.e. let $u_1(s_1=2,s_2) \ge u_1(s_1 \ne 2,s_2)$.
+\item To make sure player 1 will not deviate from choosing 2, player 1 must "eliminate" player 1's incentive to deviate, i.e. let $u_1(s_1=2,s_2) \ge u_1(s_1 \ne 2,s_2)$.
 \item A strategy $s_2$ such as $(4,8,\textcolor{red}{6},6,5,4,3,2,1)$ achieves such a NE. 
 \item Note the red \textcolor{red}{6} is the outcome (payoff) but not a "strategy". A strategy is a complete contingent plan. Here includes both the result player 2 wants (\textcolor{red}{6}) and the threat part ("if you choose less than 2, fine; if you choose more than 2, I'll let you have nothing").
 \end{itemize}
@@ -406,7 +405,7 @@ The NE found in Subquestion \ref{subsec:spne} sound good, but is player 2's thre
 \item "To give in and accept the 1 piece pizza left by player 1" is BR for player 2.
 \end{itemize}
 
-NE is an ex ante view of the game. But in a dynamic game, players need to think "if something already happened, what should I do", which is a ex post view.
+NE is an ex ante view of the game. But in a dynamic game, players need to think "if something already happened, what should I do", which is an ex post view.
 
 \medskip
 
@@ -539,7 +538,7 @@ For the game of Figure 6.2 (Watson pp.55), determine the following best-response
 
 $$U^1_U(\theta_2) = \frac{1}{6} \times 2 + \frac{1}{3} \times 0 + \frac{1}{2}\times 4=\frac{14}{6}$$
 $$U^1_M(\theta_2) = \frac{1}{6} \times 3 + \frac{1}{3} \times 0 + \frac{1}{2}\times 1=1$$
-$$U^1_D(\theta_2) = \frac{1}{6} \times 1 + \frac{1}{3} \times 3 + \frac{1}{2}\times 5=\frac{14}{6}$$
+$$U^1_D(\theta_2) = \frac{1}{6} \times 1 + \frac{1}{3} \times 3 + \frac{1}{2}\times 2=\frac{13}{6}$$
 
 $BR_1(\theta_2)=\{U\}$
 
@@ -574,7 +573,7 @@ $$u_2(x,y)= 10y-2xy -y^2$$
 of the opposing player’s pure strategy.}
 
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
-Given any y, how can player $i$ maximize his/her utility? FOC and SOC!
+Given any y, how can player $1$ maximize his/her utility? FOC and SOC!
 \end{mdframed}
 
 \textbf{For player 1:}
@@ -641,7 +640,7 @@ $\Rightarrow x^*= 3, y^*=2 \ \Rightarrow \ NE=(3,2)$
 \textbf{rationalizable strategies}(Watson pp.70): The set of strategies that
 survive iterated dominance is therefore called the rationalizable strategies.
 
-\textbf{Dominance}(Watson pp.50): A pure strategy $s_i$ of player $i$ is dominated if there is a strategy (\textbf{pure or mixed}) $\sigma_i \in \Delta S_i$ such that $u_i(\sigma_i , s_{−i}) > u_i (s_i , s_{−i})$, for all strategy profiles $s_{−i} \in S_{−i}$ of the other players.
+\textbf{Dominance}(Watson pp.50): A pure strategy $s_i$ of player $i$ is dominated if there is a strategy (\textbf{pure or mixed}) $\sigma_i \in \Delta S_i$ such that $u_i(\sigma_i , s_{-i}) > u_i (s_i , s_{-i})$, for all strategy profiles $s_{-i} \in S_{-i}$ of the other players.
 
 \end{mdframed}
 
@@ -656,7 +655,7 @@ Therefore there is no dominated strategy (a number that can never be BR) for the
 The set of rationalizable strategies is $(-\infty, +\infty) \times (-\infty, +\infty) = (-\infty, +\infty)$.
 
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
-Note the symbol ``$\times$'' denotes the Cartesian product here. For example, if $S_1={A,b}, S_2={X,Y}$,then $$S= S_1 \times S_2 = {(A,X),(A,Y),(B,X),(B,Y)}$$
+Note the symbol ``$\times$'' denotes the Cartesian product here. For example, if $S_1={A,B}, S_2={X,Y}$,then $$S= S_1 \times S_2 = {(A,X),(A,Y),(B,X),(B,Y)}$$
 \end{mdframed}
 
 
@@ -715,7 +714,7 @@ $L \geq 50$ units of labor. The price of output is $1$. A union that represents 
 presents a wage demand (a nonnegative number $w$), which the firm either accepts or rejects. If
 the firm accepts the demand, it chooses the number $L$ of workers to employ (which you should
 take to be a continuous variable, not an integer); if it rejects the demand, no production
-takes place ($L = 0$). The firm's preferences are represented by his/her profits, the union's
+takes place ($L = 0$). The firm's preferences are represented by its profits, the union's
 preferences are represented by  the value of $wL$.
 
 %***************************************************
@@ -732,7 +731,12 @@ preferences are represented by  the value of $wL$.
 
 \begin{itemize}
 \item The union's payoff is $U^U(L,w)=wL(w)$; 
-\item The firm's payoff is $U^L(L,w)=L(w)(100-L(w)) - wL(w)$.
+\item The firm's payoff is 
+\begin{itemize}
+\item $U^L(L,w)=L(w)(100-L(w)) - wL(w)$ if $L(w) \le 50$
+\item $U^L(L,w)=2500 - wL(w)$ if $L(w) \ge 50$
+\end{itemize}
+
 \end{itemize}
 
 Note $L(w) = 0$ is in effect a rejection by the firm of the demand $w$, giving both a payoff of $0$.
@@ -758,7 +762,7 @@ $$\frac{d^2 U^U(L,w)}{d L^2} = -1<0$$
 When $w=50$, $L(50)=50-0.5\times50 =25$
 
 
-SPNE: $(50-0.5\times w, (always \ 50))$
+SPNE: $(w= 50,50-0.5\times w)$
 
 %
 %***************************************************
@@ -785,7 +789,7 @@ Therefor $U^T_{max} = 50 (100-50) =2500$.
 
 \medskip
 
-Compare with SPNE $(50-0.5\times w, (always \ 50))$:
+Compare with SPNE $(w= 50,50-0.5\times w)$:
 
 $$U^F_{SPNE} = 25(100-25)-50\times 25 = 625$$
 $$U^U_{SPNE} = 50 \times 25 = 1250$$
@@ -793,7 +797,7 @@ $$U^T_{SPNE} = 625 + 1250 = 1875$$
 
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
 
-Obviously, if the firm cooperate with the union, the joint surplus is more than the one in SPNE.
+Obviously, if the firm cooperates with the union, the joint surplus is more than the one in SPNE.
 
 \medskip
 
@@ -803,15 +807,15 @@ Now let's check if it's possible to allocate $U^T_{max} = 2500$ between the firm
 
 \medskip
 
-(1) If we keep the firm intact, i.e. let $U^F = U^F_{SPNE} = 625$,
+(1) If we keep the firm intact ($U$ benefits the most), i.e. let $U^F = U^F_{SPNE} = 625$,
 we have $U^U=U^T-U^F = 2500-625 = 1875$ left for the union, i.e. $U^U = 1875$.
 The wage $w= \frac{U^U = 1875}{50}=37.5$;
 
 \medskip
 
-(2) If we keep the union intact, i.e. let $U^U = U^U_{SPNE} = 1250$,
+(2) If we keep the union intact ($F$ benefits the most), i.e. let $U^U = U^U_{SPNE} = 1250$,
+Given $L = 50$, the wage $w= \frac{U^U = 1250}{50}=25$; Now
 we have $U^F =U^T-U^U = 2500-1250 = 1250$ left for the firm.
-The wage $w= \frac{U^U = 1250}{50}=25$;
 
 \medskip
 
@@ -838,9 +842,9 @@ L(w)=
 \end{equation}
 
 For such a threat, the union's BR is to accept $w=20$. 
-Note also $50-0.5w$ is the BR of the firm. Then both of the two players will not deviate.
+Note also $L = 50-0.5w$ is the BR of the firm. Then both of the two players will not deviate.
 
-(the threat above, always $20$) is a NE but not a SPNE.
+($w=20$, the threat above) is a NE but not a SPNE.
 
 
 

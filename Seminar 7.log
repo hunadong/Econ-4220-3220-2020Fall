@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.6.29) (preloaded format=xelatex 2020.9.1)  19 OCT 2020 10:55
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.6.29) (preloaded format=xelatex 2020.9.1)  7 NOV 2020 13:48
 entering extended mode
 **"./Seminar 7.tex"
 ("Seminar 7.tex"
@@ -1620,35 +1620,28 @@ Overfull \hbox (7.3262pt too wide) in paragraph at lines 105--105
 \T1/futs/b/n/14.4 com-plete in-for-ma-tion (static and dy-namic pizza game) 
  []
 
-Missing character: There is no − in font futr8t!
-Missing character: There is no − in font futr8t!
-Missing character: There is no − in font futr8t!
-Missing character: There is no − in font futr8t!
-Missing character: There is no − in font futr8t!
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 153.
+(caption)                particular \caption on input line 152.
 See the caption package documentation for explanation.
 
 
-Overfull \hbox (3.63942pt too wide) in paragraph at lines 155--171
+Overfull \hbox (3.63942pt too wide) in paragraph at lines 154--170
 [][] 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 188--190
+Underfull \hbox (badness 10000) in paragraph at lines 187--189
 
  []
 
-Missing character: There is no − in font futr8t!
-Missing character: There is no − in font futr8t!
-Package mdframed Info: Not enough space on this page on input line 218.
+Package mdframed Info: Not enough space on this page on input line 217.
 [4]
-Package mdframed Info: Not enough space on this page on input line 218.
+Package mdframed Info: Not enough space on this page on input line 217.
 File: ./pic/7.f2_7.png Graphic file (type bmp)
 <./pic/7.f2_7.png>
 
-Overfull \hbox (2.13654pt too wide) in paragraph at lines 258--259
+Overfull \hbox (2.13654pt too wide) in paragraph at lines 257--258
 []\T1/futs/m/n/12 Player 2's strat-egy has a form of ``$\FML/futmi/m/it/12 s[] 
 \FMS/futm/m/n/12 ^^81 \T1/futs/m/n/12 [\FML/futmi/m/it/12 s[]\T1/futs/m/n/12 (\
 FML/futmi/m/it/12 s[] \FMS/futm/m/n/12 ^^81 \FML/futmi/m/it/12 H\T1/futs/m/n/12
@@ -1661,33 +1654,33 @@ File: ./pic/7.f15_4.png Graphic file (type bmp)
 <./pic/7.f15_4.png>
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
-(mdframed)              on input line 303.
+(mdframed)              on input line 302.
  [6]
-Overfull \hbox (0.9158pt too wide) in paragraph at lines 314--316
+Overfull \hbox (0.9158pt too wide) in paragraph at lines 313--315
 []\T1/futs/b/n/12 Subquesiton [][]1.4[][] and Sub-que-si-ton [][]1.5[][] are to
  help you un-der-stand
  []
 
 
-Overfull \hbox (3.70085pt too wide) in paragraph at lines 333--334
-\T1/futs/m/n/12 must "elim-i-nate" player 1's in-cen-tive to de-vi-ate, i.e. le
-t $\FML/futmi/m/it/12 u[]\T1/futs/m/n/12 (\FML/futmi/m/it/12 s[] \FMS/futm/m/n/
-12 ^^81
+Overfull \hbox (11.14516pt too wide) in paragraph at lines 332--333
+\T1/futs/m/n/12 1 must "elim-i-nate" player 1's in-cen-tive to de-vi-ate, i.e. 
+let $\FML/futmi/m/it/12 u[]\T1/futs/m/n/12 (\FML/futmi/m/it/12 s[] \FMS/futm/m/
+n/12 ^^81
  []
 
 
-Overfull \hbox (3.35555pt too wide) in paragraph at lines 335--336
+Overfull \hbox (3.35555pt too wide) in paragraph at lines 334--335
 \T1/futs/m/n/12 the re-sult player 2 wants ([]6[]) and the threat part ("if you
  choose
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 366--370
+Underfull \hbox (badness 10000) in paragraph at lines 365--369
 
  []
 
 [8]
-Overfull \hbox (7.91644pt too wide) in paragraph at lines 389--392
+Overfull \hbox (7.91644pt too wide) in paragraph at lines 388--391
 []\T1/futs/m/n/12 Here player 2 de-mands all the 8 pieces in-de-pen-dently of w
 hat player
  []
@@ -1696,16 +1689,16 @@ Missing character: There is no ’ in font futr8t!
 Missing character: There is no ’ in font futr8t!
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 447.
+(caption)                particular \caption on input line 446.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 464.
+(caption)                particular \caption on input line 463.
 See the caption package documentation for explanation.
 
 [9] [10] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 490--493
+Underfull \hbox (badness 10000) in paragraph at lines 489--492
 
  []
 
@@ -1717,16 +1710,20 @@ Missing character: There is no ’ in font futb8t!
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 620.
+(caption)                particular \caption on input line 619.
 See the caption package documentation for explanation.
 
 [14]
-Missing character: There is no − in font futr8t!
-Missing character: There is no − in font futr8t!
-Missing character: There is no − in font futr8t!
-Missing character: There is no − in font futr8t!
- [15]
-Overfull \hbox (5.16739pt too wide) in paragraph at lines 656--657
+Overfull \hbox (0.93613pt too wide) in paragraph at lines 643--644
+\FML/futmi/m/it/12 u[]\T1/futs/m/n/12 (\FML/futmi/m/it/12 ^^[[]; s[]\T1/futs/m/
+n/12 ) \FMS/futm/m/n/12 ^^83 \FML/futmi/m/it/12 u[]\T1/futs/m/n/12 (\FML/futmi/
+m/it/12 s[]; s[]\T1/futs/m/n/12 )$, for all strat-egy pro-files $\FML/futmi/m/i
+t/12 s[] \FMS/futm/m/n/12 2 \FML/futmi/m/it/12 S[]$ \T1/futs/m/n/12 of the othe
+r
+ []
+
+[15]
+Overfull \hbox (5.16739pt too wide) in paragraph at lines 655--656
 []\T1/futs/m/n/12 The set of ra-tio-nal-iz-able strate-gies is $(\FMS/futm/m/n/
 12 ^^@1\FML/futmi/m/it/12 ; \FMS/futm/m/n/12 ^^801\T1/futs/m/n/12 ) \FMS/futm/m
 /n/12 ^^B \T1/futs/m/n/12 (\FMS/futm/m/n/12 ^^@1\FML/futmi/m/it/12 ; \FMS/futm/
@@ -1736,23 +1733,23 @@ m/n/12 ^^@1\FML/futmi/m/it/12 ; \FMS/futm/m/n/12 ^^801\T1/futs/m/n/12 )$.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 700.
+(caption)                particular \caption on input line 699.
 See the caption package documentation for explanation.
 
 [16]
-Overfull \hbox (2.78769pt too wide) in paragraph at lines 728--729
+Overfull \hbox (2.78769pt too wide) in paragraph at lines 727--728
 []$\FML/futmi/m/it/12 F$ \T1/futs/m/n/12 chooses a func-tion that to any non-ne
 gative wage $\FML/futmi/m/it/12 w$ \T1/futs/m/n/12 de-ter-mines
  []
 
 [17]
-Overfull \hbox (1.53902pt too wide) in paragraph at lines 741--741
+Overfull \hbox (1.53902pt too wide) in paragraph at lines 745--745
 []\T1/futs/b/n/12 Find the sub-game per-fect equi-lib-rium (equi-lib-ria?) of t
 he game. 
  []
 
 
-Overfull \hbox (43.1351pt too wide) detected at line 746
+Overfull \hbox (43.1351pt too wide) detected at line 750
 [] \FMS/futm/m/n/12 ^^81 [] ^^81 \T1/futs/m/n/12 100 \FMS/futm/m/n/12 ^^@ \T1/f
 uts/m/n/12 2\FML/futmi/m/it/12 L \FMS/futm/m/n/12 ^^@ \FML/futmi/m/it/12 w \FMS
 /futm/m/n/12 ^^81 \T1/futs/m/n/12 0 \FMS/futm/m/n/12 ) \FML/futmi/m/it/12 L\T1/
@@ -1762,29 +1759,42 @@ ts/m/n/12 50 \FMS/futm/m/n/12 ^^@ \T1/futs/m/n/12 0\FML/futmi/m/it/12 :\T1/futs
  []
 
 
-Overfull \hbox (5.07901pt too wide) in paragraph at lines 769--770
+Overfull \hbox (5.07901pt too wide) in paragraph at lines 773--774
 []\T1/futs/m/n/12 "An out-come that both par-ties pre-fer to any SPNE out-come"
  means
  []
 
+
+Package mdframed Warning: You got a bad break
+(mdframed)                because the last box will be empty
+(mdframed)                you have to change it manually
+(mdframed)                by changing the text, the space
+(mdframed)                or something else on input line 779.
+
 [18]
-Package mdframed Info: Not enough space on this page on input line 827.
- [19]
-Package mdframed Info: Not enough space on this page on input line 827.
+Overfull \hbox (4.90663pt too wide) in paragraph at lines 810--813
+[]\T1/futs/m/n/12 (1) If we keep the firm in-tact ($\FML/futmi/m/it/12 U$ \T1/f
+uts/m/n/12 ben-e-fits the most), i.e. let $\FML/futmi/m/it/12 U[] \FMS/futm/m/n
+/12 ^^81 \FML/futmi/m/it/12 U[] \FMS/futm/m/n/12 ^^81
+ []
+
+Package mdframed Info: Not enough space on this page on input line 831.
+[19]
+Package mdframed Info: Not enough space on this page on input line 831.
  [20]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 848.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 848.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 852.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 852.
  ("Seminar 7.aux")
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 848.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 848.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 852.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 852.
 Package rerunfilecheck Info: File `"Seminar 7".out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 848.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 852.
  ) 
 Here is how much of TeX's memory you used:
  31262 strings out of 414071
  594286 string characters out of 2893980
- 954312 words of memory out of 3000000
+ 954314 words of memory out of 3000000
  48246 multiletter control sequences out of 15000+200000
  608163 words of font info for 87 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
