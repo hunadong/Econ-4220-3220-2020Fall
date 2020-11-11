@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2020.8.31)  10 NOV 2020 22:02
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2020.8.31)  11 NOV 2020 14:40
 entering extended mode
 **"./Seminar 12.tex"
 ("Seminar 12.tex"
@@ -1616,39 +1616,47 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
  [1
 
 ]
-Overfull \hbox (202.61046pt too wide) in paragraph at lines 77--81
-\T1/futs/m/n/10 a-tive when $\FML/futmi/m/it/10 r \FMS/futm/m/n/10 ^^83 \FML/fu
-tmi/m/it/10 v$\T1/futs/m/n/10 , so that $\FML/futmi/m/it/10 u\T1/futs/m/n/10 (\
-FML/futmi/m/it/10 r; v\T1/futs/m/n/10 )$ is max-imised when $\FML/futmi/m/it/10
- r \FMS/futm/m/n/10 ^^81 \FML/futmi/m/it/10 v$\T1/futs/m/n/10 . See https://www
-.uio.no/studier/emner/sv/oekonomi/ECON4240/previous-
- []
-
-
-Overfull \hbox (4.7655pt too wide) in paragraph at lines 77--81
-\T1/futs/m/n/10 exams/ECON4240-2005V-SENSORVEILEDNING.pdf as well as a so-lu-ti
-on sketch avail-
- []
-
 File: ./pic/12.q2.png Graphic file (type bmp)
 <./pic/12.q2.png>
-[2] [3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 117.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 117.
+ [2]
+File: ./pic/12.q2_2.png Graphic file (type bmp)
+<./pic/12.q2_2.png>
+File: ./pic/12.q2_3.png Graphic file (type bmp)
+<./pic/12.q2_3.png>
+ [3]
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 7.35999pt on input line 1.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.25598pt on input line 1.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 7.35999pt on input line 1.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.25598pt on input line 1.
+ [4] [5] [6]
+Overfull \hbox (0.13396pt too wide) in paragraph at lines 403--405
+[]\T1/futs/m/n/10 For a Low abil-ity Worker, de-vi-at-ing from $\FML/futmi/m/it
+/10 S[]$ \T1/futs/m/n/10 to $\FML/futmi/m/it/10 U[]$ \T1/futs/m/n/10 will in-cr
+ease the pay-off from $(\FMS/futm/m/n/10 ^^@\T1/futs/m/n/10 1\FML/futmi/m/it/10
+ ; \FMS/futm/m/n/10 ^^@\T1/futs/m/n/10 1)$
+ []
+
+[7]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 424.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 424.
  ("Seminar 12.aux")
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 117.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 117.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 424.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 424.
 Package rerunfilecheck Info: File `"Seminar 12".out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 117.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 424.
  ) 
 Here is how much of TeX's memory you used:
- 30989 strings out of 414493
- 589578 string characters out of 2902447
- 922447 words of memory out of 3000000
- 47557 multiletter control sequences out of 15000+200000
- 602733 words of font info for 90 fonts, out of 3000000 for 9000
+ 31303 strings out of 414493
+ 595322 string characters out of 2902447
+ 930447 words of memory out of 3000000
+ 47869 multiletter control sequences out of 15000+200000
+ 622714 words of font info for 109 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 60i,10n,91p,962b,350s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,11n,91p,962b,1506s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Seminar 12.pdf (3 pages).
+Output written on Seminar 12.pdf (7 pages).
