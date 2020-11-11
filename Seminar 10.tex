@@ -341,7 +341,7 @@ Important. Be careful about the order of payoff, who is player 1 and who is play
 From the extensive form we can see $D'$ dominates $U'$.
 Therefore there can only be one PBE where player 1's strategy is $UD'$
 
-(2) Deote the updated belief of player 2:
+(2) Denote the updated belief of player 2:
 \begin{itemize}
 \item $Pr(\text{Game1} | U/U') = p$
 \item $Pr(\text{Game1} | D/D') = q$
@@ -508,7 +508,7 @@ edge from parent node [below]{Prepared'}
 child[grow=right]{node(4)[solid node,label=below:{$1-q$}]{}
 child{node[solid node,label=right:{$(3,3)$}]{} edge from parent node [below]{$F'$}}
 child{node[solid node,label=right:{$(5,2)$}]{} edge from parent node [above]{$A'$}}
-edge from parent node [below]{\textcolor{blue}{Unprepared'}}
+edge from parent node [below]{\textcolor{red}{Unprepared'}}
 }
 edge from parent node [right]{$\tfrac12$} node[midway, below, sloped] (TextNode){Weak}
 };
@@ -531,19 +531,19 @@ Contingent on the type. For example, $PU'$ means "Prepared if I'm strong, Unprep
 \subsection*{(b) Why is there no perfect Bayesian equilibrium where the weak challenger chooses
 \textit{Prepared}$'$ ? }
 
-Prepared$'$ is domianted by Unprepared$'$.
+Prepared$'$ is dominated by Unprepared$'$.
 It is always better for the weak challenger to choose $U'$, independently of
 what the incumbent does.
 
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
-Is {Prepared} domianted by {Unprepared} (for strong challenger)?
+Is {Prepared} dominated by {Unprepared} (for strong challenger)?
 No! If the Incumbent has (contingent) strategy $AF'$, Prepared has better payoff.
 \end{mdframed}
 
 \subsection*{(c) Separating}Show that there is a perfect Bayesian equilibrium where the strong challenger chooses
 \textit{Prepared} and the weak challenger chooses \textit{Unprepared}$'$. 
 
-Deote the updated belief of player 2:
+Denote the updated belief of player 2:
 \begin{itemize}
 \item $Pr(\text{Strong} | P/P') = p$
 \item $Pr(\text{Weak} | U/U') = q$
@@ -569,10 +569,10 @@ The BR of player 2 is $A'$. For a strong challenger, choosing U will lead to pay
 
 \medskip
 
-(1) When the challenger surprisingly chooses $P$, the incumbent chooses $A$:
+(1) When the challenger surprisingly chooses $P/P'$, the incumbent chooses $A$:
 
 $$E[U^I_{A}] = p \times 1+ (1-p)\times 2 = p + 2(1-p) = 2 - p$$
-$$E[U^I{F}] = p \times (-1)+ \tfrac12 \times 3 = -p + 3(1-p) = 3 - 4p$$
+$$E[U^I_{F}] = p \times (-1)+ \tfrac12 \times 3 = -p + 3(1-p) = 3 - 4p$$
 
 $$E[U^I_{A}] \ge E[U^I_{F}] \Rightarrow 2-p \ge 3-4p \Rightarrow p \ge \tfrac13$$
 
@@ -582,7 +582,7 @@ $$\{UU',AA',p \ge \tfrac13, q=\tfrac12\}$$
 
 \medskip
 
-(2) When the challenger surprisingly chooses $P$, the incumbent chooses $F$:
+(2) When the challenger surprisingly chooses $P/P'$, the incumbent chooses $F$:
 
 $$E[U^I_{A}] \le E[U^I_{F}] \Rightarrow 2-p \le 3-4p \Rightarrow p \le \tfrac13$$
 
