@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2020.8.31)  10 NOV 2020 21:37
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2020.8.31)  12 NOV 2020 21:19
 entering extended mode
 **"./Seminar 11.tex"
 ("Seminar 11.tex"
@@ -1615,10 +1615,10 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 5.51999pt on input line 36.
  [1
 
-]
+] [2]
 Missing character: There is no – in font futr8t!
- [2]
-Overfull \hbox (0.42664pt too wide) in paragraph at lines 111--116
+ [3]
+Overfull \hbox (0.42664pt too wide) in paragraph at lines 179--184
 []\T1/futs/m/n/10 The worker's von Neumann-Morgenstern util-ity from wage $\FML
 /futmi/m/it/10 w$ \T1/futs/m/n/10 and ef-fort $\FML/futmi/m/it/10 e$ \T1/futs/m
 /n/10 is $\FML/futmi/m/it/10 u\T1/futs/m/n/10 (\FML/futmi/m/it/10 w; e\T1/futs/
@@ -1627,37 +1627,37 @@ m/n/10 ) \FMS/futm/m/n/10 ^^81
 
 Missing character: There is no ’ in font futr8t!
 
-Overfull \hbox (2.06122pt too wide) in paragraph at lines 134--135
+Overfull \hbox (2.06122pt too wide) in paragraph at lines 202--203
 []\T1/futs/m/n/10 Since $[] \FMS/futm/m/n/10 ^^82 []$\T1/futs/m/n/10 , the work
 er will ex-ert high ef-fort ($\FML/futmi/m/it/10 e \FMS/futm/m/n/10 ^^81 \T1/fu
 ts/m/n/10 1$) in the ex-pected profit-maximizing
  []
 
 Missing character: There is no ’ in font futr8t!
-[3]
-Overfull \hbox (8.44005pt too wide) in paragraph at lines 159--160
+[4]
+Overfull \hbox (8.44005pt too wide) in paragraph at lines 227--228
 []\T1/futs/m/n/10 Since $[] \FMS/futm/m/n/10 ^^83 ^^@[]$\T1/futs/m/n/10 , the w
 orker will ex-ert low ef-fort ($\FML/futmi/m/it/10 e \FMS/futm/m/n/10 ^^81 \T1/
 futs/m/n/10 0$) in the ex-pected profit-maximizing
  []
 
-[4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 164.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 164.
+[5]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 232.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 232.
  ("Seminar 11.aux")
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 164.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 164.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 232.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 232.
 Package rerunfilecheck Info: File `"Seminar 11".out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 164.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 232.
  ) 
 Here is how much of TeX's memory you used:
- 30974 strings out of 414493
- 589460 string characters out of 2902447
+ 30978 strings out of 414493
+ 589532 string characters out of 2902447
  925446 words of memory out of 3000000
- 47551 multiletter control sequences out of 15000+200000
- 602733 words of font info for 90 fonts, out of 3000000 for 9000
+ 47555 multiletter control sequences out of 15000+200000
+ 606833 words of font info for 91 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 60i,9n,91p,962b,362s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,11n,91p,962b,474s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Seminar 11.pdf (4 pages).
+Output written on Seminar 11.pdf (5 pages).

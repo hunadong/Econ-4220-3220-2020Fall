@@ -33,7 +33,7 @@
 
 (Akerlof) Consider the following market for used cars. There are many sellers of used cars. Each
 seller has exactly one used car to sell and is characterised by the quality of the used car he wishes to
-sell. Let $\theta \in [0, 1]$ index the quality of a used car and assume that $\theta$ is uniformly distributed on $[0, 1]$.
+sell. Let $\theta \in [0, 1]$ index the quality of a used car and assume that $\theta$ is \textbf{uniformly distributed on $[0, 1]$}.
 If a seller of type $\theta$ sells his car (of quality $\theta$) for a price of $p$, his utility is $u_s(p, \theta)$. If he does not sell
 his car, then his utility is 0. Buyers of used cars receive utility $\theta - p$ if they buy a car of quality $\theta$ at
 price p and receive utility 0 if they do not purchase a car. There is asymmetric information regarding
@@ -50,10 +50,60 @@ See section on ``Asymmetric Information and Adverse Selection'', pp.~382--385.
 
 \subsection*{(b) Show that if $u_s(p, \theta) = p - \theta/2$, then every $p \in (0, 1/2]$ is an equilibrium price.}
 
-Let $p \in (0,\tfrac12]$. Sellers with quality $\theta$ satisfying $p - \tfrac{\theta}2 \geq 0$ sell their car, or equivalently:$$\theta \leq 2p \, .$$
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+
+Recall: for a random variable $\theta \in [a,b] \subset \R_1$, $F(x) = Pr(\theta\le x)$ is called cummulative distribution function (CDF). $f(x)=F'(x)$ is the probability density function (PDF) of $\theta$. We have:
+
+$$E(\theta) = \int^b_a x dF(x)$$
+
+Similarly, for a number $m \in (a,b)$
+
+$$E(\theta|\theta \le m) = \int^m_a x d F(x|\theta \le m)$$
+
+Where $F(x|\theta \le m) = Pr(\theta \le x | \theta \le m)$. 
+
+\medskip 
+
+Obviously, when $x \in [m,b]$, $Pr(\theta \le x | \theta \le m)=1$; when $x \in [a,m]$, according to Bayes' rule,
+
+
+ $$Pr(\theta \le x | \theta \le m)= \frac{Pr(\theta \le m | \theta \le x) Pr(\theta \le x)}{Pr(\theta \le m)} = \frac{1 \times Pr(F(x)}{F(m)}$$
+
+Therefore,
+
+\begin{equation}
+F(x|\theta \le m)=
+    \begin{cases}
+\frac{F(x)}{F(m)} \quad if \quad x \in [a,m] \\
+\ \ 1 \quad \quad if \quad x \in [m,b] 
+    \end{cases}
+\nonumber
+\end{equation}
+
+Thus,
+
+$$E(\theta|\theta \le m) = \int^m_a x d F(x|\theta \le m)=\int^m_a x d \frac{F(x)}{F(m)}$$
+\end{mdframed}
+
+Let $p \in (0,\tfrac12]$. Sellers with quality $\theta$ satisfying $p - \tfrac{\theta}2 \geq 0$ sell their cars, or equivalently:$$\theta \leq 2p \, .$$
+
+\medskip
+
+Sine $\theta$ is uniformed distributed in $[0,1]$, the CDF of $\theta$ is $F(x) = x$
+
+\medskip
+
 Then:
-$$\mathbb{E}(\theta | p) = \frac{\int_{0}^{2p}\theta dF(\theta)}{F(2p)} = \frac{\left[ \tfrac12 \theta^2 \right]^{2p}_0}{2p} = \frac{2p^2}{2p} = p \, .$$
-So $\mathbb{E}(\theta | p) = p$ is satisfied for each $p \in (0,\tfrac12]$.
+
+\begin{align*}
+E(\theta | p) = E(\theta | \theta \leq 2p) &= \int_{0}^{2p}x\frac{dF(x)}{F(2p)} \\
+&= \int_{0}^{2p} x\frac{dx}{2p} \\
+&= \frac{\left[ \tfrac12 x^2 \right]^{2p}_0}{2p} \\
+&= \frac{\tfrac12 (2p)^2 - \tfrac12 (0)^2}{2p} \\
+&= p
+\end{align*}
+
+So $E(\theta | p) = p$ is satisfied for each $p \in (0,\tfrac12]$.
 
 \subsection*{(c) Find the equilibrium price when $u_s(p, \theta) = p - \sqrt{\theta}$. Describe the equilibrium in words. In
 particular, which cars are traded in equilibrium?}
@@ -62,14 +112,32 @@ Consider any $p \in [0,1]$. Sellers with quality $\theta$ satisfying $p - \theta
 
 Then:
 
-$$\mathbb{E}(\theta | p) = \frac{\int_{0}^{p^2}\theta dF(\theta)}{F(p^2)} = \frac{\left[ \tfrac12 \theta^2 \right]^{p^2}_0}{p^2} = \frac{\tfrac12 p^4}{p^2} = \tfrac12 p^2 < p$$for all $p \in (0,1]$. Only $\theta = 0$ will be traded.
+\begin{align*}
+E(\theta | p) = E(\theta | \theta \leq p^2) &= \frac{\int_{0}^{p^2}x dF(x)}{F(p^2)} \\
+&= \frac{\left[ \tfrac12 \theta^2 \right]^{p^2}_0}{p^2} \\
+&= \tfrac12 p^2
+\end{align*}
+
+According to the equilibrium result we found in part (a), i.e.
+$E(\theta | p) = p$, in an equilibrium we must have:
+
+$$\tfrac12 p^2 = p \Rightarrow (p-2)p = 0 \Rightarrow p^* = 0$$ 
+
+We also have $\theta \leq p^2 \Rightarrow \theta^* = 0$
+
+\medskip
+
+Only $\theta = 0$ will be traded at $p=0$. The market breaks down completely.
 
 \subsection*{(d) Find an equilibrium price when $u_s(p, \theta) = p - \theta^3$. How many equilibria are there in this case?  }
 
 Consider any $p \in [0,1]$. Sellers with quality $\theta$ satisfying $p - \theta^3 \geq 0$ sell their car, or equivalently:$$\theta \leq p^{\tfrac13} \, .$$
 Then:
-$$\mathbb{E}(\theta | p) = \frac{\int_{0}^{p^{\frac13}}\theta dF(\theta)}{F(p^{\frac13})} = \frac{\left[ \tfrac13 \theta^2 \right]^{p^{\frac13}}_0}{p^{\frac13}} = \frac{\tfrac12 p^{\frac23}}{p^{\frac13}} = \tfrac12 p^{\frac13} \, .$$
-$\mathbb{E}(\theta | p) = p$ is satisfied for$$p = \left( \tfrac12 \right)^{\tfrac32} \, .$$
+$$E(\theta | p) = E(\theta | \theta \leq p^{\tfrac13})= \frac{\int_{0}^{p^{\frac13}}x dF(x)}{F(p^{\frac13})} = \frac{\left[ \tfrac13 x^2 \right]^{p^{\frac13}}_0}{p^{\frac13}} = \tfrac12 p^{\frac13} \, .$$
+
+$$E(\theta | p) = p \Rightarrow \tfrac12 p^{\frac13} = p \Rightarrow p^*=0 \ \ or \ \ p^*= \frac{\sqrt{2}}{4}$$
+
+There are 2 equilibria.
 
 \subsection*{(e) Are any of the preceding outcomes Pareto efficient? Describe Pareto improvements whenever
 possible.}
