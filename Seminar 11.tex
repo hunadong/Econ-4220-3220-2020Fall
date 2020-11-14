@@ -38,16 +38,58 @@ If a seller of type $\theta$ sells his car (of quality $\theta$) for a price of 
 his car, then his utility is 0. Buyers of used cars receive utility $\theta - p$ if they buy a car of quality $\theta$ at
 price p and receive utility 0 if they do not purchase a car. There is asymmetric information regarding
 the quality of used cars. Sellers know the quality of the car they are selling, but buyers do not know
-its quality. Assume that there are not enough cars to supply all potential buyers.
+its quality. Assume that \textbf{there are not enough cars to supply all potential buyers}.
 
 
 \subsection*{(a) Argue that in a competitive equilibrium under asymmetric information, we must have
 $E(\theta | p) = p$}
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+See section on ``Asymmetric Information and Adverse Selection'',Jehle \& Reny pp.~382--385.
+\end{mdframed}
 
+\begin{itemize}
+\item Seller will sell the car only if $u_s(p, \theta) \ge 0$;
+\item Buyer will buy the car only if $u_b =\theta - p \ge 0$
+\end{itemize}
 
-See section on ``Asymmetric Information and Adverse Selection'', pp.~382--385.
+Therefore in the market, we must have:
 
+\begin{equation}
+    \begin{cases}
+u_s(p, \theta) \ge 0 \\
+u_b = \theta - p \ge 0
+    \end{cases}
+\nonumber
+\end{equation}
 
+However, since the buyer can't observe the quality $\theta$, he/she must guess. The expected quality is:
+
+$$E[\theta|u_s(p, \theta) \ge 0 ]$$
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+Be careful, the smart buyer knows only when $u_s(p, \theta) \ge 0$ will the seller sell the car, therefore the expected
+quality is $E[\theta|u_s(p, \theta) \ge 0 ]$, not simply $E[\theta]$. 
+\end{mdframed}
+
+Therefore, we must have 
+
+\begin{equation}
+    \begin{cases}
+u_s(p, \theta) \ge 0 \\
+E[u_b] = E[\theta|u_s(p, \theta) \ge 0 ] - p \ge 0
+    \end{cases}
+\nonumber
+\end{equation}
+
+Note that we assume \textbf{there are not enough cars to supply all potential buyers},
+if $E[\theta|u_s(p, \theta) \ge 0 ] - p \ge 0$, there will be infinite demand, which can't be a equilibrium.
+We thus have
+
+$$E[\theta|u_s(p, \theta) \ge 0 ] = p$$
+
+We can write it as $E[\theta|p \ \ s.t. \ \ u_s(p, \theta) \ge 0 ] = p$, or just $E[\theta|p] = p$
+
+%***************************************************
 \subsection*{(b) Show that if $u_s(p, \theta) = p - \theta/2$, then every $p \in (0, 1/2]$ is an equilibrium price.}
 
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
@@ -105,6 +147,7 @@ E(\theta | p) = E(\theta | \theta \leq 2p) &= \int_{0}^{2p}x\frac{dF(x)}{F(2p)} 
 
 So $E(\theta | p) = p$ is satisfied for each $p \in (0,\tfrac12]$.
 
+%***************************************************
 \subsection*{(c) Find the equilibrium price when $u_s(p, \theta) = p - \sqrt{\theta}$. Describe the equilibrium in words. In
 particular, which cars are traded in equilibrium?}
 
@@ -128,6 +171,7 @@ We also have $\theta \leq p^2 \Rightarrow \theta^* = 0$
 \medskip
 
 Only $\theta = 0$ will be traded at $p=0$. The market breaks down completely.
+%***************************************************
 
 \subsection*{(d) Find an equilibrium price when $u_s(p, \theta) = p - \theta^3$. How many equilibria are there in this case?  }
 
@@ -138,17 +182,26 @@ $$E(\theta | p) = E(\theta | \theta \leq p^{\tfrac13})= \frac{\int_{0}^{p^{\frac
 $$E(\theta | p) = p \Rightarrow \tfrac12 p^{\frac13} = p \Rightarrow p^*=0 \ \ or \ \ p^*= \frac{\sqrt{2}}{4}$$
 
 There are 2 equilibria.
+%***************************************************
 
 \subsection*{(e) Are any of the preceding outcomes Pareto efficient? Describe Pareto improvements whenever
 possible.}
 
-In case (b), $p=\tfrac12$ is Pareto-efficient. Increasing $p$ in this case, make no difference (in expected value) for the buyers, but is better for sellers that sell.
+\textbf{In case (b)}, $p=\tfrac12$ is Pareto-efficient. For any $p \in (0, \tfrac12]$, we have $$E[u_b] = E[\theta|u_s(p, \theta) \ge 0 ] = p$$
+while for the seller, since $u_s(p, \theta) = p - \theta/2$, higher $p^*$ means higher payoff.
+
+\textbf{In case (c)}, the equilibrium condition requires $p^*=0$, there can't be any improvement.
+
+\textbf{In case (d)}, there are 2 equilibria. Similar to case (b), $p^*=\frac{\sqrt{2}}{4}$ is a Pareto improvement comparing
+with $p^*=0$.
+
 
 \bigskip
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Jehle \& Reny pp.424, exercise 8.16 - Moral hazard}
 
-Consider the following principal–agent problem. The owner of a firm (the principal) employs a
+Consider the following principal-agent problem. The owner of a firm (the principal) employs a
 worker (the agent). The worker can exert low effort, $e = 0$, or high effort, $e = 1$. The resulting
 revenue, $r$, to the owner is random, but is more likely to be high when the worker exerts high effort.
 Specifically, if the worker exerts low effort, $e = 0$, then
@@ -157,7 +210,7 @@ Specifically, if the worker exerts low effort, $e = 0$, then
 \begin{equation}
 r =
     \begin{cases}
-0, \text{with probability 2/3}
+0, \text{with probability 2/3} \\
 4, \text{with probability 1/3}
     \end{cases}
 \nonumber
@@ -169,63 +222,166 @@ If instead the worker exerts high effort, $e = 1$, then
 \begin{equation}
 r =
     \begin{cases}
-0, \text{with probability 1/3}
+0, \text{with probability 1/3} \\
 4, \text{with probability 2/3}
     \end{cases}
 \nonumber
 \end{equation}
 
 
-The worker's von Neumann-Morgenstern utility from wage $w$ and effort $e$ is $u(w, e) = \sqrt{w} -e$
-The firm's profits are $\pi = r - w$ when revenues are $r$ and the worker's wage is w. A wage contract
+The worker's von Neumann-Morgenstern utility from wage $w$ and effort $e$ is $u(w, e) = \sqrt{w} -e$.
+The firm's profits are $\pi = r - w$ when revenues are $r$ and the worker's wage is $w$. A wage contract
 $(w_0, w_4)$ specifies the wage, $w_r \ge 0$, that the worker will receive if revenues are $r \in \{0, 4\}$. When
 working, the worker chooses effort to maximise expected utility and always has the option (his only
 other option) of quitting his job and obtaining $(w, e) = (0, 0)$.
 
+\medskip
+
 Find the wage contract $(w_0, w_4) \in [0,\infty)^2$ that maximises the firm's expected profits in each
-of the situations below
+of the situations below.
 
 
+%***************************************************
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+(Read also Watson pp.340-345)
 
-\subsection*{(a)}The owner can observe the worker’s effort and so the contract can also be conditioned
+In a principal-agent problem, the principal usually wants to 
+solve 2 problems by designing a contract:
+
+\begin{itemize}
+\item Participation Constraint (PC): the agent will agree to work for the principal only if $u_a(agree) \ge u_a(reject)$.
+\item Incentive Compatibility (IC):the agent will pay effort only if $u_a(effort=1) \ge u_a(effort=0)$.
+\end{itemize}
+
+When the agent's effort is observable, the principal can set wage depending on the effort level (pay directly for the effort). Therefore Incentive Compatibility is not a problem.
+
+\medskip
+
+When the agent's effort is unobservable, the agent can pretend 
+to pay effort (Moral Hazard); while the principal can either allow the agent to pay no effort (constant low wage) or make a wage plan depending on the outcome to achieve Incentive Compatibility.
+
+
+\end{mdframed}
+
+\bigskip
+
+\subsection*{(a) Worker's effort type can be observed}
+The owner can observe the worker's effort and so the contract can also be conditioned
 on the effort level of the worker. How much effort does the worker exert in the expected
 profit-maximising contract?
 
 \bigskip
 
-Since the firm does not need to provide incentives if effort is observable, the firm need only satisfy the participation constraint (with equality). Since the firm is risk-neutral and the worker is risk-averse, the firm will offer a fixed wage, $w(0)$ in the case of low effort ($e=0$) and $w(1)$ in the case of high effort ($e=1$).
+Denote $w_r(e)$ as the wage plan given outcome $r \in \{0,4\}$
+and effort level $e\in \{0,1\}$. For example, $w_4(0)$ is the wage in the case of low effort ($e=0$) but the outcome is high ($r=4$).
 
-For $e=0$: $\pi_0(0)\sqrt{w(0)} + \pi_4(0)\sqrt{w(0)} - 0 = 0$. Hence, $w(0) = 0$, and the profit for the firm is: $\pi_0(0)0 + \pi_4(0)4 - 0 = \tfrac23 \cdot 0 + \tfrac13 \cdot 4 = \tfrac43$.
+\medskip
 
-For $e=1$: $\pi_0(1)\sqrt{w(1)} + \pi_4(1)\sqrt{w(1)} - 1 = 0$. Hence, $w(1) = 1$ and the profit for the firm is: $\pi_0(1)0 + \pi_4(1)4 - 1 = \tfrac13 \cdot 0 + \tfrac23 \cdot 4 - 1= \tfrac83 - 1 = \tfrac53$.
+There are 4 possible wages depending on the efforts:
 
-Since $\tfrac43 < \tfrac53$, the worker will exert high effort ($e=1$) in the expected profit-maximizing contract.
+\begin{itemize}
+\item If low effort: $w_0(0),w_4(0)$
+\item If high effort: $w_0(1),w_4(1)$
+\end{itemize}
 
-\subsection*{(b)}The owner cannot observe the worker’s effort and so the contract cannot be conditioned on
+Let $p = Pr(r=0), 1-p = Pr(r=4)$. Now consider the following 2 wage plans:
+
+\begin{itemize}
+\item Uncertain wage: $w_0$ if outcome is $0$; $w_4$ if outcome is $4$.
+
+Denote $w^f = pw_0 +(1-p)w_4$
+\item Fixed wage: no matter what the outcome is, pay $w^f$
+\end{itemize}
+
+
+We can see the firm is risk neutral while the worker is risk averse w.r.t. the wage. That is to say, the firm is indifferent to the uncertain wage and the fixed wage, while the worker prefers fixed wage.
+
+\medskip
+
+To minimize the cost, the firm will choose a fixed wage, otherwise the firm must compensate the worker for the risk(recall risk premium and certainty equivalent), i.e. $w_0(0)=w_4(0)=w(0), w_0(1)=w_4(1)=w(1)$
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+recall seminar 4:
+\begin{itemize}
+\item  $\pi = r - w \Rightarrow -\frac{\pi''}{w'} = 0$
+\item $u(w, e) = \sqrt{w} -e \Rightarrow -\frac{u''}{w'} = -\frac{-0.25w^{-1.5}}{0.5w^{-0.5}} = 0.5w^{-1}>0$
+\end{itemize}
+\end{mdframed}
+
+Participation Constraint (PC) requires:
+
+\begin{itemize}
+\item If effort$=0$, $u(agree) \ge u(reject) \Rightarrow \sqrt{w(0)} \ge 0 \Rightarrow w(0) \ge 0$;
+\item If effort$=1$, $u(agree) \ge u(reject) \Rightarrow \sqrt{w(1)} -1 \ge 0 \Rightarrow w(1) \ge 1$;
+\end{itemize}
+
+To minimize the cost, the firm will let $w(0) = 0,  w(1) = 1$.
+
+\medskip
+
+The expected profit of the firm is 
+\begin{itemize}
+\item If effort$=0$, $E[\Pi_0]= \tfrac23 \times 0 + \tfrac13 \times 4 - 0 =\tfrac43$
+\item If effort$=1$, $E[\Pi_1]= \tfrac13 \times 0 + \tfrac23 \times 4 - 1 =\tfrac53$
+\end{itemize}
+
+The firm prefers the worker to pay effort. In the expected
+profit-maximising contract the worker will exert effort $=1$.
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+For example, the firm can promise offering a wage slightly higher than 1 if the worker exerts efforts. Since the effort can be observed, the promise is realistic.
+\end{mdframed}
+
+%***************************************************
+\subsection*{(b) Worker's effort type can't be observed}
+The owner cannot observe the worker's effort and so the contract cannot be conditioned on
 effort. How much effort does the worker exert in the expected profit-maximising contract now?
 
 \bigskip
 
-Even if the effort is not observable, the firm need not provide incentives in a contract where the worker exert low effort ($e=0$). Hence, $w_0(0) = w_4(0) = 0$, and the profit for the firm is: $\pi_0(0)0 + \pi_4(0)4 - 0 = \tfrac23 \cdot 0 + \tfrac13 \cdot 4 = \tfrac43$.
+\textbf{(1) Case 1: the firm allows the worker exerting low effort.}
 
-If the effort is not observable, the firm must provide incentives in a contract where the worker exert high effort ($e=1$). The optimal contract is found by satisfying both the participation constraint and the incentive constraint:
+\medskip
+
+If the firm still provides a fixed wage, since no matter what the outcome is the worker is paid the same, the worker will not pay any effort (Moral Hazard). If the firm prefers the worker exerting no effort, then the only problem is Participation Constraint, the result is the same as part (a) when $e=0$:
+
+$$w_0 = w_4 = 0$$
+
+The expected profit for the firm is: $$E[\pi]= \tfrac23 \times 0 + \tfrac13 \times 4 - 0 =\tfrac43$$
+
+\medskip
+
+\textbf{(2) Case 2: the firm wants the worker exerting high effort.}
+
+\medskip
+
+If the effort is not observable, the firm must provide incentives in a contract where the worker exerts high effort ($e=1$). The optimal contract is found by satisfying both the Participation Constraint and the Incentive Compatibility:
 
 \begin{gather*}
-  \pi_0(1)\sqrt{w_0(1)} + \pi_4(1)\sqrt{w_4(1)} - 1 \geq 0  \, ,\\
-  \pi_0(1)\sqrt{w_0(1)} + \pi_4(1)\sqrt{w_4(1)} - 1 \geq \pi_0(0)\sqrt{w_0(1)} + \pi_4(0)\sqrt{w_4(1)} \, .
+ \text{PC:} \quad \tfrac13\sqrt{w_0} + \tfrac23\sqrt{w_4} - 1 \geq 0  \, ,\\
+ \text{IC:} \quad   \tfrac13\sqrt{w_0} + \tfrac23\sqrt{w_4} - 1 \geq \tfrac23\sqrt{w_0} + \tfrac13\sqrt{w_4} -0 \, .
 \end{gather*}
 
-Inserting the probabilities we obtain:
+Simplifying:
 
 \begin{gather*}
-  \tfrac13 \sqrt{w_0(1)} + \tfrac23 \sqrt{w_4(1)} \geq 1  \, ,\\
-   -\tfrac13 \sqrt{w_0(1)} + \tfrac13 \sqrt{w_4(1)} \geq 1  \, .
+ \text{PC:}   \tfrac13 \sqrt{w_0} + \tfrac23 \sqrt{w_4} \geq 1  \, ,\\
+ \text{PC:}    -\tfrac13 \sqrt{w_0} + \tfrac13 \sqrt{w_4} \geq 1  \, .
 \end{gather*}
 
-The lowest wage rates that satisfy these inequalities are $w_0(1) = 0$ (since wage is non-negative) and $w_4(1) = 9$, and the profit for the firm is: $\pi_0(1)0 + \pi_4(1) \left( 4 - 9 \right) = \tfrac13 \cdot 0 - \tfrac23 \cdot 5 = - \tfrac{10}3$.
+The lowest (non-negative) wage rates that satisfy these inequalities are $w_0 = 0$ and $w_4 = 9$.
 
-Since $\tfrac43 > - \tfrac{10}6$, the worker will exert low effort ($e=0$) in the expected profit-maximizing contract when effort is not observable.
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+The IC can be written as $\sqrt{w_4} \geq  \sqrt{w_0} + 3$. The higher $w_0$ is, the higher $w_4$ must be. Therefore we let $w_0=0$ and the lowest $w_4=3$. They also satisfy the PC condition.
+\end{mdframed}
 
+The expected profit for the firm is: $$ E[\pi]=\tfrac13 \times 0 - \tfrac23 \times 5 = - \tfrac{10}3$$.
+
+Since $\tfrac43 > - \tfrac{10}3$, the firm prefer the worker to exert low effort. Thus the worker will exert low effort ($e=0$) in the expected profit-maximizing contract when effort is not observable.
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+In this case, the firm simply provides a fixed wage close to 0 and the worker will not exert high effort.
+\end{mdframed}
 
 
 
