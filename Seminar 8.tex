@@ -178,9 +178,12 @@ Obviously $L$ and $R$ are not dominated by each other (as pure strategies) for t
 mixed strategy case.
 \end{mdframed}
 
-Let $p$ be the probability that the Goalie moves $L$ and $1-p$ the probability that the Golie moves $R$, and let $q$ be the probability that the Striker kicks $L$ and $1-q$ the probability that the Striker kicks $R$. This yields the following payoffs:
+The Kicker believes the Goalie chooses $L$ and $R$ with probability $(p, 1-p)$; the Golie believes the Kicker moves to $L$ and $R$ with probability $(q, 1-q)$. This yields the following expected payoffs:
 
-\newpage
+\begin{mdframed}[backgroundcolor=yellow!20,linecolor=white]
+Write the probability on the normal form to avoid confusion
+\end{mdframed}
+
 
 For Goalie:
 \begin{itemize}
@@ -337,13 +340,12 @@ unstable.
 \subsection*{(c) Find the symmetric mixed strategy Nash equilibrium.}
 
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
-If there is a dominated strategy, the player will assgin 0 probability to it. Therefore:
+If there is a dominated strategy, the player will assgin 0 probability to it. Therefore, in a mixed strategy mixed strategy Nash equilibrium, the players must be \textbf{indifferent between $A$ and $I$}.
 \end{mdframed}
 
-In a mixed strategy mixed strategy Nash equilibrium, the players must be \textbf{indifferent between $A$ and $I$}.
+$$U^i_A = v-c$$
 \begin{align*}
-& U^i_A = v-c \\  
-&E(U^i_I) = 0 \times Pr(\text{no one else acts}) + v \times  Pr(\text{at least one else acts}) \\
+E(U^i_I) &= 0 \times Pr(\text{no one else acts}) + v \times  Pr(\text{at least one else acts}) \\
 &= 0 + v \times [1- Pr(\text{no one else acts})]
 \end{align*}
 $$U^i_A = E(U^i_I) \Rightarrow v-c = v [1- Pr(\text{no one else acts})]\Rightarrow Pr(\text{no one else acts}) = \frac{c}{v}$$
@@ -352,6 +354,7 @@ this implies:
 
 $$Pr(\text{no one else acts}) = (1-p)^{n-1} \Rightarrow \frac{c}{v}= (1-p)^{n-1} \Rightarrow  p = 1 - \left( \tfrac{c}{v} \right)^\frac1{n-1}$$ 
 
+The NE is everyone will choose $A$ and $I$ with probability $(1 - \left( \tfrac{c}{v} \right)^\frac1{n-1},\left( \tfrac{c}{v} \right)^\frac1{n-1})$.
 
 \subsection*{(d) In the symmetric mixed strategy NE, how does the \\ $Pr(\text{the police  will  be  called})$ vary with the number of people $n$?}  
 
@@ -375,7 +378,7 @@ This is one explanation of the so-called ``bystander effect''.
 
 \begin{mdframed}[backgroundcolor=yellow!20,linecolor=white]
 
-Examples can be helpful to avoid mistakes. If there are only 2 people, $1-\left( \tfrac{c}{v} \right)^\frac 1{1-\tfrac 1 2} =1- \left( \tfrac{c}{v} \right)^2$; if there are infinite people,  $1- \left( \tfrac{c}{v} \right)^\frac 1{1-\tfrac 1 2} =1- \tfrac{c}{v}$.
+Examples can be helpful to avoid mistakes. If there are only 2 people, $1-\left( \tfrac{c}{v} \right)^\frac 1{1-\tfrac 1 2} =1- \left( \tfrac{c}{v} \right)^2$; if there are infinite people,  $1- \left( \tfrac{c}{v} \right)^\frac 1{1-0} =1- \tfrac{c}{v}$.
 
 \smallskip
 You can also use derivatives to show monotonicity.
@@ -447,7 +450,7 @@ if $\delta \geq 1/5$.
 \bigskip
 
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
-We can see $(D,R)$ is not a NE for any stage. Actually, the only static pure strategy NE for a stage game is $(U,L)$. But in an infinitely repeated game, a trigger strategy can achieve $(D,R)$ as long as the punish for devication is strong enough.
+We can see $(D,R)$ is not a NE for any stage. Actually, the only static pure strategy NE for a stage game is $(U,L)$. But in an infinitely repeated game, a trigger strategy can achieve $(D,R)$ as long as the punishment for devication is strong enough.
 \end{mdframed}
 
 Consider the strategy profile determined by player 1 beginning with $D$ and player 2 with $R$ and that both players continue with this as long as only $D$ and $R$ have been played before. 
@@ -459,7 +462,7 @@ If any one deviates, player 1 plays $U$ and player 2 plays $L$, forever.
 
 \medskip
 
-Suppose in period $t$ one player deviates, starting from period $t$, the player's payoff is:
+Suppose in period $t$ one player deviates (to obtain payoff 6), starting from period $t$, the player's payoff is:
 
 $$U_{divi} = 6 + 1\times \delta + 1\times \delta^2 + \cdots = 5 + \frac{1}{1-\delta}$$
 
@@ -565,27 +568,29 @@ market is shared by $n$ firms.
 
 \smallskip
 
-For any single firm, it can produce $\frac{1}{n}(110-60)$ with a MC of 10 kr.
+For any single firm, it can produce $\frac{50}{n}$ with a MC of 10 kr.
 
 \smallskip
 
 Therefore, at any period $a$, any firm $i$ can obtain profit:
 
 
-$$U^{\text{collusion}}_{i,t=a} = Q_i (p-MC) = \frac{1}{n}(110-60) (60-10) = \frac {2500}{n} $$
+$$U^{\text{collusion}}_{i,t=a} = Q_i (p-MC) = \frac{50}{n}(60-10) = \frac {2500}{n} $$
 
-Starting from period $t$ until forever, the firm $i$'s discounted profit via collusion is:
+Starting from period $t=a$ until forever, the firm $i$'s discounted profit via collusion is:
 
 $$\Sigma^{\infty}_{i,t=a} U^{\text{collusion}}_{i,t}= \frac {2500}{n} + \frac {2500}{n} \delta + \frac {2500}{n}\delta^2 + \cdots = \frac {2500}{n} \frac{1}{1-\delta}$$
 
 
-By deviating in period $t$, the firm can obtain the whole firm by setting the price slightly less than $60$, say, $p_i = 60 -\epsilon$. The production $Q = 110 - p_i = 50 + \epsilon$, and the profit is $(50 + \epsilon)(60 -\epsilon -10)=2500 - \epsilon^2$. Since $\epsilon$ can be extremely small, we just ignore it here.
+By deviating in period $t=a$, the firm can obtain the whole market by setting the price slightly less than $60$, say, $p_i = 60 -\epsilon$. Since $\epsilon$ can be extremely small, we just ignore it here. The production $Q \approx 110 - p_i = 50$, and the profit is about $50 (60 -10)=2500$. 
 
 \smallskip
 
 But later on, there will be no profit since all the others choose price $p=10=MC$. 
 
-Therefore, starting from period $t$ until forever, the firm $i$'s discounted profit via deviation is:
+\smallskip
+
+Therefore, starting from period $t=a$ until forever, the firm $i$'s discounted profit via deviation is:
 
 $$\Sigma^{\infty}_{i,t=a} U^{\text{deviate}}_{i,t}= 2500  + 0 =2500$$
 
@@ -598,7 +603,7 @@ That is $\frac {2500}{n} \frac{1}{1-\delta} \ge 2500 \Rightarrow \delta \ge 1 -\
 The greater $n$ is, the closer $\delta$ is to $1$, which means the condition is stricter. Cartels are less likely to sustain when size increases.
 
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
-$\delta = 1$ means the firms believe tomorrow is as important as today, which is not realistic
+$\delta = 1$ means the firms believe tomorrow is as important as today, which is a strict condition.
 \end{mdframed}
 
 

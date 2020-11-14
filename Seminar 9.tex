@@ -105,7 +105,7 @@ Note: the question is slightly different from those in Watson textbook.
 \medskip
 
 In the textbook, it often says
-the nature moves with probability $(Pr_1,Pr_2)$, i.e. both of the two players have expected payoff.
+the nature moves with probability $(Pr_1,Pr_2)$, i.e. both of the two players can have expected payoff.
 Here only player 2 has to guess, while player 1 doesn't need to. 
 \medskip
 
@@ -117,7 +117,7 @@ Although the question can be solved in the same way, you may wonder if it's reas
 
 \begin{itemize}
 \item Player 2 believes player 1 has the expected payoff $U^1 = 0.5 \times \cdots + 0.5 \times \cdots$, and player 1 knows what player 2 believes.
-\item In the view of player 1, there is actually no expected payoff, since the which game to play is determined for him/her.
+\item In the view of player 1, there is actually no expected payoff, since the which game to play is already determined for him/her.
 \end{itemize}
 
 
@@ -143,10 +143,24 @@ Anyway, the method is the same, simply calculate the expected payoff according t
 \subsection*{(b) NE}
 
 For the Bayesian normal form found in part (a), determine a NE. Is there more than one NE?
+
+\bigskip
+
+\begin{center}
+\includegraphics[width=0.4\textwidth]{9.q1}
+\vspace{2mm}
+\end{center}
+
+\medskip
+
 $(UD',R)$ is the unique NE.
 
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
-$DU'$ is dominated by $DD'$ $\Rightarrow \ L$ is dominated by $R \ \Rightarrow \ UD'$ dominates the rest 2 strategies. Dominated strategies can't be BR and should be assigned with probability 0.
+$UD'$ dominates $UU'$; $DD'$ dominates $DU'$ $\Rightarrow \ R$ dominates $L \ \Rightarrow \ UD'$ dominates $DD'$. 
+
+\medskip
+
+Dominated strategies can't be BR and should be assigned with probability 0 (no mixed-strategy NE).
 \end{mdframed}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -341,7 +355,7 @@ U^1_{MO'} &= 0 \times q +  2 (1-q) = 2 (1-q) \\
 
 \medskip
 
-\textbf{(1)} If $P_1$ mixes $OO'$ and $OM'$ with probability $(p,1-p)$
+\textbf{(1)} If $P_1$ mixes $OO'$ and $OM'$ with probability $(p,1-p)$, i.e. player 2 has belief $(p,1-p,0,0)$.
 \medskip
 
 For $P_1$:
@@ -364,16 +378,16 @@ The NE is :$[\left( \tfrac12, \tfrac12, 0, 0 \right), \left( \tfrac34, \tfrac14 
 Note how we assign 0 probability to the strategies $P_1$ doesn't choose.
 \end{mdframed}
 
-\textbf{(2)} If $P_1$ mixes $OM'$ and $MO'$ with probability $(p,1-p)$
+\textbf{(2)} If $P_1$ mixes $OM'$ and $MO'$ with probability $(p,1-p)$, i.e. player 2 has belief $(0,p,1-p,0)$.
 
 \medskip
 
 For $P_2$, facing with $P_1$'s mixed strategy, $M$ dominates $O$ (therefore $q=1$).
-The mixed strategy brokes down.
+The mixed strategy brokes down (player 2's belief $(0,p,1-p,0)$ is not reasonable).
 
 \medskip
 
-\textbf{(3)} If $P_1$ mixes $OO'$ and $MO'$ with probability $(p,1-p)$
+\textbf{(3)} If $P_1$ mixes $OO'$ and $MO'$ with probability $(p,1-p)$, i.e. player 2 has belief $(p,0,1-p,0)$.
 \medskip
 
 For $P_1$:
@@ -392,16 +406,15 @@ The NE is :$[\left( \tfrac12, 0, \tfrac12, 0 \right), \left( \tfrac14, \tfrac34 
 
 \medskip
 
-\textbf{(4)} If $P_1$ mixes $OO'$, $OM'$ and $MO'$ with probability $(m,n,1-m-n)$
+\textbf{(4)} If $P_1$ mixes $OO'$, $OM'$ and $MO'$ with probability $(m,n,1-m-n)$, i.e. player 2 has belief $(m,n,1-m-n,0)$.
 \medskip
 
 There must be $U^1_{OO'} = U^1_{OM'} = U^1_{MO'}$.
 
 From (1) and (3) we already know 
-$P_1$'s belief (i.e. $P_2$ chooses $O$ with $Pr=q$ and $M$ with $Pr=1-q$) 
-supporting $U^1_{OO'} = U^1_{OM'}$ is different from his/her belief supporting
+$P_2$'s belief supporting $U^1_{OO'} = U^1_{OM'}$ is different from his/her belief supporting
 $U^1_{OO'} = U^1_{MO'}$. Therefore there is no such a brief that supports
-$U^1_{OO'} = U^1_{OM'} = U^1_{MO'}$.
+$U^1_{OO'} = U^1_{OM'} = U^1_{MO'}$ simultaneously.
 
 
 \newpage
@@ -657,7 +670,7 @@ With different MC, firm 2 can set different (contingent) price, while firm 1 can
 
 \end{mdframed}
 
-\textbf{For player 2:}
+\textbf{For firm 2:}
 
 \medskip
 
@@ -703,13 +716,18 @@ $$\frac{\partial^2 U^{2L}}{\partial p^2_2} = -4 <0$$
 
 
 
-\textbf{For player 1:}
+\textbf{For firm 1:}
 
 \begin{align*}
 E(U^1)&= 0.5 U^1(p_1,p_2^H) + 0.5 U^1(p_1,p_2^L) \\
 &= 0.5(-2p_1^2 +p_1p^H_2 + 42p_1 - 10p^H_2 -220) + 0.5(-2p_1^2 +p_1p^L_2 + 42p_1 - 10p^L_2 -220)\\
 &=-2p_1^2 + 42p_1 +(p_1 -10)(0.5p^H_2 + 0.5p^L_2) -220
 \end{align*}
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+Can we substitute firm 2's BR ($p^{H*}_2, p^{L*}_2$) into firm 1's expected utility function now? No! We want to get firm 1's BR to any ($p^H_2, p^L_2$), not just to firm 2's BR ($p^{H*}_2, p^{L*}_2$)!
+\end{mdframed}
+
 
 $\quad $FOC:
 
@@ -720,7 +738,7 @@ $\quad $SOC:
 $$\frac{\partial^2 U^{1}}{\partial p^2_1} = -4 <0$$
 
 
-\textbf{NE: Denote the NE as $(p^*_1,p^{*H}_2,p^{*L}_2)$}, we have
+\textbf{NE}: Denote the NE as $(p^*_1,p^{*H}_2,p^{*L}_2)$, we have
 
 
 $$p^{*}_1 = \frac{42 + 0.5(p^{*H}_2 + p^{*L}_2)}{4}= \frac{42 + 0.5(\frac{50+p_1}{4} + \frac{34+p_1}{4})}{4} $$
