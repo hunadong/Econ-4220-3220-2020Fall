@@ -13,5 +13,5 @@
 
 ## Textbook:
 
-* Jehle, G. A., and P. J. Reny. "Advanced Microeconomic Theory (Third)." Essex: Pearson Education Limited (2011).
-* Watson, Joel. Strategy: an introduction to game theory. Vol. 139. New York: WW Norton, 2002.
+* Jehle, G. A., and P. J. Reny. "Advanced Microeconomic Theory (Third Edition)." Essex: Pearson Education Limited (2011).
+* Watson, Joel. Strategy: an introduction to game theory (Third Edition).  New York: WW Norton, 2013.
