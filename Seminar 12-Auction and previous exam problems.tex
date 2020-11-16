@@ -28,6 +28,127 @@
 \maketitle
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+
+The following review part is based on Jehle \& Reny pp.428-432 
+
+\section*{First-price sealed-bid auction}
+
+There are $N$ bidders in an auction, and any bidder $i$ has a private value $v_i$ for the auctioned good. Bidder $i$ can submit any sealed bid $b_i$. We define the bid that can maximize the bidder's payoff (best response) as $b_i^* = \hat{b}(v_i)$. We assume
+\begin{itemize}
+\item Private value $v_i$ is independent among the bidders; the CDF of $v_i$ is $F(x)$
+\item Best response bidding function $\hat{b}(\cdot)$ is strictly increasing and identical for all bidders (we want to find a symmetric NE).
+\end{itemize}
+
+\subsection*{What is the BR $\hat{b}(v_i)$ for bidder $i$ ?}
+
+If bidder $i$ with $v_i=r$ submits a price higher than bidder $1$'s bid, we must have:
+
+$$\hat{b}(v_1) < \hat{b}(r) \iff v_1  < r, i \neq 1
+$$
+
+\medskip
+
+Therefore bidder $i$ can guess how likely he/she defeats bidder $1$, $$Pr\{\text{bidder $i$ defeats bidder 1}\} = Pr\{v_1  < r\} = F(r)$$
+
+and similarly,
+
+$$Pr\{\text{bidder $i$ defeats all the other N-1 bidders}\} = F^{(N-1)}(r)$$
+
+
+Here is another interesting way to understand function $F^{(N-1)}(x)$:
+
+\smallskip 
+
+Since ``\textit{bidder $i$ defeats all the other N-1 bidders}'' $\iff$ ``\textit{bidder $i$ defeats the bidder the second-highest price}'', if we denote the second-highest price as $\theta$, we can also write the probability above as
+
+\begin{equation}
+Pr\{\theta < r\} = F^{(N-1)}(r)
+    \label{eq:second}   
+\end{equation}
+
+We find that  $F^{(N-1)}(x)$ is actually the CDF of $\theta$! We will use the conclusion later in equation \ref{eq:b}.
+
+\medskip
+
+The maximized expected utility function of bidder $i$ is:
+\begin{align*}
+u(r)&= Pr\{\text{bidder $i$ defeats all the other N-1 bidders}\} \times (r-\hat{b}(r)) \\&+  Pr\{\text{bidder $i$ lose the auction}\} \times 0 \\ 
+&= F^{(N-1)}(r) (r-\hat{b}(r)) + (1-F^{(N-1)}(r))\times 0 \\
+&= F^{(N-1)}(r) (r-\hat{b}(r))
+\end{align*}
+
+(To calculate $\hat{b}(\cdot)$) Imagine the real private value of bidder $i$ is actually $v$, not $r$, but the bidder reacted (by mistake) as if his/her private value was $r$, i.e. bid at $\hat{b}(r)$ instead of $\hat{b}(v)$. When the bidder realized the mistake, the price had already been submitted...
+
+\medskip
+
+The expected utility function due to the mistake is (eq. 9.1, Jehle \& Reny pp.430):
+\begin{align*}
+u(r,v)= F^{(N-1)}(r) (v-\hat{b}(r))
+\end{align*}
+
+We know only when the wrong private value $r$ is luckily the same as the real private value $v$, will the expected payoff be maximized (since $\hat{b}(v)$ instead of $\hat{b}(r)$ is the best response). That is to say, $r=v$ solves $\max_{r} u(r,v)$.
+
+\medskip
+
+The FOC of $\max_{r} u(r,v)$ is (eq. 9.2, Jehle \& Reny pp.430):
+
+$$\frac{d F^{(N-1)}(r)(v-\hat{b}(r))}{d r} = (N-1)F^{N-2}(r)f(r)(v-\hat{b}(r))-F^{(N-1)}(r)\hat{b}'(r)=0$$
+
+Since $r=v$ solves $\max_{r} u(r,v)$, it must solve the FOC above, i.e. (eq. 9.3, Jehle \& Reny pp.430)
+
+$$(N-1)F(v)^{N-2}f(v)(v-\hat{b}(v))-F^{(N-1)}(v)\hat{b}'(v)=0$$
+
+Which gives,
+\begin{align*}
+(N-1)F(v)^{N-2}f(v)\hat{b}(v))+ F^{(N-1)}(v)\hat{b}'(v) &= (N-1)F(v)^{N-2}vf(v) \\
+\text{(If we treat $v$ as a variable:)} \quad \frac{d F^{(N-1)}(v)\hat{b}(v)}{d v} &= (N-1)F(v)^{N-2}vf(v) \\
+F^{(N-1)}(v)\hat{b}(v)&= \int_0^{v} (N-1)F^{(N-2)}(x)xf(x)dx + C
+\end{align*}
+
+($C$ is constant)
+
+\medskip
+
+Since a bidder with $v=0$ must bid $0$ to maximize the expected payoff, we know $\hat{b}(0)=0$ in the NE.
+\begin{align*}
+F(0)^{N-1}\hat{b}(0)&= \int_0^{0} (N-1)F^{(N-2)}(x)xf(x)dx + C \\
+0&= 0+ C
+\end{align*}
+
+Thus,
+\begin{align*}
+F^{(N-1)}(v)\hat{b}(v)&= \int_0^{v} (N-1)F^{(N-2)}(x)xf(x)dx \\
+\Rightarrow \quad \hat{b}(v)&= \frac{\int_0^{v} (N-1)F^{(N-2)}(x)xf(x)dx}{F^{(N-1)}(v)} \\
+&= \frac{\int_0^{v} xdF^{(N-1)}(x)}{F^{(N-1)}(v)} \\
+&= \frac{1}{F^{(N-1)}(v)} \int_0^{v}x d F^{(N-1)}(x) \quad \quad (eq.9.5)  \\
+&= \int_0^{v}xd\frac{F^{(N-1)}(x)}{F^{(N-1)}(v)}
+\end{align*}
+
+\subsection*{$\hat{b}(v)$ as the conditional expectation}
+
+Recall that in Seminar 11, we already know: for a random variable $\theta \in [a,b] \subset \R_1$ and $m \in (a,b)$，
+
+$$E(\theta|\theta \le m) = \int^m_a x d F(x|\theta \le m)=\int^m_a x d \frac{F(x)}{F(m)}$$
+
+where $F(x) = Pr(\theta\le x)$ is the CDF of $\theta$.
+
+\medskip
+
+$\hat{b}(v)$ is actually an expectation of some variable $\theta$ conditional on $\theta \le v$, and the variable $\theta$'s CDF is $Pr(\theta \le x) = F^{(N-1)}(x)$. In equation \ref{eq:second} we already showed $\theta$ is actually the second highest price.
+
+\medskip
+
+In conclusion, the the BR of any bidder $i$ with private value $v$, is the expectation of the second highest price conditional on $v$ is higher than the second highest price (i.e. bidder $i$ wins):
+\begin{equation}
+\hat{b}(v) = E(\theta|\theta \le v)
+    \label{eq:b}   
+\end{equation}
+
+\end{mdframed}
+
+\newpage
+
 \section{Jehle \& Reny pp.484, exercise 9.2}
 
 Show in two ways that the symmetric equilibrium bidding strategy of a first-price auction with $N$
@@ -40,42 +161,164 @@ For the first way, use our solution from the text and apply integration by parts
 way, use the fact that $F^{N-1}(r)(v - \hat{b}(r))$ is maximised in r when $r = v$ and then apply the envelope
 theorem to conclude that $d(F^{N-1}(v)(v - \hat{b}(v))/dv = F^{N-1}(v)$; now integrate both sides from $0$ to $v$.
 
-\bigskip
+\subsection*{Method 1: Integration by parts}
 
-See lecture notes for the third lecture on the economics of information (on ``Auctions and the revenue equivalence theorem''), pages 17 and 19.
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+Integration by parts: 
+$$\int_a^b u(x) \cdot v'(x) dx = \left[u(x) \cdot v(x)\right]_a^b - \int_a^b u'(x) \cdot v(x) dx $$
+\end{mdframed}
 
+We start from the euqation above equation (9.5) on Jehle \& Reny pp.431, let's call it equation \ref{eq:95},
+\begin{equation}
+\hat{b}(v)= \frac{(N-1)}{F^{(N-1)}(v)} \int_0^{v}xf(x)F^{(N-2)}(x)dx
+\label{eq:95}   
+\end{equation}
+
+Denote,
+\begin{equation}
+    \begin{cases}
+u(x)=x  \\
+v(x)= \frac{F^{(N-1)}(x)}{(N-1)}
+    \end{cases}
+\Rightarrow
+	\begin{cases}
+ u'(x)= 1 \\
+ v'(x)= F^{(N-2)}(x)f(x)
+	\end{cases}
+\nonumber
+\end{equation}
+
+Equation \ref{eq:95} can be rewritten as,
+
+\begin{align*}
+\hat{b}(v)&= \frac{(N-1)}{F^{(N-1)}(v)} \int_0^{v}xf(x)F^{(N-2)}(x)dx \\
+&= \frac{(N-1)}{F^{(N-1)}(v)} \int_0^{v} u(x)\cdot v'(x)dx \\
+\text{(Integration by parts:)}\quad &=\frac{(N-1)}{F^{(N-1)}(v)} \left\{\left[u(x) \cdot v(x)\right]_0^v - \int_0^v u'(x) \cdot v(x) dx\right\} \\
+&=\frac{(N-1)}{F^{(N-1)}(v)}  \left\{\left[x \cdot \frac{F^{(N-1)}(x)}{(N-1)}\right]_0^v - \int_0^v 1 \cdot \frac{F^{(N-1)}(x)}{(N-1)} dx \right\} \\
+&=\frac{(N-1)}{F^{(N-1)}(v)}  \left\{v \cdot \frac{F^{(N-1)}(v)}{(N-1)} -   \frac{1}{N-1} \int_0^v F^{(N-1)}(x) dx \right\} \\
+&= v -  \int_0^v \left[\frac{F(x)}{F(v)}\right]^{(N-1)} dx 
+\end{align*}
+
+\subsection*{Method 2: Envelop theorem}
+
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+Envelop theorem (unconstraint case):
+
+\medskip
+
+$f(x;a)$ is a function of $x$ with $a$ as paratmeter. Given any $a$, let $x^*$ be the solution maximizing or minimizing object function $f(x,a)$, i.e. $\max_{x} f(x,a)= f(x^*,a)$, then
+
+$$\frac{d f(x^*,a)}{d a} = \frac{f(x,a)}{d a} \bigg\rvert_{x=x^*} $$
+\end{mdframed}
+
+We start from euqation (9.1) on Jehle \& Reny pp.430 (the one called as \textit{``expected utility function due to the mistake''} in the review part),
+\begin{align*}
+u(r,v)= F^{(N-1)}(r) (v-\hat{b}(r))
+\end{align*}
+
+We know $r^*=v$ maximizes $u(r,v)$, i.e. 
+\begin{equation}
+\max_r u(r,v) = u(r^*,v)=F^{(N-1)}(v) (v-\hat{b}(v))
+    \label{eq:max1}   
+\end{equation}
+
+On the other hand, by envelop theorem,
+\begin{align*}
+\frac{d u(r^*,v)}{d v} &= \frac{f(r,v)}{d v} \bigg\rvert_{r=v} \\
+&= F^{(N-1)}(r) \bigg\rvert_{r=v} \\
+&=F^{(N-1)}(v)
+\end{align*}
+
+we find another way to express $u(r^*,v)$:
+\begin{equation}
+u(r^*,v) = \int_0^v F^{(N-1)}(x) dx
+    \label{eq:max2}   
+\end{equation}
+
+
+Therefore, by equation \ref{eq:max1} and equation \ref{eq:max2},
+\begin{align*}
+F^{(N-1)}(v) (v-\hat{b}(v)) &= \int_0^v F^{(N-1)}(x) dx \\
+\hat{b}(v)&= v - \int_0^v \left[\frac{F(x)}{F(v)}\right]^{(N-1)} dx 
+\end{align*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Jehle \& Reny pp.484, exercise 9.1 - Show that the bidding strategy in (9.5) is strictly increasing.}
 
-By exercise 9.1, the bid function can be written as:$$\hat{b}(v_i) = v_i - \frac{\int_0^{v_i}[F(x)]^{N-1} dx}{[F(v_i)]^{N-1}} \, .$$
+By exercise 9.1 we know,
+$$\hat{b}(v) = v - \frac{\int_0^v F^{N-1}(x) dx}{F^{N-1}(v)} \, .$$
 
 Then:
 
 \begin{align*}
-  \frac{d}{dv_i}\left( \hat{b}(v_i) \right) &= \frac{d}{dv_i}\left( v_i - \frac{\int_0^{v_i}[F(x)]^{N-1} dx}{[F(v_i)]^{N-1}} \right) \\
-  &= 1 - \frac{[F(v_i)]^{N-1}}{[F(v_i)]^{N-1}} + \frac{\int_0^{v_i}[F(x)]^{N-1} dx }{[F(v_i)]^{2N-2}} \cdot \frac{d}{dv_i}\left( [F(v_i)]^{N-1} \right) \\
-  &= \frac{\int_0^{v_i}[F(x)]^{N-1} dx }{[F(v_i)]^{2N-2}} \cdot (N-1) [F(v_i)]^{N-2} f(v_i) > 0 \, .
+  \frac{d}{dv}\left( \hat{b}(v) \right) &= \frac{d}{dv}\left( v - \frac{\int_0^v F^{N-1}(x) dx}{F^{N-1}(v)} \right) \\
+  &= 1 - \frac{\frac{\int_0^vF^{N-1}(x) dx }{dv} \cdot [F^{N-1}(v)]- \left[\int_0^v[F^{N-1}(x)] dx \right] \cdot \frac{F^{N-1}(v)}{dv}}{\left[F^{N-1}(v)\right]^2}\\
+  &= 1 - \frac{F^{N-1}(v) \cdot [F^{N-1}(v)] - \left[\int_0^v[F^{N-1}(x)] dx \right] \cdot [(N-1) F^{N-2}(v) f(v)]} {F^{2N-2}(v)} \\
+  &= 1 - 1 + \frac{\left[\int_0^v[F^{N-1}(x)] dx \right] \cdot [(N-1) f(v)]} {F^{N}(v)} \\
+  &= \frac{\left[\int_0^v[F^{N-1}(x)] dx \right] \cdot [(N-1) f(v)]} {F^{N}(v)}
 \end{align*}
 
-\bigskip
+If we assume $F(x)$ is strictly increasing and $N > 1$, then $\hat{b}(v) > 0$.
 
 \section{Jehle \& Reny pp.485, exercise 9.3}
 
 This exercise will guide you through the proof that the bidding function in (9.5) is in fact a symmetric
 equilibrium of the first-price auction.
+%***************************************************
 
-\subsection*{(a)} Recall from (9.2) that
-$$\frac{du(r,v)}{dr}=(N-1)F^{N-2}(r)f(r)(v-\hat{b}(r))-F^{N-1}(r)\hat{b'}(r).$$
+\subsection*{(a) Another way to write the derivative} 
+
+Recall from (9.2) that
+$$\frac{du(r,v)}{dr}=(N-1)F^{N-2}(r)f(r)(v-\hat{b}(r))-\textcolor{blue}{F^{N-1}(r)\hat{b'}(r)}.$$
 Using (9.3), show that
-
-
 \begin{align*}
 \frac{du(r,v)}{dr}&=(N-1)F^{N-2}(r)f(r)(v-\hat{b}(r))-(N-1)F^{N-2}(r)f(r)(r-\hat{b'}(r)) \\
 &= (N-1)F^{N-2}(r)f(r)(v-r)
 \end{align*}
 
-\subsection*{(b)}Use the result in part (a) to conclude that $du(r, v)/dr$ is positive when $r < v$ and negative when
+\medskip
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+Equation 9.3 on Jehle \& Reny pp.430 is,
+$$(N-1)F(v)^{N-2}f(v)\hat{b}(v))+ \textcolor{blue}{F^{(N-1)}(v)\hat{b}'(v)} = (N-1)F(v)^{N-2}vf(v) $$
+\end{mdframed}
+
+Equation 9.3 holds for any $v$, since $v$ is the variable. It will also hold if we take $v=r$, i.e.
+
+$$(N-1)F^{N-2}(r)f(r)\hat{b}(r))+ \textcolor{blue}{F^{(N-1)}(r)\hat{b}'(r)} = (N-1)F^{N-2}(r)rf(r) $$
+which yields,
+\begin{align*}
+\textcolor{blue}{F^{(N-1)}(r)\hat{b}'(r)} &= (N-1)F^{N-2}(r)rf(r)-(N-1)F^{N-2}(r)f(r)\hat{b}(r)) \\
+&=(N-1)F^{N-2}(r)f(r)\left[r - \hat{b}(r)\right]
+\end{align*}
+
+Substituting the result above into equation 9.2 yields,
+\begin{align*}
+\frac{du(r,v)}{dr}&=(N-1)F^{N-2}(r)f(r)(v-\hat{b}(r))-\textcolor{blue}{F^{N-1}(r)\hat{b'}(r)} \\
+&=(N-1)F^{N-2}(r)f(r)(v-\hat{b}(r))-(N-1)F^{N-2}(r)f(r)\left[r - \hat{b}(r)\right] \\
+&= (N-1)F^{N-2}(r)f(r)(v-r)
+\end{align*}
+
+
+
+%***************************************************
+
+\subsection*{(b) Minimum or maximum?}Use the result in part (a) to conclude that $du(r, v)/dr$ is positive when $r < v$ and negative when
 $r > v$, so that $u(r, v)$ is maximised when $r = v$.
+
+\bigskip
+
+$$\frac{du(r,v)}{dr} = (N-1)F^{N-2}(r)f(r)(v-r)$$
+
+Obviously, if we assume $F(x)$ is strictly increasing and $N>1$,
+ $\frac{du(r,v)}{dr} > 0$ when $r < v$ and $\frac{du(r,v)}{dr} < 0$ when
+$r > v$. Therefore $r=v$ maximizes $u(r,v)$.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Problems 2  of the exam in \href{https://www.uio.no/studier/emner/sv/oekonomi/ECON4240/previous-exams/}{ECON4240, Spring 2005}}
 
@@ -88,6 +331,7 @@ ability ($L$). The players' payoffs depending on their actions and W's type is s
 \includegraphics[width=0.8\textwidth]{12.q2}
 \vspace{2mm}}
 
+%***************************************************
 
 \subsection*{a) Rationalizable strategies \& NE} For each of these games, determine the set of (pure) rationalizable strategies for each
 player, and the set of pure-strategy Nash equilibria.
@@ -113,6 +357,7 @@ Denote the Worker's contingent choices are: If Game $H$, $S$ and $U$; If Game $L
 \vspace{2mm}
 \end{center}
 
+%***************************************************
 
 \subsection*{c) Rationalizable strategy \& BNE} For the Bayesian normal form found in part (b), determine the set of (pure)
 rationalizable strategies for each player, and the set of pure-strategy and/or mixedstrategy Nash equilibria.
@@ -166,12 +411,16 @@ $$E(U^W_{SS'}) = E(U^W_{SU'}) \Rightarrow 2q-1=0.5 \Rightarrow \tfrac34$$
 
 The Mixed-strategy NE is: the Employer chooses $A$ and $R$ with probability $(0.5,0.5)$; Worker chooses $SS'$ and $SU'$ with probability $(\tfrac34,\tfrac14)$.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \section{Problems 3  of the exam in \href{https://www.uio.no/studier/emner/sv/oekonomi/ECON4240/previous-exams/}{ECON4240, Spring 2005}}
 
 Problem 3 (20 \%)
 Consider again the strategic situation between an employer ($E$) and a worker ($W$) described in
 Problem 2. Assume (as in parts b and c) of Problem 2) that only $W$ knows his own type, while
 player $E$ thinks that the two types of $W$ are equally likely.
+%***************************************************
+
 \subsection*{a) (Screening)} Assume now that $E$ acts before W, and that $E$'s choice of A or R can be
 observed by $W$ before he makes his choice of $S$ or $U$. Show that there is a unique
 subgame perfect Nash equilibrium.
@@ -259,6 +508,8 @@ The strategy of the $Employer$ is to choose $A$.
 Therefore there is a SPNE:
 
 \{(For High ability Worker:) $S$ after $A$, $S$ after $R$. (For Low ability Worker:) $S'$ after $A$, $U'$ after $R$ ; (For Employer) $A$\}
+
+%***************************************************
 
 \subsection*{b) (Signaling)} Assume now that $W$ acts before $E$, and that $W$'s choice of $S$ or $U$ can be
 observed by $E$ before she makes her choice of $A$ or $R$. Show that there is a unique
@@ -411,13 +662,6 @@ $\Rightarrow US'$ is not part of a PBE.
 
 In conclusion, there is only one PBE:
 $$\{SU',AR',p=1,q=0\}$$
-
-
-
-
-
-
-
 
 
 
