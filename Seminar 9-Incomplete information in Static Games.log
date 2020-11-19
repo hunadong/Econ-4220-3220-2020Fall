@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2020.8.31)  16 NOV 2020 20:24
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2020.8.31)  19 NOV 2020 10:09
 entering extended mode
 **"./Seminar 9-Incomplete information in Static Games.tex"
 ("Seminar 9-Incomplete information in Static Games.tex"
@@ -1447,8 +1447,7 @@ ls-angles.tex
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-obj
 -eu-triangles.tex
 2020/03/18 3.06c tkz-obj-eu-triangles.tex
-))
-No file "Seminar 9-Incomplete information in Static Games".aux.
+)) ("Seminar 9-Incomplete information in Static Games.aux")
 \openout1 = `"Seminar 9-Incomplete information in Static Games.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
@@ -1462,6 +1461,7 @@ LaTeX Font Info:    ... okay on input line 26.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 2
 6.
+
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
@@ -1518,12 +1518,10 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 26.
 LaTeX Info: Redefining \pageref on input line 26.
 LaTeX Info: Redefining \nameref on input line 26.
+ ("Seminar 9-Incomplete information in Static Games.out")
+("Seminar 9-Incomplete information in Static Games.out")
 \@outlinefile=\write4
 \openout4 = `"Seminar 9-Incomplete information in Static Games.out"'.
-
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
 
 LaTeX Font Info:    Redeclaring math accent \widehat on input line 26.
 LaTeX Font Info:    Redeclaring math accent \widetilde on input line 26.
@@ -1550,6 +1548,7 @@ Package gensymb Info: Using \textohm for \ohm on input line 26.
 Package gensymb Info: Using \textmu for \micro on input line 26.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
+
 ABD: EveryShipout initializing macros
 LaTeX Font Info:    Trying to load font information for FML+futmi on input line
  29.
@@ -1636,50 +1635,48 @@ File: ./pic/9.q26_3.png Graphic file (type bmp)
 File: ./pic/9.q26_3_a.png Graphic file (type bmp)
 <./pic/9.q26_3_a.png>
 
-Overfull \hbox (4.27945pt too wide) in paragraph at lines 454--455
+Overfull \hbox (4.27945pt too wide) in paragraph at lines 450--451
 []\T1/futs/m/n/10 Note, the dashed line passes through all the four nodes, mean
 -ing player 2 doesn't
  []
 
 [7]
-Package mdframed Info: Not enough space on this page on input line 455.
+Package mdframed Info: Not enough space on this page on input line 451.
+File: ./pic/9.q26_3_b3.png Graphic file (type bmp)
+<./pic/9.q26_3_b3.png>
 
-Overfull \hbox (0.51337pt too wide) in paragraph at lines 468--475
+Overfull \hbox (0.51337pt too wide) in paragraph at lines 465--472
 \T1/futs/m/n/10 Consider a three-player in-ter-pre-ta-tion of this strate-gic s
 et-ting in which each of player
  []
 
 File: ./pic/9.q26_3_b1.png Graphic file (type bmp)
 <./pic/9.q26_3_b1.png>
+[8]
+Package mdframed Info: Not enough space on this page on input line 487.
 File: ./pic/9.q26_3_b2.png Graphic file (type bmp)
 <./pic/9.q26_3_b2.png>
-[8]
-Overfull \hbox (2.9862pt too wide) in paragraph at lines 511--512
-[]\T1/futs/m/n/10 We use the text-book's way be-cause it makes the next ques-ti
-on more clearly, 
- []
-
-[9] [10] [11] [12]
-Overfull \hbox (11.24768pt too wide) detected at line 725
+ [9] [10] [11] [12]
+Overfull \hbox (11.24768pt too wide) detected at line 719
 []
  []
 
 [13] [14]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 761.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 761.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 764.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 764.
  ("Seminar 9-Incomplete information in Static Games.aux")
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 761.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 761.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 764.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 764.
 Package rerunfilecheck Info: File `"Seminar 9-Incomplete information in Static 
 Games".out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 761.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 764.
  ) 
 Here is how much of TeX's memory you used:
- 31050 strings out of 414493
- 590862 string characters out of 2902447
- 927447 words of memory out of 3000000
- 47618 multiletter control sequences out of 15000+200000
+ 31068 strings out of 414493
+ 591359 string characters out of 2902447
+ 927562 words of memory out of 3000000
+ 47629 multiletter control sequences out of 15000+200000
  610913 words of font info for 92 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
  60i,10n,91p,1000b,455s stack positions out of 5000i,500n,10000p,200000b,50000s

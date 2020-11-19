@@ -310,18 +310,13 @@ All the other strategies are rationalizable.
 
 \medskip
 
-\textbf{NE}: $(MO', M)$, $\left( \left( \tfrac12, \tfrac12, 0, 0 \right), \left( \tfrac34, \tfrac14 \right) \right)$, and $\left( \left( \tfrac12, 0, \tfrac12, 0 \right), \left( \tfrac14, \tfrac34 \right) \right)$. 
+\textbf{Pure-strategy NE}: $(MO', M)$. 
 
 \medskip
 
-For mixed stategy, $P_1$ chooses strategies among (note MM' is dominated and can't be chosen):
+For mixed stategy, $P_1$ can choose strategies among (note MM' is dominated and $Pr(MM')=0$):$\{OO' , OM' , MO'\}$.
 
-\begin{equation}
-    \begin{cases}
-OO' \\ OM' \\ MO'
-    \end{cases}
-\nonumber
-\end{equation}
+\medskip
 
 There are 4 possible combinations:
 
@@ -416,6 +411,9 @@ $P_2$'s belief supporting $U^1_{OO'} = U^1_{OM'}$ is different from his/her beli
 $U^1_{OO'} = U^1_{MO'}$. Therefore there is no such a brief that supports
 $U^1_{OO'} = U^1_{OM'} = U^1_{MO'}$ simultaneously.
 
+\medskip
+
+\textbf{Mixed-stategy NE}: $\left( \left( \tfrac12, \tfrac12, 0, 0 \right), \left( \tfrac34, \tfrac14 \right) \right)$, and $\left( \left( \tfrac12, 0, \tfrac12, 0 \right), \left( \tfrac14, \tfrac34 \right) \right)$
 
 \newpage
 
@@ -447,8 +445,6 @@ being played when he or she selects between L and R.
 \begin{center}
 \includegraphics[width=0.9\textwidth]{9.q26_3_a}
 \end{center}
-\vspace{2mm}
-
 
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
 Note, the dashed line passes through all the four nodes, meaning player 2 doesn't know either which game is played (incomplete) or how player 1 moves (static), thus can only choose $L$ or $R$.
@@ -456,15 +452,16 @@ Note, the dashed line passes through all the four nodes, meaning player 2 doesn'
 
 
 \textbf{(2) Compute the set of rationalizable strategies and NE}
-\vspace{2mm}
+\begin{center}
+\includegraphics[width=0.3\textwidth]{9.q26_3_b3}
+\end{center}
 
 $UU'$ is dominated by $DD'$, then $L$ is dominated by $R$. In the end, only $(DU',R)$ survives iterated dominance method. 
-\vspace{2mm}
+
+\vspace{1mm}
 
 Therefore the set of rationalizable strategies is $\{(DU',R)\}$. The only NE is $(DU',R)$
-
 \subsection*{(b) A three-player interpretation } 
-
 Consider a three-player interpretation of this strategic setting in which each of player 1's types is modeled as a separate player. That is, the
 game is played by players 1A, 1B, and 2. Assume that player 1A's
 payoff is zero whenever nature chooses B; likewise, player 1B's payoff
@@ -473,17 +470,17 @@ is zero whenever nature selects A. Depict this version of the game in the
 and in the \textbf{normal form}. Compute the set of \textbf{rationalizable strategies and
 find the NE}.
 
-\vspace{4mm}
+\vspace{1mm}
 
 Extensive form:
 
 \begin{center}
-\includegraphics[width=0.7\textwidth]{9.q26_3_b1}
+\includegraphics[width=0.67\textwidth]{9.q26_3_b1}
 \end{center}
 \vspace{2mm}
 
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
-Player 2 doesn't who he/she is playing with.
+Player 2 doesn't know who he/she is playing with.
 \vspace{2mm}
 
 Note also when Player 1A (1B) is reached, the payoff for 1B (1A) is 0 (in red frame).
@@ -500,7 +497,11 @@ Normal form:
 \vspace{2mm}
 
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
-Although there are 3 players, player 2 still doesn't know who he/she is playing with. As a result, the payoff is in player 2's imagination, and player $1A$,$1B$ know how player 2 thinks clearly (an \textit{ex ante} perspective).
+Although there are 3 players, player 2 still doesn't know who he/she is playing with. As a result, the payoff is in player 2's imagination, and player $1A$,$1B$ know how player 2 thinks clearly (an \textit{ex ante} perspective). For example,
+
+$$U^{1A}_{D,U',R} = 0.5 \times 4 + 0.5 \times 0 =2$$
+$$U^{1B}_{D,U',R} = 0.5 \times 0 + 0.5 \times 2 =1$$
+$$U^{2}_{D,U',R} = 0.5 \times 4 + 0.5 \times 0 =2$$
 
 \medskip
 
@@ -508,13 +509,13 @@ You can also draw the normal form the way on Geir's slides (lecture part 5, pp.5
 the matrix for player $1B$ and player $2$, and player $1A$ joins as another player. 
 
 \begin{itemize}
-\item We use the textbook's way because it makes the next question more clearly,
+\item We use the textbook's way because it explains the next question more clearly,
 \item Note also the difference between the textbook and Geir's slides:
 \begin{itemize}
 
 \item The textbook calculates expected payoff for all the 3 players,  It's more intuitive and can get the correct Bayesian NE.
 
-\item The slides pp.5 is an \textit{ex post} perspective, and the payoff for player $1A$ and $1B$ is not expected payoff but what they can really get. The result should be the same.
+\item The slides pp.5 is an \textit{ex post} perspective, and the payoff for player $1A$ and $1B$ is not expected payoff but what they can really get. 
 
 \item More about \textit{ex post} and \textit{ex ante} perspective can be found \href{https://www.cs.toronto.edu/~cebly/2534/Notes/CSC2534_Lecture9.pdf}{here}.
 \end{itemize}
@@ -524,13 +525,14 @@ the matrix for player $1B$ and player $2$, and player $1A$ joins as another play
 \end{mdframed}
 
 \subsubsection*{Rationalizable strategies}
-\vspace{2mm}
+
+\vspace{1mm}
 
 \textbf{For player $1A$ and $1B$:}
 
-When player $2$ choose $L$,  $D'$ dominates $U'$, and $U$ dominates $D$. (($U$,$D'$) survives iterated dominance)
+If player $2$ choose $L$,  $D'$ dominates $U'$, and $U$ dominates $D$. (($U$,$D'$) survives iterated dominance)
 
-When player $2$ choose $R$, $D$ dominates $U$, and  $U'$ dominates $D'$. (($D$,$U'$) survives iterated dominance)
+If player $2$ choose $R$, $D$ dominates $U$, and  $U'$ dominates $D'$. (($D$,$U'$) survives iterated dominance)
 
 As a result, all the strategies for $1A$ and $1B$ can be BR.
 
@@ -549,10 +551,8 @@ actions are rationalizable.
 By backward induction, if player $2$ chooses $L$, the payoff is $1$ (by $(U,D',L)$); if player $2$ chooses $R$, the payoff is $2$ (by $(D,U',R)$). Thus player $2$ will choose $R$ and the NE is $(D,U',R)$.
 
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
-Note although player $2$ will only choose $R$ by backward induction, $R$ doesn't dominate $L$. Dominance means "always better no matter how the opponents act". Obviously, under some conditions $L$ yields more payoff than $R$.
+Note although player $2$ will only choose $R$ by backward induction, $R$ doesn't dominate $L$. Dominance means "always better no matter how the opponents act". Obviously, under some (non-NE) conditions $L$ yields more payoff than $R$.
 \end{mdframed}
-
-
 
 \subsection*{(c) 2-player view \& 3-player view}
 Explain why the predictions of parts (a) and (b) are the same in regard
@@ -571,7 +571,7 @@ If we use the view of 3 players, then palyer $1$ are 2 different people, then $(
 
 \medskip
 
-What if player $1A$ and player $1B$ have different belief? For example, player $1A$ believes player $2$ chooses $L$, then $U$ is prefered; and at the same time, player $1B$ believes player $2$ chooses $R$, then $U'$ is prefered.
+What if player $1A$ and player $1B$ have different beliefs? For example, player $1A$ believes player $2$ chooses $L$, then $U$ is prefered; and at the same time, player $1B$ believes player $2$ chooses $R$, then $U'$ is prefered.
 \medskip
 
 In this case, (U,U') is chosen separetely, not dominated!
@@ -584,8 +584,6 @@ This belief separation  doesn't affect NE because both player $1A$ and player $1
 In part (b), the beliefs of players $1A$ and $1B$ do not have to
 coincide, so they may end up making $U$ and $U'$ as rational choices based on their separated beliefs. While in NE, the beliefs of player $1A$ and $1B$ are the same (by backward induction).
 
-
-\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Problem 4 - Differentiated duopoly}
 
@@ -692,14 +690,11 @@ $\quad $SOC:
 
 $$\frac{\partial^2 U^{2H}}{\partial p^2_2} = -4 <0$$
 
-
-
 \textbf{$\quad $(2)When $c=c^L=6$}
 
 \smallskip
 
 $\quad $ (I omitted the superscript $^L$ of $p_2$ and $c$ for simpliciy.)
-
 \begin{align*}
 U^{2L} &= -2p_2^2 +p_1p_2 -cp_1 + (22+2c)p_2 -22c \quad \quad \text{(the result from question a.)}  \\
 &= -2p_2^2 +p_1p_2 -6p_1 + 34p_2 -22 \times 6
@@ -717,7 +712,6 @@ $$\frac{\partial^2 U^{2L}}{\partial p^2_2} = -4 <0$$
 
 
 \textbf{For firm 1:}
-
 \begin{align*}
 E(U^1)&= 0.5 U^1(p_1,p_2^H) + 0.5 U^1(p_1,p_2^L) \\
 &= 0.5(-2p_1^2 +p_1p^H_2 + 42p_1 - 10p^H_2 -220) + 0.5(-2p_1^2 +p_1p^L_2 + 42p_1 - 10p^L_2 -220)\\
@@ -728,7 +722,6 @@ E(U^1)&= 0.5 U^1(p_1,p_2^H) + 0.5 U^1(p_1,p_2^L) \\
 Can we substitute firm 2's BR ($p^{H*}_2, p^{L*}_2$) into firm 1's expected utility function now? No! We want to get firm 1's BR to any ($p^H_2, p^L_2$), not just to firm 2's BR ($p^{H*}_2, p^{L*}_2$)!
 \end{mdframed}
 
-
 $\quad $FOC:
 
 $$\frac{\partial U^{1}}{\partial p_1} = 0 \Rightarrow -4p^{*}_1+ 42 +(0.5p^H_2 + 0.5p^L_2) = 0 \Rightarrow p^{*}_1 = \frac{42 + 0.5(p^H_2 + p^L_2)}{4}$$
@@ -738,10 +731,20 @@ $\quad $SOC:
 $$\frac{\partial^2 U^{1}}{\partial p^2_1} = -4 <0$$
 
 
-\textbf{NE}: Denote the NE as $(p^*_1,p^{*H}_2,p^{*L}_2)$, we have
+\textbf{NE}: Denote the NE as $(p^*_1,p^{*H}_2,p^{*L}_2)$. The NE requires the BRs for the two firms achieved at the same time:
 
+\begin{equation}
+    \begin{cases}
+p^{H*}_2 = \frac{50+p^{*}_1}{4} \\
+p^{L*}_2 = \frac{34+p^{*}_1}{4} \\
+p^{*}_1 = \frac{42 + 0.5(p^{H*}_2 + p^{L*}_2)}{4}
+    \end{cases}
+\nonumber
+\end{equation}
 
-$$p^{*}_1 = \frac{42 + 0.5(p^{*H}_2 + p^{*L}_2)}{4}= \frac{42 + 0.5(\frac{50+p_1}{4} + \frac{34+p_1}{4})}{4} $$
+(3 functions and 3 variables) solve by substitution,
+
+$$p^{*}_1 = \frac{42 + 0.5(p^{*H}_2 + p^{*L}_2)}{4}= \frac{42 + 0.5(\frac{50+p^{*}_1}{4} + \frac{34+p^{*}_1}{4})}{4} $$
 
 Therefore: 
 
