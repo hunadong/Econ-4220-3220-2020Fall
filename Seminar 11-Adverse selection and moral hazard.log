@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2020.8.31)  16 NOV 2020 20:24
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2020.8.31)  22 NOV 2020 21:13
 entering extended mode
 **"./Seminar 11-Adverse selection and moral hazard.tex"
 ("Seminar 11-Adverse selection and moral hazard.tex"
@@ -1447,8 +1447,7 @@ ls-angles.tex
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-obj
 -eu-triangles.tex
 2020/03/18 3.06c tkz-obj-eu-triangles.tex
-))
-No file "Seminar 11-Adverse selection and moral hazard".aux.
+)) ("Seminar 11-Adverse selection and moral hazard.aux")
 \openout1 = `"Seminar 11-Adverse selection and moral hazard.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
@@ -1462,6 +1461,7 @@ LaTeX Font Info:    ... okay on input line 26.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 2
 6.
+
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
@@ -1518,12 +1518,10 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 26.
 LaTeX Info: Redefining \pageref on input line 26.
 LaTeX Info: Redefining \nameref on input line 26.
+ ("Seminar 11-Adverse selection and moral hazard.out")
+("Seminar 11-Adverse selection and moral hazard.out")
 \@outlinefile=\write4
 \openout4 = `"Seminar 11-Adverse selection and moral hazard.out"'.
-
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
 
 LaTeX Font Info:    Redeclaring math accent \widehat on input line 26.
 LaTeX Font Info:    Redeclaring math accent \widetilde on input line 26.
@@ -1550,6 +1548,7 @@ Package gensymb Info: Using \textohm for \ohm on input line 26.
 Package gensymb Info: Using \textmu for \micro on input line 26.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
+
 ABD: EveryShipout initializing macros
 LaTeX Font Info:    Trying to load font information for FML+futmi on input line
  29.
@@ -1620,29 +1619,31 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 ]
 Package mdframed Info: Not enough space on this page on input line 72.
  [2] [3]
-Overfull \hbox (0.42664pt too wide) in paragraph at lines 232--237
+Overfull \hbox (0.42664pt too wide) in paragraph at lines 231--236
 []\T1/futs/m/n/10 The worker's von Neumann-Morgenstern util-ity from wage $\FML
 /futmi/m/it/10 w$ \T1/futs/m/n/10 and ef-fort $\FML/futmi/m/it/10 e$ \T1/futs/m
 /n/10 is $\FML/futmi/m/it/10 u\T1/futs/m/n/10 (\FML/futmi/m/it/10 w; e\T1/futs/
 m/n/10 ) \FMS/futm/m/n/10 ^^81
  []
 
-[4] [5] [6] [7]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 388.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 388.
+[4] [5] [6]
+Missing character: There is no ） in font futr8t!
+ [7]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 389.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 389.
  ("Seminar 11-Adverse selection and moral hazard.aux")
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 388.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 388.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 389.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 389.
 Package rerunfilecheck Info: File `"Seminar 11-Adverse selection and moral haza
 rd".out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 388.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 389.
  ) 
 Here is how much of TeX's memory you used:
- 30972 strings out of 414493
- 589809 string characters out of 2902447
- 924436 words of memory out of 3000000
- 47555 multiletter control sequences out of 15000+200000
+ 30979 strings out of 414493
+ 590105 string characters out of 2902447
+ 924551 words of memory out of 3000000
+ 47556 multiletter control sequences out of 15000+200000
  606833 words of font info for 91 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
  60i,11n,91p,997b,454s stack positions out of 5000i,500n,10000p,200000b,50000s
