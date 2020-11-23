@@ -1,7 +1,7 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2020.8.31)  22 NOV 2020 10:49
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2020.8.31)  16 NOV 2020 20:22
 entering extended mode
-**"./Seminar 12-Auction and previous exam problems.tex"
-("Seminar 12-Auction and previous exam problems.tex"
+**"./Seminar 5-Production Theory.tex"
+("Seminar 5-Production Theory.tex"
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-08-07>
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -1447,8 +1447,9 @@ ls-angles.tex
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-obj
 -eu-triangles.tex
 2020/03/18 3.06c tkz-obj-eu-triangles.tex
-)) ("Seminar 12-Auction and previous exam problems.aux")
-\openout1 = `"Seminar 12-Auction and previous exam problems.aux"'.
+))
+No file "Seminar 5-Production Theory".aux.
+\openout1 = `"Seminar 5-Production Theory.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
 LaTeX Font Info:    ... okay on input line 26.
@@ -1461,7 +1462,6 @@ LaTeX Font Info:    ... okay on input line 26.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 2
 6.
-
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
@@ -1518,10 +1518,12 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 26.
 LaTeX Info: Redefining \pageref on input line 26.
 LaTeX Info: Redefining \nameref on input line 26.
- ("Seminar 12-Auction and previous exam problems.out")
-("Seminar 12-Auction and previous exam problems.out")
 \@outlinefile=\write4
-\openout4 = `"Seminar 12-Auction and previous exam problems.out"'.
+\openout4 = `"Seminar 5-Production Theory.out"'.
+
+
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
 
 LaTeX Font Info:    Redeclaring math accent \widehat on input line 26.
 LaTeX Font Info:    Redeclaring math accent \widetilde on input line 26.
@@ -1548,7 +1550,6 @@ Package gensymb Info: Using \textohm for \ohm on input line 26.
 Package gensymb Info: Using \textmu for \micro on input line 26.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-
 ABD: EveryShipout initializing macros
 LaTeX Font Info:    Trying to load font information for FML+futmi on input line
  29.
@@ -1596,30 +1597,6 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `futs' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 37.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 37.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 37.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 37.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 37.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 37.
-
-Overfull \hbox (3.93848pt too wide) detected at line 107
-[]
- []
-
-Missing character: There is no ， in font futr8t!
-Package mdframed Info: Box was splittet wrong
- starting loop to iterate the splitting point
-(mdframed)              on input line 148.
-Package mdframed Info: You first box width is to small
- mdframed fixed it
-(mdframed)              on input line 148.
 
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\se-asci
 i-print.def
@@ -1627,43 +1604,252 @@ File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
 
 ) [1
 
-] [2] [3] [4] [5] [6]
-File: ./pic/12.q2.png Graphic file (type bmp)
-<./pic/12.q2.png>
- [7]
-File: ./pic/12.q2_2.png Graphic file (type bmp)
-<./pic/12.q2_2.png>
-File: ./pic/12.q2_3.png Graphic file (type bmp)
-<./pic/12.q2_3.png>
- [8]
+]
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 1.
+(Font)              scaled to size 9.19998pt on input line 40.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.25598pt on input line 1.
+(Font)              scaled to size 6.99199pt on input line 40.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 40.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 1.
+(Font)              scaled to size 9.19998pt on input line 40.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.25598pt on input line 1.
- [9] [10] [11] [12]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 673.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 673.
+(Font)              scaled to size 6.99199pt on input line 40.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 5.51999pt on input line 40.
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 6
+0.
 
-("Seminar 12-Auction and previous exam problems.aux")
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 673.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 673.
-Package rerunfilecheck Info: File `"Seminar 12-Auction and previous exam proble
-ms".out' has not changed.
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmss.fd
+File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmss' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.25598pt on input line 60.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.25598pt on input line 60.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 6
+1.
+
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+[2
+
+]
+Overfull \hbox (2.10744pt too wide) in paragraph at lines 125--126
+[]\T1/futs/b/n/10 ASSUMPTION 3.1 Prop-er-ties of the Pro-duc-tion Func-tion \T1
+/futs/m/n/10 (Jehle & Reny pp.127) 
+ []
+
+Missing character: There is no ’ in font futr8t!
+
+Overfull \hbox (2.68239pt too wide) in paragraph at lines 140--141
+[]\T1/futs/b/n/10 Conditional in-put de-mand \T1/futs/m/n/10 is sim-i-lar to Hi
+ck-sian de-mands for con-sumers. 
+ []
+
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 176.
+[3
+
+]
+Overfull \hbox (15.33084pt too wide) in paragraph at lines 198--198
+[]\T1/futs/b/n/14.4 Another pro-duc-tion & cost func-tion ex-am-ple from exam
+ []
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 240.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (5.63615pt too wide) in paragraph at lines 239--240
+ [] 
+ []
+
+Missing character: There is no ∈ in font futr8t!
+[4]
+Overfull \hbox (3.07231pt too wide) in paragraph at lines 262--263
+[]\T1/futs/m/n/10 return to scale un-cer-tain, some-times in-crease, some-times
+ con-stant or de-crease. 
+ []
+
+[5]
+Package mdframed Info: Not enough space on this page on input line 345.
+ [6]
+Package mdframed Info: Not enough space on this page on input line 345.
+
+
+LaTeX Warning: Reference `eq:hydro_c' on page 7 undefined on input line 354.
+
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 404.
+[7]
+
+LaTeX Warning: Reference `eq:check1' on page 8 undefined on input line 431.
+
+
+LaTeX Warning: Reference `eq:check2' on page 8 undefined on input line 448.
+
+[8] [9]
+File: ./pic/5.convex.png Graphic file (type bmp)
+<./pic/5.convex.png>
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 530.
+See the caption package documentation for explanation.
+
+[10]
+
+LaTeX Warning: Reference `eq:E5' on page 11 undefined on input line 551.
+
+
+LaTeX Warning: Reference `eq:E6' on page 11 undefined on input line 551.
+
+[11]
+
+LaTeX Warning: Reference `eq:E5' on page 12 undefined on input line 587.
+
+
+LaTeX Warning: Reference `eq:E6' on page 12 undefined on input line 587.
+
+
+Overfull \hbox (59.77173pt too wide) detected at line 642
+[]
+ []
+
+[12]
+
+Package mdframed Warning: You got a bad break
+(mdframed)                because the last box will be empty
+(mdframed)                you have to change it manually
+(mdframed)                by changing the text, the space
+(mdframed)                or something else on input line 669.
+
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 669.
+[13]
+Missing character: There is no ﬁ in font futr8t!
+ [14]
+Missing character: There is no ﬁ in font futr8t!
+
+Overfull \hbox (5.13069pt too wide) in paragraph at lines 723--725
+[]\T1/futs/m/n/10 The con-clu-sion above is the same as the so-called "Own-pric
+e ef-fects" we have proved. 
+ []
+
+
+Overfull \hbox (43.79482pt too wide) in paragraph at lines 759--760
+[]\T1/futs/m/n/10 If $\FML/futmi/m/it/10 ^^Z \FMS/futm/m/n/10 2 \T1/futs/m/n/10
+ (0\FML/futmi/m/it/10 ; \T1/futs/m/n/10 1)\FML/futmi/m/it/10 ; ^^L \FMS/futm/m/
+n/10 ^^82 \T1/futs/m/n/10 0$, the pro-duc-tion func-tion doesn't make sense sin
+ce $[][] \FML/futmi/m/it/10 f\T1/futs/m/n/10 (\FML/futmi/m/it/10 x\T1/futs/m/n/
+10 ) \FMS/futm/m/n/10 ^^81
+ []
+
+[15] [16] [17]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 822.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathop' on input line 822.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\mathgroup' on input line 822.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\symoperators' on input line 822.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\nmlimits@' on input line 822.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 822.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 822.
+
+[18]
+
+LaTeX Warning: Reference `eq:check1' on page 19 undefined on input line 859.
+
+
+LaTeX Warning: Reference `eq:E5' on page 19 undefined on input line 859.
+
+
+LaTeX Warning: Reference `eq:check2' on page 19 undefined on input line 879.
+
+
+LaTeX Warning: Reference `eq:E7' on page 19 undefined on input line 879.
+
+
+LaTeX Warning: Reference `fig:soc' on page 19 undefined on input line 899.
+
+File: ./pic/5.soc.png Graphic file (type bmp)
+<./pic/5.soc.png>
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 904.
+See the caption package documentation for explanation.
+
+File: ./pic/5.mc.png Graphic file (type bmp)
+<./pic/5.mc.png>
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 935.
+See the caption package documentation for explanation.
+
+[19] [20]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 969.
+See the caption package documentation for explanation.
+
+[21] [22]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 976.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 976.
+ ("Seminar 5-Production Theory.aux")
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 976.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 976.
+Package rerunfilecheck Info: File `"Seminar 5-Production Theory".out' has not c
+hanged.
 (rerunfilecheck)             Checksum: <no file>.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 673.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 976.
  ) 
 Here is how much of TeX's memory you used:
- 31353 strings out of 414493
- 596897 string characters out of 2902447
- 954845 words of memory out of 3000000
- 47916 multiletter control sequences out of 15000+200000
- 642684 words of font info for 128 fonts, out of 3000000 for 9000
+ 31279 strings out of 414493
+ 594927 string characters out of 2902447
+ 935364 words of memory out of 3000000
+ 47841 multiletter control sequences out of 15000+200000
+ 624864 words of font info for 104 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 60i,14n,91p,997b,1506s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,16n,91p,979b,965s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Seminar 12-Auction and previous exam problems.pdf (12 pages).
-
+Output written on Seminar 5-Production Theory.pdf (22 pages).

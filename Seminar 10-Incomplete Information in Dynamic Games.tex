@@ -30,7 +30,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Problem 1 - Screening and signaling}
 
-Consider again the strategic situation described in Problem 1 of the set for the nineth seminar, 
+Consider again the strategic situation described in Problem 1 of the exercise set for the nineth seminar, 
 
 \begin{center}
 Game $1$ \vspace{6pt}
@@ -132,7 +132,7 @@ edge from parent node [midway, above, sloped] (TextNode) {Game 1}
 
 Player 1 acts contingently; Player 2 acts according to the expected payoff based on some belief $(\tfrac12,\tfrac12)$; 
 \begin{itemize}
-\item Note: use backward induction method to calculate player 2's expected payoff (payoff in blue)
+\item Use backward induction method to firstly determin how player 1 will react (in blue) and then calculate player 2's expected payoff.
 \item We can also find when Game 2 is played, for player 1, $D'$ dominates $U'$
 \end{itemize}
 
@@ -169,6 +169,19 @@ Therefore there is only one SPNE:
 
 \{(For player 1) In Game 1: $D$ after $L$, $U$ after $R$. In Game 2, $D'$ after $L$, $D'$ after $R$ ; (For player 2) $L$\}
 
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+Compare the question with the \href{https://www.uio.no/studier/emner/sv/oekonomi/ECON4220/previous-exams/econ32_4220_2019h_sensorveiledning.pdf}{2019 exam problem 2(e)}. 
+
+\medskip
+
+Don't get tricked when the question says ``$U$ acts before $I$" but ``$U$ can choose between the four strategies $CC'$, $CE'$, 
+$EC'$ and $EE'$ ''
+
+\medskip
+
+In the question, $U$'s strategy is like an agreement, which is passive and can only be activated by the choice of $I$; while only $I$ has contingent strategy.
+
+\end{mdframed}
 
 \subsection*{(b) Signaling} Assume now that player 1 acts before player 2, and that 1's choice can be observed by 2 before she makes her choice. Show that there is a unique separating perfect Bayesian equilibrium.
 
@@ -179,7 +192,7 @@ Signaling: Player \textbf{with} private information moves first $\Rightarrow$
 Player 2 can observe and infer the "type" of player 1.
 
 \begin{itemize}
-\item Both players have contingent strategy (Geir prefers not to distinguish player 2's contingent strategy)
+\item Both players have contingent strategy (Geir prefers not to distinguish player 2's contingent strategy in notation)
 \item Player 2 observes $U/U'$ or $D/D'$ $\Rightarrow$ updates belief ($p\&q$) $\Rightarrow$ choose between $L$ and $R$
 \end{itemize}
 
@@ -188,6 +201,8 @@ Player 2 can observe and infer the "type" of player 1.
 \item $Pr(\text{Game1} | U/U') = p$
 \item $Pr(\text{Game1} | D/D') = q$
 \end{itemize}
+
+
 
 \begin{tikzpicture}[scale=1.4,font=\footnotesize]
 \tikzset{
@@ -235,7 +250,7 @@ edge from parent node [right]{$\tfrac12$} node[midway, below, sloped] (TextNode)
 \draw [dashed] (3) -- (4) node [midway, above, sloped, red] (TextNode) {Player 2};
 \end{tikzpicture}
 
-Note that for player 1, when Game 2 is played, $U'$ dominates $D'$. Therefore player 1 can 
+Note that for player 1, when Game 2 is played, $D'$ dominates $U'$. Therefore player 1 can 
 only have 2 possible strategies: $UD'$ (if separating) and $DD'$(if pooling).
 
 \medskip
@@ -254,7 +269,7 @@ and the BR of player 2 is $RR'$.
 
 \medskip
 
-Will player 1 deviate from $U$ to $D$ if Game 1 is played? No, if player 1
+\textbf{Will player 1 deviate from $U$ to $D$ if Game 1 is played? }No, if player 1
 deviates to $D$, according to player 2's belief (player 2 believes Game 2 is played and thus chooses $R'$), the payoff is $(0,8)$, lower than $(4,2)$ if not deviate.
 
 \medskip
@@ -296,7 +311,7 @@ Player 2's BR is $R'$.
 
 \medskip
 
-Will player 1 deviate from $D$ to $U$ if Game 1 is played? It depends on what player 2 will do if the "surprise" shows up.
+\textbf{Will player 1 deviate from $D$ to $U$ if Game 1 is played?} It depends on what player 2 will do if the "surprise" shows up.
 
 \medskip
 
@@ -320,7 +335,7 @@ The pooling PBE is:
 
 $$\{DD', LR', p \le \tfrac12, q = \tfrac12\}$$
 
-However, this PBE is not realistic. Since player 2 knows clearly that if Game 2 is played, $U'$ will never be chosen by player 1. Therefore $1-p = 0, p =1 \ge \tfrac12$.
+\textbf{However, this PBE is not realistic}. Since player 2 knows clearly that if Game 2 is played, $U'$ will never be chosen by player 1. Therefore $1-p = 0, p =1 \ge \tfrac12$.
 
 \medskip
 
@@ -339,7 +354,7 @@ Important. Be careful about the order of payoff, who is player 1 and who is play
 \end{mdframed}
 
 From the extensive form we can see $D'$ dominates $U'$.
-Therefore there can only be one PBE where player 1's strategy is $UD'$
+Therefore there can only be one separating PBE where player 1's strategy is $UD'$
 
 (2) Denote the updated belief of player 2:
 \begin{itemize}
@@ -352,10 +367,6 @@ $RR'$. Therefore the PBE is
 
 $$\{UD',RR',p=1,q=0\}$$
 
-
-\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
-Compare the question with \href{https://www.uio.no/studier/emner/sv/oekonomi/ECON4220/previous-exams/econ32_4220_2019h_sensorveiledning.pdf}{Question 2(d)} in Exam 2019. The (initial) probability of types is not necessary to be known to claim there is PBE.
-\end{mdframed}
 
 \section{Problem 2 - Sequential moves and incomplete information; Perfect
 Bayesian equilibrium}
@@ -554,6 +565,9 @@ $AF'$. Therefore the PBE is
 
 $$\{PU',AF',p=1,q=0\}$$
 
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+Will the challenger deviate?
+\end{mdframed}
 
 \subsection*{(d) Pooling}Show that there is a perfect Bayesian equilibrium where the strong challenger chooses
 \textit{Unprepared} and the weak challenger chooses \textit{Unprepared}$'$. What do we call such an

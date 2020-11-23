@@ -1,7 +1,7 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2020.8.31)  22 NOV 2020 10:49
+This is XeTeX, Version 3.14159265-2.6-0.999992 (MiKTeX 20.7) (preloaded format=xelatex 2020.8.31)  16 NOV 2020 20:21
 entering extended mode
-**"./Seminar 12-Auction and previous exam problems.tex"
-("Seminar 12-Auction and previous exam problems.tex"
+**"./Seminar 1-Preference and Marshallian demand function.tex"
+("Seminar 1-Preference and Marshallian demand function.tex"
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-08-07>
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -247,79 +247,36 @@ File: xetex.def 2017/06/24 v5.0h Graphics/color driver for xetex
 \Gin@req@height=\dimen140
 \Gin@req@width=\dimen141
 )
-(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.sty
-Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
-\c@tracingmulticols=\count186
-\mult@box=\box46
-\multicol@leftmargin=\dimen142
-\c@unbalance=\count187
-\c@collectmore=\count188
-\doublecol@number=\count189
-\multicoltolerance=\count190
-\multicolpretolerance=\count191
-\full@width=\dimen143
-\page@free=\dimen144
-\premulticols=\dimen145
-\postmulticols=\dimen146
-\multicolsep=\skip50
-\multicolbaselineskip=\skip51
-\partial@page=\box47
-\last@line=\box48
-\maxbalancingoverflow=\dimen147
-\mult@rightbox=\box49
-\mult@grightbox=\box50
-\mult@gfirstbox=\box51
-\mult@firstbox=\box52
-\@tempa=\box53
-\@tempa=\box54
-\@tempa=\box55
-\@tempa=\box56
-\@tempa=\box57
-\@tempa=\box58
-\@tempa=\box59
-\@tempa=\box60
-\@tempa=\box61
-\@tempa=\box62
-\@tempa=\box63
-\@tempa=\box64
-\@tempa=\box65
-\@tempa=\box66
-\@tempa=\box67
-\@tempa=\box68
-\@tempa=\box69
-\@tempa=\box70
-\@tempa=\box71
-\@tempa=\box72
-\@tempa=\box73
-\@tempa=\box74
-\@tempa=\box75
-\@tempa=\box76
-\@tempa=\box77
-\@tempa=\box78
-\@tempa=\box79
-\@tempa=\box80
-\@tempa=\box81
-\@tempa=\box82
-\@tempa=\box83
-\@tempa=\box84
-\@tempa=\box85
-\@tempa=\box86
-\@tempa=\box87
-\@tempa=\box88
-\@tempa=\box89
-\c@minrows=\count192
-\c@columnbadness=\count193
-\c@finalcolumnbadness=\count194
-\last@try=\dimen148
-\multicolovershoot=\dimen149
-\multicolundershoot=\dimen150
-\mult@nat@firstbox=\box90
-\colbreak@box=\box91
-\mc@col@check@num=\count195
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tablefootnote\table
+footnote.sty
+Package: tablefootnote 2014/01/26 v1.1c Table foot notes (HMM)
+
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/xifthen\xifthen.sty
+Package: xifthen 2015/11/05 v1.4.0 Extended ifthen features
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count186
+\calc@Bcount=\count187
+\calc@Adimen=\dimen142
+\calc@Bdimen=\dimen143
+\calc@Askip=\skip50
+\calc@Bskip=\skip51
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count188
+\calc@Cskip=\skip52
 )
-(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
-Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/ifmtarg\ifmtarg.sty
+Package: ifmtarg 2018/04/16 v1.2b check for an empty argument
+))
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.s
+ty
+Package: etoolbox 2020/08/24 v2.5j e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count189
+))
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fourier.sty
 Package: fourier 2020/03/03 2.2 fourier-GUTenberg package
 
@@ -484,11 +441,11 @@ LaTeX Font Info:    Redeclaring math symbol \hslash on input line 262.
 .sty
 Package: microtype 2019/11/18 v2.7d Micro-typographical refinements (RS)
 \MT@toks=\toks19
-\MT@count=\count196
+\MT@count=\count190
 LaTeX Info: Redefining \textls on input line 790.
-\MT@outer@kern=\dimen151
+\MT@outer@kern=\dimen144
 LaTeX Info: Redefining \textmicrotypecontext on input line 1354.
-\MT@listname@count=\count197
+\MT@listname@count=\count191
 
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/microtype\microtype
 -xetex.def
@@ -503,7 +460,7 @@ File: microtype.cfg 2019/11/18 v2.7d microtype main configuration file (RS)
 ))
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2020/01/20 v2.17e AMS math features
-\@mathmargin=\skip52
+\@mathmargin=\skip53
 For additional information on amsmath, use the `?' option.
 
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
@@ -511,49 +468,49 @@ Package: amstext 2000/06/29 v2.01 AMS text
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks20
-\ex@=\dimen152
+\ex@=\dimen145
 ))
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen153
+\pmbraise@=\dimen146
 ) (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.st
 y
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count198
+\inf@bad=\count192
 LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count199
-\leftroot@=\count266
+\uproot@=\count193
+\leftroot@=\count194
 LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count267
-\DOTSCASE@=\count268
+\classnum@=\count195
+\DOTSCASE@=\count196
 LaTeX Info: Redefining \ldots on input line 486.
 LaTeX Info: Redefining \dots on input line 489.
 LaTeX Info: Redefining \cdots on input line 610.
-\Mathstrutbox@=\box92
-\strutbox@=\box93
-\big@size=\dimen154
+\Mathstrutbox@=\box46
+\strutbox@=\box47
+\big@size=\dimen147
 LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count269
-\c@MaxMatrixCols=\count270
+\macc@depth=\count197
+\c@MaxMatrixCols=\count198
 \dotsspace@=\muskip17
-\c@parentequation=\count271
-\dspbrk@lvl=\count272
+\c@parentequation=\count199
+\dspbrk@lvl=\count266
 \tag@help=\toks21
-\row@=\count273
-\column@=\count274
-\maxfields@=\count275
+\row@=\count267
+\column@=\count268
+\maxfields@=\count269
 \andhelp@=\toks22
-\eqnshift@=\dimen155
-\alignsep@=\dimen156
-\tagshift@=\dimen157
-\tagwidth@=\dimen158
-\totwidth@=\dimen159
-\lineht@=\dimen160
+\eqnshift@=\dimen148
+\alignsep@=\dimen149
+\tagshift@=\dimen150
+\tagwidth@=\dimen151
+\totwidth@=\dimen152
+\lineht@=\dimen153
 \@envbody=\toks23
-\multlinegap=\skip53
-\multlinetaggap=\skip54
+\multlinegap=\skip54
+\multlinetaggap=\skip55
 \mathdisplay@stack=\toks24
 LaTeX Info: Redefining \[ on input line 2859.
 LaTeX Info: Redefining \] on input line 2860.
@@ -572,25 +529,20 @@ Package: expl3 2020-08-07 L3 programming layer (loader)
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend
 -xdvipdfmx.def
 File: l3backend-xdvipdfmx.def 2020-08-07 L3 backend support: xdvipdfmx
-\g__graphics_track_int=\count276
-\l__pdf_internal_box=\box94
-\g__pdf_backend_object_int=\count277
-\g__pdf_backend_annotation_int=\count278
+\g__graphics_track_int=\count270
+\l__pdf_internal_box=\box48
+\g__pdf_backend_object_int=\count271
+\g__pdf_backend_annotation_int=\count272
 ))
 Package: xparse 2020-05-15 L3 Experimental document command parser
 
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\x
 parse-generic.tex
-\l__xparse_current_arg_int=\count279
-\g__xparse_grabber_int=\count280
-\l__xparse_m_args_int=\count281
-\l__xparse_v_nesting_int=\count282
+\l__xparse_current_arg_int=\count273
+\g__xparse_grabber_int=\count274
+\l__xparse_m_args_int=\count275
+\l__xparse_v_nesting_int=\count276
 ))
-(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.s
-ty
-Package: etoolbox 2020/08/24 v2.5j e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count283
-)
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/zref\zref-abspage.s
 ty
 Package: zref-abspage 2020-05-28 v2.31 Module abspage for zref (HO)
@@ -601,7 +553,7 @@ Package zref Info: New property list: main on input line 763.
 Package zref Info: New property: default on input line 764.
 Package zref Info: New property: page on input line 765.
 )
-\c@abspage=\count284
+\c@abspage=\count277
 Package zref Info: New property: abspage on input line 66.
 )
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/needspace\needspace
@@ -617,94 +569,94 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: xetex.def on input line 147.
 )
-\mdf@templength=\skip55
-\c@mdf@globalstyle@cnt=\count285
-\mdf@skipabove@length=\skip56
-\mdf@skipbelow@length=\skip57
-\mdf@leftmargin@length=\skip58
-\mdf@rightmargin@length=\skip59
-\mdf@innerleftmargin@length=\skip60
-\mdf@innerrightmargin@length=\skip61
-\mdf@innertopmargin@length=\skip62
-\mdf@innerbottommargin@length=\skip63
-\mdf@splittopskip@length=\skip64
-\mdf@splitbottomskip@length=\skip65
-\mdf@outermargin@length=\skip66
-\mdf@innermargin@length=\skip67
-\mdf@linewidth@length=\skip68
-\mdf@innerlinewidth@length=\skip69
-\mdf@middlelinewidth@length=\skip70
-\mdf@outerlinewidth@length=\skip71
-\mdf@roundcorner@length=\skip72
-\mdf@footenotedistance@length=\skip73
-\mdf@userdefinedwidth@length=\skip74
-\mdf@needspace@length=\skip75
-\mdf@frametitleaboveskip@length=\skip76
-\mdf@frametitlebelowskip@length=\skip77
-\mdf@frametitlerulewidth@length=\skip78
-\mdf@frametitleleftmargin@length=\skip79
-\mdf@frametitlerightmargin@length=\skip80
-\mdf@shadowsize@length=\skip81
-\mdf@extratopheight@length=\skip82
-\mdf@subtitleabovelinewidth@length=\skip83
-\mdf@subtitlebelowlinewidth@length=\skip84
-\mdf@subtitleaboveskip@length=\skip85
-\mdf@subtitlebelowskip@length=\skip86
-\mdf@subtitleinneraboveskip@length=\skip87
-\mdf@subtitleinnerbelowskip@length=\skip88
-\mdf@subsubtitleabovelinewidth@length=\skip89
-\mdf@subsubtitlebelowlinewidth@length=\skip90
-\mdf@subsubtitleaboveskip@length=\skip91
-\mdf@subsubtitlebelowskip@length=\skip92
-\mdf@subsubtitleinneraboveskip@length=\skip93
-\mdf@subsubtitleinnerbelowskip@length=\skip94
+\mdf@templength=\skip56
+\c@mdf@globalstyle@cnt=\count278
+\mdf@skipabove@length=\skip57
+\mdf@skipbelow@length=\skip58
+\mdf@leftmargin@length=\skip59
+\mdf@rightmargin@length=\skip60
+\mdf@innerleftmargin@length=\skip61
+\mdf@innerrightmargin@length=\skip62
+\mdf@innertopmargin@length=\skip63
+\mdf@innerbottommargin@length=\skip64
+\mdf@splittopskip@length=\skip65
+\mdf@splitbottomskip@length=\skip66
+\mdf@outermargin@length=\skip67
+\mdf@innermargin@length=\skip68
+\mdf@linewidth@length=\skip69
+\mdf@innerlinewidth@length=\skip70
+\mdf@middlelinewidth@length=\skip71
+\mdf@outerlinewidth@length=\skip72
+\mdf@roundcorner@length=\skip73
+\mdf@footenotedistance@length=\skip74
+\mdf@userdefinedwidth@length=\skip75
+\mdf@needspace@length=\skip76
+\mdf@frametitleaboveskip@length=\skip77
+\mdf@frametitlebelowskip@length=\skip78
+\mdf@frametitlerulewidth@length=\skip79
+\mdf@frametitleleftmargin@length=\skip80
+\mdf@frametitlerightmargin@length=\skip81
+\mdf@shadowsize@length=\skip82
+\mdf@extratopheight@length=\skip83
+\mdf@subtitleabovelinewidth@length=\skip84
+\mdf@subtitlebelowlinewidth@length=\skip85
+\mdf@subtitleaboveskip@length=\skip86
+\mdf@subtitlebelowskip@length=\skip87
+\mdf@subtitleinneraboveskip@length=\skip88
+\mdf@subtitleinnerbelowskip@length=\skip89
+\mdf@subsubtitleabovelinewidth@length=\skip90
+\mdf@subsubtitlebelowlinewidth@length=\skip91
+\mdf@subsubtitleaboveskip@length=\skip92
+\mdf@subsubtitlebelowskip@length=\skip93
+\mdf@subsubtitleinneraboveskip@length=\skip94
+\mdf@subsubtitleinnerbelowskip@length=\skip95
 
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/mdframed\md-frame-0
 .mdf
 File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 )
-\mdf@frametitlebox=\box95
-\mdf@footnotebox=\box96
-\mdf@splitbox@one=\box97
-\mdf@splitbox@two=\box98
-\mdf@splitbox@save=\box99
-\mdfsplitboxwidth=\skip95
-\mdfsplitboxtotalwidth=\skip96
-\mdfsplitboxheight=\skip97
-\mdfsplitboxdepth=\skip98
-\mdfsplitboxtotalheight=\skip99
-\mdfframetitleboxwidth=\skip100
-\mdfframetitleboxtotalwidth=\skip101
-\mdfframetitleboxheight=\skip102
-\mdfframetitleboxdepth=\skip103
-\mdfframetitleboxtotalheight=\skip104
-\mdffootnoteboxwidth=\skip105
-\mdffootnoteboxtotalwidth=\skip106
-\mdffootnoteboxheight=\skip107
-\mdffootnoteboxdepth=\skip108
-\mdffootnoteboxtotalheight=\skip109
-\mdftotallinewidth=\skip110
-\mdfboundingboxwidth=\skip111
-\mdfboundingboxtotalwidth=\skip112
-\mdfboundingboxheight=\skip113
-\mdfboundingboxdepth=\skip114
-\mdfboundingboxtotalheight=\skip115
-\mdf@freevspace@length=\skip116
-\mdf@horizontalwidthofbox@length=\skip117
-\mdf@verticalmarginwhole@length=\skip118
-\mdf@horizontalspaceofbox=\skip119
-\mdfsubtitleheight=\skip120
-\mdfsubsubtitleheight=\skip121
-\c@mdfcountframes=\count286
+\mdf@frametitlebox=\box49
+\mdf@footnotebox=\box50
+\mdf@splitbox@one=\box51
+\mdf@splitbox@two=\box52
+\mdf@splitbox@save=\box53
+\mdfsplitboxwidth=\skip96
+\mdfsplitboxtotalwidth=\skip97
+\mdfsplitboxheight=\skip98
+\mdfsplitboxdepth=\skip99
+\mdfsplitboxtotalheight=\skip100
+\mdfframetitleboxwidth=\skip101
+\mdfframetitleboxtotalwidth=\skip102
+\mdfframetitleboxheight=\skip103
+\mdfframetitleboxdepth=\skip104
+\mdfframetitleboxtotalheight=\skip105
+\mdffootnoteboxwidth=\skip106
+\mdffootnoteboxtotalwidth=\skip107
+\mdffootnoteboxheight=\skip108
+\mdffootnoteboxdepth=\skip109
+\mdffootnoteboxtotalheight=\skip110
+\mdftotallinewidth=\skip111
+\mdfboundingboxwidth=\skip112
+\mdfboundingboxtotalwidth=\skip113
+\mdfboundingboxheight=\skip114
+\mdfboundingboxdepth=\skip115
+\mdfboundingboxtotalheight=\skip116
+\mdf@freevspace@length=\skip117
+\mdf@horizontalwidthofbox@length=\skip118
+\mdf@verticalmarginwhole@length=\skip119
+\mdf@horizontalspaceofbox=\skip120
+\mdfsubtitleheight=\skip121
+\mdfsubsubtitleheight=\skip122
+\c@mdfcountframes=\count279
 
 ****** mdframed patching \endmdf@trivlist
 
 ****** -- success******
 
-\mdf@envdepth=\count287
-\c@mdf@env@i=\count288
-\c@mdf@env@ii=\count289
-\c@mdf@zref@counter=\count290
+\mdf@envdepth=\count280
+\c@mdf@env@i=\count281
+\c@mdf@env@ii=\count282
+\c@mdf@zref@counter=\count283
 Package zref Info: New property: mdf@pagevalue on input line 895.
 )
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
@@ -714,17 +666,17 @@ Package: caption 2020/05/30 v3.4k Customizing captions (AR)
 y
 Package: caption3 2020/07/20 v1.12b caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 61.
-\captionmargin=\dimen161
-\captionmargin@=\dimen162
-\captionwidth=\dimen163
-\caption@tempdima=\dimen164
-\caption@indent=\dimen165
-\caption@parindent=\dimen166
-\caption@hangindent=\dimen167
+\captionmargin=\dimen154
+\captionmargin@=\dimen155
+\captionwidth=\dimen156
+\caption@tempdima=\dimen157
+\caption@indent=\dimen158
+\caption@parindent=\dimen159
+\caption@hangindent=\dimen160
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count291
-\c@continuedfloat=\count292
+\c@caption@flags=\count284
+\c@continuedfloat=\count285
 Package caption Info: hyperref package is loaded.
 )
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
@@ -754,14 +706,14 @@ s.sty
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgf
 util-common.tex
 \pgfutil@everybye=\toks25
-\pgfutil@tempdima=\dimen168
-\pgfutil@tempdimb=\dimen169
+\pgfutil@tempdima=\dimen161
+\pgfutil@tempdimb=\dimen162
 
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgf
 util-common-lists.tex))
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgf
 util-latex.def
-\pgfutil@abb=\box100
+\pgfutil@abb=\box54
 
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/ms\everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
@@ -791,26 +743,26 @@ keys.code.tex
 keysfiltered.code.tex
 \pgfkeys@tmptoks=\toks28
 ))
-\pgf@x=\dimen170
-\pgf@y=\dimen171
-\pgf@xa=\dimen172
-\pgf@ya=\dimen173
-\pgf@xb=\dimen174
-\pgf@yb=\dimen175
-\pgf@xc=\dimen176
-\pgf@yc=\dimen177
-\pgf@xd=\dimen178
-\pgf@yd=\dimen179
+\pgf@x=\dimen163
+\pgf@y=\dimen164
+\pgf@xa=\dimen165
+\pgf@ya=\dimen166
+\pgf@xb=\dimen167
+\pgf@yb=\dimen168
+\pgf@xc=\dimen169
+\pgf@yc=\dimen170
+\pgf@xd=\dimen171
+\pgf@yd=\dimen172
 \w@pgf@writea=\write3
 \r@pgf@reada=\read3
-\c@pgf@counta=\count293
-\c@pgf@countb=\count294
-\c@pgf@countc=\count295
-\c@pgf@countd=\count296
+\c@pgf@counta=\count286
+\c@pgf@countb=\count287
+\c@pgf@countc=\count288
+\c@pgf@countd=\count289
 \t@pgf@toka=\toks29
 \t@pgf@tokb=\toks30
 \t@pgf@tokc=\toks31
-\pgf@sys@id@count=\count297
+\pgf@sys@id@count=\count290
 
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\p
 gf.cfg
@@ -830,13 +782,13 @@ File: pgfsys-dvipdfmx.def 2020/01/08 v3.1.5b (3.1.5b)
 gfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2020/01/08 v3.1.5b (3.1.5b)
 )
-\pgfsys@objnum=\count298
+\pgfsys@objnum=\count291
 )))
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\p
 gfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfsyssoftpath@smallbuffer@items=\count299
-\pgfsyssoftpath@bigbuffer@items=\count300
+\pgfsyssoftpath@smallbuffer@items=\count292
+\pgfsyssoftpath@bigbuffer@items=\count293
 )
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\p
 gfsysprotocol.code.tex
@@ -854,9 +806,9 @@ alc.code.tex
 til.code.tex)
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathp
 arser.code.tex
-\pgfmath@dimen=\dimen180
-\pgfmath@count=\count301
-\pgfmath@box=\box101
+\pgfmath@dimen=\dimen173
+\pgfmath@count=\count294
+\pgfmath@box=\box55
 \pgfmath@toks=\toks32
 \pgfmath@stack@operand=\toks33
 \pgfmath@stack@operation=\toks34
@@ -881,59 +833,59 @@ unctions.misc.code.tex)
 unctions.integerarithmetics.code.tex)))
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathf
 loat.code.tex
-\c@pgfmathroundto@lastzeros=\count302
+\c@pgfmathroundto@lastzeros=\count295
 ))
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.c
 ode.tex)
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
 fcorepoints.code.tex
 File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@picminx=\dimen181
-\pgf@picmaxx=\dimen182
-\pgf@picminy=\dimen183
-\pgf@picmaxy=\dimen184
-\pgf@pathminx=\dimen185
-\pgf@pathmaxx=\dimen186
-\pgf@pathminy=\dimen187
-\pgf@pathmaxy=\dimen188
-\pgf@xx=\dimen189
-\pgf@xy=\dimen190
-\pgf@yx=\dimen191
-\pgf@yy=\dimen192
-\pgf@zx=\dimen193
-\pgf@zy=\dimen194
+\pgf@picminx=\dimen174
+\pgf@picmaxx=\dimen175
+\pgf@picminy=\dimen176
+\pgf@picmaxy=\dimen177
+\pgf@pathminx=\dimen178
+\pgf@pathmaxx=\dimen179
+\pgf@pathminy=\dimen180
+\pgf@pathmaxy=\dimen181
+\pgf@xx=\dimen182
+\pgf@xy=\dimen183
+\pgf@yx=\dimen184
+\pgf@yy=\dimen185
+\pgf@zx=\dimen186
+\pgf@zy=\dimen187
 )
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
 fcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@path@lastx=\dimen195
-\pgf@path@lasty=\dimen196
+\pgf@path@lastx=\dimen188
+\pgf@path@lasty=\dimen189
 )
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
 fcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@shorten@end@additional=\dimen197
-\pgf@shorten@start@additional=\dimen198
+\pgf@shorten@end@additional=\dimen190
+\pgf@shorten@start@additional=\dimen191
 )
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
 fcorescopes.code.tex
 File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfpic=\box102
-\pgf@hbox=\box103
-\pgf@layerbox@main=\box104
-\pgf@picture@serial@count=\count303
+\pgfpic=\box56
+\pgf@hbox=\box57
+\pgf@layerbox@main=\box58
+\pgf@picture@serial@count=\count296
 )
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
 fcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgflinewidth=\dimen199
+\pgflinewidth=\dimen192
 )
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
 fcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@pt@x=\dimen256
-\pgf@pt@y=\dimen257
-\pgf@pt@temp=\dimen258
+\pgf@pt@x=\dimen193
+\pgf@pt@y=\dimen194
+\pgf@pt@temp=\dimen195
 )
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
 fcorequick.code.tex
@@ -950,14 +902,14 @@ File: pgfcorepathprocessing.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
 fcorearrows.code.tex
 File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfarrowsep=\dimen259
+\pgfarrowsep=\dimen196
 )
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
 fcoreshade.code.tex
 File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@max=\dimen260
-\pgf@sys@shading@range@num=\count304
-\pgf@shadingcount=\count305
+\pgf@max=\dimen197
+\pgf@sys@shading@range@num=\count297
+\pgf@shadingcount=\count298
 )
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
 fcoreimage.code.tex
@@ -966,7 +918,7 @@ File: pgfcoreimage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
 fcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfexternal@startupbox=\box105
+\pgfexternal@startupbox=\box59
 ))
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pg
 fcorelayers.code.tex
@@ -987,7 +939,7 @@ File: pgfcorerdf.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmo
 duleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfnodeparttextbox=\box106
+\pgfnodeparttextbox=\box60
 )
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmo
 duleplot.code.tex
@@ -996,8 +948,8 @@ File: pgfmoduleplot.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\p
 gfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@nodesepstart=\dimen261
-\pgf@nodesepend=\dimen262
+\pgf@nodesepstart=\dimen198
+\pgf@nodesepend=\dimen199
 )
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\p
 gfcomp-version-1-18.sty
@@ -1019,8 +971,8 @@ Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
 
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.
 code.tex)
-\pgffor@iter=\dimen263
-\pgffor@skip=\dimen264
+\pgffor@iter=\dimen256
+\pgffor@skip=\dimen257
 \pgffor@stack=\toks35
 \pgffor@toks=\toks36
 ))
@@ -1031,34 +983,34 @@ Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgf
 libraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgf@plot@mark@count=\count306
-\pgfplotmarksize=\dimen265
+\pgf@plot@mark@count=\count299
+\pgfplotmarksize=\dimen258
 )
-\tikz@lastx=\dimen266
-\tikz@lasty=\dimen267
-\tikz@lastxsaved=\dimen268
-\tikz@lastysaved=\dimen269
-\tikz@lastmovetox=\dimen270
-\tikz@lastmovetoy=\dimen271
-\tikzleveldistance=\dimen272
-\tikzsiblingdistance=\dimen273
-\tikz@figbox=\box107
-\tikz@figbox@bg=\box108
-\tikz@tempbox=\box109
-\tikz@tempbox@bg=\box110
-\tikztreelevel=\count307
-\tikznumberofchildren=\count308
-\tikznumberofcurrentchild=\count309
-\tikz@fig@count=\count310
+\tikz@lastx=\dimen259
+\tikz@lasty=\dimen260
+\tikz@lastxsaved=\dimen261
+\tikz@lastysaved=\dimen262
+\tikz@lastmovetox=\dimen263
+\tikz@lastmovetoy=\dimen264
+\tikzleveldistance=\dimen265
+\tikzsiblingdistance=\dimen266
+\tikz@figbox=\box61
+\tikz@figbox@bg=\box62
+\tikz@tempbox=\box63
+\tikz@tempbox@bg=\box64
+\tikztreelevel=\count300
+\tikznumberofchildren=\count301
+\tikznumberofcurrentchild=\count302
+\tikz@fig@count=\count303
 
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmo
 dulematrix.code.tex
 File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfmatrixcurrentrow=\count311
-\pgfmatrixcurrentcolumn=\count312
-\pgf@matrix@numberofcolumns=\count313
+\pgfmatrixcurrentrow=\count304
+\pgfmatrixcurrentcolumn=\count305
+\pgf@matrix@numberofcolumns=\count306
 )
-\tikz@expandcount=\count314
+\tikz@expandcount=\count307
 
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer
 /tikz/libraries\tikzlibrarytopaths.code.tex
@@ -1085,15 +1037,15 @@ File: tikzlibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgf
 libraryarrows.code.tex
 File: pgflibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\arrowsize=\dimen274
+\arrowsize=\dimen267
 ))
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgf
 libraryarrows.meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2020/01/08 v3.1.5b (3.1.5b)
-\pgfarrowinset=\dimen275
-\pgfarrowlength=\dimen276
-\pgfarrowwidth=\dimen277
-\pgfarrowlinewidth=\dimen278
+\pgfarrowinset=\dimen268
+\pgfarrowlength=\dimen269
+\pgfarrowwidth=\dimen270
+\pgfarrowlinewidth=\dimen271
 )
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer
 /tikz/libraries\tikzlibrarybabel.code.tex
@@ -1107,16 +1059,16 @@ File: tikzlibrarycalc.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 /tikz/libraries\tikzlibrarydecorations.code.tex
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmo
 duledecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen279
-\pgfdecoratedremainingdistance=\dimen280
-\pgfdecoratedinputsegmentcompleteddistance=\dimen281
-\pgfdecoratedinputsegmentremainingdistance=\dimen282
-\pgf@decorate@distancetomove=\dimen283
-\pgf@decorate@repeatstate=\count315
-\pgfdecorationsegmentamplitude=\dimen284
-\pgfdecorationsegmentlength=\dimen285
+\pgfdecoratedcompleteddistance=\dimen272
+\pgfdecoratedremainingdistance=\dimen273
+\pgfdecoratedinputsegmentcompleteddistance=\dimen274
+\pgfdecoratedinputsegmentremainingdistance=\dimen275
+\pgf@decorate@distancetomove=\dimen276
+\pgf@decorate@repeatstate=\count308
+\pgfdecorationsegmentamplitude=\dimen277
+\pgfdecorationsegmentlength=\dimen278
 )
-\tikz@lib@dec@box=\box111
+\tikz@lib@dec@box=\box65
 )
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer
 /tikz/libraries\tikzlibrarydecorations.markings.code.tex
@@ -1134,9 +1086,9 @@ orations\pgflibrarydecorations.shapes.code.tex))
 /tikz/libraries\tikzlibrarydecorations.text.code.tex
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/dec
 orations\pgflibrarydecorations.text.code.tex
-\pgf@lib@dec@text@box=\box112
+\pgf@lib@dec@text@box=\box66
 )
-\tikz@lib@dec@te@box=\box113
+\tikz@lib@dec@te@box=\box67
 )
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer
 /tikz/libraries\tikzlibrarydecorations.pathmorphing.code.tex
@@ -1148,7 +1100,7 @@ orations\pgflibrarydecorations.pathmorphing.code.tex))
 libraryintersections.code.tex
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgf
 libraryfpu.code.tex)
-\pgf@intersect@solutions=\count316
+\pgf@intersect@solutions=\count309
 ))
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer
 /tikz/libraries\tikzlibrarypatterns.code.tex
@@ -1203,31 +1155,31 @@ ty
 Package: numprint 2012/08/20 v1.39 Print numbers (HH)
  (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
 Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
-\col@sep=\dimen286
-\ar@mcellbox=\box114
-\extrarowheight=\dimen287
+\col@sep=\dimen279
+\ar@mcellbox=\box68
+\extrarowheight=\dimen280
 \NC@list=\toks37
-\extratabsurround=\skip122
-\backup@length=\skip123
-\ar@cellbox=\box115
+\extratabsurround=\skip123
+\backup@length=\skip124
+\ar@cellbox=\box69
 )
-\c@nprt@mantissa@digitsbefore=\count317
-\c@nprt@mantissa@digitsafter=\count318
-\c@nprt@exponent@digitsbefore=\count319
-\c@nprt@exponent@digitsafter=\count320
-\nprt@digitwidth=\skip124
-\nprt@sepwidth=\skip125
-\nprt@decimalwidth=\skip126
-\nprt@blockwidth=\skip127
+\c@nprt@mantissa@digitsbefore=\count310
+\c@nprt@mantissa@digitsafter=\count311
+\c@nprt@exponent@digitsbefore=\count312
+\c@nprt@exponent@digitsafter=\count313
+\nprt@digitwidth=\skip125
+\nprt@sepwidth=\skip126
+\nprt@decimalwidth=\skip127
+\nprt@blockwidth=\skip128
 \nprt@digittoks=\toks38
 \nprt@pretoks=\toks39
 \nprt@posttoks=\toks40
-\nprt@thisdigit=\count321
-\nprt@curpos=\count322
-\nprt@rndpos=\count323
-\c@nprt@digitsfirstblock=\count324
-\c@nprt@blockcnt=\count325
-\c@nprt@cntprint=\count326
+\nprt@thisdigit=\count314
+\nprt@curpos=\count315
+\nprt@rndpos=\count316
+\c@nprt@digitsfirstblock=\count317
+\c@nprt@blockcnt=\count318
+\c@nprt@cntprint=\count319
 No configuration file `numprint.cfg' found.)
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xfp\xfp.
 sty
@@ -1238,19 +1190,19 @@ Package: fp 1995/04/02
 `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/fp\defpattern.sty
 Package: defpattern 1994/10/12
-\actioncount=\count327
+\actioncount=\count320
 )
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-basic.sty
 Package: fp-basic 1996/05/13
-\FP@xs=\count328
-\FP@xia=\count329
-\FP@xib=\count330
-\FP@xfa=\count331
-\FP@xfb=\count332
-\FP@rega=\count333
-\FP@regb=\count334
-\FP@regs=\count335
-\FP@times=\count336
+\FP@xs=\count321
+\FP@xia=\count322
+\FP@xib=\count323
+\FP@xfa=\count324
+\FP@xfb=\count325
+\FP@rega=\count326
+\FP@regb=\count327
+\FP@regs=\count328
+\FP@times=\count329
 )
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-addons.sty
 Package: fp-addons 1995/03/15
@@ -1269,7 +1221,7 @@ Package: fp-pas 1994/08/29
 )
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-random.sty
 Package: fp-random 1995/02/23
-\FPseed=\count337
+\FPseed=\count330
 )
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-eqn.sty
 Package: fp-eqn 1995/04/03
@@ -1280,26 +1232,26 @@ Package: fp-upn 1996/10/21
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/fp\fp-eval.sty
 Package: fp-eval 1995/04/03
 ))
-\tkzRadius=\dimen288
-\tkzLength=\dimen289
-\tkz@radi=\dimen290
-\tkz@ax=\dimen291
-\tkz@ay=\dimen292
-\tkz@bx=\dimen293
-\tkz@by=\dimen294
-\tkz@cx=\dimen295
-\tkz@cy=\dimen296
-\tkz@dx=\dimen297
-\tkz@dy=\dimen298
-\tkz@tax=\dimen299
-\tkz@tay=\dimen300
-\tkz@tbx=\dimen301
-\tkz@tby=\dimen302
-\tkz@tcx=\dimen303
-\tkz@tcy=\dimen304
-\tkz@tdx=\dimen305
-\tkz@tdy=\dimen306
-\tkz@cntmk=\count338
+\tkzRadius=\dimen281
+\tkzLength=\dimen282
+\tkz@radi=\dimen283
+\tkz@ax=\dimen284
+\tkz@ay=\dimen285
+\tkz@bx=\dimen286
+\tkz@by=\dimen287
+\tkz@cx=\dimen288
+\tkz@cy=\dimen289
+\tkz@dx=\dimen290
+\tkz@dy=\dimen291
+\tkz@tax=\dimen292
+\tkz@tay=\dimen293
+\tkz@tbx=\dimen294
+\tkz@tby=\dimen295
+\tkz@tcx=\dimen296
+\tkz@tcy=\dimen297
+\tkz@tdx=\dimen298
+\tkz@tdy=\dimen299
+\tkz@cntmk=\count331
 
 Local configuration file tkz-base.cfg found and used
 
@@ -1379,8 +1331,8 @@ ls-angles.tex
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-obj
 -eu-angles.tex
 2020/03/18 3.06c tkz-tool-eu-angles.tex
-\tkz@arcsize=\dimen307
-\tkz@fillsize=\dimen308
+\tkz@arcsize=\dimen300
+\tkz@fillsize=\dimen301
 )
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-obj
 -eu-arcs.tex
@@ -1447,59 +1399,59 @@ ls-angles.tex
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/tkz-euclide\tkz-obj
 -eu-triangles.tex
 2020/03/18 3.06c tkz-obj-eu-triangles.tex
-)) ("Seminar 12-Auction and previous exam problems.aux")
-\openout1 = `"Seminar 12-Auction and previous exam problems.aux"'.
+))
+No file "Seminar 1-Preference and Marshallian demand function".aux.
+\openout1 = `"Seminar 1-Preference and Marshallian demand function.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 2
-6.
-
+5.
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 25.
 LaTeX Font Info:    Trying to load font information for FML+futm on input line 
-26.
+25.
 
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 25.
 LaTeX Font Info:    Trying to load font information for FMS+futm on input line 
-26.
+25.
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 25.
 LaTeX Font Info:    Trying to load font information for FMX+futm on input line 
-26.
+25.
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 26.
-\AtBeginShipoutBox=\box116
-Package hyperref Info: Link coloring ON on input line 26.
+LaTeX Font Info:    ... okay on input line 25.
+\AtBeginShipoutBox=\box70
+Package hyperref Info: Link coloring ON on input line 25.
 
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.st
 y
@@ -1513,19 +1465,21 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ttitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count339
+\c@section@level=\count332
 )
-LaTeX Info: Redefining \ref on input line 26.
-LaTeX Info: Redefining \pageref on input line 26.
-LaTeX Info: Redefining \nameref on input line 26.
- ("Seminar 12-Auction and previous exam problems.out")
-("Seminar 12-Auction and previous exam problems.out")
+LaTeX Info: Redefining \ref on input line 25.
+LaTeX Info: Redefining \pageref on input line 25.
+LaTeX Info: Redefining \nameref on input line 25.
 \@outlinefile=\write4
-\openout4 = `"Seminar 12-Auction and previous exam problems.out"'.
+\openout4 = `"Seminar 1-Preference and Marshallian demand function.out"'.
 
-LaTeX Font Info:    Redeclaring math accent \widehat on input line 26.
-LaTeX Font Info:    Redeclaring math accent \widetilde on input line 26.
-LaTeX Info: Redefining \microtypecontext on input line 26.
+
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 25.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 25.
+LaTeX Info: Redefining \microtypecontext on input line 25.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: No adjustment of tracking.
@@ -1537,38 +1491,37 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
 \symgns@font=\mathgroup8
 LaTeX Font Info:    Overwriting symbol font `gns@font' in version `bold'
-(Font)                  TS1/futs/m/n --> TS1/futs/b/n on input line 26.
-Package gensymb Info: Math companion symbols declared on input line 26.
-LaTeX Info: Redefining \degree on input line 26.
-LaTeX Info: Redefining \celsius on input line 26.
+(Font)                  TS1/futs/m/n --> TS1/futs/b/n on input line 25.
+Package gensymb Info: Math companion symbols declared on input line 25.
+LaTeX Info: Redefining \degree on input line 25.
+LaTeX Info: Redefining \celsius on input line 25.
 Package gensymb Info: Using text companion symbols for \degree, \celsius and \p
-erthousand on input line 26.
-LaTeX Info: Redefining \ohm on input line 26.
-Package gensymb Info: Using \textohm for \ohm on input line 26.
-Package gensymb Info: Using \textmu for \micro on input line 26.
+erthousand on input line 25.
+LaTeX Info: Redefining \ohm on input line 25.
+Package gensymb Info: Using \textohm for \ohm on input line 25.
+Package gensymb Info: Using \textmu for \micro on input line 25.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-
 ABD: EveryShipout initializing macros
 LaTeX Font Info:    Trying to load font information for FML+futmi on input line
- 29.
+ 28.
 
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/fourier\fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 29.
+(Font)              scaled to size 11.03998pt on input line 28.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 29.
+(Font)              scaled to size 8.27998pt on input line 28.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 29.
+(Font)              scaled to size 6.43999pt on input line 28.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 29.
+(Font)              scaled to size 11.03998pt on input line 28.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 29.
+(Font)              scaled to size 8.27998pt on input line 28.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 29.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 29.
+(Font)              scaled to size 6.43999pt on input line 28.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 28.
 
  (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1577,7 +1530,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 g
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 29.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 28.
 
  (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1587,7 +1540,7 @@ g
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Trying to load font information for TS1+futs on input line 
-29.
+28.
 
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/fourier\ts1futs.fd
 File: ts1futs.fd 2003/09/14 Fontinst v1.801 font definitions for TS1/futs.
@@ -1597,29 +1550,17 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 37.
+(Font)              scaled to size 9.19998pt on input line 33.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 37.
+(Font)              scaled to size 6.99199pt on input line 33.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 37.
+(Font)              scaled to size 5.51999pt on input line 33.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 37.
+(Font)              scaled to size 9.19998pt on input line 33.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 37.
+(Font)              scaled to size 6.99199pt on input line 33.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 37.
-
-Overfull \hbox (3.93848pt too wide) detected at line 107
-[]
- []
-
-Missing character: There is no ， in font futr8t!
-Package mdframed Info: Box was splittet wrong
- starting loop to iterate the splitting point
-(mdframed)              on input line 148.
-Package mdframed Info: You first box width is to small
- mdframed fixed it
-(mdframed)              on input line 148.
+(Font)              scaled to size 5.51999pt on input line 33.
 
 (C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\se-asci
 i-print.def
@@ -1627,43 +1568,443 @@ File: se-ascii-print.def 2019/11/29 v1.12 stringenc: Printable ASCII characters
 
 ) [1
 
-] [2] [3] [4] [5] [6]
-File: ./pic/12.q2.png Graphic file (type bmp)
-<./pic/12.q2.png>
- [7]
-File: ./pic/12.q2_2.png Graphic file (type bmp)
-<./pic/12.q2_2.png>
-File: ./pic/12.q2_3.png Graphic file (type bmp)
-<./pic/12.q2_3.png>
- [8]
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 1.
-LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.25598pt on input line 1.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 7.35999pt on input line 1.
-LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.25598pt on input line 1.
- [9] [10] [11] [12]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 673.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 673.
+]
+Overfull \hbox (37.07947pt too wide) in paragraph at lines 52--53
+[]\T1/futs/m/n/10 You can com-ment on my slides di-rectly, and point out in whi
+ch line/graph/fuction
+ []
 
-("Seminar 12-Auction and previous exam problems.aux")
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 673.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 673.
-Package rerunfilecheck Info: File `"Seminar 12-Auction and previous exam proble
-ms".out' has not changed.
+[2]
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer
+/tikz/libraries\tikzlibraryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer
+/tikz/libraries\tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/sha
+pes\pgflibraryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+))
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer
+/tikz/libraries\tikzlibraryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/sha
+pes\pgflibraryshapes.symbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+))
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer
+/tikz/libraries\tikzlibraryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/sha
+pes\pgflibraryshapes.arrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+))
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer
+/tikz/libraries\tikzlibraryshapes.callouts.code.tex
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/sha
+pes\pgflibraryshapes.callouts.code.tex))
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer
+/tikz/libraries\tikzlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/sha
+pes\pgflibraryshapes.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfnodepartlowerbox=\box71
+\pgfnodeparttwobox=\box72
+\pgfnodepartthreebox=\box73
+\pgfnodepartfourbox=\box74
+\pgfnodeparttwentybox=\box75
+\pgfnodepartnineteenbox=\box76
+\pgfnodeparteighteenbox=\box77
+\pgfnodepartseventeenbox=\box78
+\pgfnodepartsixteenbox=\box79
+\pgfnodepartfifteenbox=\box80
+\pgfnodepartfourteenbox=\box81
+\pgfnodepartthirteenbox=\box82
+\pgfnodeparttwelvebox=\box83
+\pgfnodepartelevenbox=\box84
+\pgfnodeparttenbox=\box85
+\pgfnodepartninebox=\box86
+\pgfnodeparteightbox=\box87
+\pgfnodepartsevenbox=\box88
+\pgfnodepartsixbox=\box89
+\pgfnodepartfivebox=\box90
+)))
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer
+/tikz/libraries\tikzlibrarytrees.code.tex
+File: tikzlibrarytrees.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 1
+01.
+
+(C:\Users\Xiaoguang\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmss.fd
+File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmss' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+Overfull \hbox (81.69899pt too wide) in paragraph at lines 132--133
+[] 
+ []
+
+[3]
+
+LaTeX Warning: Reference `fig:familiar' on page 4 undefined on input line 153.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 167.
+See the caption package documentation for explanation.
+
+File: ./pic/1.open.png Graphic file (type bmp)
+<./pic/1.open.png>
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 186.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:ball' on page 4 undefined on input line 199.
+
+File: ./pic/1.ball.png Graphic file (type bmp)
+<./pic/1.ball.png>
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 205.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:ball' on page 4 undefined on input line 221.
+
+
+LaTeX Warning: Reference `fig:line' on page 4 undefined on input line 222.
+
+File: ./pic/1.line.png Graphic file (type bmp)
+<./pic/1.line.png>
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 227.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:mono' on page 4 undefined on input line 231.
+
+File: ./pic/1.mono.png Graphic file (type bmp)
+<./pic/1.mono.png>
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 236.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:closest' on page 4 undefined on input line 249.
+
+File: ./pic/1.closest.png Graphic file (type bmp)
+<./pic/1.closest.png>
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 254.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:closest' on page 4 undefined on input line 273.
+
+
+LaTeX Warning: Reference `fig:familiar' on page 4 undefined on input line 274.
+
+
+LaTeX Warning: Reference `fig:final' on page 4 undefined on input line 274.
+
+File: ./pic/1.final.png Graphic file (type bmp)
+<./pic/1.final.png>
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 280.
+See the caption package documentation for explanation.
+
+[4]
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 283.
+ [5] [6] [7]
+
+LaTeX Warning: Reference `fig:1_8' on page 8 undefined on input line 285.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 298.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:1_8_a5'' on page 8 undefined on input line 308.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 346.
+See the caption package documentation for explanation.
+
+[8]
+
+LaTeX Warning: Reference `fig:1_8_a5' on page 9 undefined on input line 355.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 376.
+See the caption package documentation for explanation.
+
+[9]
+Missing character: There is no ‘ in font futb8t!
+Missing character: There is no ’ in font futb8t!
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 411.
+See the caption package documentation for explanation.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 448.
+See the caption package documentation for explanation.
+
+[10]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 480.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:1_9_a5' on page 11 undefined on input line 486.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 503.
+See the caption package documentation for explanation.
+
+
+Overfull \hbox (1.26143pt too wide) in paragraph at lines 509--511
+\T1/futs/m/n/10 A con-sumer has lex-i-co-graphic pref-er-ences over $\U/futm/m/
+n/10 R[]$ \T1/futs/m/n/10 if the re-la-tion sat-is-fies $\FML/futmi/m/it/10 x[]
+; x[]$ \T1/futs/m/n/10 when-
+ []
+
+[11]
+
+LaTeX Warning: Reference `eq:laxi' on page 12 undefined on input line 540.
+
+
+LaTeX Warning: Reference `fig:1_13_pre' on page 12 undefined on input line 566.
+
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 580.
+See the caption package documentation for explanation.
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 600--601
+
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 606.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 606.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 606.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\gg' on input line 606.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 606.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 624.
+See the caption package documentation for explanation.
+
+[13]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 672.
+See the caption package documentation for explanation.
+
+[14]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 681.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 681.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 681.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\gg' on input line 681.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 681.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 751.
+See the caption package documentation for explanation.
+
+[15]
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 7.35999pt on input line 761.
+LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
+(Font)              scaled to size 6.25598pt on input line 761.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 7.35999pt on input line 761.
+LaTeX Font Info:    Font shape `U/futm/m/n' will be
+(Font)              scaled to size 6.25598pt on input line 761.
+
+
+LaTeX Warning: Reference `eq:L3' on page 16 undefined on input line 809.
+
+
+LaTeX Warning: Reference `eq:L4' on page 16 undefined on input line 809.
+
+
+LaTeX Warning: Reference `eq:L1' on page 16 undefined on input line 810.
+
+
+LaTeX Warning: Reference `eq:L4' on page 16 undefined on input line 812.
+
+
+LaTeX Warning: Reference `eq:L1' on page 16 undefined on input line 813.
+
+
+LaTeX Warning: Reference `eq:L3' on page 16 undefined on input line 813.
+
+
+LaTeX Warning: Reference `eq:L3' on page 16 undefined on input line 815.
+
+
+LaTeX Warning: Reference `eq:L1' on page 16 undefined on input line 816.
+
+
+LaTeX Warning: Reference `eq:L2' on page 16 undefined on input line 817.
+
+[16]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 862.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `eq:mm' on page 17 undefined on input line 868.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 904.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:1_27_budget' on page 17 undefined on input line 9
+09.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 946.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:1_27_budget2' on page 17 undefined on input line 
+950.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 975.
+See the caption package documentation for explanation.
+
+[17]
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 986.
+ [18]
+
+LaTeX Warning: Reference `fig:1_27_la' on page 19 undefined on input line 992.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1018.
+See the caption package documentation for explanation.
+
+[19]
+
+LaTeX Warning: Reference `fig:1_27_a' on page 20 undefined on input line 1023.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1049.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:1_27_budget' on page 20 undefined on input line 1
+054.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1080.
+See the caption package documentation for explanation.
+
+[20]
+
+LaTeX Warning: Reference `fig:1_27_1/a' on page 21 undefined on input line 1083
+.
+
+
+LaTeX Warning: Reference `fig:1_27_budget2' on page 21 undefined on input line 
+1086.
+
+[21]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1106.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1106.
+ ("Seminar 1-Preference and Marshallian demand function.aux")
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1106.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1106.
+
+Package rerunfilecheck Info: File `"Seminar 1-Preference and Marshallian demand
+ function".out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 673.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1106.
  ) 
 Here is how much of TeX's memory you used:
- 31353 strings out of 414493
- 596897 string characters out of 2902447
- 954845 words of memory out of 3000000
- 47916 multiletter control sequences out of 15000+200000
- 642684 words of font info for 128 fonts, out of 3000000 for 9000
+ 33377 strings out of 414493
+ 653371 string characters out of 2902447
+ 1024332 words of memory out of 3000000
+ 49893 multiletter control sequences out of 15000+200000
+ 649534 words of font info for 130 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
- 60i,14n,91p,997b,1506s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 60i,13n,91p,939b,1242s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Seminar 12-Auction and previous exam problems.pdf (12 pages).
-
+Output written on Seminar 1-Preference and Marshallian demand function.pdf (21 
+pages).

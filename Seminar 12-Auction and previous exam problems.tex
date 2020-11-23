@@ -42,7 +42,7 @@ There are $N$ bidders in an auction, and any bidder $i$ has a private value $v_i
 
 \subsection*{What is the BR $\hat{b}(v_i)$ for bidder $i$ ?}
 
-If bidder $i$ with $v_i=r$ submits a price higher than bidder $1$'s bid, we must have:
+If bidder $i$ with $v_i=r$ submits a price higher than bidder $1$, we must have:
 
 $$\hat{b}(v_1) < \hat{b}(r) \iff v_1  < r, i \neq 1
 $$
@@ -60,7 +60,7 @@ Here is another interesting way to understand function $F^{(N-1)}(x)$:
 
 \smallskip 
 
-Since ``\textit{bidder $i$ defeats all the other N-1 bidders}'' $\iff$ ``\textit{bidder $i$ defeats the bidder the second-highest price}'', if we denote the second-highest price as $\theta$, we can also write the probability above as
+Since ``\textit{bidder $i$ defeats all the other N-1 bidders}'' $\iff$ ``\textit{bidder $i$ defeats the bidder with the second-highest private value}'', if we denote the second-highest private value as $\theta$, we can also write the probability above as
 
 \begin{equation}
 Pr\{\theta < r\} = F^{(N-1)}(r)
@@ -135,11 +135,11 @@ where $F(x) = Pr(\theta\le x)$ is the CDF of $\theta$.
 
 \medskip
 
-$\hat{b}(v)$ is actually an expectation of some variable $\theta$ conditional on $\theta \le v$, and the variable $\theta$'s CDF is $Pr(\theta \le x) = F^{(N-1)}(x)$. In equation \ref{eq:second} we already showed $\theta$ is actually the second highest price.
+$\hat{b}(v)$ is actually an expectation of some variable $\theta$ conditional on $\theta \le v$, and the variable $\theta$'s CDF is $Pr(\theta \le x) = F^{(N-1)}(x)$. In equation \ref{eq:second} we already showed $\theta$ is actually the second highest private value.
 
 \medskip
 
-In conclusion, the the BR of any bidder $i$ with private value $v$, is the expectation of the second highest price conditional on $v$ is higher than the second highest price (i.e. bidder $i$ wins):
+In conclusion, the the BR of any bidder $i$ with private value $v$, is the expectation of the second highest private value conditional on $v$ is higher than the second highest private value (i.e. bidder $i$ wins):
 \begin{equation}
 \hat{b}(v) = E(\theta|\theta \le v)
     \label{eq:b}   
@@ -189,7 +189,6 @@ v(x)= \frac{F^{(N-1)}(x)}{(N-1)}
 \end{equation}
 
 Equation \ref{eq:95} can be rewritten as,
-
 \begin{align*}
 \hat{b}(v)&= \frac{(N-1)}{F^{(N-1)}(v)} \int_0^{v}xf(x)F^{(N-2)}(x)dx \\
 &= \frac{(N-1)}{F^{(N-1)}(v)} \int_0^{v} u(x)\cdot v'(x)dx \\
@@ -232,10 +231,11 @@ On the other hand, by envelop theorem,
 
 we find another way to express $u(r^*,v)$:
 \begin{equation}
-u(r^*,v) = \int_0^v F^{(N-1)}(x) dx
+u(r^*,v) = \int_0^v F^{(N-1)}(x) dx + C
     \label{eq:max2}   
 \end{equation}
 
+($C=0$ since $u(v=0) =0 = 0 +C$)
 
 Therefore, by equation \ref{eq:max1} and equation \ref{eq:max2},
 \begin{align*}
@@ -338,9 +338,9 @@ player, and the set of pure-strategy Nash equilibria.
 
 \bigskip
 
-In Game $H$: Only $S$ and $A$ are rationalizable. $(S, A)$ is the unique NE. 
+In Game $H$: Only $A$ and $S$ are rationalizable. $(A, S)$ is the unique NE. 
 
-In Game $L$. Only $U$ and $R$ are rationalizable. $(U, R)$ is the unique NE.
+In Game $L$. Only $R$ and $U$ are rationalizable. $(R, U)$ is the unique NE.
 
 
 \subsection*{b) Bayesian normal form} Assume next that only $W$ knows his own type, while player $E$ thinks that the two types
@@ -374,11 +374,11 @@ rationalizable strategies for each player, and the set of pure-strategy and/or m
 
 \medskip
 
-For the Worker, $US'$ is dominated by $SS'$; $UU'$ is dominated by $SU'$. The rationalizable strategies are $SS$ and $SU'$.
+For the Employer, both $A$ and $R$ are rationalizable.
 
 \medskip
 
-For the Employer, both $A$ and $R$ are rationalizable.
+For the Worker, $US'$ is dominated by $SS'$; $UU'$ is dominated by $SU'$. The rationalizable strategies are $SS'$ and $SU'$.
 
 \medskip
 
@@ -409,7 +409,9 @@ $$E(U^W_{SS'}) = q \times 1 + (1-q) \times (-1) = 2q-1$$
 $$E(U^W_{SU'}) = q \times 0.5 + (1-q) \times 0.5 = 0.5$$
 $$E(U^W_{SS'}) = E(U^W_{SU'}) \Rightarrow 2q-1=0.5 \Rightarrow \tfrac34$$
 
-The Mixed-strategy NE is: the Employer chooses $A$ and $R$ with probability $(0.5,0.5)$; Worker chooses $SS'$ and $SU'$ with probability $(\tfrac34,\tfrac14)$.
+The Mixed-strategy NE is: the Employer chooses $A$ and $R$ with probability $(0.5,0.5)$; Worker chooses $SS'$ and $SU'$ with probability $(\tfrac34,\tfrac14)$, i.e.
+
+$$\{(0.5,0.5), (\tfrac34,\tfrac14,0,0)\}$$
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -574,7 +576,7 @@ The Worker has 4 possible strategies: $SS',UU',SU',US'$.
 
 \smallskip
 
-Denote the updated belief of the Worker :
+Denote the updated belief of the Employer :
 \begin{itemize}
 \item $Pr(\text{Strong} | P/P') = p$
 \item $Pr(\text{Weak} | U/U') = q$
@@ -647,12 +649,15 @@ Then $p=0,q=1$,
 
 \smallskip
 
-The BR of the Employer is to choose $A$ after $S/S'$ and $R$ after $U/U'$.
+The BR of the Employer is to choose $R$ after $S/S'$ and $R'$ after $U/U'$.
 
 \smallskip
 
-For a Low ability Worker, deviating from $S'$ to $U'$ will increase the payoff from
-$(-1,-1)$ to $(0,0)$.
+For a High ability Worker, deviating from $U$ to $S$ will increase the payoff from $(0,0)$ to $(0,1)$.
+
+\smallskip
+
+For a Low ability Worker, deviating from $S'$ to $U'$ will increase the payoff from $(0,-3)$ to $(0,0)$.
 
 \smallskip
 

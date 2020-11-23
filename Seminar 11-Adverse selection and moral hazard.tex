@@ -109,7 +109,7 @@ Where $F(x|\theta \le m) = Pr(\theta \le x | \theta \le m)$.
 Obviously, when $x \in [m,b]$, $Pr(\theta \le x | \theta \le m)=1$; when $x \in [a,m]$, according to Bayes' rule,
 
 
- $$Pr(\theta \le x | \theta \le m)= \frac{Pr(\theta \le m | \theta \le x) Pr(\theta \le x)}{Pr(\theta \le m)} = \frac{1 \times Pr(F(x)}{F(m)}$$
+ $$Pr(\theta \le x | \theta \le m)= \frac{Pr(\theta \le m | \theta \le x) Pr(\theta \le x)}{Pr(\theta \le m)} = \frac{1 \times F(x)}{F(m)}$$
 
 Therefore,
 
@@ -127,7 +127,7 @@ Thus,
 $$E(\theta|\theta \le m) = \int^m_a x d F(x|\theta \le m)=\int^m_a x d \frac{F(x)}{F(m)}$$
 \end{mdframed}
 
-Let $p \in (0,\tfrac12]$. Sellers with quality $\theta$ satisfying $p - \tfrac{\theta}2 \geq 0$ sell their cars, or equivalently:$$\theta \leq 2p \, .$$
+Let $p \in (0,\tfrac12]$. Sellers with quality $\theta$ satisfying $u_s(p,\theta)=p - \tfrac{\theta}2 \geq 0$ sell their cars, or equivalently:$$\theta \leq 2p \, .$$
 
 \medskip
 
@@ -136,7 +136,6 @@ Sine $\theta$ is uniformed distributed in $[0,1]$, the CDF of $\theta$ is $F(x) 
 \medskip
 
 Then:
-
 \begin{align*}
 E(\theta | p) = E(\theta | \theta \leq 2p) &= \int_{0}^{2p}x\frac{dF(x)}{F(2p)} \\
 &= \int_{0}^{2p} x\frac{dx}{2p} \\
@@ -154,9 +153,9 @@ particular, which cars are traded in equilibrium?}
 Consider any $p \in [0,1]$. Sellers with quality $\theta$ satisfying $p - \theta^\frac12 \geq 0$ sell their car, or equivalently:$$\theta \leq p^2 \, .$$
 
 Then:
-
 \begin{align*}
 E(\theta | p) = E(\theta | \theta \leq p^2) &= \frac{\int_{0}^{p^2}x dF(x)}{F(p^2)} \\
+&= \frac{\int_{0}^{p^2}x dx}{p^2} \\
 &= \frac{\left[ \tfrac12 \theta^2 \right]^{p^2}_0}{p^2} \\
 &= \tfrac12 p^2
 \end{align*}
@@ -187,13 +186,13 @@ There are 2 equilibria.
 \subsection*{(e) Are any of the preceding outcomes Pareto efficient? Describe Pareto improvements whenever
 possible.}
 
-\textbf{In case (b)}, $p=\tfrac12$ is Pareto-efficient. For any $p \in (0, \tfrac12]$, we have $$E[u_b] = E[\theta|u_s(p, \theta) \ge 0 ] = p$$
-while for the seller, since $u_s(p, \theta) = p - \theta/2$, higher $p^*$ means higher payoff.
+\textbf{In case (b)}, $p=\tfrac12$ is Pareto-efficient. For any $p \in (0, \tfrac12]$, we have $$E[u_b] = E[\theta|u_s(p, \theta) \ge 0 ] - p= 0$$
+while for the seller, since $u_s(p, \theta) = p - \theta/2$, higher $p^*$ means higher payoff (and all sellers can sell the car now).
 
 \textbf{In case (c)}, the equilibrium condition requires $p^*=0$, there can't be any improvement.
 
 \textbf{In case (d)}, there are 2 equilibria. Similar to case (b), $p^*=\frac{\sqrt{2}}{4}$ is a Pareto improvement comparing
-with $p^*=0$.
+with $p^*=0$ (again, only the seller benefits).
 
 
 \bigskip
@@ -277,7 +276,7 @@ and effort level $e\in \{0,1\}$. For example, $w_4(0)$ is the wage in the case o
 
 \medskip
 
-There are 4 possible wages depending on the efforts:
+There are 4 possible wages depending on the efforts and outcome:
 
 \begin{itemize}
 \item If low effort: $w_0(0),w_4(0)$
@@ -294,7 +293,7 @@ Denote $w^f = pw_0 +(1-p)w_4$
 \end{itemize}
 
 
-We can see the firm is risk neutral while the worker is risk averse w.r.t. the wage. That is to say, the firm is indifferent to the uncertain wage and the fixed wage, while the worker prefers fixed wage.
+We can see the firm is risk neutral while the worker is risk averse w.r.t. the wage. That is to say, the firm is indifferent to the uncertain wage and the fixed wage, while the worker prefers fixed wage $w^f$ than uncertain wage $pw_0 +(1-p)w_4$.
 
 \medskip
 
@@ -321,15 +320,15 @@ To minimize the cost, the firm will let $w(0) = 0,  w(1) = 1$.
 
 The expected profit of the firm is 
 \begin{itemize}
-\item If effort$=0$, $E[\Pi_0]= \tfrac23 \times 0 + \tfrac13 \times 4 - 0 =\tfrac43$
-\item If effort$=1$, $E[\Pi_1]= \tfrac13 \times 0 + \tfrac23 \times 4 - 1 =\tfrac53$
+\item If effort$=0$, $E[\pi_0]= \tfrac23 \times 0 + \tfrac13 \times 4 - 0 =\tfrac43$
+\item If effort$=1$, $E[\pi_1]= \tfrac13 \times 0 + \tfrac23 \times 4 - 1 =\tfrac53$
 \end{itemize}
 
 The firm prefers the worker to pay effort. In the expected
 profit-maximising contract the worker will exert effort $=1$.
 
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
-For example, the firm can promise offering a wage slightly higher than 1 if the worker exerts efforts. Since the effort can be observed, the promise is realistic.
+The firm can promise offering a $wage = 1$ if the worker exerts efforts. Since the effort can be observed, the promise is realistic. And there is no incentive for the worker to reject.
 \end{mdframed}
 
 %***************************************************
@@ -366,21 +365,23 @@ Simplifying:
 
 \begin{gather*}
  \text{PC:}   \tfrac13 \sqrt{w_0} + \tfrac23 \sqrt{w_4} \geq 1  \, ,\\
- \text{PC:}    -\tfrac13 \sqrt{w_0} + \tfrac13 \sqrt{w_4} \geq 1  \, .
+ \text{IC:}    -\tfrac13 \sqrt{w_0} + \tfrac13 \sqrt{w_4} \geq 1  \, .
 \end{gather*}
+
+\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
+The IC can be written as $\sqrt{w_4} \geq  \sqrt{w_0} + 3$. The higher $w_0$ is, the higher $w_4$ must be. Therefore we let $w_0=0$ and the lowest $w_4=9$. They also satisfy the PC condition.
+\end{mdframed}
 
 The lowest (non-negative) wage rates that satisfy these inequalities are $w_0 = 0$ and $w_4 = 9$.
 
-\begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
-The IC can be written as $\sqrt{w_4} \geq  \sqrt{w_0} + 3$. The higher $w_0$ is, the higher $w_4$ must be. Therefore we let $w_0=0$ and the lowest $w_4=3$. They also satisfy the PC condition.
-\end{mdframed}
 
-The expected profit for the firm is: $$ E[\pi]=\tfrac13 \times 0 - \tfrac23 \times 5 = - \tfrac{10}3$$.
+The expected profit for the firm is: 
+$$ E[\pi]=\tfrac13 \times (0-0） + \tfrac23 \times (4 -9) = - \tfrac{10}3$$
 
-Since $\tfrac43 > - \tfrac{10}3$, the firm prefer the worker to exert low effort. Thus the worker will exert low effort ($e=0$) in the expected profit-maximizing contract when effort is not observable.
+Since $\tfrac43 > - \tfrac{10}3$, the firm prefers the worker to exert low effort. Thus the worker will exert low effort ($e=0$) in the expected profit-maximizing contract when effort is not observable.
 
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
-In this case, the firm simply provides a fixed wage close to 0 and the worker will not exert high effort.
+In this case, the firm simply provides a fixed wage 0 and the worker will not exert high effort. There is no incentive to deviate.
 \end{mdframed}
 
 
