@@ -367,9 +367,7 @@ $RR'$. Therefore the PBE is
 
 $$\{UD',RR',p=1,q=0\}$$
 
-
-\section{Problem 2 - Sequential moves and incomplete information; Perfect
-Bayesian equilibrium}
+\section{Problem 2 - Signaling pizza problem}
 
 Consider the situation of Problem 1 of the eighth seminar, but assume now in addition that the pizza comes in 5
 different sizes, each with $x$ slices, where $x \in \{4, 6, 8, 10, 12\}$. \textbf{Player 1 observes $x$}
@@ -377,20 +375,16 @@ before making her demand, while players 2 only observes player 1's demand, but n
 having to make his own demand. Before observing player 1's demand, player 2 thinks that the 5
 different pizza sizes are equally likely, but he may infer something from her demand.
 %
-
-%
 \subsection*{(a) Explain what a strategy is for player 1 in this game of incomplete information.} 
 %
 Player 1's strategy is contingent on the size of pizza ($x$), i.e. $s_1(x)$, 
 where $x \in \{4, 6, 8, 10, 12\}$.
-
 
 \subsection*{(b) Perfect Bayesian
 equilibrium} Show that the following strategy for player 1 can be part of a perfect Bayesian
 equilibrium: $s_1(4) = 2$, $s_1(6) = 3$, $s_1(8) = 4$, $s_1(10) = 5$, $s_1(12) = 11$. Specify
 both player 2's strategy and player 2's beliefs. 
 %
-\bigskip
 
 \begin{mdframed}[backgroundcolor=blue!20,linecolor=white]
 
@@ -403,7 +397,7 @@ Denote player 2's belief (probability on sizes $4, 6, 8, 10, 12$) as $\mu(x)$, a
 
 \begin{center}
 \begin{tabular}{|c|ccccc|c|}
-\multicolumn{1}{c}{} & \multicolumn{6}{c}{$\mu(x)$ for $x =$}  \\
+\multicolumn{1}{c}{} & \multicolumn{6}{c}{Belief $\mu(x)$ for $x = \quad  \quad  \quad$}   \\
 $s_1$ & $4,$ & $6,$ & $8,$ & $10$ & $12$ & $s_2^*$  \\   \cline{1-7} 
 $2$ & $(1,$ & $0,$ & $0,$ & $0,$ & $0)$ & $2$ \\   
 $3$ & $(0,$ & $1,$ & $0,$ & $0,$ & $0)$ & $3$ \\   
@@ -413,12 +407,15 @@ $11$& $(0,$ & $0,$ & $0,$ & $0,$ & $1)$ & $1$ \\
 \hline 
 \end{tabular}
 \end{center}
+\textbf{Note that the belief above is required by Bayes' rule.}
+
+\medskip
 
 What if player 1 surprisingly asked for, for example, 6 slices? As long as the payoff is lower than PBE result, there is no deviation. The following belief can make sure so:
 
 \begin{center}
 \begin{tabular}{|c|ccccc|c|}
-\multicolumn{1}{c}{} & \multicolumn{6}{c}{$\mu(x)$ for $x =$}  \\
+\multicolumn{1}{c}{} & \multicolumn{6}{c}{Belief $\mu(x)$ for $x = \quad  \quad  \quad$}  \\
 $s_1$ & $4,$ & $6,$ & $8,$ & $10$ & $12$ & $s_2^*$  \\   \cline{1-7}
 $0$ & $(1,$ & $0,$ & $0,$ & $0,$ & $0)$ & $4$ \\   
 $1$ & $(1,$ & $0,$ & $0,$ & $0,$ & $0)$ & $3$ \\    \hline 
@@ -435,6 +432,10 @@ $10$& $(0,$ & $0,$ & $0,$ & $0,$ & $1)$ & $2$ \\  \hline
 $12$ & $(0,$ & $0,$ & $0,$ & $0,$ & $1)$ & $\ge 1$ \\   
 \end{tabular}
 \end{center}
+
+Note that the belief for strategies in black is \textbf{NOT} required by Bayes' rule.
+
+\medskip
 
 For example, if the size $x=10$, on the equilibrium path, player 1 should ask for
 5. But if player 1 surprisingly asks for 6, according to player 2's belief (player 2 
@@ -495,7 +496,7 @@ hollow node/.style={circle,draw,inner sep=1.5}}
 \node(0)[hollow node,label=right:{Nature}]{}
 child[grow=up]{node[solid node,label=above:{
 \begin{tabular}{c}
-\textcolor{red}{Challenger} \\ \\
+\textcolor{red}{Challenger(P1)} \\ \\
 \end{tabular}}] {}
 child[grow=left]{node(1)[solid node,label=above:{$p$}]{}
 child{node[solid node,label=left:{$(4,1)$}]{} edge from parent node [above]{$A$}}
@@ -509,7 +510,7 @@ edge from parent node [above]{Unprepared}
 edge from parent node [right]{$\tfrac12$} node [midway, above, sloped] (TextNode){Strong}
 }
 child[grow=down]{node[solid node,label=below:{\begin{tabular}{c}
-\\ \textcolor{red}{Challenger}
+\\ \textcolor{red}{Challenger(P1)}
 \end{tabular}}] {}
 child[grow=left]{node(2)[solid node,label=below:{$1-p$}]{}
 child{node[solid node,label=left:{$(2,2)$}]{} edge from parent node [above]{$A$}}
@@ -524,8 +525,8 @@ edge from parent node [below]{\textcolor{red}{Unprepared'}}
 edge from parent node [right]{$\tfrac12$} node[midway, below, sloped] (TextNode){Weak}
 };
 % information set
-\draw [dashed] (2) -- (1) node [midway, above, sloped, blue] (TextNode) {Incumbent};
-\draw [dashed] (3) -- (4) node [midway, above, sloped, blue] (TextNode) {Incumbent};
+\draw [dashed] (2) -- (1) node [midway, above, sloped, blue] (TextNode) {Incumbent(P2)};
+\draw [dashed] (3) -- (4) node [midway, above, sloped, blue] (TextNode) {Incumbent(P2)};
 \end{tikzpicture}
 
 \medskip
